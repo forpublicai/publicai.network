@@ -36,7 +36,7 @@ We are looking for libraries across **diverse regions and community types**. Ide
 We envision a fast-paced, dynamic program where we iterate and co-design the software in partnership with members of the pilot program. Each applicant team should include one library director who can champion the project and one member of staff who is able to run it and serve as the regular point-of-contact.
 
 **Interested in being a pilot site?** [Apply with **this form**](https://forms.gle/FPJhXAhnZ4pcqwuT9). Decisions are rolling.<br/>
-Have questions or want to learn more? Reach out to: [info@publicai.network](mailto:info@publicai.network)
+Have questions or want to learn more? Reach out to: [hello@publicai.network](mailto:hello@publicai.network)
 
 ## What Is Public AI?
 
