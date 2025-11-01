@@ -40,9 +40,9 @@ We also host many [events](#events) (see below) and a regular [seminar series](h
 
 ## Learn more
 
-- 2024 [White Paper](https://bit.ly/publicAIpaper){:target="_blank" rel="noopener"}, currently the best overview of Public AI
-- NeurIPS 2023 [Workshop Paper](https://arxiv.org/abs/2311.11350){:target="_blank" rel="noopener"} and [poster](https://docs.google.com/presentation/d/e/2PACX-1vTTPlkbPBeLAjzfQzx72DsS4VwBFY3YLYvX_cCLNw83FWs0zoLoaDSYjgFbdgi8zQ/pub?start=false&loop=false&delayms=3000){:target="_blank" rel="noopener"}, intended for the ML community
-- Ongoing [Seminar notes & recordings](https://publicai.network/seminar.html){:target="_blank" rel="noopener"}
+- What is public AI? Read the 2024 [White Paper](https://drive.google.com/file/d/1bcCPdRHyUGFB23--6wn4j1f9mRgdG2QF/view?usp=sharing){:target="_blank" rel="noopener"} or check out our [publications list](https://publicai.network/publications/){:target="_blank" rel="noopener"}
+- How does it relate to open source? Read [our spotlight paper](https://arxiv.org/abs/2507.09296){:target="_blank" rel="noopener"} at ICML CodeML 2025
+- Other questions? Look at our [seminar notes & recordings](https://publicai.network/seminar.html){:target="_blank" rel="noopener"}
 
 ## Getting involved
 
