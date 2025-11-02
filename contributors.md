@@ -906,6 +906,19 @@ The **Public AI Network** brings together a diverse coalition of researchers, pr
 </div>
 
 <div class="card">
+  <div class="tab">Mohsin Y. K. Yousufi</div>
+  <div class="content">
+    <div class="avatar c2">MY</div>
+    <div class="name">Mohsin Y. K. Yousufi</div>
+    <div class="aff">Georgia Tech</div>
+    <div class="details">
+    <b>Focus:</b> Public AI for Libraries, Civic Tech
+    </div>
+    <div class="joined">2025</div>
+  </div>
+</div>
+
+<div class="card">
   <div class="tab">Natalie Buda Smith</div>
   <div class="content">
     <div class="avatar c6">NB</div>
