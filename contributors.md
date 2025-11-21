@@ -776,6 +776,22 @@ The **Public AI Network** brings together a diverse coalition of researchers, pr
       </div>
     </div>
 
+
+    <div class="card">
+      <div class="tab">Nathan E. Sanders</div>
+      <div class="content">
+        <div class="avatar c1">NS</div>
+        <div class="name">Nathan E. Sanders</div>
+        <div class="aff">Harvard Berkman Klein Center</div>
+        <div class="details">
+          Data Scientist<br/>
+          <b>Focus:</b> Civic technology, AI for democracy<br/>
+          <b>Projects:</b> Rewiring Democracy book, MAPLE
+        </div>
+        <div class="joined">2023</div>
+      </div>
+    </div>
+    
 <div class="card">
   <div class="tab">Katherine Elkins</div>
   <div class="content">
