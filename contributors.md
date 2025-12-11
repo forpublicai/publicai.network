@@ -999,6 +999,20 @@ The **Public AI Network** brings together a diverse coalition of researchers, pr
       </div>
     </div>
 
+ <div class="card">
+  <div class="tab">Renata Avila</div>
+  <div class="content">
+    <div class="avatar c6">RA</div>
+    <div class="name">Renata Avila</div>
+    <div class="aff">France</div>
+    <div class="details">
+      <b>Focus:</b> Digital commons, standards, A2K, fundamental rights
+      <b>Project:</b> <a href="https://okfn.org/en/projects/sustainable-data-commons/">Sustainable data commons</a>
+    </div>
+    <div class="joined">2025</div>
+  </div>
+  </div>
+  
   <div class="card">
   <div class="tab">Robert Gehorsam</div>
   <div class="content">
