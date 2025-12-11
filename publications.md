@@ -130,7 +130,7 @@ table em {
 
 ## Other network publications
 
-|------|-----------------|------- ------|
+|------|-----------------|-------------|
 | Sep 9, 2025<br><span class="tag">Op-Ed</span> | [Should the public sector build its own AI?](https://www.ft.com/content/686252f6-6d3d-40ec-bb2b-132d4fafb198)<br>*Gideon Lichfield*, FT | How some countries are trying to take back control of access to AI |
 | May 29, 2025<br><span class="tag">Proposal</span> | [Minimum Viable Public AI Utility Co.](https://docs.google.com/document/d/1OXAiQ2Ucmgq8fFDzGFcksQUbhIKrQvTIFEaq28_4VSM/)<br>*Brandon Jackson, et al.* | Framework for establishing minimal viable public AI utilities as foundational community infrastructure. |
 | May 2025<br><span class="tag">Report</span>| [Public AI in Singapore]()<br>*Joseph Low*  | Review of Singapore's position as regional AI leader, proposal of a "Singapore AI-lines" framework. |
