@@ -1,7 +1,7 @@
 ---
 title: SAIL Countries
 layout: page
-description: Country rankings and detailed assessments of sovereign AI initiatives worldwide.
+description: Country rankings and detailed assessments of sovereign AI initiatives evaluated under the SAIL certification program.
 permalink: /sail/countries/
 ---
 
@@ -268,8 +268,8 @@ Comprehensive rankings and assessments of sovereign AI initiatives across countr
   <input type="text" id="country-search" placeholder="Search countries...">
   
   <select id="sort-by">
-    <option value="score-desc">Score (High to Low)</option>
-    <option value="score-asc">Score (Low to High)</option>
+    <option value="points-desc">Points (High to Low)</option>
+    <option value="points-asc">Points (Low to High)</option>
     <option value="name-asc">Name (A-Z)</option>
   </select>
 </div>
@@ -281,161 +281,181 @@ Comprehensive rankings and assessments of sovereign AI initiatives across countr
     <tr>
       <th style="width: 60px;">Rank</th>
       <th>Country</th>
-      <th style="width: 100px;">SAIL Score</th>
-      <th style="width: 200px;">Key Dimensions</th>
-      <th style="width: 120px;">Status</th>
+      <th style="width: 120px;">SAIL Points</th>
+      <th style="width: 200px;">Key Layers</th>
+      <th style="width: 120px;">Certification</th>
     </tr>
   </thead>
   <tbody>
     <tr data-country="Switzerland" data-region="Europe">
       <td><span class="rank-badge top-3">1</span></td>
       <td><strong>🇨🇭 Switzerland</strong></td>
-      <td class="score-cell excellent">9.3</td>
+      <td class="score-cell excellent">88 pts</td>
       <td>
         <div class="dimension-scores">
-          <span class="dimension-score">I: 9.5</span>
-          <span class="dimension-score">G: 9.2</span>
-          <span class="dimension-score">R: 9.4</span>
-          <span class="dimension-score">P: 9.1</span>
-          <span class="dimension-score">S: 9.3</span>
+          <span class="dimension-score">L1: 23</span>
+          <span class="dimension-score">L2: 22</span>
+          <span class="dimension-score">L3: 24</span>
+          <span class="dimension-score">L4: 25</span>
+          <span class="dimension-score">L5: 24</span>
+          <span class="dimension-score">L6: 20</span>
+          <span class="dimension-score">L7: 23</span>
         </div>
       </td>
-      <td><span style="color: #28a745; font-weight: 600;">✓ Certified</span></td>
+      <td><span style="color: #666; font-weight: 600;">🏆 Platinum</span></td>
     </tr>
     <tr data-country="Singapore" data-region="Asia">
       <td><span class="rank-badge top-3">2</span></td>
       <td><strong>🇸🇬 Singapore</strong></td>
-      <td class="score-cell excellent">9.1</td>
+      <td class="score-cell excellent">82 pts</td>
       <td>
         <div class="dimension-scores">
-          <span class="dimension-score">I: 9.3</span>
-          <span class="dimension-score">G: 8.9</span>
-          <span class="dimension-score">R: 9.2</span>
-          <span class="dimension-score">P: 9.0</span>
-          <span class="dimension-score">S: 9.1</span>
+          <span class="dimension-score">L1: 22</span>
+          <span class="dimension-score">L2: 21</span>
+          <span class="dimension-score">L3: 23</span>
+          <span class="dimension-score">L4: 24</span>
+          <span class="dimension-score">L5: 23</span>
+          <span class="dimension-score">L6: 18</span>
+          <span class="dimension-score">L7: 22</span>
         </div>
       </td>
-      <td><span style="color: #28a745; font-weight: 600;">✓ Certified</span></td>
+      <td><span style="color: #666; font-weight: 600;">🏆 Platinum</span></td>
     </tr>
     <tr data-country="Sweden" data-region="Europe">
       <td><span class="rank-badge top-3">3</span></td>
       <td><strong>🇸🇪 Sweden</strong></td>
-      <td class="score-cell excellent">8.8</td>
+      <td class="score-cell good">75 pts</td>
       <td>
         <div class="dimension-scores">
-          <span class="dimension-score">I: 8.5</span>
-          <span class="dimension-score">G: 9.0</span>
-          <span class="dimension-score">R: 8.7</span>
-          <span class="dimension-score">P: 9.2</span>
-          <span class="dimension-score">S: 8.6</span>
+          <span class="dimension-score">L1: 20</span>
+          <span class="dimension-score">L2: 19</span>
+          <span class="dimension-score">L3: 21</span>
+          <span class="dimension-score">L4: 22</span>
+          <span class="dimension-score">L5: 21</span>
+          <span class="dimension-score">L6: 15</span>
+          <span class="dimension-score">L7: 20</span>
         </div>
       </td>
-      <td><span style="color: #28a745; font-weight: 600;">✓ Certified</span></td>
+      <td><span style="color: #b8860b; font-weight: 600;">🥇 Gold</span></td>
     </tr>
     <tr data-country="United States" data-region="North America">
       <td><span class="rank-badge top-10">4</span></td>
       <td><strong>🇺🇸 United States</strong></td>
-      <td class="score-cell excellent">8.9</td>
+      <td class="score-cell excellent">85 pts</td>
       <td>
         <div class="dimension-scores">
-          <span class="dimension-score">I: 9.5</span>
-          <span class="dimension-score">G: 8.2</span>
-          <span class="dimension-score">R: 9.3</span>
-          <span class="dimension-score">P: 8.0</span>
-          <span class="dimension-score">S: 8.5</span>
+          <span class="dimension-score">L1: 24</span>
+          <span class="dimension-score">L2: 23</span>
+          <span class="dimension-score">L3: 22</span>
+          <span class="dimension-score">L4: 25</span>
+          <span class="dimension-score">L5: 24</span>
+          <span class="dimension-score">L6: 22</span>
+          <span class="dimension-score">L7: 19</span>
         </div>
       </td>
-      <td><span style="color: #28a745; font-weight: 600;">✓ Certified</span></td>
+      <td><span style="color: #666; font-weight: 600;">🏆 Platinum</span></td>
     </tr>
     <tr data-country="France" data-region="Europe">
       <td><span class="rank-badge top-10">5</span></td>
       <td><strong>🇫🇷 France</strong></td>
-      <td class="score-cell good">8.2</td>
+      <td class="score-cell good">68 pts</td>
       <td>
         <div class="dimension-scores">
-          <span class="dimension-score">I: 8.0</span>
-          <span class="dimension-score">G: 8.5</span>
-          <span class="dimension-score">R: 8.3</span>
-          <span class="dimension-score">P: 7.8</span>
-          <span class="dimension-score">S: 8.4</span>
+          <span class="dimension-score">L1: 19</span>
+          <span class="dimension-score">L2: 18</span>
+          <span class="dimension-score">L3: 20</span>
+          <span class="dimension-score">L4: 21</span>
+          <span class="dimension-score">L5: 20</span>
+          <span class="dimension-score">L6: 14</span>
+          <span class="dimension-score">L7: 19</span>
         </div>
       </td>
-      <td><span style="color: #17a2b8; font-weight: 600;">○ Compliant</span></td>
+      <td><span style="color: #b8860b; font-weight: 600;">🥇 Gold</span></td>
     </tr>
     <tr data-country="Germany" data-region="Europe">
       <td><span class="rank-badge top-10">6</span></td>
       <td><strong>🇩🇪 Germany</strong></td>
-      <td class="score-cell good">8.0</td>
+      <td class="score-cell good">65 pts</td>
       <td>
         <div class="dimension-scores">
-          <span class="dimension-score">I: 7.8</span>
-          <span class="dimension-score">G: 8.3</span>
-          <span class="dimension-score">R: 8.1</span>
-          <span class="dimension-score">P: 7.9</span>
-          <span class="dimension-score">S: 7.9</span>
+          <span class="dimension-score">L1: 18</span>
+          <span class="dimension-score">L2: 17</span>
+          <span class="dimension-score">L3: 19</span>
+          <span class="dimension-score">L4: 20</span>
+          <span class="dimension-score">L5: 19</span>
+          <span class="dimension-score">L6: 13</span>
+          <span class="dimension-score">L7: 18</span>
         </div>
       </td>
-      <td><span style="color: #17a2b8; font-weight: 600;">○ Compliant</span></td>
+      <td><span style="color: #b8860b; font-weight: 600;">🥇 Gold</span></td>
     </tr>
     <tr data-country="Canada" data-region="North America">
       <td><span class="rank-badge top-10">7</span></td>
       <td><strong>🇨🇦 Canada</strong></td>
-      <td class="score-cell good">7.9</td>
+      <td class="score-cell good">64 pts</td>
       <td>
         <div class="dimension-scores">
-          <span class="dimension-score">I: 7.5</span>
-          <span class="dimension-score">G: 8.2</span>
-          <span class="dimension-score">R: 8.0</span>
-          <span class="dimension-score">P: 7.8</span>
-          <span class="dimension-score">S: 8.0</span>
+          <span class="dimension-score">L1: 17</span>
+          <span class="dimension-score">L2: 16</span>
+          <span class="dimension-score">L3: 18</span>
+          <span class="dimension-score">L4: 19</span>
+          <span class="dimension-score">L5: 18</span>
+          <span class="dimension-score">L6: 12</span>
+          <span class="dimension-score">L7: 17</span>
         </div>
       </td>
-      <td><span style="color: #17a2b8; font-weight: 600;">○ Compliant</span></td>
+      <td><span style="color: #b8860b; font-weight: 600;">🥇 Gold</span></td>
     </tr>
     <tr data-country="Spain" data-region="Europe">
       <td><span class="rank-badge top-10">8</span></td>
       <td><strong>🇪🇸 Spain</strong></td>
-      <td class="score-cell good">7.8</td>
+      <td class="score-cell good">62 pts</td>
       <td>
         <div class="dimension-scores">
-          <span class="dimension-score">I: 7.6</span>
-          <span class="dimension-score">G: 7.9</span>
-          <span class="dimension-score">R: 7.7</span>
-          <span class="dimension-score">P: 7.9</span>
-          <span class="dimension-score">S: 7.7</span>
+          <span class="dimension-score">L1: 16</span>
+          <span class="dimension-score">L2: 15</span>
+          <span class="dimension-score">L3: 17</span>
+          <span class="dimension-score">L4: 18</span>
+          <span class="dimension-score">L5: 17</span>
+          <span class="dimension-score">L6: 11</span>
+          <span class="dimension-score">L7: 16</span>
         </div>
       </td>
-      <td><span style="color: #17a2b8; font-weight: 600;">○ Compliant</span></td>
+      <td><span style="color: #b8860b; font-weight: 600;">🥇 Gold</span></td>
     </tr>
     <tr data-country="Finland" data-region="Europe">
       <td><span class="rank-badge top-10">9</span></td>
       <td><strong>🇫🇮 Finland</strong></td>
-      <td class="score-cell good">7.6</td>
+      <td class="score-cell fair">58 pts</td>
       <td>
         <div class="dimension-scores">
-          <span class="dimension-score">I: 7.3</span>
-          <span class="dimension-score">G: 8.0</span>
-          <span class="dimension-score">R: 7.5</span>
-          <span class="dimension-score">P: 7.8</span>
-          <span class="dimension-score">S: 7.4</span>
+          <span class="dimension-score">L1: 15</span>
+          <span class="dimension-score">L2: 14</span>
+          <span class="dimension-score">L3: 16</span>
+          <span class="dimension-score">L4: 17</span>
+          <span class="dimension-score">L5: 16</span>
+          <span class="dimension-score">L6: 10</span>
+          <span class="dimension-score">L7: 15</span>
         </div>
       </td>
-      <td><span style="color: #17a2b8; font-weight: 600;">○ Compliant</span></td>
+      <td><span style="color: #808080; font-weight: 600;">🥈 Silver</span></td>
     </tr>
     <tr data-country="Norway" data-region="Europe">
       <td><span class="rank-badge top-10">10</span></td>
       <td><strong>🇳🇴 Norway</strong></td>
-      <td class="score-cell good">7.5</td>
+      <td class="score-cell fair">57 pts</td>
       <td>
         <div class="dimension-scores">
-          <span class="dimension-score">I: 7.2</span>
-          <span class="dimension-score">G: 7.8</span>
-          <span class="dimension-score">R: 7.4</span>
-          <span class="dimension-score">P: 7.6</span>
-          <span class="dimension-score">S: 7.5</span>
+          <span class="dimension-score">L1: 14</span>
+          <span class="dimension-score">L2: 13</span>
+          <span class="dimension-score">L3: 15</span>
+          <span class="dimension-score">L4: 16</span>
+          <span class="dimension-score">L5: 15</span>
+          <span class="dimension-score">L6: 9</span>
+          <span class="dimension-score">L7: 14</span>
         </div>
       </td>
-      <td><span style="color: #17a2b8; font-weight: 600;">○ Compliant</span></td>
+      <td><span style="color: #808080; font-weight: 600;">🥈 Silver</span></td>
     </tr>
   </tbody>
 </table>
@@ -452,31 +472,39 @@ Comprehensive rankings and assessments of sovereign AI initiatives across countr
       <p style="color: #666; margin: 0;">Leading sovereign AI initiative with strong emphasis on transparency and open source</p>
     </div>
     <div class="country-overall-score">
-      <div class="overall-score-value">9.3</div>
-      <div style="color: #28a745; font-weight: 600;">✓ SAIL Certified</div>
+      <div class="overall-score-value">88</div>
+      <div style="color: #666; font-weight: 600;">🏆 Platinum</div>
     </div>
   </div>
   
   <div class="score-breakdown">
     <div class="breakdown-item">
-      <div class="breakdown-label">Infrastructure & Capacity</div>
-      <div class="breakdown-value">9.5</div>
+      <div class="breakdown-label">Layer 1: Application & Service</div>
+      <div class="breakdown-value">23</div>
     </div>
     <div class="breakdown-item">
-      <div class="breakdown-label">Governance & Policy</div>
-      <div class="breakdown-value">9.2</div>
+      <div class="breakdown-label">Layer 2: Orchestration</div>
+      <div class="breakdown-value">22</div>
     </div>
     <div class="breakdown-item">
-      <div class="breakdown-label">Innovation & Research</div>
-      <div class="breakdown-value">9.4</div>
+      <div class="breakdown-label">Layer 3: Data Sovereignty</div>
+      <div class="breakdown-value">24</div>
     </div>
     <div class="breakdown-item">
-      <div class="breakdown-label">Public Access & Benefit</div>
-      <div class="breakdown-value">9.1</div>
+      <div class="breakdown-label">Layer 4: Model Sovereignty</div>
+      <div class="breakdown-value">25</div>
     </div>
     <div class="breakdown-item">
-      <div class="breakdown-label">Sustainability & Resilience</div>
-      <div class="breakdown-value">9.3</div>
+      <div class="breakdown-label">Layer 5: Training & Post-Training</div>
+      <div class="breakdown-value">24</div>
+    </div>
+    <div class="breakdown-item">
+      <div class="breakdown-label">Layer 6: Compute & Infrastructure</div>
+      <div class="breakdown-value">20</div>
+    </div>
+    <div class="breakdown-item">
+      <div class="breakdown-label">Layer 7: Legal & Governance</div>
+      <div class="breakdown-value">23</div>
     </div>
   </div>
   
@@ -508,31 +536,39 @@ Comprehensive rankings and assessments of sovereign AI initiatives across countr
       <p style="color: #666; margin: 0;">Regional leader in multilingual AI for Southeast Asia</p>
     </div>
     <div class="country-overall-score">
-      <div class="overall-score-value">9.1</div>
-      <div style="color: #28a745; font-weight: 600;">✓ SAIL Certified</div>
+      <div class="overall-score-value">82</div>
+      <div style="color: #666; font-weight: 600;">🏆 Platinum</div>
     </div>
   </div>
   
   <div class="score-breakdown">
     <div class="breakdown-item">
-      <div class="breakdown-label">Infrastructure & Capacity</div>
-      <div class="breakdown-value">9.3</div>
+      <div class="breakdown-label">Layer 1: Application & Service</div>
+      <div class="breakdown-value">22</div>
     </div>
     <div class="breakdown-item">
-      <div class="breakdown-label">Governance & Policy</div>
-      <div class="breakdown-value">8.9</div>
+      <div class="breakdown-label">Layer 2: Orchestration</div>
+      <div class="breakdown-value">21</div>
     </div>
     <div class="breakdown-item">
-      <div class="breakdown-label">Innovation & Research</div>
-      <div class="breakdown-value">9.2</div>
+      <div class="breakdown-label">Layer 3: Data Sovereignty</div>
+      <div class="breakdown-value">23</div>
     </div>
     <div class="breakdown-item">
-      <div class="breakdown-label">Public Access & Benefit</div>
-      <div class="breakdown-value">9.0</div>
+      <div class="breakdown-label">Layer 4: Model Sovereignty</div>
+      <div class="breakdown-value">24</div>
     </div>
     <div class="breakdown-item">
-      <div class="breakdown-label">Sustainability & Resilience</div>
-      <div class="breakdown-value">9.1</div>
+      <div class="breakdown-label">Layer 5: Training & Post-Training</div>
+      <div class="breakdown-value">23</div>
+    </div>
+    <div class="breakdown-item">
+      <div class="breakdown-label">Layer 6: Compute & Infrastructure</div>
+      <div class="breakdown-value">18</div>
+    </div>
+    <div class="breakdown-item">
+      <div class="breakdown-label">Layer 7: Legal & Governance</div>
+      <div class="breakdown-value">22</div>
     </div>
   </div>
   
@@ -556,7 +592,7 @@ Comprehensive rankings and assessments of sovereign AI initiatives across countr
 
 ## Methodology
 
-Country rankings are based on comprehensive evaluation using the [SAIL Rating System Specification](/sail/spec). Scores are calculated from verified data sources and reviewed by independent experts.
+Country rankings are based on comprehensive evaluation using the [SAIL Specification](/sail/spec). Points are awarded across seven layers based on demonstrated capacity, legal robustness, and exit readiness. Certification levels are determined by total points earned (out of 175 possible).
 
 **Last Updated**: September 2025  
 **Next Update**: December 2025
@@ -589,14 +625,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sort
     const sortValue = sortBy.value;
     filtered.sort((a, b) => {
-      if (sortValue === 'score-desc') {
-        const scoreA = parseFloat(a.querySelector('.score-cell')?.textContent || 0);
-        const scoreB = parseFloat(b.querySelector('.score-cell')?.textContent || 0);
-        return scoreB - scoreA;
-      } else if (sortValue === 'score-asc') {
-        const scoreA = parseFloat(a.querySelector('.score-cell')?.textContent || 0);
-        const scoreB = parseFloat(b.querySelector('.score-cell')?.textContent || 0);
-        return scoreA - scoreB;
+      if (sortValue === 'points-desc') {
+        const pointsA = parseFloat(a.querySelector('.score-cell')?.textContent?.replace(' pts', '') || 0);
+        const pointsB = parseFloat(b.querySelector('.score-cell')?.textContent?.replace(' pts', '') || 0);
+        return pointsB - pointsA;
+      } else if (sortValue === 'points-asc') {
+        const pointsA = parseFloat(a.querySelector('.score-cell')?.textContent?.replace(' pts', '') || 0);
+        const pointsB = parseFloat(b.querySelector('.score-cell')?.textContent?.replace(' pts', '') || 0);
+        return pointsA - pointsB;
       } else if (sortValue === 'name-asc') {
         const nameA = a.querySelector('strong')?.textContent || '';
         const nameB = b.querySelector('strong')?.textContent || '';

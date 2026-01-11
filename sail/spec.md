@@ -1,7 +1,7 @@
 ---
 title: SAIL Specification
 layout: page
-description: Detailed specification of the SAIL rating system methodology and evaluation criteria.
+description: Detailed specification of the SAIL certification system methodology and evaluation criteria.
 permalink: /sail/spec/
 ---
 
@@ -31,24 +31,26 @@ permalink: /sail/spec/
   color: white;
 }
 
-.dimension-card {
+.layer-card {
   background: white;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 1.5rem;
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.dimension-card h3 {
+.layer-card h3 {
   color: #667eea;
   margin-top: 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
 }
 
-.dimension-card h3::before {
+.layer-card h3::before {
   content: '';
   width: 4px;
   height: 24px;
@@ -56,76 +58,90 @@ permalink: /sail/spec/
   border-radius: 2px;
 }
 
-.metric-table {
+.credit-table {
   width: 100%;
   border-collapse: collapse;
   margin: 1rem 0;
 }
 
-.metric-table th,
-.metric-table td {
+.credit-table th,
+.credit-table td {
   padding: 12px;
   text-align: left;
   border-bottom: 1px solid #e0e0e0;
 }
 
-.metric-table th {
+.credit-table th {
   background: #f8f9fa;
   font-weight: 600;
   color: #333;
 }
 
-.metric-table tr:hover {
+.credit-table tr:hover {
   background: #f8f9fa;
 }
 
-.weight-badge {
+.points-badge {
   display: inline-block;
-  padding: 4px 8px;
+  padding: 4px 12px;
   background: #667eea;
   color: white;
-  border-radius: 4px;
-  font-size: 0.85rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
   font-weight: 600;
-  margin-left: 8px;
-}
-
-.scoring-scale {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.score-level {
+  min-width: 50px;
   text-align: center;
-  padding: 1rem;
-  border-radius: 8px;
+}
+
+.cert-level {
+  background: white;
   border: 2px solid;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
 }
 
-.score-level.excellent {
-  background: #d4edda;
-  border-color: #28a745;
-  color: #155724;
+.cert-level.platinum {
+  border-color: #e8e8e8;
+  background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
 }
 
-.score-level.good {
-  background: #d1ecf1;
-  border-color: #17a2b8;
-  color: #0c5460;
+.cert-level.gold {
+  border-color: #ffd700;
+  background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
 }
 
-.score-level.fair {
-  background: #fff3cd;
-  border-color: #ffc107;
-  color: #856404;
+.cert-level.silver {
+  border-color: #c0c0c0;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
 }
 
-.score-level.poor {
-  background: #f8d7da;
-  border-color: #dc3545;
-  color: #721c24;
+.cert-level.certified {
+  border-color: #667eea;
+  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+}
+
+.cert-level h3 {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cert-level.platinum h3 {
+  color: #666;
+}
+
+.cert-level.gold h3 {
+  color: #b8860b;
+}
+
+.cert-level.silver h3 {
+  color: #808080;
+}
+
+.cert-level.certified h3 {
+  color: #667eea;
 }
 
 .toc {
@@ -152,6 +168,34 @@ permalink: /sail/spec/
 .toc a:hover {
   text-decoration: underline;
 }
+
+.flag-box {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+.constraint-box {
+  background: #f8d7da;
+  border-left: 4px solid #dc3545;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+.key-principles {
+  background: #d1ecf1;
+  border-left: 4px solid #17a2b8;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+.key-principles ul {
+  margin: 0.5rem 0;
+}
 </style>
 
 <nav class="spec-nav">
@@ -160,290 +204,446 @@ permalink: /sail/spec/
   <a href="/sail/countries">🌍 Countries</a>
 </nav>
 
-## SAIL Rating System Specification
+## SAIL Specification
 
-This document provides the complete specification for the SAIL (Sovereign AI Index & Leadership) rating system, including evaluation criteria, scoring methodology, and certification requirements.
+This document provides the complete specification for the **Sovereign AI Leadership (SAIL)** certification program, including evaluation criteria, point-based scoring methodology, and certification requirements.
 
 ### Table of Contents
 
 <div class="toc">
 <ul>
   <li><a href="#overview">Overview</a></li>
-  <li><a href="#dimensions">Rating Dimensions</a></li>
-  <li><a href="#scoring">Scoring Methodology</a></li>
-  <li><a href="#certification">Certification Process</a></li>
-  <li><a href="#updates">Version History</a></li>
+  <li><a href="#levels">Certification Levels</a></li>
+  <li><a href="#layers">The Seven Layers</a></li>
+  <li><a href="#flags">Flags & Constraints</a></li>
+  <li><a href="#process">Certification Process</a></li>
 </ul>
 </div>
 
 ## Overview {#overview}
 
-The SAIL rating system evaluates sovereign AI initiatives on a scale of 0-10 across five key dimensions. The overall SAIL score is a weighted average of these dimensions, providing a comprehensive assessment of a country's sovereign AI capabilities.
+SAIL uses a **point-based system** for evaluating national and governmental AI strategies. As a framework, SAIL assesses AI sovereignty across the full AI stack from applications and data governance to training pipelines and compute dependencies.
 
-### Overall Score Calculation
+To achieve SAIL certification, a country or public agency must:
+1. First satisfy all **baseline prerequisites** (minimum governance, control, and transparency requirements) across each layer
+2. Then earn **points** by meeting additional conditions aligned with its strategic goals
 
-```
-SAIL Score = (I×0.25) + (G×0.25) + (R×0.20) + (P×0.20) + (S×0.10)
+The framework is designed to reward realistic, optimized sovereignty strategies, including federated and allied approaches. It penalizes dependency and especially unacknowledged dependencies.
 
-Where:
-I = Infrastructure & Capacity (25%)
-G = Governance & Policy (25%)
-R = Innovation & Research (20%)
-P = Public Access & Benefit (20%)
-S = Sustainability & Resilience (10%)
-```
-
-## Rating Dimensions {#dimensions}
-
-### 1. Infrastructure & Capacity (25% weight)
-
-Evaluates the technical infrastructure and computational resources available for sovereign AI development and deployment.
-
-<table class="metric-table">
-  <thead>
-    <tr>
-      <th>Metric</th>
-      <th>Description</th>
-      <th>Weight</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Compute Infrastructure</strong></td>
-      <td>Availability of high-performance computing resources, GPUs, and cloud infrastructure</td>
-      <td>30%</td>
-    </tr>
-    <tr>
-      <td><strong>Data Infrastructure</strong></td>
-      <td>Quality and accessibility of training data, data governance frameworks, and data sovereignty</td>
-      <td>25%</td>
-    </tr>
-    <tr>
-      <td><strong>Technical Capabilities</strong></td>
-      <td>Expertise in AI/ML development, model training capabilities, and technical talent pool</td>
-      <td>25%</td>
-    </tr>
-    <tr>
-      <td><strong>Deployment Infrastructure</strong></td>
-      <td>Ability to deploy and serve AI models at scale, inference infrastructure, and edge capabilities</td>
-      <td>20%</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2. Governance & Policy (25% weight)
-
-Assesses the regulatory frameworks, ethical guidelines, and governance structures for sovereign AI.
-
-<table class="metric-table">
-  <thead>
-    <tr>
-      <th>Metric</th>
-      <th>Description</th>
-      <th>Weight</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Regulatory Framework</strong></td>
-      <td>Existence and quality of AI regulations, data protection laws, and policy frameworks</td>
-      <td>30%</td>
-    </tr>
-    <tr>
-      <td><strong>Ethical Guidelines</strong></td>
-      <td>Adoption of ethical AI principles, bias mitigation, and fairness standards</td>
-      <td>25%</td>
-    </tr>
-    <tr>
-      <td><strong>Public Oversight</strong></td>
-      <td>Transparency, accountability mechanisms, and public participation in AI governance</td>
-      <td>25%</td>
-    </tr>
-    <tr>
-      <td><strong>International Cooperation</strong></td>
-      <td>Participation in international AI governance initiatives and standards bodies</td>
-      <td>20%</td>
-    </tr>
-  </tbody>
-</table>
-
-### 3. Innovation & Research (20% weight)
-
-Measures investment in AI research, development, and innovation capabilities.
-
-<table class="metric-table">
-  <thead>
-    <tr>
-      <th>Metric</th>
-      <th>Description</th>
-      <th>Weight</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>R&D Investment</strong></td>
-      <td>Public and private investment in AI research and development</td>
-      <td>30%</td>
-    </tr>
-    <tr>
-      <td><strong>Academic Partnerships</strong></td>
-      <td>Collaboration with universities, research institutions, and academic excellence in AI</td>
-      <td>25%</td>
-    </tr>
-    <tr>
-      <td><strong>Innovation Output</strong></td>
-      <td>Publications, patents, and technological breakthroughs in AI</td>
-      <td>25%</td>
-    </tr>
-    <tr>
-      <td><strong>Startup Ecosystem</strong></td>
-      <td>Vibrant AI startup ecosystem and innovation hubs</td>
-      <td>20%</td>
-    </tr>
-  </tbody>
-</table>
-
-### 4. Public Access & Benefit (20% weight)
-
-Evaluates how accessible and beneficial sovereign AI is to the public.
-
-<table class="metric-table">
-  <thead>
-    <tr>
-      <th>Metric</th>
-      <th>Description</th>
-      <th>Weight</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Accessibility</strong></td>
-      <td>Ease of access to AI services for citizens, affordability, and digital inclusion</td>
-      <td>30%</td>
-    </tr>
-    <tr>
-      <td><strong>Public Services</strong></td>
-      <td>Integration of AI in public services, government applications, and civic technology</td>
-      <td>25%</td>
-    </tr>
-    <tr>
-      <td><strong>Open Source & Open Data</strong></td>
-      <td>Commitment to open source models, open data initiatives, and public goods</td>
-      <td>25%</td>
-    </tr>
-    <tr>
-      <td><strong>Public Benefit</strong></td>
-      <td>Demonstrated positive impact on society, addressing public needs, and social good</td>
-      <td>20%</td>
-    </tr>
-  </tbody>
-</table>
-
-### 5. Sustainability & Resilience (10% weight)
-
-Assesses long-term viability, security, and independence of sovereign AI initiatives.
-
-<table class="metric-table">
-  <thead>
-    <tr>
-      <th>Metric</th>
-      <th>Description</th>
-      <th>Weight</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Long-term Viability</strong></td>
-      <td>Sustainable funding models, maintenance capacity, and long-term planning</td>
-      <td>35%</td>
-    </tr>
-    <tr>
-      <td><strong>Security & Privacy</strong></td>
-      <td>Cybersecurity measures, data protection, and privacy safeguards</td>
-      <td>30%</td>
-    </tr>
-    <tr>
-      <td><strong>Independence</strong></td>
-      <td>Reduced dependence on foreign technology, supply chain resilience, and sovereignty</td>
-      <td>35%</td>
-    </tr>
-  </tbody>
-</table>
-
-## Scoring Methodology {#scoring}
-
-### Score Scale
-
-<div class="scoring-scale">
-  <div class="score-level excellent">
-    <strong>9.0 - 10.0</strong><br>
-    Excellent<br>
-    World-leading capabilities
-  </div>
-  <div class="score-level good">
-    <strong>7.0 - 8.9</strong><br>
-    Good<br>
-    Strong capabilities
-  </div>
-  <div class="score-level fair">
-    <strong>5.0 - 6.9</strong><br>
-    Fair<br>
-    Developing capabilities
-  </div>
-  <div class="score-level poor">
-    <strong>0.0 - 4.9</strong><br>
-    Poor<br>
-    Limited capabilities
-  </div>
+<div class="key-principles">
+<h4>Key Principles</h4>
+<ul>
+  <li><strong>Sovereignty may be partial, federated, or optimized</strong>, but dependencies must be explicit.</li>
+  <li><strong>Certain layers</strong> (compute, legal environment) act as structural constraints and may cap achievable certification tiers.</li>
+  <li><strong>Credit is awarded</strong> for real capacity, legal robustness, and exit readiness, not stated intent.</li>
+</ul>
 </div>
 
-### Evaluation Process
+**Note**: SAIL does not evaluate technical excellence, though it does look at publicly available adoption levels of sovereign products and artifacts.
 
-1. **Data Collection**: Gather information from public sources, official reports, and verified submissions
-2. **Expert Review**: Independent experts evaluate each dimension based on established criteria
-3. **Peer Review**: Findings are reviewed by a panel of international experts
-4. **Public Comment**: Draft ratings are published for public comment and feedback
-5. **Final Rating**: Ratings are finalized and published with detailed justifications
+## Certification Levels {#levels}
 
-### Data Sources
+### Platinum — Sovereign Leadership
+**80+ points earned**
 
-- Government reports and official documentation
-- Academic publications and research papers
-- Industry reports and analysis
-- Verified submissions from countries and organizations
-- Public data and open government initiatives
+Demonstrates end-to-end control across the AI stack, including model adaptation and pre-training (individually or through credible allied/federated arrangements).
 
-## Certification Process {#certification}
+<div class="cert-level platinum">
+  <h3>🏆 Platinum Certification</h3>
+  <p><strong>Requirements:</strong> 80+ points with strong performance across all layers, especially Layers 4-6 (Model, Training, and Compute sovereignty).</p>
+  <p><strong>Constraint:</strong> If Layer 6 (Compute) score < 10, Platinum certification is capped unless credible federated arrangements exist.</p>
+</div>
 
-### SAIL Certification Levels
+### Gold — Strategic Sovereignty
+**60–79 points earned**
 
-- **SAIL Certified** (Score ≥ 8.0): Recognizes excellence in sovereign AI development
-- **SAIL Compliant** (Score ≥ 6.0): Meets minimum standards for sovereign AI
-- **SAIL Developing** (Score < 6.0): Acknowledges ongoing development efforts
+Demonstrates strong control over data and model behavior, with limited but well-managed external dependencies.
 
-### Certification Requirements
+<div class="cert-level gold">
+  <h3>🥇 Gold Certification</h3>
+  <p><strong>Requirements:</strong> 60-79 points with demonstrated control at Layers 1-4 (Application through Model sovereignty).</p>
+</div>
 
-To achieve SAIL certification, initiatives must:
+### Silver — Operational Sovereignty
+**50–59 points earned**
 
-1. Meet minimum thresholds across all five dimensions
-2. Demonstrate commitment to public benefit and accessibility
-3. Provide transparent documentation of capabilities and governance
-4. Commit to continuous improvement and regular updates
-5. Participate in peer review and public accountability processes
+Demonstrates control at the application and data layers, with meaningful but unresolved dependencies at deeper layers.
 
-### Application Process
+<div class="cert-level silver">
+  <h3>🥈 Silver Certification</h3>
+  <p><strong>Requirements:</strong> 50-59 points with baseline control at Layers 1-3 (Application, Orchestration, Data sovereignty).</p>
+</div>
 
-1. Submit application with comprehensive documentation
-2. Initial review by SAIL evaluation team
-3. Independent expert assessment
-4. Public comment period
-5. Certification decision and publication
+### Certified — Baseline Sovereignty
+**40–49 points earned**
 
-## Version History {#updates}
+Meets baseline prerequisites and demonstrates initial control over AI deployment and governance, but remains highly dependent on external providers.
 
-- **v1.0** (2024): Initial specification release
-- **v1.1** (2025): Enhanced sustainability metrics, updated weighting scheme
+<div class="cert-level certified">
+  <h3>✓ Certified</h3>
+  <p><strong>Requirements:</strong> 40-49 points meeting all baseline prerequisites across layers.</p>
+</div>
+
+## The Seven Layers {#layers}
+
+### Layer 1: Application & Service Sovereignty
+**Max points: 25**
+
+This layer evaluates whether AI-enabled public services can be modified, migrated, or withdrawn without reliance on a specific vendor, model, or jurisdiction.
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>A1</strong></td>
+      <td>Model-agnostic service design - Core service logic decoupled from specific models or APIs</td>
+      <td><span class="points-badge">6</span></td>
+    </tr>
+    <tr>
+      <td><strong>A2</strong></td>
+      <td>Public ownership of application logic - State owns or controls source code and workflows</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>A3</strong></td>
+      <td>Vendor substitution feasibility - Demonstrated ability to swap AI providers within 6–12 months</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>A4</strong></td>
+      <td>Decision traceability & auditability - AI-assisted decisions are logged and reviewable</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>A5</strong></td>
+      <td>Domestic service maintenance capacity - In-country teams can modify and redeploy services</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+  </tbody>
+</table>
+
+### Layer 2: Orchestration, Integration & Distribution
+**Max points: 25**
+
+This layer assesses control over how AI components are composed, routed, monitored, and distributed to users.
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>O1</strong></td>
+      <td>Provider-independent orchestration - Ability to route workloads across models/providers</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>O2</strong></td>
+      <td>Institution-controlled policy layer - Safety, usage, and routing rules defined locally</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>O3</strong></td>
+      <td>System observability - Prompts, outputs, failures are inspectable</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>O4</strong></td>
+      <td>Independent rollback & suspension - Systems can be paused or reverted without vendor approval</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>O5</strong></td>
+      <td>Distribution sovereignty - Control over primary model/service distribution channels</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>O6</strong></td>
+      <td>Migration-ready hosting - Ability to mirror or migrate hosting jurisdiction</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+  </tbody>
+</table>
+
+### Layer 3: Data Sovereignty (Origin, Control, Evaluation)
+**Max points: 25**
+
+This layer evaluates control over the data AI systems learn from, remember, and are evaluated against—emphasizing provenance and legal robustness.
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>D1</strong></td>
+      <td>Legal ownership of datasets - Enforceable public rights over AI-relevant data</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>D2</strong></td>
+      <td>Data curation & deletion authority - Ability to modify, filter, and delete data</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>D3</strong></td>
+      <td>Data provenance balance - Meaningful share of data from domestic or allied sources</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>D4</strong></td>
+      <td>Legally robust openness - Data reusable under clear, defensible licenses</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>D5</strong></td>
+      <td>Evaluation & benchmark sovereignty - Ownership/control of eval and post-training datasets</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>D6</strong></td>
+      <td>Prevention of irreversible leakage - Safeguards against uncontrolled embedding/gradient reuse</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+  </tbody>
+</table>
+
+### Layer 4: Model Sovereignty (Reproducibility & Capability)
+**Max points: 25**
+
+This layer measures the ability to shape, reproduce, and rely on models as sovereign infrastructure, not just artifacts.
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>M1</strong></td>
+      <td>Access to weights or adapters - Meaningful ability to modify model behavior</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>M2</strong></td>
+      <td>Reproducibility completeness - Training data, recipes, scripts documented</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>M3</strong></td>
+      <td>Independent fine-tuning capacity - Domestic ability to adapt models</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>M4</strong></td>
+      <td>Task-level competitiveness - Models competitive in priority public-sector tasks</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>M5</strong></td>
+      <td>Version control & forkability - Ability to freeze, fork, or maintain versions</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>M6</strong></td>
+      <td>Dependency-adjusted integrity - No opaque external components in core models</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+  </tbody>
+</table>
+
+### Layer 5: Training & Post-Training Sovereignty
+**Max points: 25**
+
+This layer assesses control over alignment, instruction tuning, and improvement processes after pretraining.
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>T1</strong></td>
+      <td>Control over training objectives - Public authority defines reward/alignment goals</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>T2</strong></td>
+      <td>Vendor-independent post-training - Fine-tuning without external approval</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>T3</strong></td>
+      <td>Reproducibility of adaptations - Training outcomes can be reproduced</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>T4</strong></td>
+      <td>Transparency of interventions - Post-training changes are documented</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>T5</strong></td>
+      <td>Institutional oversight - Formal oversight of alignment decisions</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>T6</strong></td>
+      <td>In-region execution - Post-training physically executed domestically/allied</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+  </tbody>
+</table>
+
+### Layer 6: Compute & Infrastructure Sovereignty (Structural)
+**Max points: 25**
+
+This layer evaluates reliable, governable access to compute and infrastructure required to train and run AI systems.
+
+<div class="constraint-box">
+<strong>Structural Constraint:</strong> If Layer 6 score < 10, Platinum certification is capped unless credible federated arrangements exist.
+</div>
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>C1</strong></td>
+      <td>Guaranteed compute access - Domestic or allied compute under public control</td>
+      <td><span class="points-badge">6</span></td>
+    </tr>
+    <tr>
+      <td><strong>C2</strong></td>
+      <td>Priority & crisis allocation - Ability to reprioritize workloads in emergencies</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>C3</strong></td>
+      <td>Time-to-availability - Capacity available now or within 12 months</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>C4</strong></td>
+      <td>Absence of unilateral kill-switches - No single foreign actor can disable access</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>C5</strong></td>
+      <td>Supply chain resilience - Plans for hardware/energy disruption</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+    <tr>
+      <td><strong>C6</strong></td>
+      <td>Inference/training separation - Dedicated inference capacity for public services</td>
+      <td><span class="points-badge">2</span></td>
+    </tr>
+  </tbody>
+</table>
+
+### Layer 7: Legal, Governance & Exit Sovereignty
+**Max points: 25**
+
+This layer measures legal authority, institutional mandate, and the ability to override or exit AI systems.
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>G1</strong></td>
+      <td>Legal override authority - Clear authority to suspend or retire AI systems</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>G2</strong></td>
+      <td>Contractual exit rights - Explicit migration/fork rights in contracts</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>G3</strong></td>
+      <td>Documented exit playbooks - Layer-by-layer exit strategies</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>G4</strong></td>
+      <td>Oversight with technical competence - Independent oversight bodies</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>G5</strong></td>
+      <td>Legal stability outlook - AI-enabling rights stable or improving</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>G6</strong></td>
+      <td>Policy alignment - AI strategy aligned with IP/copyright law</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+  </tbody>
+</table>
+
+## Flags & Constraints {#flags}
+
+### Compute Constraint Flag
+**Triggered if Layer 6 < 10**
+
+If compute sovereignty is insufficient, Platinum certification is capped unless credible federated arrangements exist.
+
+### Legal Trajectory Flag
+**Triggered if G5 = 0 or 1**
+
+Indicates concerns about legal stability and the sustainability of AI-enabling rights.
+
+### Distribution Dependency Flag
+**Triggered if O5 = 0 or 1**
+
+Indicates lack of control over primary model/service distribution channels.
+
+## Certification Process {#process}
+
+1. **Baseline Assessment**: Verify all baseline prerequisites are met across each layer
+2. **Point Evaluation**: Assess each credit criterion and award points based on demonstrated capacity
+3. **Flag Review**: Identify and document any structural constraints or flags
+4. **Certification Level**: Determine certification level based on total points and constraints
+5. **Public Review**: Publish assessment for public comment and peer review
+6. **Final Certification**: Issue certification with detailed justification
 
 ---
 
-*This specification is maintained by the Public AI Network. For questions or suggestions, please contact [info@publicai.network](mailto:info@publicai.network).*
+**Total Possible Points: 175**
+
+*This specification is maintained by the Public AI Regular Council. For questions or suggestions, please contact [info@publicai.network](mailto:info@publicai.network).*
+
+*Acknowledgements: Jan Hajic's presentation to OSFM.*

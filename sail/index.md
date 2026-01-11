@@ -1,7 +1,7 @@
 ---
-title: SAIL Rating System
+title: SAIL Certification
 layout: page
-description: A comprehensive rating system and certification program for sovereign AI initiatives worldwide.
+description: Sovereign AI Leadership Certification - A certificate program for sovereign AI.
 permalink: /sail/
 ---
 
@@ -113,10 +113,9 @@ permalink: /sail/
 </style>
 
 <div class="hero">
-  <h1>SAIL Rating System</h1>
+  <h1>Sovereign AI Leadership</h1>
   <p style="font-size: 1.2rem; color: #555; max-width: 800px; margin: 0 auto;">
-    A comprehensive rating system and certification program for sovereign AI initiatives worldwide. 
-    Evaluate, compare, and improve sovereign AI capabilities across nations.
+    A certificate program for sovereign AI. Move beyond symbolic claims toward rigorous, testable assessment of who actually controls AI systems under real-world stress.
   </p>
 </div>
 
@@ -126,98 +125,99 @@ permalink: /sail/
   <a href="/sail/countries">🌍 Countries</a>
 </nav>
 
-## Overview
+## Simple Summary
 
-The **SAIL (Sovereign AI Index & Leadership)** Rating System provides a standardized framework for evaluating sovereign AI initiatives. It assesses countries' capabilities across multiple dimensions including infrastructure, governance, innovation, and public benefit.
+**Sovereign AI Leadership (SAIL)** is a certificate program for sovereign AI that evaluates the degree to which a country, public agency, or trusted private provider can independently set, revise, and enforce objectives for the AI systems that affect it.
 
-## Key Metrics
+## Motivation
+
+As AI becomes embedded in public administration, critical infrastructure, and national strategy, the primary risk for countries is not technical performance but **structural dependency**—on vendors, jurisdictions, data pipelines, and alignment regimes that cannot be revised when political, economic, or geopolitical conditions shift.
+
+Governments, agencies, and many companies—including large American and Chinese hyperscalers—are making claims about "sovereign AI" that remain untestable.
+
+The **Sovereign AI Leadership (SAIL)** program is designed to move governments beyond symbolic claims of "sovereign AI" toward a rigorous, testable assessment of who actually controls their AI systems under real-world stress. SAIL makes these dependencies explicit and comparable by certifying the degree to which a country, public agency, or trusted private provider can independently set, revise, and enforce objectives for the AI systems that affect it.
+
+**SAIL is managed and governed by the nonprofit Public AI Regular Council.**
+
+## Certification Levels
 
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-number" id="countries-count">-</div>
-    <div class="stat-label">Countries Evaluated</div>
+    <div class="stat-number" style="color: #e8e8e8;">Platinum</div>
+    <div class="stat-label">80+ points<br>Sovereign Leadership</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number" id="models-count">-</div>
-    <div class="stat-label">Models Tracked</div>
+    <div class="stat-number" style="color: #ffd700;">Gold</div>
+    <div class="stat-label">60-79 points<br>Strategic Sovereignty</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number" id="avg-score">-</div>
-    <div class="stat-label">Average SAIL Score</div>
+    <div class="stat-number" style="color: #c0c0c0;">Silver</div>
+    <div class="stat-label">50-59 points<br>Operational Sovereignty</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number" id="certified-count">-</div>
-    <div class="stat-label">Certified Initiatives</div>
+    <div class="stat-number" style="color: #667eea;">Certified</div>
+    <div class="stat-label">40-49 points<br>Baseline Sovereignty</div>
   </div>
 </div>
 
-## Core Features
+## Key Principles
 
 <div class="features">
   <div class="feature-card">
-    <h3>📊 Comprehensive Evaluation</h3>
-    <p>Multi-dimensional assessment covering technical capabilities, governance frameworks, public accessibility, and ethical standards.</p>
+    <h3>🔍 Full Stack Assessment</h3>
+    <p>SAIL evaluates AI sovereignty across the full AI stack from applications and data governance to training pipelines and compute dependencies.</p>
   </div>
   
   <div class="feature-card">
-    <h3>🌐 Global Comparison</h3>
-    <p>Compare sovereign AI initiatives across different countries and regions to identify best practices and areas for improvement.</p>
+    <h3>✅ Baseline Prerequisites</h3>
+    <p>Countries must first satisfy all baseline prerequisites (minimum governance, control, and transparency requirements) across each layer.</p>
   </div>
   
   <div class="feature-card">
-    <h3>✅ Certification Program</h3>
-    <p>Recognize initiatives that meet high standards for sovereign AI development and deployment.</p>
+    <h3>📊 Point-Based System</h3>
+    <p>Earn points by meeting additional conditions aligned with strategic goals. The framework rewards realistic, optimized sovereignty strategies.</p>
   </div>
   
   <div class="feature-card">
-    <h3>📈 Continuous Monitoring</h3>
-    <p>Track progress over time as countries develop and enhance their sovereign AI capabilities.</p>
+    <h3>🚫 Dependency Penalties</h3>
+    <p>SAIL penalizes dependency and especially unacknowledged dependencies. Sovereignty may be partial, federated, or optimized, but dependencies must be explicit.</p>
   </div>
   
   <div class="feature-card">
-    <h3>🔍 Transparency</h3>
-    <p>Open methodology and scoring criteria ensure accountability and enable peer review.</p>
+    <h3>🏗️ Structural Constraints</h3>
+    <p>Certain layers (compute, legal environment) act as structural constraints and may cap achievable certification tiers.</p>
   </div>
   
   <div class="feature-card">
-    <h3>🤝 Collaboration</h3>
-    <p>Foster international cooperation and knowledge sharing in sovereign AI development.</p>
+    <h3>💪 Real Capacity Focus</h3>
+    <p>Credit is awarded for real capacity, legal robustness, and exit readiness, not stated intent.</p>
   </div>
 </div>
 
-## Rating Dimensions
+## The Seven Layers
 
-The SAIL rating system evaluates sovereign AI initiatives across five key dimensions:
+SAIL evaluates sovereignty across seven layers of the AI stack:
 
-1. **Infrastructure & Capacity** - Compute resources, data infrastructure, and technical capabilities
-2. **Governance & Policy** - Regulatory frameworks, ethical guidelines, and public oversight
-3. **Innovation & Research** - R&D investments, academic partnerships, and technological advancement
-4. **Public Access & Benefit** - Accessibility, affordability, and public good orientation
-5. **Sustainability & Resilience** - Long-term viability, security, and independence
+1. **Application & Service Sovereignty** (25 points) - Model-agnostic design, vendor substitution, decision traceability
+2. **Orchestration, Integration & Distribution** (25 points) - Provider-independent orchestration, policy control, observability
+3. **Data Sovereignty** (25 points) - Legal ownership, data curation, provenance balance, evaluation sovereignty
+4. **Model Sovereignty** (25 points) - Access to weights, reproducibility, independent fine-tuning, version control
+5. **Training & Post-Training Sovereignty** (25 points) - Control over objectives, vendor-independent post-training, transparency
+6. **Compute & Infrastructure Sovereignty** (25 points) - Guaranteed compute access, priority allocation, supply chain resilience
+7. **Legal, Governance & Exit Sovereignty** (25 points) - Legal override authority, exit rights, oversight, policy alignment
+
+**Total possible points: 175**
 
 ## Getting Started
 
-- **Learn about the methodology**: Read the [SAIL Specification](/sail/spec) to understand how ratings are calculated
-- **Explore models**: Browse [Sovereign AI Models](/sail/models) from different countries
+- **Read the specification**: Review the [SAIL Specification](/sail/spec) to understand the point-based evaluation system
+- **Explore certified initiatives**: Browse [Sovereign AI Models](/sail/models) and implementations
 - **Compare countries**: View [Country Rankings](/sail/countries) and detailed assessments
 
-## Contributing
+## Governance
 
-The SAIL rating system is an open, collaborative effort. We welcome contributions from researchers, policymakers, and practitioners working on sovereign AI initiatives.
+SAIL is managed and governed by the **Public AI Regular Council**, a nonprofit organization dedicated to advancing sovereign AI capabilities worldwide.
 
-- Submit updates to country or model information
-- Propose improvements to the rating methodology
-- Share case studies and best practices
+---
 
-<script>
-// Dynamic stats loading (placeholder - would be replaced with actual data)
-document.addEventListener('DOMContentLoaded', function() {
-  // These would typically be loaded from an API or data file
-  setTimeout(() => {
-    document.getElementById('countries-count').textContent = '25+';
-    document.getElementById('models-count').textContent = '50+';
-    document.getElementById('avg-score').textContent = '7.2';
-    document.getElementById('certified-count').textContent = '12';
-  }, 300);
-});
-</script>
+*Acknowledgements: Jan Hajic's presentation to OSFM.*

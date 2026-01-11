@@ -1,7 +1,7 @@
 ---
 title: SAIL Models
 layout: page
-description: Comprehensive directory of sovereign AI models from countries around the world.
+description: Comprehensive directory of sovereign AI models and implementations evaluated under the SAIL certification program.
 permalink: /sail/models/
 ---
 
@@ -244,7 +244,7 @@ A comprehensive directory of sovereign AI language models, foundation models, an
       <div class="model-meta">
         <span>📅 Released: 2023</span>
         <span>🏢 AI Sweden</span>
-        <span>📊 SAIL Score: <span class="score-badge good">8.2</span></span>
+        <span>📊 SAIL: <span class="score-badge good">Gold (65 pts)</span></span>
       </div>
     </div>
   </div>
@@ -286,7 +286,7 @@ A comprehensive directory of sovereign AI language models, foundation models, an
       <div class="model-meta">
         <span>📅 Released: 2024</span>
         <span>🏢 AI Singapore</span>
-        <span>📊 SAIL Score: <span class="score-badge excellent">9.1</span></span>
+        <span>📊 SAIL: <span class="score-badge excellent">Platinum (82 pts)</span></span>
       </div>
     </div>
   </div>
@@ -328,7 +328,7 @@ A comprehensive directory of sovereign AI language models, foundation models, an
       <div class="model-meta">
         <span>📅 Released: 2025</span>
         <span>🏢 ETH Zurich</span>
-        <span>📊 SAIL Score: <span class="score-badge excellent">9.3</span></span>
+        <span>📊 SAIL: <span class="score-badge excellent">Platinum (88 pts)</span></span>
       </div>
     </div>
   </div>
@@ -370,7 +370,7 @@ A comprehensive directory of sovereign AI language models, foundation models, an
       <div class="model-meta">
         <span>📅 Released: 2023-2024</span>
         <span>🏢 Mistral AI</span>
-        <span>📊 SAIL Score: <span class="score-badge good">7.8</span></span>
+        <span>📊 SAIL: <span class="score-badge good">Gold (68 pts)</span></span>
       </div>
     </div>
   </div>
@@ -412,7 +412,7 @@ A comprehensive directory of sovereign AI language models, foundation models, an
       <div class="model-meta">
         <span>📅 Released: 2023</span>
         <span>🏢 Argonne National Laboratory</span>
-        <span>📊 SAIL Score: <span class="score-badge excellent">8.9</span></span>
+        <span>📊 SAIL: <span class="score-badge excellent">Platinum (85 pts)</span></span>
       </div>
     </div>
   </div>
@@ -450,7 +450,9 @@ A comprehensive directory of sovereign AI language models, foundation models, an
 
 - **Total Models Tracked**: 50+
 - **Countries Represented**: 25+
-- **Average SAIL Score**: 7.2
+- **Platinum Certified**: 8
+- **Gold Certified**: 15
+- **Silver Certified**: 12
 - **Open Source Models**: 35+
 - **Multilingual Models**: 20+
 
