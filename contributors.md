@@ -1006,7 +1006,7 @@ The **Public AI Network** brings together a diverse coalition of researchers, pr
       <div class="tab">Philip Tomei</div>
       <div class="content">
         <div class="avatar c5">PT</div>
-        <div class="name">Philiip Tomei</div>
+        <div class="name">Philip Tomei</div>
         <div class="aff">AI Objectives Institute, UK</div>
         <div class="details">
           <b>Focus:</b> Art and AI, labor and societal impacts <br/>

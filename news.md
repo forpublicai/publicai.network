@@ -27,7 +27,7 @@ table th { text-align: center; font-weight: normal; font-size: 16px; }
 | 7/10 | [📰] Vitalik ([*My response to AI 2027*](https://vitalik.eth.limo/general/2025/07/10/2027.html)) writes that "Initiatives like Public AI become more of a good idea" as acceleration continues, to ensure infrastructural actors have capacity to act.|
 | 7/10 | [👨‍🏫] Special seminar on [NDIF and interpretability](https://www.youtube.com/watch?v=y6DZloFMZT4) with David Bau ([notes](https://docs.google.com/document/d/1gCCvDQN54xjcgXu8X5BHSIqvEIkXrVDPe-UaiQwLO4g/edit?tab=t.0#heading=h.wfmyqqtj62dr))
 | 6/18 | [📜] [*Intelligence in the Public Interest*](https://www.aspendigital.org/report/intelligence-in-the-public-interest/) Tursman E, Cavello B. An Aspen Digital report on how communities can influence AI development via benchmark design 
-| 5/20 | [📜] [*Public AI – A public alternative to private AI dominance*]() Sieker F, Tarkowski A, Gimpel L, Osborne C.  A position paper from Bertelsmann Foundation and Open Future on how societies can shape AI rather than merely consuming it. |
+| 5/20 | [📜] [*Public AI – A public alternative to private AI dominance*](https://www.bertelsmann-stiftung.de/en/publications/publication/did/public-ai-white-paper-a-public-alternative-to-private-ai-dominance) Sieker F, Tarkowski A, Gimpel L, Osborne C.  A position paper from Bertelsmann Foundation and Open Future on how societies can shape AI rather than merely consuming it. |
 
 
 
