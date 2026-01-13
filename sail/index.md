@@ -31,6 +31,19 @@ permalink: /sail/
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
+.sail-nav a.disabled {
+  background: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.sail-nav a.disabled:hover {
+  transform: none;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
 .hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -355,8 +368,8 @@ permalink: /sail/
 
 <nav class="sail-nav">
   <a href="/sail/spec">📋 Specification</a>
-  <a href="/sail/models">🤖 Models</a>
-  <a href="/sail/countries">🌍 Countries</a>
+  <a href="#" class="disabled">🤖 Models</a>
+  <a href="#" class="disabled">🌍 Countries</a>
 </nav>
 
 <div class="placeholder-image">
