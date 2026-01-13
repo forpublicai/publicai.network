@@ -17,6 +17,8 @@ A research seminar to study public AI and other forms of public interest AI. You
 ## Season 4
 Season 4 will run from February 17 to April 7, 2026. The fourth season of the seminar will cover the business of AI, spanning business models, gaps, and case studies. In particular, we will consider the opportunities for public AI across applications, models, inference, and physical infrastructure.
 
+To apply for the seminar, please [apply](https://forms.gle/1f8fkcCEjEoJF6L78) by February 12, AOE.
+
 Organizers: Joshua Tan (Public AI), Gideon Lichfield (Harvard)
 
 ## Season 3
