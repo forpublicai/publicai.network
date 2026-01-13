@@ -14,6 +14,11 @@ table th { text-align: center; }
 
 A research seminar to study public AI and other forms of public interest AI. You can [apply](https://forms.gle/1f8fkcCEjEoJF6L78) to join a future season of the seminar.
 
+## Season 4
+Season 4 will run from February 17 to April 7, 2026. The fourth season of the seminar will cover the business of AI, spanning business models, gaps, and case studies. In particular, we will consider the opportunities for public AI across applications, models, inference, and physical infrastructure.
+
+Organizers: Joshua Tan (Public AI), Gideon Lichfield (Harvard)
+
 ## Season 3
 Season 3 ran from April 22 to June 10, 2025, with two special sessions later in the summer. The seminar surveyed positions on AI emerging from art and culture, and considered the relationship between AI and the creative industries through four lenses: political power, cultural power, technological power, and economic power. Several spots were reserved for creative professionals in any medium interested in exploring public AI.
 
