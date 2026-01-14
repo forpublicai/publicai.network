@@ -52,42 +52,51 @@ permalink: /sail/
 
 .hero {
   text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 6rem 2rem;
+  background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=600&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 12px;
   margin: 2rem 0;
   position: relative;
   overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero::before {
   content: '';
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
-  width: 300px;
-  height: 300px;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="rgba(102,126,234,0.1)" stroke-width="2"/><circle cx="100" cy="100" r="60" fill="none" stroke="rgba(102,126,234,0.1)" stroke-width="2"/><circle cx="100" cy="100" r="40" fill="none" stroke="rgba(102,126,234,0.1)" stroke-width="2"/></svg>') no-repeat;
-  background-size: contain;
-  opacity: 0.3;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #2c3e50;
+  color: white;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
   font-size: 1.3rem;
-  color: #555;
+  color: white;
   max-width: 900px;
   margin: 0 auto;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .section-divider {
@@ -118,37 +127,59 @@ permalink: /sail/
 .cert-levels {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 3rem;
+  align-items: flex-start;
+  gap: 2.5rem;
   margin: 3rem 0;
   flex-wrap: wrap;
 }
 
-.torch-icon {
-  width: 60px;
-  height: 60px;
-  display: inline-block;
+.cert-level-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 120px;
 }
 
-.torch-icon svg {
+.cert-level-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.75rem;
+}
+
+.cert-level-icon img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
-.torch-icon.platinum svg {
-  fill: #c0c0c0;
+.cert-level-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
 }
 
-.torch-icon.gold svg {
-  fill: #ffd700;
+.cert-level-item.platinum .cert-level-name {
+  color: #666;
 }
 
-.torch-icon.silver svg {
-  fill: #a8a8a8;
+.cert-level-item.gold .cert-level-name {
+  color: #b8860b;
 }
 
-.torch-icon.certified svg {
-  fill: #dc3545;
+.cert-level-item.silver .cert-level-name {
+  color: #808080;
+}
+
+.cert-level-item.certified .cert-level-name {
+  color: #dc3545;
+}
+
+.cert-level-points {
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
 }
 
 .process-steps {
@@ -252,7 +283,7 @@ permalink: /sail/
   width: 100%;
   height: 300px;
   border-radius: 8px;
-  margin: 2rem 0;
+  margin: 2rem 0 0.5rem 0;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -265,6 +296,15 @@ permalink: /sail/
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 
 .cert-table {
@@ -323,19 +363,13 @@ permalink: /sail/
   <h1>SAIL rating system</h1>
   <p>The most comprehensive system for evaluating sovereign AI strategies and systems.</p>
 </div>
-
-
-<div class="placeholder-image">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Barcelona_Supercomputing_Center.jpg/1280px-Barcelona_Supercomputing_Center.jpg" alt="Barcelona Supercomputing Centre - SAIL-certified AI infrastructure facility">
-</div>
+<p class="image-caption">Barcelona Supercomputing Centre | SAIL-certified AI infrastructure facility</p>
 
 <div class="section">
   <h2>SAIL-certified sovereign AI systems are better systems</h2>
   <p>SAIL (Sovereign AI Leadership) is a rating and evaluation system that provides a structured assessment of a country's or agency's AI sovereignty across technical, legal, and governance dimensions. It offers a point-based system that signals resilience, control, and strategic leadership.</p>
   <p>SAIL serves as a globally recognized symbol of sovereignty leadership, supported by a committed community of governments, agencies, and technical partners driving market transformation toward resilient AI governance.</p>
 </div>
-
-<hr class="section-divider">
 
 <div class="section">
   <h2>SAIL is designed for all AI governance contexts</h2>
@@ -344,46 +378,47 @@ permalink: /sail/
   <div class="placeholder-image small">
     <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=800&fit=crop" alt="AI governance contexts - national, ministry, agency, program">
   </div>
+  <p class="image-caption">AI governance contexts - national, ministry, agency, program</p>
 </div>
-
-<hr class="section-divider">
 
 <div class="section">
   <h2>How SAIL works</h2>
   <p>SAIL is holistic. As a framework, it evaluates sovereignty across seven layers—from applications and orchestration to compute and legal governance—through a series of credit categories tailored for each assessment track. To achieve SAIL certification, an entity must first satisfy baseline prerequisites and then accrue points by fulfilling credit criteria. Assessments are independently verified and award points that correspond to a level of SAIL certification: Certified, Silver, Gold, and Platinum.</p>
   
   <div class="cert-levels">
-    <div class="torch-icon platinum">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2C12 2 8 6 8 10C8 12 9 14 10 15C10 16 9 17 8 17C8 18 9 19 10 20C11 21 12 22 12 22V2Z" fill="currentColor"/>
-        <path d="M12 2C12 2 16 6 16 10C16 12 15 14 14 15C14 16 15 17 16 17C16 18 15 19 14 20C13 21 12 22 12 22V2Z" fill="currentColor" opacity="0.8"/>
-      </svg>
+    <div class="cert-level-item platinum">
+      <div class="cert-level-icon">
+        <img src="/assets/sail-cert-icon.png" alt="Platinum certification icon">
+      </div>
+      <div class="cert-level-name">Platinum</div>
+      <div class="cert-level-points">80+ points</div>
     </div>
     
-    <div class="torch-icon gold">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2C12 2 8 6 8 10C8 12 9 14 10 15C10 16 9 17 8 17C8 18 9 19 10 20C11 21 12 22 12 22V2Z" fill="currentColor"/>
-        <path d="M12 2C12 2 16 6 16 10C16 12 15 14 14 15C14 16 15 17 16 17C16 18 15 19 14 20C13 21 12 22 12 22V2Z" fill="currentColor" opacity="0.8"/>
-      </svg>
+    <div class="cert-level-item gold">
+      <div class="cert-level-icon">
+        <img src="/assets/sail-cert-icon.png" alt="Gold certification icon">
+      </div>
+      <div class="cert-level-name">Gold</div>
+      <div class="cert-level-points">60–79 points</div>
     </div>
     
-    <div class="torch-icon silver">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2C12 2 8 6 8 10C8 12 9 14 10 15C10 16 9 17 8 17C8 18 9 19 10 20C11 21 12 22 12 22V2Z" fill="currentColor"/>
-        <path d="M12 2C12 2 16 6 16 10C16 12 15 14 14 15C14 16 15 17 16 17C16 18 15 19 14 20C13 21 12 22 12 22V2Z" fill="currentColor" opacity="0.8"/>
-      </svg>
+    <div class="cert-level-item silver">
+      <div class="cert-level-icon">
+        <img src="/assets/sail-cert-icon.png" alt="Silver certification icon">
+      </div>
+      <div class="cert-level-name">Silver</div>
+      <div class="cert-level-points">50–59 points</div>
     </div>
     
-    <div class="torch-icon certified">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2C12 2 8 6 8 10C8 12 9 14 10 15C10 16 9 17 8 17C8 18 9 19 10 20C11 21 12 22 12 22V2Z" fill="currentColor"/>
-        <path d="M12 2C12 2 16 6 16 10C16 12 15 14 14 15C14 16 15 17 16 17C16 18 15 19 14 20C13 21 12 22 12 22V2Z" fill="currentColor" opacity="0.8"/>
-      </svg>
+    <div class="cert-level-item certified">
+      <div class="cert-level-icon">
+        <img src="/assets/sail-cert-icon.png" alt="Certified certification icon">
+      </div>
+      <div class="cert-level-name">Certified</div>
+      <div class="cert-level-points">40–49 points</div>
     </div>
   </div>
 </div>
-
-<hr class="section-divider">
 
 <div class="section">
   <h2>SAIL Assessment Process</h2>
@@ -421,8 +456,6 @@ permalink: /sail/
   </div>
 </div>
 
-<hr class="section-divider">
-
 <div class="section">
   <h2>SAIL Tools and Resources</h2>
   <p>SAIL is supported by a suite of resources designed to help teams understand and fulfill credit requirements:</p>
@@ -433,8 +466,6 @@ permalink: /sail/
     <a href="#" class="disabled">🌍 Countries</a>
   </nav>
 </div>
-
-<hr class="section-divider">
 
 <div class="section">
   <h2>Understanding SAIL and Getting Started</h2>
@@ -449,39 +480,24 @@ permalink: /sail/
   <div class="placeholder-image small">
     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop" alt="Getting started guide - SAIL assessment flowchart">
   </div>
+  <p class="image-caption">Getting started guide - SAIL assessment flowchart</p>
 </div>
-
-<hr class="section-divider">
 
 <div class="section">
   <h2>Certification and Recognition</h2>
-  <p>Once certified, entities can:</p>
-  
-  <ul class="bullet-list">
-    <li><strong>Showcase their sovereignty achievements</strong> through SAIL badges and scorecards.</li>
-    <li><strong>Use certification results</strong> to guide policy priorities and capacity investments.</li>
-    <li><strong>Participate in the SAIL community</strong> to share best practices and influence future updates.</li>
-  </ul>
-  
+  <p>Once certified, projects have joined a select group of leaders in AI. They can then order or download a certificate for display, and share the news through a coordinated press release.</p>
   <div class="placeholder-image small">
     <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=800&fit=crop" alt="SAIL certification badges and recognition showcase">
   </div>
+  <p class="image-caption">SAIL certification badges and recognition showcase</p>
 </div>
 
-<hr class="section-divider">
-
 <div class="section">
-  <h2>SAIL Evolution & Versioning</h2>
-  <p>SAIL evolves periodically to reflect advances in AI technologies, governance practices, and geopolitical realities. Updates to the SAIL framework are developed through a multi-stakeholder process involving public sector experts, technologists, and civil society, with opportunities for public comment and pilot testing before formal adoption.</p>
-</div>
-
-<hr class="section-divider">
-
-<div class="section">
-  <h2>About the SAIL Initiative</h2>
-  <p>The SAIL program is developed and maintained by the <strong>Sovereign AI Leadership Consortium</strong>, a multi-stakeholder body of governments, research institutions, and technical partners committed to advancing sovereign and resilient AI governance. SAIL aims to make sovereignty legible, actionable, and comparable across contexts.</p>
+  <h2>About SAIL</h2>
+  <p>The SAIL program is developed and maintained by the <strong>Public AI Regular Council</strong>.</p>
   
   <div class="placeholder-image">
     <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=600&fit=crop" alt="Sovereign AI Leadership Consortium partners and members">
   </div>
+  <p class="image-caption">Sovereign AI Leadership Consortium partners and members</p>
 </div>
