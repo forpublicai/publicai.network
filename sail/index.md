@@ -51,52 +51,43 @@ permalink: /sail/
 }
 
 .hero {
-  text-align: center;
-  padding: 6rem 2rem;
-  background-image: /assets/bsc.jpg;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  margin: 2rem 0;
   position: relative;
+  width: 100%;
+  margin: 0 0 0.5rem 0;
   overflow: hidden;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.hero::before {
-  content: '';
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.hero-content {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 100%);
+  color: white;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
   color: white;
-  position: relative;
-  z-index: 2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.3;
 }
 
 .hero p {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  margin: 0;
   color: white;
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-  line-height: 1.6;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 .section-divider {
@@ -360,8 +351,11 @@ permalink: /sail/
 </style>
 
 <div class="hero">
-  <h1>SAIL rating system</h1>
-  <p>The most comprehensive system for evaluating sovereign AI strategies and systems.</p>
+  <img src="/sail/assets/bsc.jpg" alt="Barcelona Supercomputing Centre" class="hero-image">
+  <div class="hero-content">
+    <h1>SAIL rating system</h1>
+    <p>The most comprehensive system for evaluating sovereign AI strategies and systems.</p>
+  </div>
 </div>
 <p class="image-caption">Barcelona Supercomputing Centre | SAIL-certified AI infrastructure facility</p>
 
