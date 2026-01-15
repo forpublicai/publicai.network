@@ -53,7 +53,7 @@ permalink: /sail/
 .hero {
   text-align: center;
   padding: 6rem 2rem;
-  background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=600&fit=crop');
+  background-image: assets/bsc.jpg;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -388,7 +388,7 @@ permalink: /sail/
   <div class="cert-levels">
     <div class="cert-level-item platinum">
       <div class="cert-level-icon">
-        <img src="/assets/sail-cert-icon.png" alt="Platinum certification icon">
+        <img src="/sail/assets/torch_platinum.png" alt="Platinum certification icon">
       </div>
       <div class="cert-level-name">Platinum</div>
       <div class="cert-level-points">80+ points</div>
@@ -396,7 +396,7 @@ permalink: /sail/
     
     <div class="cert-level-item gold">
       <div class="cert-level-icon">
-        <img src="/assets/sail-cert-icon.png" alt="Gold certification icon">
+        <img src="/sail/assets/torch_gold.png" alt="Gold certification icon">
       </div>
       <div class="cert-level-name">Gold</div>
       <div class="cert-level-points">60–79 points</div>
@@ -404,7 +404,7 @@ permalink: /sail/
     
     <div class="cert-level-item silver">
       <div class="cert-level-icon">
-        <img src="/assets/sail-cert-icon.png" alt="Silver certification icon">
+        <img src="/sail/assets/torch_silver.png" alt="Silver certification icon">
       </div>
       <div class="cert-level-name">Silver</div>
       <div class="cert-level-points">50–59 points</div>
@@ -412,7 +412,7 @@ permalink: /sail/
     
     <div class="cert-level-item certified">
       <div class="cert-level-icon">
-        <img src="/assets/sail-cert-icon.png" alt="Certified certification icon">
+        <img src="/sail/assets/torch_red.png" alt="Certified certification icon">
       </div>
       <div class="cert-level-name">Certified</div>
       <div class="cert-level-points">40–49 points</div>
