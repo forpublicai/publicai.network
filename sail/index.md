@@ -53,7 +53,7 @@ permalink: /sail/
 .hero {
   text-align: center;
   padding: 6rem 2rem;
-  background-image: assets/bsc.jpg;
+  background-image: /assets/bsc.jpg;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -299,7 +299,7 @@ permalink: /sail/
 }
 
 .image-caption {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #666;
   font-style: italic;
   text-align: center;
