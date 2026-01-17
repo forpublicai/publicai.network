@@ -480,10 +480,6 @@ permalink: /sail/
 <div class="section">
   <h2>Certification and Recognition</h2>
   <p>Once certified, projects have joined a select group of leaders in AI. They can then order or download a certificate for display, and share the news through a coordinated press release.</p>
-  <div class="placeholder-image small">
-    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=800&fit=crop" alt="SAIL certification badges and recognition showcase">
-  </div>
-  <p class="image-caption">SAIL certification badges and recognition showcase</p>
 </div>
 
 <div class="section">
