@@ -40,8 +40,15 @@ Identify 3–5 shared claims about public AI across the readings and 1–2 subst
 Why is public AI needed given existing tools like regulation, antitrust, and public procurement?
 
 ### Readings
-- **[Public Option](https://www.cambridge.org/core/journals/royal-institute-of-philosophy-supplements/article/abs/public-option/AC1EB06D6B9BB38A36D09EC7A88EA6EF)** — Diane Coyle  
-- **[Antimonopoly Tools for Regulating AI](https://cdn.vanderbilt.edu/vu-sub/wp-content/uploads/sites/281/2023/12/19183408/Policy-Brief-2023.10.08-.pdf)** — Ganesh Sitaraman
+- **[The Public Option](https://www.cambridge.org/core/journals/royal-institute-of-philosophy-supplements/article/abs/public-option/AC1EB06D6B9BB38A36D09EC7A88EA6EF)** — Diane Coyle  
+- **[Antimonopoly Tools for Regulating AI](https://cdn.vanderbilt.edu/vu-sub/wp-content/uploads/sites/281/2023/12/19183408/Policy-Brief-2023.10.08-.pdf)** — Ganesh Sitaraman  
+- **[The Dynamo and the Computer](https://www.jstor.org/stable/2006544)** — Paul David
+
+### Optional readings
+- **The Labor Market Impacts of Technological Change** — David Autor (2024)
+
+### Background reference
+- **Anthropic Economic Index Report (2026)** — Anthropic
 
 ### Discussion prompts
 - What can public options do that regulation or antitrust alone cannot?  
@@ -50,6 +57,10 @@ Why is public AI needed given existing tools like regulation, antitrust, and pub
 ### Applied exercise (output)
 **Problem-framing memo (≈1 page)**  
 Choose one political–economic justification for public AI (e.g. monopoly power, democratic legitimacy, state capacity). Argue why regulation or procurement alone is insufficient.
+
+### Optional readings
+- **[The Labor Market Impacts of Technological Change](https://www.nber.org/system/files/working_papers/w30074/w30074.pdf)** — David Autor (2024)
+- **[Anthropic Economic Index Report](https://www.anthropic.com/economic-index)** — Anthropic (2026)
 
 ---
 
