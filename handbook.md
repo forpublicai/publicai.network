@@ -1,0 +1,89 @@
+# A Very Brief Introduction to Public AI
+
+This course introduces **public AI** as an approach to treating AI as public infrastructure. It emphasizes political economy, institutional design, and practical implementation rather than abstract ethics or purely technical alignment.
+
+Each week combines shared readings with a concrete artifact that can be produced individually or collectively.
+
+---
+
+## Week 1 — Foundations: What Is Public AI?
+
+### Core question
+What does it mean to treat AI as public infrastructure, and how has this idea emerged across different institutional contexts?
+
+### Required readings (selected excerpts)
+- **[Public AI: Infrastructure for the Common Good](https://publicai.network/whitepaper)** — Public AI Network  
+- **[Public AI: Making AI Work for Everyone, by Everyone](https://www.mozillafoundation.org/en/research/library/public-ai/)** — Mozilla Foundation  
+- **[Public AI White Paper – A Public Alternative to Private AI Dominance](https://www.bertelsmann-stiftung.de/en/publications/publication/did/public-ai-white-paper-a-public-alternative-to-private-ai-dominance)** — Bertelsmann Stiftung  
+- **[The Global Rise of Public AI](https://cdn.vanderbilt.edu/vu-URL/wp-content/uploads/sites/412/2025/05/05220054/The-Global-Rise-of-Public-AI.pdf)** — Vanderbilt (Sitaraman et al.)
+
+### Discussion prompts
+- What core features of public AI recur across these papers? Where do they diverge?  
+- Is public AI framed more as infrastructure, policy intervention, or counterpower?
+
+### Applied exercise (output)
+**Comparative synthesis memo (≈1 page)**  
+Identify 3–5 shared claims about public AI across the readings and 1–2 substantive disagreements. Distinguish what appears settled from what remains contested.
+
+---
+
+## Week 2 — Why Public AI? Political Economy, Power, and Public Options
+
+### Core question
+Why is public AI needed given existing tools like regulation, antitrust, and public procurement?
+
+### Required readings
+- **[Public Option](https://www.cambridge.org/core/journals/royal-institute-of-philosophy-supplements/article/abs/public-option/AC1EB06D6B9BB38A36D09EC7A88EA6EF)** — Diane Coyle  
+- **[Antimonopoly Tools for Regulating AI](https://cdn.vanderbilt.edu/vu-sub/wp-content/uploads/sites/281/2023/12/19183408/Policy-Brief-2023.10.08-.pdf)** — Ganesh Sitaraman
+
+### Discussion prompts
+- What can public options do that regulation or antitrust alone cannot?  
+- Does public AI complement antimonopoly approaches, or risk weakening them?
+
+### Applied exercise (output)
+**Problem-framing memo (≈1 page)**  
+Choose one political–economic justification for public AI (e.g. monopoly power, democratic legitimacy, state capacity). Argue why regulation or procurement alone is insufficient.
+
+---
+
+## Week 3 — National Strategies, Sovereignty, and Coordination
+
+### Core question
+How does public AI relate to national AI strategies, sovereignty claims, and multilateral coordination?
+
+### Required readings
+- **[Canada as a Champion for Public AI](https://publicai.network/publications/)** — Vincent, Surman, Hirsch-Allen  
+- **[Airbus for AI](https://publicai.co/airbus-for-ai.pdf)** — Public AI / Metagov  
+- **[AI Nationalisms: Global Industrial Policy Approaches to AI](https://ainowinstitute.org/publications/research/ai-nationalisms-global-industrial-policy-approaches-to-ai)** — AI Now Institute
+
+### Discussion prompts
+- When does sovereignty reinforce public accountability, and when does it undermine it?  
+- Is the Airbus analogy helpful for thinking about public AI, or misleading?
+
+### Applied exercise (output)
+**Strategy comparison brief (diagram + short text)**  
+Compare two approaches (e.g. national public AI vs multilateral public AI). Identify coordination gains, governance risks, and failure modes.
+
+---
+
+## Week 4 — Building Public AI Locally
+
+### Core question
+What are realistic ways to build, pilot, or support public AI at local or institutional scales?
+
+### Required readings
+- **[Public AI Libraries](https://libraries.publicai.co)** — initiative overview  
+- **Minimum Viable Public AI Utility** — Public AI Network *(link TBD)*
+
+### Optional / exemplar readings
+- **[Public AI Data Flywheels (mini-book)](https://github.com/nickmvincent/pai-flywheel-mini-book-2/deployments)**  
+- **[NNsight: A Mechanistic Interpretability Platform](https://arxiv.org/abs/2407.14561)**  
+- **[NDIF (National Deep Inference Fabric)](https://publicai.network/publications/)** — Public AI Network
+
+### Discussion prompts
+- Where do local institutions (libraries, universities, municipalities) have real leverage?  
+- What makes a public AI initiative durable rather than symbolic?
+
+### Applied exercise (output)
+**Local action plan (1–2 pages)**  
+Identify one plausible intervention (event, partnership, pilot proposal, policy memo). Specify the target institution, goals, allies, timeline, and success criteria.
