@@ -1,6 +1,12 @@
+---
+title: Public AI Handbook
+layout: page
+description: A short, four-week introduction to public AI as public infrastructure, with readings and applied exercises.
+---
+
 # A Very Brief Introduction to Public AI
 
-This course introduces **public AI** as an approach to treating AI as public infrastructure. It emphasizes political economy, institutional design, and practical implementation rather than abstract ethics or purely technical alignment.
+This short course introduces **public AI** as an approach to treating AI as public infrastructure. It emphasizes political economy, institutional design, and practical implementation rather than abstract ethics or purely technical alignment.
 
 Each week combines shared readings with a concrete artifact that can be produced individually or collectively.
 
@@ -11,7 +17,8 @@ Each week combines shared readings with a concrete artifact that can be produced
 ### Core question
 What does it mean to treat AI as public infrastructure, and how has this idea emerged across different institutional contexts?
 
-### Required readings (selected excerpts)
+### Readings
+Selected excerpts from:
 - **[Public AI: Infrastructure for the Common Good](https://publicai.network/whitepaper)** — Public AI Network  
 - **[Public AI: Making AI Work for Everyone, by Everyone](https://www.mozillafoundation.org/en/research/library/public-ai/)** — Mozilla Foundation  
 - **[Public AI White Paper – A Public Alternative to Private AI Dominance](https://www.bertelsmann-stiftung.de/en/publications/publication/did/public-ai-white-paper-a-public-alternative-to-private-ai-dominance)** — Bertelsmann Stiftung  
@@ -32,7 +39,7 @@ Identify 3–5 shared claims about public AI across the readings and 1–2 subst
 ### Core question
 Why is public AI needed given existing tools like regulation, antitrust, and public procurement?
 
-### Required readings
+### Readings
 - **[Public Option](https://www.cambridge.org/core/journals/royal-institute-of-philosophy-supplements/article/abs/public-option/AC1EB06D6B9BB38A36D09EC7A88EA6EF)** — Diane Coyle  
 - **[Antimonopoly Tools for Regulating AI](https://cdn.vanderbilt.edu/vu-sub/wp-content/uploads/sites/281/2023/12/19183408/Policy-Brief-2023.10.08-.pdf)** — Ganesh Sitaraman
 
@@ -51,7 +58,7 @@ Choose one political–economic justification for public AI (e.g. monopoly power
 ### Core question
 How does public AI relate to national AI strategies, sovereignty claims, and multilateral coordination?
 
-### Required readings
+### Readings
 - **[Canada as a Champion for Public AI](https://publicai.network/publications/)** — Vincent, Surman, Hirsch-Allen  
 - **[Airbus for AI](https://publicai.co/airbus-for-ai.pdf)** — Public AI / Metagov  
 - **[AI Nationalisms: Global Industrial Policy Approaches to AI](https://ainowinstitute.org/publications/research/ai-nationalisms-global-industrial-policy-approaches-to-ai)** — AI Now Institute
@@ -71,11 +78,11 @@ Compare two approaches (e.g. national public AI vs multilateral public AI). Iden
 ### Core question
 What are realistic ways to build, pilot, or support public AI at local or institutional scales?
 
-### Required readings
+### Readings
 - **[Public AI Libraries](https://libraries.publicai.co)** — initiative overview  
-- **Minimum Viable Public AI Utility** — Public AI Network *(link TBD)*
+- **Minimum Viable Public AI Utility** — Public AI Network *(link forthcoming)*
 
-### Optional / exemplar readings
+### Optional readings
 - **[Public AI Data Flywheels (mini-book)](https://github.com/nickmvincent/pai-flywheel-mini-book-2/deployments)**  
 - **[NNsight: A Mechanistic Interpretability Platform](https://arxiv.org/abs/2407.14561)**  
 - **[NDIF (National Deep Inference Fabric)](https://publicai.network/publications/)** — Public AI Network
