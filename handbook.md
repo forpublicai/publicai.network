@@ -105,3 +105,34 @@ What are realistic ways to build, pilot, or support public AI at local or instit
 ### Applied exercise (output)
 **Local action plan (1–2 pages)**  
 Identify one plausible intervention (event, partnership, pilot proposal, policy memo). Specify the target institution, goals, allies, timeline, and success criteria.
+
+---
+
+## Glossary
+
+**Public AI (concept)**  
+An approach to treating AI as public infrastructure, emphasizing democratic governance, broad accessibility, and accountability to the communities that AI systems serve. Distinct from both purely private AI and state-owned AI systems.
+
+**Public AI Network**  
+The organization and community coordinating research, advocacy, and implementation of public AI initiatives globally. Maintains publicai.network and coordinates related projects.
+
+**Public AI utility**  
+A specific institutional form: an AI system or service operated as a public utility, with governance structures ensuring public accountability, sustainable financing, and service obligations to communities.
+
+**Public option**  
+A publicly provided alternative to private services that competes alongside private providers while pursuing public goals. In the AI context, offers choice while setting standards for quality, access, and accountability.
+
+**Public infrastructure**  
+Essential systems and services that support collective life and economic activity, traditionally including roads, water, electricity, and increasingly digital systems. Public AI positions AI systems as infrastructure requiring similar governance and access principles.
+
+**AI sovereignty**  
+The capacity of nations or regions to develop, deploy, and govern AI systems according to their own values and interests, rather than depending entirely on systems controlled by other jurisdictions or private corporations.
+
+**Public AI Libraries**  
+An initiative to position public libraries as access points and stewards of public AI services, building on libraries' existing role as democratic institutions providing equitable access to information and technology.
+
+**NDIF (National Deep Inference Fabric)**  
+A proposed framework for distributed public AI infrastructure that enables secure, privacy-preserving AI inference across institutional boundaries while maintaining public accountability.
+
+**Mechanistic interpretability**  
+Technical approaches to understanding how AI systems actually work internally, enabling better governance, debugging, and accountability of AI systems used in public contexts.
