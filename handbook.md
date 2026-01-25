@@ -110,14 +110,30 @@ Identify one plausible intervention (event, partnership, pilot proposal, policy 
 
 ## Glossary
 
-**Public AI (concept)**  
+**public AI (the idea)**  
 An approach to treating AI as public infrastructure, emphasizing democratic governance, broad accessibility, and accountability to the communities that AI systems serve. Distinct from both purely private AI and state-owned AI systems.
 
-**Public AI Network**  
-The organization and community coordinating research, advocacy, and implementation of public AI initiatives globally. Maintains publicai.network and coordinates related projects.
+**Public AI (the movement)**  
+The global movement of researchers, practitioners, policymakers, and communities working to realize public AI as infrastructure for the common good. Sometimes abbreviated as Public AI.
 
-**Public AI utility**  
-A specific institutional form: an AI system or service operated as a public utility, with governance structures ensuring public accountability, sustainable financing, and service obligations to communities.
+**Public AI Network**  
+An open community within the Public AI movement that curates resources like this handbook, coordinates research and advocacy, and maintains publicai.network as a hub for the movement.
+
+**Public AI Inference Utility**  
+A particular product developed within the Public AI movement: an AI inference service operated as a public utility, with governance structures ensuring public accountability, sustainable financing, and service obligations to communities.
+
+### Projects and Initiatives
+
+**Apertus**  
+A public AI project developing open infrastructure and tools for democratic AI governance and deployment.
+
+**NDIF (National Deep Inference Fabric)**  
+A proposed framework for distributed public AI infrastructure that enables secure, privacy-preserving AI inference across institutional boundaries while maintaining public accountability.
+
+**Public AI Libraries Project**  
+An initiative to position public libraries as access points and stewards of public AI services, building on libraries' existing role as democratic institutions providing equitable access to information and technology.
+
+### Related Concepts
 
 **Public option**  
 A publicly provided alternative to private services that competes alongside private providers while pursuing public goals. In the AI context, offers choice while setting standards for quality, access, and accountability.
@@ -127,12 +143,6 @@ Essential systems and services that support collective life and economic activit
 
 **AI sovereignty**  
 The capacity of nations or regions to develop, deploy, and govern AI systems according to their own values and interests, rather than depending entirely on systems controlled by other jurisdictions or private corporations.
-
-**Public AI Libraries**  
-An initiative to position public libraries as access points and stewards of public AI services, building on libraries' existing role as democratic institutions providing equitable access to information and technology.
-
-**NDIF (National Deep Inference Fabric)**  
-A proposed framework for distributed public AI infrastructure that enables secure, privacy-preserving AI inference across institutional boundaries while maintaining public accountability.
 
 **Mechanistic interpretability**  
 Technical approaches to understanding how AI systems actually work internally, enabling better governance, debugging, and accountability of AI systems used in public contexts.
