@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SAIL Specification | Public AI Network</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="SAIL Specification" />
+<meta name="author" content="Public AI Network" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Detailed specification of the SAIL certification system methodology and evaluation criteria." />
+<meta property="og:description" content="Detailed specification of the SAIL certification system methodology and evaluation criteria." />
+<link rel="canonical" href="http://localhost:4000/sail/spec/" />
+<meta property="og:url" content="http://localhost:4000/sail/spec/" />
+<meta property="og:site_name" content="Public AI Network" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SAIL Specification" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Public AI Network"},"description":"Detailed specification of the SAIL certification system methodology and evaluation criteria.","headline":"SAIL Specification","url":"http://localhost:4000/sail/spec/"}</script>
+<!-- End Jekyll SEO tag -->
+<link id="main-stylesheet" rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Public AI Network" />
+
+<meta name="author" content="Public AI Network" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8CM1DYG2FB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8CM1DYG2FB');
+</script>
+
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">Public AI Network</a>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon"></span>
+        </label>
+
+        <div class="nav-items">
+<!-- 
+  
+  
+    <a class="page-link" href="/libraries.html">
+      Libraries
+    </a>
+  
+
+  
+  
+    <a class="page-link" href="/seminar.html">
+      Seminar
+    </a>
+  
+
+  
+  
+    <a class="page-link" href="/contributors/">
+      Contributors
+    </a>
+  
+
+  
+  
+    <a class="page-link" href="/publications/">
+      Publications
+    </a>
+  
+
+  
+  
+    <a class="page-link" href="/news/">
+      News
+    </a>
+  
+ -->
+  <a class="nav-item" href="/libraries.html">Libraries</a>
+  <a class="nav-item" href="/seminar.html">Seminar</a>
+  <a class="nav-item" href="/contributors/">Contributors</a>
+  <a class="nav-item" href="/publications/">Publications</a>
+  <a class="nav-item" href="/news/">News</a>
+</div>
+
+      </nav>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">SAIL Specification</h1>
+  </header>
+
+  <div class="post-content">
+    <style>
+.spec-nav {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.spec-nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f8f9fa;
+  color: #667eea;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 2px solid #667eea;
+  transition: all 0.2s ease;
+}
+
+.spec-nav a:hover {
+  background: #667eea;
+  color: white;
+}
+
+.layer-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.layer-card h3 {
+  color: #667eea;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.layer-card h3::before {
+  content: '';
+  width: 4px;
+  height: 24px;
+  background: #667eea;
+  border-radius: 2px;
+}
+
+.credit-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.credit-table th,
+.credit-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.credit-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.credit-table tr:hover {
+  background: #f8f9fa;
+}
+
+.points-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #667eea;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-width: 50px;
+  text-align: center;
+}
+
+.cert-level {
+  background: white;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.cert-level.platinum {
+  border-color: #e8e8e8;
+  background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+}
+
+.cert-level.gold {
+  border-color: #ffd700;
+  background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+}
+
+.cert-level.silver {
+  border-color: #c0c0c0;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+.cert-level.certified {
+  border-color: #667eea;
+  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+}
+
+.cert-level h3 {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cert-level.platinum h3 {
+  color: #666;
+}
+
+.cert-level.gold h3 {
+  color: #b8860b;
+}
+
+.cert-level.silver h3 {
+  color: #808080;
+}
+
+.cert-level.certified h3 {
+  color: #667eea;
+}
+
+.toc {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc li {
+  margin: 0.5rem 0;
+}
+
+.toc a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+.flag-box {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+.constraint-box {
+  background: #f8d7da;
+  border-left: 4px solid #dc3545;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+.key-principles {
+  background: #d1ecf1;
+  border-left: 4px solid #17a2b8;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+.key-principles ul {
+  margin: 0.5rem 0;
+}
+</style>
+
+<nav class="spec-nav">
+  <a href="/sail">🏠 Home</a>
+  <a href="/sail/models">🤖 Models</a>
+  <a href="/sail/countries">🌍 Countries</a>
+</nav>
+
+<h2 id="sail-specification">SAIL Specification</h2>
+
+<p>This document provides the complete specification for the <strong>Sovereign AI Leadership (SAIL)</strong> certification program, including evaluation criteria, point-based scoring methodology, and certification requirements.</p>
+
+<h3 id="table-of-contents">Table of Contents</h3>
+
+<div class="toc">
+<ul>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#levels">Certification Levels</a></li>
+  <li><a href="#layers">The Seven Layers</a></li>
+  <li><a href="#flags">Flags &amp; Constraints</a></li>
+  <li><a href="#process">Certification Process</a></li>
+</ul>
+</div>
+
+<h2 id="overview">Overview</h2>
+
+<p>SAIL uses a <strong>point-based system</strong> for evaluating national and governmental AI strategies. As a framework, SAIL assesses AI sovereignty across the full AI stack from applications and data governance to training pipelines and compute dependencies.</p>
+
+<p>To achieve SAIL certification, a country or public agency must:</p>
+<ol>
+  <li>First satisfy all <strong>baseline prerequisites</strong> (minimum governance, control, and transparency requirements) across each layer</li>
+  <li>Then earn <strong>points</strong> by meeting additional conditions aligned with its strategic goals</li>
+</ol>
+
+<p>The framework is designed to reward realistic, optimized sovereignty strategies, including federated and allied approaches. It penalizes dependency and especially unacknowledged dependencies.</p>
+
+<div class="key-principles">
+<h4>Key Principles</h4>
+<ul>
+  <li><strong>Sovereignty may be partial, federated, or optimized</strong>, but dependencies must be explicit.</li>
+  <li><strong>Certain layers</strong> (compute, legal environment) act as structural constraints and may cap achievable certification tiers.</li>
+  <li><strong>Credit is awarded</strong> for real capacity, legal robustness, and exit readiness, not stated intent.</li>
+</ul>
+</div>
+
+<p><strong>Note</strong>: SAIL does not evaluate technical excellence, though it does look at publicly available adoption levels of sovereign products and artifacts.</p>
+
+<h2 id="levels">Certification Levels</h2>
+
+<h3 id="platinum--sovereign-leadership">Platinum — Sovereign Leadership</h3>
+<p><strong>80+ points earned</strong></p>
+
+<p>Demonstrates end-to-end control across the AI stack, including model adaptation and pre-training (individually or through credible allied/federated arrangements).</p>
+
+<div class="cert-level platinum">
+  <h3>🏆 Platinum Certification</h3>
+  <p><strong>Requirements:</strong> 80+ points with strong performance across all layers, especially Layers 4-6 (Model, Training, and Compute sovereignty).</p>
+  <p><strong>Constraint:</strong> If Layer 6 (Compute) score &lt; 10, Platinum certification is capped unless credible federated arrangements exist.</p>
+</div>
+
+<h3 id="gold--strategic-sovereignty">Gold — Strategic Sovereignty</h3>
+<p><strong>60–79 points earned</strong></p>
+
+<p>Demonstrates strong control over data and model behavior, with limited but well-managed external dependencies.</p>
+
+<div class="cert-level gold">
+  <h3>🥇 Gold Certification</h3>
+  <p><strong>Requirements:</strong> 60-79 points with demonstrated control at Layers 1-4 (Application through Model sovereignty).</p>
+</div>
+
+<h3 id="silver--operational-sovereignty">Silver — Operational Sovereignty</h3>
+<p><strong>50–59 points earned</strong></p>
+
+<p>Demonstrates control at the application and data layers, with meaningful but unresolved dependencies at deeper layers.</p>
+
+<div class="cert-level silver">
+  <h3>🥈 Silver Certification</h3>
+  <p><strong>Requirements:</strong> 50-59 points with baseline control at Layers 1-3 (Application, Orchestration, Data sovereignty).</p>
+</div>
+
+<h3 id="certified--baseline-sovereignty">Certified — Baseline Sovereignty</h3>
+<p><strong>40–49 points earned</strong></p>
+
+<p>Meets baseline prerequisites and demonstrates initial control over AI deployment and governance, but remains highly dependent on external providers.</p>
+
+<div class="cert-level certified">
+  <h3>✓ Certified</h3>
+  <p><strong>Requirements:</strong> 40-49 points meeting all baseline prerequisites across layers.</p>
+</div>
+
+<h2 id="layers">The Seven Layers</h2>
+
+<h3 id="layer-1-application--service-sovereignty">Layer 1: Application &amp; Service Sovereignty</h3>
+<p><strong>Max points: 25</strong></p>
+
+<p>This layer evaluates whether AI-enabled public services can be modified, migrated, or withdrawn without reliance on a specific vendor, model, or jurisdiction.</p>
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>A1</strong></td>
+      <td>Model-agnostic service design - Core service logic decoupled from specific models or APIs</td>
+      <td><span class="points-badge">6</span></td>
+    </tr>
+    <tr>
+      <td><strong>A2</strong></td>
+      <td>Public ownership of application logic - State owns or controls source code and workflows</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>A3</strong></td>
+      <td>Vendor substitution feasibility - Demonstrated ability to swap AI providers within 6–12 months</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>A4</strong></td>
+      <td>Decision traceability &amp; auditability - AI-assisted decisions are logged and reviewable</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>A5</strong></td>
+      <td>Domestic service maintenance capacity - In-country teams can modify and redeploy services</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="layer-2-orchestration-integration--distribution">Layer 2: Orchestration, Integration &amp; Distribution</h3>
+<p><strong>Max points: 25</strong></p>
+
+<p>This layer assesses control over how AI components are composed, routed, monitored, and distributed to users.</p>
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>O1</strong></td>
+      <td>Provider-independent orchestration - Ability to route workloads across models/providers</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>O2</strong></td>
+      <td>Institution-controlled policy layer - Safety, usage, and routing rules defined locally</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>O3</strong></td>
+      <td>System observability - Prompts, outputs, failures are inspectable</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>O4</strong></td>
+      <td>Independent rollback &amp; suspension - Systems can be paused or reverted without vendor approval</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>O5</strong></td>
+      <td>Distribution sovereignty - Control over primary model/service distribution channels</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>O6</strong></td>
+      <td>Migration-ready hosting - Ability to mirror or migrate hosting jurisdiction</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="layer-3-data-sovereignty-origin-control-evaluation">Layer 3: Data Sovereignty (Origin, Control, Evaluation)</h3>
+<p><strong>Max points: 25</strong></p>
+
+<p>This layer evaluates control over the data AI systems learn from, remember, and are evaluated against—emphasizing provenance and legal robustness.</p>
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>D1</strong></td>
+      <td>Legal ownership of datasets - Enforceable public rights over AI-relevant data</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>D2</strong></td>
+      <td>Data curation &amp; deletion authority - Ability to modify, filter, and delete data</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>D3</strong></td>
+      <td>Data provenance balance - Meaningful share of data from domestic or allied sources</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>D4</strong></td>
+      <td>Legally robust openness - Data reusable under clear, defensible licenses</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>D5</strong></td>
+      <td>Evaluation &amp; benchmark sovereignty - Ownership/control of eval and post-training datasets</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>D6</strong></td>
+      <td>Prevention of irreversible leakage - Safeguards against uncontrolled embedding/gradient reuse</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="layer-4-model-sovereignty-reproducibility--capability">Layer 4: Model Sovereignty (Reproducibility &amp; Capability)</h3>
+<p><strong>Max points: 25</strong></p>
+
+<p>This layer measures the ability to shape, reproduce, and rely on models as sovereign infrastructure, not just artifacts.</p>
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>M1</strong></td>
+      <td>Access to weights or adapters - Meaningful ability to modify model behavior</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>M2</strong></td>
+      <td>Reproducibility completeness - Training data, recipes, scripts documented</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>M3</strong></td>
+      <td>Independent fine-tuning capacity - Domestic ability to adapt models</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>M4</strong></td>
+      <td>Task-level competitiveness - Models competitive in priority public-sector tasks</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>M5</strong></td>
+      <td>Version control &amp; forkability - Ability to freeze, fork, or maintain versions</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>M6</strong></td>
+      <td>Dependency-adjusted integrity - No opaque external components in core models</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="layer-5-training--post-training-sovereignty">Layer 5: Training &amp; Post-Training Sovereignty</h3>
+<p><strong>Max points: 25</strong></p>
+
+<p>This layer assesses control over alignment, instruction tuning, and improvement processes after pretraining.</p>
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>T1</strong></td>
+      <td>Control over training objectives - Public authority defines reward/alignment goals</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>T2</strong></td>
+      <td>Vendor-independent post-training - Fine-tuning without external approval</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>T3</strong></td>
+      <td>Reproducibility of adaptations - Training outcomes can be reproduced</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>T4</strong></td>
+      <td>Transparency of interventions - Post-training changes are documented</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>T5</strong></td>
+      <td>Institutional oversight - Formal oversight of alignment decisions</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>T6</strong></td>
+      <td>In-region execution - Post-training physically executed domestically/allied</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="layer-6-compute--infrastructure-sovereignty-structural">Layer 6: Compute &amp; Infrastructure Sovereignty (Structural)</h3>
+<p><strong>Max points: 25</strong></p>
+
+<p>This layer evaluates reliable, governable access to compute and infrastructure required to train and run AI systems.</p>
+
+<div class="constraint-box">
+<strong>Structural Constraint:</strong> If Layer 6 score &lt; 10, Platinum certification is capped unless credible federated arrangements exist.
+</div>
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>C1</strong></td>
+      <td>Guaranteed compute access - Domestic or allied compute under public control</td>
+      <td><span class="points-badge">6</span></td>
+    </tr>
+    <tr>
+      <td><strong>C2</strong></td>
+      <td>Priority &amp; crisis allocation - Ability to reprioritize workloads in emergencies</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>C3</strong></td>
+      <td>Time-to-availability - Capacity available now or within 12 months</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>C4</strong></td>
+      <td>Absence of unilateral kill-switches - No single foreign actor can disable access</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>C5</strong></td>
+      <td>Supply chain resilience - Plans for hardware/energy disruption</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+    <tr>
+      <td><strong>C6</strong></td>
+      <td>Inference/training separation - Dedicated inference capacity for public services</td>
+      <td><span class="points-badge">2</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="layer-7-legal-governance--exit-sovereignty">Layer 7: Legal, Governance &amp; Exit Sovereignty</h3>
+<p><strong>Max points: 25</strong></p>
+
+<p>This layer measures legal authority, institutional mandate, and the ability to override or exit AI systems.</p>
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Credit</th>
+      <th>Description</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>G1</strong></td>
+      <td>Legal override authority - Clear authority to suspend or retire AI systems</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>G2</strong></td>
+      <td>Contractual exit rights - Explicit migration/fork rights in contracts</td>
+      <td><span class="points-badge">5</span></td>
+    </tr>
+    <tr>
+      <td><strong>G3</strong></td>
+      <td>Documented exit playbooks - Layer-by-layer exit strategies</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>G4</strong></td>
+      <td>Oversight with technical competence - Independent oversight bodies</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>G5</strong></td>
+      <td>Legal stability outlook - AI-enabling rights stable or improving</td>
+      <td><span class="points-badge">4</span></td>
+    </tr>
+    <tr>
+      <td><strong>G6</strong></td>
+      <td>Policy alignment - AI strategy aligned with IP/copyright law</td>
+      <td><span class="points-badge">3</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="flags">Flags &amp; Constraints</h2>
+
+<h3 id="compute-constraint-flag">Compute Constraint Flag</h3>
+<p><strong>Triggered if Layer 6 &lt; 10</strong></p>
+
+<p>If compute sovereignty is insufficient, Platinum certification is capped unless credible federated arrangements exist.</p>
+
+<h3 id="legal-trajectory-flag">Legal Trajectory Flag</h3>
+<p><strong>Triggered if G5 = 0 or 1</strong></p>
+
+<p>Indicates concerns about legal stability and the sustainability of AI-enabling rights.</p>
+
+<h3 id="distribution-dependency-flag">Distribution Dependency Flag</h3>
+<p><strong>Triggered if O5 = 0 or 1</strong></p>
+
+<p>Indicates lack of control over primary model/service distribution channels.</p>
+
+<h2 id="process">Certification Process</h2>
+
+<ol>
+  <li><strong>Baseline Assessment</strong>: Verify all baseline prerequisites are met across each layer</li>
+  <li><strong>Point Evaluation</strong>: Assess each credit criterion and award points based on demonstrated capacity</li>
+  <li><strong>Flag Review</strong>: Identify and document any structural constraints or flags</li>
+  <li><strong>Certification Level</strong>: Determine certification level based on total points and constraints</li>
+  <li><strong>Public Review</strong>: Publish assessment for public comment and peer review</li>
+  <li><strong>Final Certification</strong>: Issue certification with detailed justification</li>
+</ol>
+
+<hr />
+
+<p><strong>Total Possible Points: 175</strong></p>
+
+<p><em>This specification is maintained by the Public AI Regular Council. For questions or suggestions, please contact <a href="mailto:info@publicai.network">info@publicai.network</a>.</em></p>
+
+<p><em>Acknowledgements: Jan Hajic’s presentation to OSFM.</em></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><link id="fa-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+
+<footer class="site-footer h-card">
+  <data class="u-url" value="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <ul class="contact-list">
+          <li class="p-name">Public AI Network</li>
+          <li><a class="u-email" href="mailto:info@publicai.network">info@publicai.network</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>A coalition to build public AI</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list">
+  <li>
+    <a href="http://localhost:4000/feed.xml" target="_blank" title="Subscribe to syndication feed">
+      <svg class="svg-icon grey" viewbox="0 0 16 16">
+        <path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194
+          11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.99 2.194-2.2 2.194C.98 16 0 15.017 0
+          13.806c0-1.21.983-2.195 2.194-2.195zM10.606
+          16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"
+        />
+      </svg>
+    </a>
+  </li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>
