@@ -10,10 +10,11 @@ body {
 
 .site-title{ 
     font-size: 0px;
-    background: url("/assets/logo-old.png");
-    background-size: 100%;
+    background: url("/assets/public%20AI%20network%20logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     display: block;
-    width: 150px;
+    width: 280px;
     height: 40px;
     position: relative;
     top: 10px;
