@@ -1554,7 +1554,7 @@ The **Public AI Network** brings together a diverse coalition of researchers, pr
 </div>
 
 *Other facilitators and speakers at past Public AI events include:* 
-* [*AI in the Agencies*](https://www.aspendigital.org/event/building-a-more-public-ai-ecosystem/) panel, Library of Congress, 2024-08-11: Travis Hoppe (AI R&D, White House OSTP), Victoria Houed (AI Policy, Commerce; now at POPVOX), Zach  Whitman (Chief AI Officer, GSA). Caroyln Dee (NY State AI policy) gave a presentation about the state of Empire AI.
+* [*AI in the Agencies*](https://www.aspendigital.org/event/building-a-more-public-ai-ecosystem/) panel, Library of Congress, 2024-08-11: Travis Hoppe (AI R&D, White House OSTP), Victoria Houed (AI Policy, Commerce; now at POPVOX), Zach  Whitman (Chief AI Officer, GSA). Carolyn Dee (NY State AI policy) gave a presentation about the state of Empire AI.
 * [**Public AI Congress**](https://www.ai-inthecity.ens.psl.eu/en/programme/67892dde5474c438e5a4c5b0), Paris, 2025-02-11: Adriana Groh, [Sovereign Tech Agency](https://www.sovereign.tech/) (Germany); Alexander Ilic, ETH AI Center (Switzerland); Marta Villegas, BSC (Spain); Petri Myllymäki, Ellis Institute (Finland) 
 * [**AI Action II**](https://docs.google.com/document/d/1IyP2jGob6Zxp1V7jjN1Ax--r45FHGYBgDhK31eoMNVU/edit?tab=t.0), Fey, 2025-02-12/13: Brewster Kahle (Internet Archive), Peter Wang (Anaconda), Primavera De Filippi (Alien), Pedro Ortiz Suarez (Common Crawl), Vincent Ginis (VUB)
 
