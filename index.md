@@ -63,7 +63,6 @@ table th { text-align: center; }
 </style>
 
 ### Upcoming events
-Upcoming events are being planned in Zurich, Los Angeles, and New Delhi.
 
 | Date | Event | Location |
 |------|-------|----------|
