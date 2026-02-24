@@ -63,17 +63,19 @@ table th { text-align: center; }
 </style>
 
 ### Upcoming events
-Upcoming events are being planned in Zurich and Los Angeles.
+Upcoming events are being planned in Zurich, Los Angeles, and New Delhi.
 
 | Date | Event | Location |
 |------|-------|----------|
-| Sep 9, 2025 | the first [Public AI quarterly call](https://lu.ma/g9fafiq0){:target="_blank" rel="noopener"} | &emsp; *Online* |
-| Sep-Oct, 2025 | [Public AI Inference Utility](https://publicai.co/) makes [Apertus](https://ethz.ch/en/news-and-events/eth-news/news/2025/09/press-release-apertus-a-fully-open-transparent-multilingual-language-model.html) accessible during [Swiss AI Weeks](https://swiss-ai-weeks.ch/). |  &emsp; *Online* |
+| Feb 27, 2026 | [Public AI Switzerland Founding Event](https://luma.com/3fwdxk84){:target="_blank" rel="noopener"} | Zürich, Switzerland |
 
 ### Past events
 
 | Date | Event | Location |
 |------|-------|----------|
+| Feb 21 2026 | [Karaoke Night](https://luma.com/21cshso9){:target="_blank" rel="noopener"} during the India AI Impact Summit | New Delhi, India |
+| Feb 17–21, 2026 | [AI Commons House](https://commonkhoj.org/){:target="_blank" rel="noopener"} at Khoj Studios during the [India AI Impact Summit](https://impact.indiaai.gov.in/){:target="_blank" rel="noopener"} week | New Delhi, India |
+| Sep 9, 2025 | the first [Public AI quarterly call](https://lu.ma/g9fafiq0){:target="_blank" rel="noopener"} | &emsp; *Online* |
 | Jul 31, 2025 | Public AI: Policy, Community, & the Future of National Labs. [TPC 2025](https://tpc25.org){:target="_blank" rel="noopener"} | San Jose, CA |
 | Jul 16, 2025 | [Oh Canada! A Public AI Happy Hour](https://lu.ma/7rjoaxts){:target="_blank" rel="noopener"} at ICML 2025 | Vancouver, Canada |
 | Apr 26, 2025 | [Public AI Dinner & Salon](https://lu.ma/6zeopix2){:target="_blank" rel="noopener"} at ICLR 2025 | Singapore |
