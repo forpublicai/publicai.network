@@ -15,6 +15,7 @@ plugins:
 
 minima:
   nav_pages:
+  - cursor-demo.md
   - libraries.md
   - seminar.md
   - contributors.md
