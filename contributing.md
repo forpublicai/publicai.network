@@ -7,7 +7,7 @@ description: Everyone is welcome to contribute to publicai.network - no permissi
 
 ## Welcome Contributors! 
 
-**You don't need to ask permission to contribute to this site.** Anyone can open a pull request to make changes, improvements, or additions to publicai.network. We actively encourage it!
+**You don't need to ask permission to contribute to this site.** Anyone can open a **pull request** (a proposed change) to make improvements or additions to publicai.network. We actively encourage it!
 
 Whether you want to:
 - Fix a typo
@@ -18,6 +18,23 @@ Whether you want to:
 - Suggest design improvements
 
 **Just open a PR!** We're excited to see your contributions.
+
+## New to This? Technical Terms Explained
+
+Don't worry if you're not familiar with the technical terms below. You can contribute in many ways, and we'll help you learn!
+
+**Common Terms:**
+- **PR (Pull Request)**: A proposed change to the website. Think of it like suggesting an edit to a shared document - someone reviews it, and if it looks good, they accept it and your changes go live.
+- **Repository (or "repo")**: The folder containing all the website's files and code, stored on GitHub.
+- **GitHub**: A website where code and projects are stored and shared, making it easy for people to collaborate.
+- **Fork**: Making your own copy of the repository so you can experiment with changes without affecting the original.
+- **Branch**: A separate version of the website where you can make changes. Like working on a draft before publishing.
+- **Commit**: Saving your changes with a description of what you changed. Like saving a document with a note about your edits.
+- **Merge**: Accepting a pull request and adding those changes to the main website.
+- **Markdown**: A simple way to format text (like making something **bold** or creating lists) using plain text. Much easier than HTML!
+- **Jekyll**: The software that turns our simple text files into a full website.
+
+**Don't let the terminology intimidate you!** You can contribute by simply describing what you want changed, and our Slack bot or community members will handle the technical parts.
 
 ## Why Contribute?
 
@@ -33,19 +50,19 @@ Your contributions help:
 
 ### 1. **Direct GitHub Contribution**
 
-The traditional way - fork, edit, and submit a PR:
+The traditional way - make your own copy, edit it, and propose your changes:
 
-1. Visit the [publicai.network repository](https://github.com/forpublicai/publicai.network)
-2. Fork the repository
-3. Make your changes
-4. Submit a pull request
+1. Visit the [publicai.network repository](https://github.com/forpublicai/publicai.network) (the folder with all our website files)
+2. Click "Fork" to make your own copy
+3. Make your changes to the files
+4. Submit a pull request (your proposed changes)
 5. Wait for review and feedback
 
-**Tech Details:**
-- This is a Jekyll site built with Markdown
+**Tech Details** (for those interested):
+- This is a Jekyll site (static site generator) built with Markdown (simple text formatting)
 - Pages are `.md` files in the root or subdirectories
-- Navigation is configured in `_config.yml`
-- Styling is in `assets/css/` and `_sass/`
+- Navigation menu is configured in `_config.yml`
+- Styling/design is in `assets/css/` and `_sass/`
 
 ### 2. **Use the Slack Bot** (Recommended!)
 
@@ -96,49 +113,49 @@ Someone from the community will help make it happen.
 
 ### Review Process
 
-All contributions go through a lightweight review process:
+All contributions go through a quick review process:
 
-1. **Automated Checks**: Basic tests run automatically
-2. **Community Review**: Someone with write access will review your PR
+1. **Automated Checks**: Basic tests run automatically (making sure nothing breaks)
+2. **Community Review**: Someone with edit access will review your proposed changes
 3. **Feedback & Discussion**: We may suggest improvements or ask questions
-4. **Merge**: Once approved, your changes go live!
+4. **Merge**: Once approved, your changes are added to the live website!
 
-**Review time**: Most PRs are reviewed within 1-3 days.
+**Review time**: Most contributions are reviewed within 1-3 days.
 
-### Getting Write Access
+### Getting Edit Access
 
-Regular contributors can get write access to the repository, which allows you to:
-- Review and merge pull requests
-- Make direct commits to branches
-- Help maintain the site
+Regular contributors can get direct edit access to the website, which allows you to:
+- Review and approve other people's proposed changes
+- Make changes directly without waiting for approval
+- Help maintain and improve the site
 
-**To get write access:**
-- Contribute a few successful PRs to show you understand the project
+**To get edit access:**
+- Contribute a few successful changes to show you understand the project
 - Let us know you're interested in becoming a regular maintainer
 - We'll add you to the team!
 
 It's an informal process - we trust our community.
 
-## Quick Merges via Slack
+## Quick Approvals via Slack
 
 **Have an urgent fix or update?**
 
-If you need something merged quickly, you can ping one of our regular contributors with write access in Slack:
+If you need something approved and published quickly, you can ping one of our regular contributors with edit access in Slack:
 
-**People with write access:**
+**People who can approve changes:**
 - Joshua Tan (`@Joshua Tan`)
 - Sam Klein (`@Sam Klein`)
 - Nick Garcia (`@Nick Garcia`)
 - B Cavello (`@B Cavello`)
 - Brandon Jackson (`@Brandon Jackson`)
 
-Just mention them along with your PR link or change request, and they can help expedite the merge.
+Just mention them along with your proposed changes link or change request, and they can help get it live faster.
 
 **Example:**
 ```
-@Joshua Tan Could you review and merge this PR? 
+@Joshua Tan Could you review and approve this change? 
 It updates the seminar date that was incorrect.
-[PR link]
+[link to your proposed changes]
 ```
 
 ## Types of Contributions We Love
@@ -195,35 +212,38 @@ To keep things smooth:
 
 ### Adding Yourself to Contributors
 
-1. Edit `contributors.md`
+1. Edit the `contributors.md` file
 2. Add a new card in the appropriate alphabetical section
-3. Follow the existing card format
-4. Submit a PR with the title: "Add [Your Name] to contributors"
+3. Follow the existing card format (copy and modify an existing one)
+4. Submit your proposed change with the title: "Add [Your Name] to contributors"
 
 ### Adding an Event
 
-1. Edit `index.md` (for the homepage events table)
+1. Edit `index.md` (the homepage file)
 2. Add a row to the "Upcoming events" table
 3. Include date, event name, and location
-4. Submit a PR with title: "Add [Event Name] to events"
+4. Submit your proposed change with title: "Add [Event Name] to events"
 
 ### Fixing a Typo
 
-1. Edit the file with the typo
+1. Find and edit the file with the typo
 2. Make the correction
-3. Submit a PR with title: "Fix typo on [page name]"
+3. Submit your proposed change with title: "Fix typo on [page name]"
 
-**Pro tip**: For simple fixes, you can even edit directly on GitHub's web interface!
+**Pro tip**: For simple fixes, you can edit directly on GitHub's web interface without downloading anything!
 
 ## Need Help?
 
-**Never contributed to an open source project before?**
+**Never contributed to a website or open source project before?**
 
-That's okay! We're happy to help you get started.
+That's completely okay! We're happy to help you get started. Many of our contributors were beginners when they started.
 
-- **GitHub Guides**: [How to submit a pull request](https://docs.github.com/en/pull-requests)
-- **Slack**: Ask questions in `#general` or `#website`
+**Get help:**
+- **Slack**: Ask questions in `#general` or `#website` - our community is friendly!
 - **Email**: [hello@publicai.network](mailto:hello@publicai.network)
+- **GitHub Guides**: [How to propose a change](https://docs.github.com/en/pull-requests) (if you want to learn the technical details)
+
+**Not technical? No problem!** Just describe what you want changed in Slack or via email, and someone will help make it happen. You don't need to understand code to contribute ideas and content.
 
 Don't be shy - we were all beginners once, and we want to make this as accessible as possible.
 
@@ -312,8 +332,8 @@ All contributors are:
 
 <div style="text-align: center; margin: 50px 0 20px 0; padding: 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; color: white;">
   <h2 style="color: white; border: none; margin: 0; padding: 0;">Ready to Contribute?</h2>
-  <p style="margin: 15px 0; font-size: 18px;">Open a PR today - no permission needed!</p>
+  <p style="margin: 15px 0; font-size: 18px;">Propose a change today - no permission needed!</p>
   <a href="https://github.com/forpublicai/publicai.network" style="display: inline-block; padding: 12px 30px; background: white; color: #667eea; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 10px;">View on GitHub →</a>
 </div>
 
-*This page was created to encourage open collaboration and make contributing as easy as possible. Have suggestions for improving this guide? Open a PR!*
+*This page was created to encourage open collaboration and make contributing as easy as possible. Have suggestions for improving this guide? Propose a change!*
