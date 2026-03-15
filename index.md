@@ -63,15 +63,13 @@ table th { text-align: center; }
 </style>
 
 ### Upcoming events
-
-| Date | Event | Location |
-|------|-------|----------|
-| Feb 27, 2026 | [Public AI Switzerland Founding Event](https://luma.com/3fwdxk84){:target="_blank" rel="noopener"} | Zürich, Switzerland |
+Watch this space for upcoming events as they are scheduled.
 
 ### Past events
 
 | Date | Event | Location |
 |------|-------|----------|
+| Feb 27, 2026 | [Public AI Switzerland Founding Event](https://luma.com/3fwdxk84){:target="_blank" rel="noopener"} | Zürich, Switzerland |
 | Feb 21 2026 | [Karaoke Night](https://luma.com/21cshso9){:target="_blank" rel="noopener"} during the India AI Impact Summit | New Delhi, India |
 | Feb 17–21, 2026 | [AI Commons House](https://commonkhoj.org/){:target="_blank" rel="noopener"} at Khoj Studios during the [India AI Impact Summit](https://impact.indiaai.gov.in/){:target="_blank" rel="noopener"} week | New Delhi, India |
 | Sep 9, 2025 | the first [Public AI quarterly call](https://lu.ma/g9fafiq0){:target="_blank" rel="noopener"} | &emsp; *Online* |
