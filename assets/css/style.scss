@@ -360,3 +360,12 @@ h2 {
     font-size: 24px;
     font-style: none;
 }
+
+/* Minima sets `table { display: block }` below 800px for overflow scrolling, but that
+   breaks the table layout model (cells stack instead of columns). Restore real tables. */
+@include media-query($on-laptop) {
+    table {
+        display: table;
+        width: 100%;
+    }
+}
