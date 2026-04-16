@@ -13,24 +13,85 @@
     {%- endfor %}
   </div>
 
-  <div class="nav-repo-funnel" aria-label="forpublicai repositories">
-    <p class="nav-repo-heading">
-      Explore {{ include.repos | size }} non-forked repositories in <a href="https://github.com/forpublicai" target="_blank" rel="noopener noreferrer">forpublicai</a>
-    </p>
-    <div class="nav-repo-list">
-      {%- for repo in include.repos -%}
-        {%- assign repo_context = repo.description -%}
-        {%- if repo_context == nil or repo_context == "" -%}
-          {%- assign repo_context = repo.homepage | replace: "https://", "" | replace: "http://", "" -%}
-        {%- endif -%}
-        {%- if repo_context == nil or repo_context == "" -%}
-          {%- assign repo_context = "GitHub repository" -%}
-        {%- endif -%}
-        <a class="repo-item" href="{{ repo.url }}" target="_blank" rel="noopener noreferrer">
-          <span class="repo-item-name">{{ repo.name }}</span>
-          <span class="repo-item-context">{{ repo_context }}</span>
-        </a>
-      {%- endfor -%}
+  {%- assign repos_by_activity = include.repos | sort: "pushed_at" | reverse -%}
+  {%- assign now_unix = "now" | date: "%s" | plus: 0 -%}
+  <details class="repo-details" aria-label="forpublicai repositories">
+    <summary class="repo-summary">
+      <span class="repo-summary-icon" aria-hidden="true">☰</span>
+      <span class="repo-summary-text">Explore repos across forpublicai.</span>
+    </summary>
+    <div class="nav-repo-funnel">
+      <div class="repo-group">
+        <p class="repo-group-title">Recently active</p>
+        <div class="nav-repo-list">
+          {%- for repo in repos_by_activity -%}
+            {%- assign last_activity = repo.pushed_at | default: repo.updated_at -%}
+            {%- assign repo_unix = last_activity | date: "%s" | plus: 0 -%}
+            {%- assign age_days = now_unix | minus: repo_unix | divided_by: 86400 -%}
+            {%- if age_days <= 14 -%}
+              {%- assign repo_context = repo.description -%}
+              {%- if repo_context == nil or repo_context == "" -%}
+                {%- assign repo_context = repo.homepage | replace: "https://", "" | replace: "http://", "" -%}
+              {%- endif -%}
+              {%- if repo_context == nil or repo_context == "" -%}
+                {%- assign repo_context = "GitHub repository" -%}
+              {%- endif -%}
+              <a class="repo-item" href="{{ repo.url }}" target="_blank" rel="noopener noreferrer">
+                <span class="repo-item-name"><span class="activity-icon activity-recent" aria-hidden="true"></span>{{ repo.name }}</span>
+                <span class="repo-item-context">{{ repo_context }}</span>
+              </a>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <div class="repo-group">
+        <p class="repo-group-title">Active</p>
+        <div class="nav-repo-list">
+          {%- for repo in repos_by_activity -%}
+            {%- assign last_activity = repo.pushed_at | default: repo.updated_at -%}
+            {%- assign repo_unix = last_activity | date: "%s" | plus: 0 -%}
+            {%- assign age_days = now_unix | minus: repo_unix | divided_by: 86400 -%}
+            {%- if age_days > 14 and age_days <= 90 -%}
+              {%- assign repo_context = repo.description -%}
+              {%- if repo_context == nil or repo_context == "" -%}
+                {%- assign repo_context = repo.homepage | replace: "https://", "" | replace: "http://", "" -%}
+              {%- endif -%}
+              {%- if repo_context == nil or repo_context == "" -%}
+                {%- assign repo_context = "GitHub repository" -%}
+              {%- endif -%}
+              <a class="repo-item" href="{{ repo.url }}" target="_blank" rel="noopener noreferrer">
+                <span class="repo-item-name"><span class="activity-icon activity-active" aria-hidden="true"></span>{{ repo.name }}</span>
+                <span class="repo-item-context">{{ repo_context }}</span>
+              </a>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <div class="repo-group">
+        <p class="repo-group-title">Quiet</p>
+        <div class="nav-repo-list">
+          {%- for repo in repos_by_activity -%}
+            {%- assign last_activity = repo.pushed_at | default: repo.updated_at -%}
+            {%- assign repo_unix = last_activity | date: "%s" | plus: 0 -%}
+            {%- assign age_days = now_unix | minus: repo_unix | divided_by: 86400 -%}
+            {%- if age_days > 90 -%}
+              {%- assign repo_context = repo.description -%}
+              {%- if repo_context == nil or repo_context == "" -%}
+                {%- assign repo_context = repo.homepage | replace: "https://", "" | replace: "http://", "" -%}
+              {%- endif -%}
+              {%- if repo_context == nil or repo_context == "" -%}
+                {%- assign repo_context = "GitHub repository" -%}
+              {%- endif -%}
+              <a class="repo-item" href="{{ repo.url }}" target="_blank" rel="noopener noreferrer">
+                <span class="repo-item-name"><span class="activity-icon activity-quiet" aria-hidden="true"></span>{{ repo.name }}</span>
+                <span class="repo-item-context">{{ repo_context }}</span>
+              </a>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
     </div>
-  </div>
+  </details>
 </div>

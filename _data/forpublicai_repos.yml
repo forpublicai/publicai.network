@@ -2,66 +2,93 @@
   url: https://github.com/forpublicai/manymodels
   description: The many models research project
   homepage: https://manymodels.org/
+  pushed_at: 2025-08-01T22:14:24Z
+  updated_at: 2025-11-07T11:18:28Z
 
 - name: publicai.network
   url: https://github.com/forpublicai/publicai.network
   description: The website of the Public AI Network
   homepage: https://publicai.network/
+  pushed_at: 2026-04-16T15:42:20Z
+  updated_at: 2026-04-16T15:42:25Z
 
 - name: publicai.us
   url: https://github.com/forpublicai/publicai.us
   description: The website for publicai.us
   homepage: http://publicai.us/
+  pushed_at: 2026-03-10T22:05:10Z
+  updated_at: 2026-03-10T22:05:15Z
 
 - name: publicai.co
   url: https://github.com/forpublicai/publicai.co
   description: The website of the Public AI Inference Utility
   homepage: https://publicai.co
+  pushed_at: 2026-04-12T20:28:46Z
+  updated_at: 2026-04-12T20:28:50Z
 
 - name: chat.publicai.co
   url: https://github.com/forpublicai/chat.publicai.co
   description: The main chat app for the Public AI Inference Utility, based on OpenWebUI
   homepage: https://chat.publicai.co
+  pushed_at: 2026-04-10T14:48:56Z
+  updated_at: 2026-04-14T17:50:30Z
 
 - name: platform.publicai.co
   url: https://github.com/forpublicai/platform.publicai.co
   description: The API gateway for the Public AI Inference Utility, based on Zuplo
   homepage: https://platform.publicai.co
+  pushed_at: 2026-04-10T14:06:00Z
+  updated_at: 2026-04-10T14:05:59Z
 
 - name: publicai-flywheel-experiments
   url: https://github.com/forpublicai/publicai-flywheel-experiments
   description: A repo for writing and code related to public AI flywheel experiments
-
-- name: .github
-  url: https://github.com/forpublicai/.github
+  pushed_at: 2025-09-01T16:36:58Z
+  updated_at: 2025-09-01T16:37:01Z
 
 - name: publicai-mcp-server
   url: https://github.com/forpublicai/publicai-mcp-server
+  pushed_at: 2025-12-30T07:55:41Z
+  updated_at: 2026-02-23T08:18:12Z
 
 - name: libraries-kiosk
   url: https://github.com/forpublicai/libraries-kiosk
   description: The dashboard for the libraries project
   homepage: https://forpublicai.github.io/libraries-kiosk/
+  pushed_at: 2026-03-11T18:35:36Z
+  updated_at: 2026-04-15T06:04:56Z
 
 - name: publicai.ch
   url: https://github.com/forpublicai/publicai.ch
   description: Public AI Switzerland
   homepage: http://publicai.ch/
+  pushed_at: 2026-03-07T11:55:12Z
+  updated_at: 2026-04-10T13:58:14Z
 
 - name: personalize
   url: https://github.com/forpublicai/personalize
+  pushed_at: 2025-12-30T15:35:18Z
+  updated_at: 2025-12-30T15:35:22Z
 
 - name: ADHDAI
   url: https://github.com/forpublicai/ADHDAI
   homepage: https://forpublicai.github.io/ADHDAI/
+  pushed_at: 2026-02-12T15:02:58Z
+  updated_at: 2026-02-10T21:20:09Z
 
 - name: safemolt
   url: https://github.com/forpublicai/safemolt
   homepage: https://safemolt.com
+  pushed_at: 2026-04-14T18:35:16Z
+  updated_at: 2026-04-14T18:35:20Z
 
 - name: publicai_survey
   url: https://github.com/forpublicai/publicai_survey
+  pushed_at: 2026-02-26T18:19:35Z
+  updated_at: 2026-02-26T18:19:38Z
 
 - name: publicai.uk
   url: https://github.com/forpublicai/publicai.uk
   homepage: https://publicai-uk.vercel.app
+  pushed_at: 2026-03-27T07:33:57Z
+  updated_at: 2026-03-27T07:34:00Z
