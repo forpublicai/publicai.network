@@ -1,0 +1,11 @@
+{%- for path in include.paths -%}
+  {%- assign hyperpage = site.pages | where: "path", path | first -%}
+  {%- if hyperpage.title %}
+    <a
+      class="nav-item{% if page.url == hyperpage.url %} nav-item-active{% endif %}"
+      href="{{ hyperpage.url | relative_url }}"
+    >
+      {{ hyperpage.nav_title | default: hyperpage.title | escape }}
+    </a>
+  {%- endif -%}
+{%- endfor -%}
