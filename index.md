@@ -66,12 +66,12 @@ table th { text-align: center; }
 
 | Date | Event | Location |
 |------|-------|----------|
-| Feb 27, 2026 | [Public AI Switzerland Founding Event](https://luma.com/3fwdxk84){:target="_blank" rel="noopener"} | Zürich, Switzerland |
 
 ### Past events
 
 | Date | Event | Location |
 |------|-------|----------|
+| Feb 27, 2026 | [Public AI Switzerland Founding Event](https://luma.com/3fwdxk84){:target="_blank" rel="noopener"} | Zürich, Switzerland |
 | Feb 21 2026 | [Karaoke Night](https://luma.com/21cshso9){:target="_blank" rel="noopener"} during the India AI Impact Summit | New Delhi, India |
 | Feb 17–21, 2026 | [AI Commons House](https://commonkhoj.org/){:target="_blank" rel="noopener"} at Khoj Studios during the [India AI Impact Summit](https://impact.indiaai.gov.in/){:target="_blank" rel="noopener"} week | New Delhi, India |
 | Sep 9, 2025 | the first [Public AI quarterly call](https://lu.ma/g9fafiq0){:target="_blank" rel="noopener"} | &emsp; *Online* |
@@ -97,7 +97,6 @@ table th { text-align: center; }
 | Sep 21, 2023 | [Talk at AI: Ethical Paths Forward](https://archive.org/details/dweb-meetup-september-2023-ai-ethical-paths-forward){:target="_blank" rel="noopener"} | Internet Archive |
 | Sep 14, 2023 | [Public AI Seminar](https://www.eventbrite.com/e/public-ai-seminar-tickets-716665073527){:target="_blank" rel="noopener"} | NYU Engelberg Ctr |
 | Jul 3-10, 2023 | [AI Palace 2023](https://www.aipalace.org/){:target="_blank" rel="noopener"} | Bückeburg Palace |
-
 ## Acknowledgements
 
 A [wide range of people](https://docs.google.com/document/d/1ykjsXpTRZu4Obu9miJlkR9vIqWSLey5m0G4Utlm6HBg/edit#heading=h.v36dq6wln0nk){:target="_blank" rel="noopener"} have contributed ideas and time to the movement for public AI. We gratefully acknowledge operational support by [Metagov](https://metagov.org){:target="_blank" rel="noopener"}, [Aspen Digital](https://www.aspendigital.org/){:target="_blank" rel="noopener"}, [Open Future](https://openfuture.eu/){:target="_blank" rel="noopener"}, [Public Knowledge](https://publicknowledge.org){:target="_blank" rel="noopener"}, [Code for Science and Society](https://www.codeforsociety.org/){:target="_blank" rel="noopener"}, [Mozilla](https://mozilla.org){:target="_blank" rel="noopener"}, the [Rockefeller Foundation](https://www.rockefellerfoundation.org/), the [Internet Archive](https://archive.org){:target="_blank" rel="noopener"}, [Chatham House](https://www.chathamhouse.org/){:target="_blank" rel="noopener"}, the [Berkman Klein Center](https://cyber.harvard.edu/), the [Bertelsmann Foundation](https://www.bfna.org/){:target="_blank" rel="noopener"}, the [Patrick J. McGovern Foundation](https://www.mcgovern.org/), and many more organizations.

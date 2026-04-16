@@ -1,0 +1,32 @@
+name: Sync events from Luma
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 9 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync-events:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Sync upcoming and past events
+        env:
+          LUMA_PUBLIC_CALENDAR_URL: https://luma.com/forpublicai
+        run: python3 scripts/sync_events.py
+
+      - name: Auto-commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(events): sync upcoming and past events from Luma"
+          file_pattern: index.md

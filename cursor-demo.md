@@ -226,7 +226,7 @@ Ready to try Cursor yourself?
 
 - [Public AI Network Homepage](/)
 - [Seminar Series](/seminar)
-- [Contributors](/contributors)
+- [Contributing](/contributing/)
 - [Publications](/publications)
 
 ---

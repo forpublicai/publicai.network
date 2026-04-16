@@ -102,7 +102,7 @@ The site promotes **Public AI** as a concept of AI as public infrastructure, sim
 - `_config.yml` - Site configuration
 - `PublicAIwhitepaper.pdf` - Core policy document
 - `seminar.md` - Seminar series information
-- `contributors.md`, `maintainers.md` - Community information
+- `contributing.md` (contributors + onboarding), `maintainers.md` - Community information
 
 ## Integration Test Status
 
