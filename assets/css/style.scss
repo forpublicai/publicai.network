@@ -55,102 +55,14 @@ body {
     gap: 10px;
 }
 
-/* Large screens: site links live in repo bar dropdown (see .nav-primary-items--stacked hidden) */
-.nav-primary-items--stacked {
-    display: none;
-}
-
 .repo-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 14px;
     border-top: 1px solid #e3e3e3;
     padding-top: 10px;
 }
 
 .repo-bar .repo-details {
-    flex: 1;
-    min-width: 0;
     border-top: none;
     padding-top: 0;
-}
-
-.site-menu-details {
-    flex-shrink: 0;
-    position: relative;
-    align-self: flex-start;
-}
-
-.site-menu-summary {
-    list-style: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    cursor: pointer;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    padding: 7px 11px;
-    background: #fafafa;
-    color: #444;
-    font-size: 13px;
-    font-weight: 500;
-    transition: border-color 0.15s ease, background 0.15s ease;
-}
-
-.site-menu-summary::-webkit-details-marker {
-    display: none;
-}
-
-.site-menu-summary:hover,
-.site-menu-summary:focus-visible {
-    border-color: #cfcfcf;
-    background: #f3f3f3;
-}
-
-.site-menu-label {
-    line-height: 1.2;
-}
-
-.site-menu-chevron {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 5px solid #777;
-    margin-top: 1px;
-    opacity: 0.75;
-    transition: transform 0.15s ease;
-}
-
-.site-menu-details[open] .site-menu-summary {
-    border-color: #d0d0d0;
-    background: #fff;
-}
-
-.site-menu-details[open] .site-menu-chevron {
-    transform: rotate(180deg);
-}
-
-.site-menu-pane {
-    display: none;
-}
-
-.site-menu-details[open] .site-menu-pane {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: calc(100% + 6px);
-    min-width: 220px;
-    max-width: min(320px, 92vw);
-    padding: 8px 0;
-    background: #fff;
-    border: 1px solid #e4e4e4;
-    border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    z-index: 60;
 }
 
 .nav-primary-items {
@@ -180,34 +92,6 @@ body {
     font-weight: 600;
 }
 
-.site-nav .nav-primary-items--dropdown {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    gap: 0;
-}
-
-.site-nav .nav-primary-items--dropdown .nav-item {
-    display: block;
-    padding: 9px 14px;
-    border-bottom: 1px solid transparent;
-    border-left: none;
-    font-size: 14px;
-}
-
-.site-nav .nav-primary-items--dropdown .nav-item:hover,
-.site-nav .nav-primary-items--dropdown .nav-item:focus-visible {
-    background: #fff9f9;
-}
-
-.site-nav .nav-primary-items--dropdown .nav-item-active {
-    background: #fff5f5;
-    border-bottom-color: transparent;
-    border-left: 3px solid #ef233c;
-    padding-left: 11px;
-    font-weight: 600;
-}
-
 .repo-details {
     padding-top: 0;
 }
@@ -216,32 +100,36 @@ body {
     list-style: none;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    margin: 0;
     cursor: pointer;
-    border: 1px solid #e4e4e4;
-    border-radius: 6px;
-    padding: 8px 12px;
-    background: #fff;
-    color: #222;
-    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    padding: 0 0 2px;
+    background: transparent;
+    line-height: 1.2;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: inherit;
+    color: #2a2a2a;
+    border-bottom: 2px solid transparent;
 }
 
 .repo-summary::-webkit-details-marker {
     display: none;
 }
 
-.repo-summary-icon {
-    font-size: 16px;
-    line-height: 1;
-    color: #444;
-}
-
 .repo-summary-text {
     line-height: 1.2;
 }
 
+.repo-summary:hover,
+.repo-summary:focus-visible {
+    color: #ef233c;
+}
+
 .repo-details[open] .repo-summary {
-    border-color: #ef233c;
+    color: #ef233c;
+    border-bottom-color: #ef233c;
 }
 
 .nav-repo-funnel {
@@ -382,20 +270,7 @@ body {
         gap: 14px;
     }
 
-    /* Small screens: full stacked link list; hide desktop Site dropdown */
-    .nav-primary-items--stacked {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 4px;
-    }
-
-    .site-menu-details {
-        display: none !important;
-    }
-
     .repo-bar {
-        display: block;
         border-top: none;
         padding-top: 0;
     }

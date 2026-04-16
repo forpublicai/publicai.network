@@ -1,17 +1,14 @@
 <div class="nav-shell">
-  <!-- Mobile / small screens: stacked site links (unchanged order in drawer) -->
-  <div class="nav-items nav-primary-items nav-primary-items--stacked" aria-label="Site pages">
+  <div class="nav-items nav-primary-items" aria-label="Site pages">
     {% include nav-primary-links.html paths = include.paths %}
   </div>
 
-  <!-- Large screens: repo strip + subtle Site menu (right) -->
   {%- assign repos_by_activity = include.repos | sort: "pushed_at" | reverse -%}
   {%- assign now_unix = "now" | date: "%s" | plus: 0 -%}
   <div class="repo-bar">
     <details class="repo-details" aria-label="forpublicai repositories">
       <summary class="repo-summary">
-        <span class="repo-summary-icon" aria-hidden="true">☰</span>
-        <span class="repo-summary-text">Explore repos across forpublicai.</span>
+        <span class="repo-summary-text">Repos</span>
       </summary>
       <div class="nav-repo-funnel">
         <div class="repo-group">
@@ -85,18 +82,6 @@
             {%- endfor -%}
           </div>
         </div>
-      </div>
-    </details>
-
-    <details class="site-menu-details">
-      <summary class="site-menu-summary" aria-label="Site pages menu">
-        <span class="site-menu-label">Site</span>
-        <span class="site-menu-chevron" aria-hidden="true"></span>
-      </summary>
-      <div class="site-menu-pane">
-        <nav class="nav-items nav-primary-items nav-primary-items--dropdown" aria-label="Site pages">
-          {% include nav-primary-links.html paths = include.paths %}
-        </nav>
       </div>
     </details>
   </div>
