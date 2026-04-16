@@ -1,0 +1,67 @@
+- name: manymodels
+  url: https://github.com/forpublicai/manymodels
+  description: The many models research project
+  homepage: https://manymodels.org/
+
+- name: publicai.network
+  url: https://github.com/forpublicai/publicai.network
+  description: The website of the Public AI Network
+  homepage: https://publicai.network/
+
+- name: publicai.us
+  url: https://github.com/forpublicai/publicai.us
+  description: The website for publicai.us
+  homepage: http://publicai.us/
+
+- name: publicai.co
+  url: https://github.com/forpublicai/publicai.co
+  description: The website of the Public AI Inference Utility
+  homepage: https://publicai.co
+
+- name: chat.publicai.co
+  url: https://github.com/forpublicai/chat.publicai.co
+  description: The main chat app for the Public AI Inference Utility, based on OpenWebUI
+  homepage: https://chat.publicai.co
+
+- name: platform.publicai.co
+  url: https://github.com/forpublicai/platform.publicai.co
+  description: The API gateway for the Public AI Inference Utility, based on Zuplo
+  homepage: https://platform.publicai.co
+
+- name: publicai-flywheel-experiments
+  url: https://github.com/forpublicai/publicai-flywheel-experiments
+  description: A repo for writing and code related to public AI flywheel experiments
+
+- name: .github
+  url: https://github.com/forpublicai/.github
+
+- name: publicai-mcp-server
+  url: https://github.com/forpublicai/publicai-mcp-server
+
+- name: libraries-kiosk
+  url: https://github.com/forpublicai/libraries-kiosk
+  description: The dashboard for the libraries project
+  homepage: https://forpublicai.github.io/libraries-kiosk/
+
+- name: publicai.ch
+  url: https://github.com/forpublicai/publicai.ch
+  description: Public AI Switzerland
+  homepage: http://publicai.ch/
+
+- name: personalize
+  url: https://github.com/forpublicai/personalize
+
+- name: ADHDAI
+  url: https://github.com/forpublicai/ADHDAI
+  homepage: https://forpublicai.github.io/ADHDAI/
+
+- name: safemolt
+  url: https://github.com/forpublicai/safemolt
+  homepage: https://safemolt.com
+
+- name: publicai_survey
+  url: https://github.com/forpublicai/publicai_survey
+
+- name: publicai.uk
+  url: https://github.com/forpublicai/publicai.uk
+  homepage: https://publicai-uk.vercel.app

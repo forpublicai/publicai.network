@@ -1,16 +1,36 @@
-<div class="nav-items">
-<!-- {% for path in include.paths %}
-  {% assign my_page = site.pages | where: "path", path | first %}
-  {% if my_page.title %}
-    <a class="page-link" href="{{ my_page.url | relative_url }}">
-      {{ my_page.nav_title | default: my_page.title | escape }}
-    </a>
-  {% endif %}
-{% endfor %} -->
-{%- for path in include.paths -%}
-  {%- assign hyperpage = site.pages | where: "path", path | first -%}
-  {%- if hyperpage.title %}
-  <a class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.nav_title | escape }}</a>
-  {%- endif -%}
-  {%- endfor %}
+<div class="nav-shell">
+  <div class="nav-items nav-primary-items" aria-label="Site pages">
+    {%- for path in include.paths -%}
+      {%- assign hyperpage = site.pages | where: "path", path | first -%}
+      {%- if hyperpage.title %}
+        <a
+          class="nav-item{% if page.url == hyperpage.url %} nav-item-active{% endif %}"
+          href="{{ hyperpage.url | relative_url }}"
+        >
+          {{ hyperpage.nav_title | default: hyperpage.title | escape }}
+        </a>
+      {%- endif -%}
+    {%- endfor %}
+  </div>
+
+  <div class="nav-repo-funnel" aria-label="forpublicai repositories">
+    <p class="nav-repo-heading">
+      Explore {{ include.repos | size }} non-forked repositories in <a href="https://github.com/forpublicai" target="_blank" rel="noopener noreferrer">forpublicai</a>
+    </p>
+    <div class="nav-repo-list">
+      {%- for repo in include.repos -%}
+        {%- assign repo_context = repo.description -%}
+        {%- if repo_context == nil or repo_context == "" -%}
+          {%- assign repo_context = repo.homepage | replace: "https://", "" | replace: "http://", "" -%}
+        {%- endif -%}
+        {%- if repo_context == nil or repo_context == "" -%}
+          {%- assign repo_context = "GitHub repository" -%}
+        {%- endif -%}
+        <a class="repo-item" href="{{ repo.url }}" target="_blank" rel="noopener noreferrer">
+          <span class="repo-item-name">{{ repo.name }}</span>
+          <span class="repo-item-context">{{ repo_context }}</span>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
 </div>
