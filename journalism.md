@@ -20,6 +20,8 @@ The program will develop:
 - Community-based AI infrastructure for investigative journalism
 - Tools for fact-checking, research, and content analysis
 - Resources aligned with journalistic ethics and standards
+- **Query pattern analytics** from the Inference Utility for journalists, modeled after Google Trends, to surface emerging stories and public interest
+- **Privacy-aware tips system** leveraging the Inference Utility to help journalists discover newsworthy patterns and leads in a consentful, privacy-preserving way
 
 ## Core Research Questions
 
@@ -29,16 +31,18 @@ Our initiative investigates:
 - What infrastructure is needed for sovereign AI tools in journalism?
 - How can newsrooms share resources and capabilities through collaborative platforms?
 
-## Key Partners and Contributors
+## People of Interest
 
-We are collaborating with leading figures and organizations in journalism and technology:
+We are engaging with leading researchers, practitioners, and organizations working at the intersection of AI and journalism:
 
-**Partner Organizations:**
-- **Frontier Collective** + **Minnesota Public Radio** — Aimee Rinehart
-- **Center for Journalism and Liberty** — Courtney Radsch
-- **NYU** — Hilke Schellman
-- **Emily Tseng** — Research and development
-- **Jake Hartnell** — Technical infrastructure
+- **Aimee Rinehart** — Founder, Frontier Collective; previously Senior Product Manager of AI Strategy at The Associated Press; lead author of "Ownership, Not Just Happy Talk: Co-Designing a Participatory Large Language Model for Journalism"
+- **Courtney Radsch** — Center for Journalism and Liberty; co-author of research on market concentration in cloud services and its impact on investigative journalism
+- **Hilke Schellman** — NYU
+- **Emily Tseng** — Co-author of research on participatory LLMs for journalism
+- **Jake Hartnell** — Technical infrastructure and AI systems
+- **Shanthi Bolla** — Senior Program Manager, Aspen Digital; contributor to "Ten Big Questions on AI and the News"
+- **Nick Diakopoulos** — Professor of Communication Studies and Computer Science, Northwestern University; Director of Computational Journalism Lab; author of "Automating the News: How Algorithms are Rewriting the Media"
+- **Harini Suresh** — Assistant Professor of Computer Science, Brown University; leads Data in Society Collective (DISCO Lab); co-author of research on participatory LLMs for journalism
 
 ## Our Approach
 
@@ -126,10 +130,28 @@ It is **open, accountable, and sustainably maintained**, providing meaningful ac
 - [Public AI Network](https://publicai.network/)
 - More to be announced
 
-## Learn More
+## Relevant Research and Resources
 
-- 📄 [Public AI White Paper](https://publicai.network/whitepaper)
-- 📚 Research on journalism cloud infrastructure and investigative journalism
-- 📰 Aimee Rinehart's research on LLMs for journalism
-- 🔬 Academic work on AI ethics in journalism
-- 🌐 Journalism Cloud Alliance resources
+### Key Papers and Reports
+
+- **"Ownership, Not Just Happy Talk": Co-Designing a Participatory Large Language Model for Journalism** — Aimee Rinehart, Emily Tseng, et al. (2025). Explores participatory approaches to building journalist-controlled LLMs. [arXiv](https://arxiv.org/abs/2501.17299)
+
+- **"Market Concentration in Cloud Services and its Impact on Investigative Journalism"** — Courtney C. Radsch and Karina Montoya (2024). Documents how hyperscaler dominance affects news organizations. [SSRN](https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4766427_code5599145.pdf)
+
+- **"Automating the News: How Algorithms are Rewriting the Media"** — Nicholas Diakopoulos (2019). Harvard University Press. Examines the role of algorithms in media production.
+
+- **Aspen Digital AI & News Initiative** — Reports and monthly newsletter on AI in newsrooms, including "Ten Big Questions on AI and the News." [Aspen Digital](https://www.aspendigital.org/project/ai-news/)
+
+### Organizations and Resources
+
+- **Frontier Collective** — Building journalism-specific small language models through coalition of Minnesota newsrooms and universities. [frontiercollective.io](https://frontiercollective-io.pages.dev/)
+
+- **Journalism Cloud Alliance** — Non-profit initiative by GFMD and OCCRP to build shared, secure cloud infrastructure for investigative journalism. [GFMD](https://gfmd.info/cloud-alliance/)
+
+- **Computational Journalism Lab (Northwestern)** — Research on AI in news production, distribution, and consumption; Generative AI in the Newsroom (GAIN) Initiative. [nickdiakopoulos.com](https://www.nickdiakopoulos.com/)
+
+- **DISCO Lab (Brown University)** — Data in Society Collective examining participatory AI and sociotechnical evaluation. [discolab.cs.brown.edu](https://discolab.cs.brown.edu/)
+
+- **Center for Journalism and Liberty** — Research on journalism infrastructure, digital sovereignty, and media freedom. [journalismliberty.org](https://www.journalismliberty.org/)
+
+- **Public AI White Paper** — Framework for building public AI infrastructure. [publicai.network/whitepaper](https://publicai.network/whitepaper)
