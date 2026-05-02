@@ -11,7 +11,7 @@ The Public AI Network, in partnership with the **Frontier Collective**, **Minnes
 
 ## The Journalism AI Initiative
 
-![Journalism AI team collaboration](assets/journalism/team-photo.jpg)
+![Journalism AI team collaboration](assets/journalism/team-photo.png)
 
 We are building a journalism-focused AI ecosystem that prioritizes accuracy, transparency, and journalistic integrity. This initiative explores whether specialized language models can perform better than commercial models for journalism-specific tasks.
 
