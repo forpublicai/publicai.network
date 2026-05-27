@@ -1,5 +1,5 @@
 ---
-title: Public AI Founding Infrastructure Engineer
+title: Founding Infrastructure Engineer
 host: Current AI
 category: funded
 status: open

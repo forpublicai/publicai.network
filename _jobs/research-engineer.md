@@ -1,5 +1,5 @@
 ---
-title: Public AI Research Engineer
+title: Research Engineer
 host: Current AI
 category: funded
 status: open

@@ -1,5 +1,5 @@
 ---
-title: Public AI Open Source Engineer
+title: Open Source Engineer
 host: 
 category: funded
 status: open
