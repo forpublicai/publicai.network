@@ -20,8 +20,21 @@ minima:
   - contributing.md
   - publications.md
   - news.md
+  - jobs/index.md
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: true
+
+collections:
+  jobs:
+    output: true
+    permalink: /jobs/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: jobs
+    values:
+      layout: page
 
 google_analytics: G-8CM1DYG2FB
 
