@@ -1,6 +1,6 @@
 ---
 title: Public AI Open Source Engineer
-host: Current AI
+host: 
 category: funded
 status: open
 location: Fully remote, needs to be able to travel to US or Europe for workshops
@@ -11,16 +11,12 @@ date_posted: 2026-05-27
 summary: Connect open-source and open-weight components across the stack, including compatibility PRs, reference demos, and integration work reporting to the CTO.
 ---
 
-This opportunity is funded by and offered in collaboration with [Current AI](https://currentai.org), a Paris-based nonprofit.
-
 **Location:** Fully remote, with a preference for the US, Canada, or Europe  
 **Start date:** ASAP
 
-Public AI is building a full-stack open-source competitor to ChatGPT and Claude, governed as public infrastructure. Think water, electricity, public libraries, the BBC. We already serve Apertus (Switzerland) and SEA-LION (Singapore) to users around the world at [chat.publicai.co](https://chat.publicai.co) and [platform.publicai.co](https://platform.publicai.co), and we're scaling toward national-scale inference with partners including CSCS, AI Singapore, AI Sweden, and Barcelona Supercomputing Center.
+Public AI is building a full-stack open-source competitor to ChatGPT and Claude, governed as public infrastructure. The stack we're building isn't one codebase. It's dozens: open-source models from sovereign labs, open-source inference servers, frontends, evaluation frameworks, MCP servers, agent tooling. None of these were designed to work together. Our job is to make them compose well enough that a user, a government, or a downstream builder can treat them as a single product.
 
-The stack we're building isn't one codebase. It's dozens: open-weight models from sovereign labs, open-source inference servers, frontends, evaluation frameworks, MCP servers, agent tooling. None of these were designed to work together. Our job is to make them compose well enough that a user, a government, or a downstream builder can treat them as a single product.
-
-That's where you come in. You'll be the engineer whose job is the connective tissue: writing the PRs that make components interoperate, building the demos that prove the stack is real, and filling the gaps that show up when you actually try to compose things. You'll report directly to the CTO.
+As Open Source Engineer, you'll be the person building the connective tissue: writing the PRs that make components interoperate, building the demos that prove the stack is real, and filling the gaps that show up when you actually try to compose things. You'll report directly to the CTO.
 
 ## You will
 
@@ -40,15 +36,15 @@ You'll have wide latitude. We need someone who sees what's broken between two sy
 **Required**
 
 - Real open-source contribution history, especially merged PRs to projects you don't own. Bridging two ecosystems is the strongest signal.
-- Comfort across the modern open-source AI stack — OpenWebUI, vLLM, LiteLLM, Hugging Face tooling, MCP, or similar. You don't need to have shipped all of them. You do need to be the kind of person who can read an unfamiliar codebase on Tuesday and file a useful PR by Friday.
+- Comfort across the modern open-source AI stack, e.g. OpenWebUI, vLLM, LiteLLM, Hugging Face tooling, MCP, or similar. You don't need to have shipped all of them. You do need to be the kind of person who can read an unfamiliar codebase on Tuesday and file a useful PR by Friday.
 - Strong Python and enough TypeScript to be useful at the frontend boundary. Systems literacy to debug across the inference / orchestration / UI layers.
 - A taste for integration work. Some engineers light up building new things. We need someone who lights up making two existing things talk to each other.
-- Writing ability. PR descriptions, issue reports, tutorials, RFCs to partner teams — a lot of this job is writing.
+- Writing ability. PR descriptions, issue reports, tutorials, RFCs to partner teams. A lot of this job is writing.
 - Ability to work mostly autonomously in a small team and travel occasionally for team workshops.
 
 **Most important: intrinsic motivation.**
 
-This is a nonprofit, open-source project building public goods. We need someone who actually cares about that mission and wants to build infrastructure for the public, not for a series B. We're looking for smart, creative, scrappy, intrinsically motivated, and moderately rebellious people who will challenge themselves, challenge us, and push for better. If you need a manager to tell you what to ship next, this isn't the right role.
+This is a nonprofit, open-source project building public goods. We need someone who actually cares about that mission and wants to build infrastructure for the public, not for a series B. We're looking for smart, creative, scrappy, and moderately rebellious people who will challenge themselves, challenge us, and push for better. If you need a manager to tell you what to ship next, this isn't the right role.
 
 **Nice to have**
 

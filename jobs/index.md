@@ -5,7 +5,7 @@ nav_title: Jobs
 permalink: /jobs/
 ---
 
-The movement for public AI (often capitalized as just Public AI) is a political movement and open-source community working to foster public AI. As part of our work, we offer some roles which are traditionally funded and others of which are more informal and independent (but no less important), as in a typical open-source community.
+The movement for public AI is a political movement and open-source community working to foster public AI. As part of our work, we offer some roles which are traditionally funded and others of which are more informal and independent but no less important, as is typical in an open-source community. All roles below are rolling. If it is available, it is open.
 
 Also take a look at the [“help wanted” issues on our GitHub](https://github.com/forpublicai/publicai.network/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
 
@@ -78,8 +78,10 @@ Also take a look at the [“help wanted” issues on our GitHub](https://github.
 
 <div class="job-section">
   <ul class="job-list">
-  {% assign open_jobs = site.jobs | where: "status", "open" | sort: "order" | sort: "date_posted" | reverse %}
-  {% for job in open_jobs %}
+  {% assign open_jobs = site.jobs | where: "status", "open" | sort: "order" %}
+  {% assign open_job_groups = open_jobs | group_by: "date_posted" | sort: "name" | reverse %}
+  {% for group in open_job_groups %}
+    {% for job in group.items %}
     <li>
       <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
       <span class="job-meta">
@@ -89,6 +91,7 @@ Also take a look at the [“help wanted” issues on our GitHub](https://github.
       <p class="job-summary">{{ job.summary }}</p>
       {% endif %}
     </li>
+    {% endfor %}
   {% endfor %}
   </ul>
 </div>
@@ -96,8 +99,10 @@ Also take a look at the [“help wanted” issues on our GitHub](https://github.
 <div class="job-section">
   <h2 id="filled-roles">Filled roles</h2>
   <ul class="job-list job-list--filled">
-  {% assign filled_jobs = site.jobs | where: "status", "filled" | sort: "order" | sort: "date_posted" | reverse %}
-  {% for job in filled_jobs %}
+  {% assign filled_jobs = site.jobs | where: "status", "filled" | sort: "order" %}
+  {% assign filled_job_groups = filled_jobs | group_by: "date_posted" | sort: "name" | reverse %}
+  {% for group in filled_job_groups %}
+    {% for job in group.items %}
     <li>
       {% if job.external_url %}
       <a href="{{ job.external_url }}" target="_blank" rel="noopener noreferrer">{{ job.title }}</a>
@@ -112,6 +117,7 @@ Also take a look at the [“help wanted” issues on our GitHub](https://github.
       <p class="job-summary">{{ job.summary }}</p>
       {% endif %}
     </li>
+    {% endfor %}
   {% endfor %}
   </ul>
 </div>
