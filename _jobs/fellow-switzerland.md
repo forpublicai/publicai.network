@@ -1,6 +1,6 @@
 ---
 title: Public AI Fellow, Switzerland
-host: Current AI
+host: 
 category: funded
 status: open
 location: Any major city in Switzerland, preferably Zürich
@@ -10,8 +10,6 @@ order: 3
 date_posted: 2026-05-15
 summary: Advance Public AI Switzerland, the Inference Utility, and Apertus ahead of the Swiss AI Summit in February 2027.
 ---
-
-This opportunity is funded by and offered in collaboration with [Current AI](https://currentai.org), a Paris-based nonprofit.
 
 **Location:** Any major city in Switzerland, preferably Zürich  
 **Commitment:** Deliverable-based, then part-time  
