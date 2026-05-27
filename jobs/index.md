@@ -78,7 +78,7 @@ Also take a look at the [“help wanted” issues on our GitHub](https://github.
 
 <div class="job-section">
   <ul class="job-list">
-  {% assign open_jobs = site.jobs | where: "status", "open" | sort: "order" | sort: "date_posted" %}
+  {% assign open_jobs = site.jobs | where: "status", "open" | sort: "order" | sort: "date_posted" | reverse %}
   {% for job in open_jobs %}
     <li>
       <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
@@ -96,7 +96,7 @@ Also take a look at the [“help wanted” issues on our GitHub](https://github.
 <div class="job-section">
   <h2 id="filled-roles">Filled roles</h2>
   <ul class="job-list job-list--filled">
-  {% assign filled_jobs = site.jobs | where: "status", "filled" | sort: "order" | sort: "date_posted" %}
+  {% assign filled_jobs = site.jobs | where: "status", "filled" | sort: "order" | sort: "date_posted" | reverse %}
   {% for job in filled_jobs %}
     <li>
       {% if job.external_url %}
