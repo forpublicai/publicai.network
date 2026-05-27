@@ -15,13 +15,13 @@ summary: Co-lead the invite-only Public AI Seminar—speaker outreach, member re
 **Commitment:** Part-time, volunteer  
 **Compensation:** Unpaid
 
-Joshua Tan is stepping back from day-to-day organizing of the [Public AI Seminar](https://publicai.network/seminar). We are looking for someone—or a small team with a clear lead—to take on co-organizing for **Season 4 and beyond**.
+We are looking for someone—or a small team with a clear lead—to take on co-organizing for **Season 4 and beyond**.
 
 The seminar is an invite-only Tuesday series (typically 11am–1pm ET) that runs in ~8-week seasons. Over three seasons, speakers have included Yoshua Bengio, Lawrence Lessig, Diane Coyle, Kim Stanley Robinson, Ted Chiang, Bruce Schneier, and many others. Recordings and notes from past seasons are on [publicai.network/seminar](https://publicai.network/seminar).
 
 **Season 4** is already taking shape: *the business of AI*, co-organized with Gideon Lichfield (Harvard), starting mid-summer 2026.
 
-This is one of the best vantage points we know for shaping the conversation around public AI. The role is especially well suited to a **PhD student or postdoc** working on public AI or closely related topics (policy, economics, HCI, law, media, etc.).
+This is one of the best vantage points we know for shaping the conversation around public AI. The role is especially well suited to a **PhD student, postdoc, or researcher** working on public AI or closely related topics (policy, economics, HCI, law, media, etc.).
 
 ## What you would do
 
