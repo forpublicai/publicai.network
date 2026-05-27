@@ -64,8 +64,7 @@ table th { text-align: center; }
 
 ### Upcoming events
 
-| Date | Event | Location |
-|------|-------|----------|
+Upcoming events are being planned in Zurich and Los Angeles.
 
 ### Past events
 

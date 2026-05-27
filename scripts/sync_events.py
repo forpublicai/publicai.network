@@ -23,6 +23,9 @@ from typing import List, Optional
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX_MD_PATH = os.path.join(ROOT, "index.md")
 DEFAULT_LUMA_PUBLIC_CALENDAR_URL = "https://luma.com/forpublicai"
+UPCOMING_EMPTY_TEXT = "Upcoming events are being planned in Zurich and Los Angeles.\n"
+UPCOMING_TABLE_HEADER = "| Date | Event | Location |\n"
+UPCOMING_TABLE_SEPARATOR = "|------|-------|----------|\n"
 
 
 MONTHS = {
@@ -86,6 +89,27 @@ def find_section(lines: List[str], heading: str) -> int:
         if line.strip() == heading:
             return i
     raise ValueError(f"Heading not found: {heading}")
+
+
+def find_table_header(lines: List[str], start_idx: int, end_idx: int) -> Optional[int]:
+    for i in range(start_idx, end_idx):
+        if lines[i].startswith("| Date |"):
+            return i
+    return None
+
+
+def render_upcoming_section(rows: List[MarkdownEventRow]) -> List[str]:
+    section: List[str] = ["\n"]
+    if rows:
+        section.append(UPCOMING_TABLE_HEADER)
+        section.append(UPCOMING_TABLE_SEPARATOR)
+        for row in rows:
+            line = row.raw_line if row.raw_line.endswith("\n") else row.raw_line + "\n"
+            section.append(line)
+    else:
+        section.append(UPCOMING_EMPTY_TEXT)
+    section.append("\n")
+    return section
 
 
 def parse_table_rows(lines: List[str], start_idx: int, end_idx: int) -> List[MarkdownEventRow]:
@@ -337,14 +361,12 @@ def main() -> int:
     upcoming_heading = find_section(lines, "### Upcoming events")
     past_heading = find_section(lines, "### Past events")
 
-    # Upcoming table starts after heading and blank line, with header + separator + rows.
-    upcoming_table_start = upcoming_heading + 1
-    while upcoming_table_start < len(lines) and not lines[upcoming_table_start].startswith("| Date |"):
-        upcoming_table_start += 1
-    if upcoming_table_start >= len(lines):
-        raise ValueError("Upcoming events table header not found.")
+    upcoming_table_start = find_table_header(lines, upcoming_heading + 1, past_heading)
+    if upcoming_table_start is None:
+        upcoming_rows_start = upcoming_heading + 1
+    else:
+        upcoming_rows_start = upcoming_table_start + 2
 
-    upcoming_rows_start = upcoming_table_start + 2
     upcoming_rows_end = past_heading
     while upcoming_rows_end > upcoming_rows_start and lines[upcoming_rows_end - 1].strip() == "":
         upcoming_rows_end -= 1
@@ -400,9 +422,14 @@ def main() -> int:
     new_past_rows = moved_to_past + past_rows
 
     new_lines = []
-    new_lines.extend(lines[:upcoming_rows_start])
-    new_lines.extend([r.raw_line if r.raw_line.endswith("\n") else r.raw_line + "\n" for r in kept_upcoming])
-    new_lines.extend(lines[upcoming_rows_end:past_rows_start])
+    new_lines.extend(lines[:upcoming_heading + 1])
+    new_lines.extend(render_upcoming_section(kept_upcoming))
+    new_lines.append(lines[past_heading])
+    if past_table_start > past_heading + 1:
+        new_lines.extend(lines[past_heading + 1 : past_table_start])
+    else:
+        new_lines.append("\n")
+    new_lines.extend(lines[past_table_start:past_rows_start])
     new_lines.extend([r.raw_line if r.raw_line.endswith("\n") else r.raw_line + "\n" for r in new_past_rows])
     new_lines.extend(lines[past_rows_end:])
 
