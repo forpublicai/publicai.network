@@ -11,7 +11,6 @@ date_posted: 2025-09-03
 summary: Architect and develop cross-organizational technical infrastructure for the public AI movement.
 ---
 
-**Host:** Public AI Network  
 **Location:** Remote  
 **Commitment:** Part-time, volunteer  
 **Compensation:** Unpaid

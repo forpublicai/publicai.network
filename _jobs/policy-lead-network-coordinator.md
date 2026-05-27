@@ -11,7 +11,6 @@ date_posted: 2025-10-01
 summary: Oversee policy strategy, coalition coordination, and relationships with policymakers and industry leaders.
 ---
 
-**Host:** Public AI Network  
 **Status:** Filled  
 **Location:** Remote  
 **Commitment:** Part-time, volunteer  

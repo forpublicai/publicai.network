@@ -11,7 +11,6 @@ date_posted: 2025-09-10
 summary: Catalog public compute programs and work toward standards and global infrastructure for public AI.
 ---
 
-**Host:** Public AI Network  
 **Location:** Remote  
 **Commitment:** Part-time, volunteer  
 **Compensation:** Unpaid

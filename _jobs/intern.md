@@ -11,7 +11,6 @@ date_posted: 2025-09-25
 summary: Support research, events, communications, and technical work across PAINT projects.
 ---
 
-**Host:** Public AI Network  
 **Location:** Remote  
 **Commitment:** Part-time, volunteer  
 **Compensation:** Unpaid

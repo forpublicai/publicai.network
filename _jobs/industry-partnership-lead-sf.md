@@ -11,7 +11,6 @@ date_posted: 2025-09-18
 summary: Manage PAINT events, local outreach, and industry networks in the San Francisco Bay Area.
 ---
 
-**Host:** Public AI Network  
 **Location:** San Francisco Bay Area  
 **Commitment:** Part-time, volunteer  
 **Compensation:** Unpaid

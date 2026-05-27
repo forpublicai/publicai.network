@@ -11,7 +11,6 @@ date_posted: 2025-10-08
 summary: Lead advocacy and outreach across the European Union in collaboration with regional partners.
 ---
 
-**Host:** Public AI Network  
 **Status:** Filled  
 **Location:** European Union  
 **Commitment:** Part-time, volunteer  
