@@ -1,5 +1,8 @@
 ---
 title: Public AI Fellow, Open Source
+host: Current AI
+category: funded
+status: open
 location: Fully remote, with a preference for hubs with strong open-source AI presence (Berlin, Paris, London, San Francisco, NYC, Toronto)
 commitment: Deliverable-based, then part-time
 compensation: €5,000 stipend

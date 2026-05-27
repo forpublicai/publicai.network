@@ -5,13 +5,25 @@ nav_title: Jobs
 permalink: /jobs/
 ---
 
-Open roles at the Public AI Network. These opportunities are funded by and offered in collaboration with [Current AI](https://currentai.org), a Paris-based nonprofit.
+The Public AI Network (PAINT) is a political movement and open-source coalition working to foster public AI. Our coalition includes individuals from Metagov, Chatham House, Public Knowledge, Code for Science and Society, Aspen Digital, Creative Commons, the Internet Archive, and many others.
+
+As part of our work, we offer some roles which are traditionally funded and others of which are more informal and independent (but no less important), as in a typical open-source community. All volunteer positions below are part-time and unpaid unless noted otherwise. To apply for any open position, send a brief message and CV to [hello@publicai.network](mailto:hello@publicai.network).
+
+Also take a look at the [“help wanted” issues on our GitHub](https://github.com/forpublicai/publicai.network/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
 
 <style>
+.job-section {
+  margin: 2.5rem 0 1rem;
+}
+
+.job-section h2 {
+  margin-bottom: 0.5rem;
+}
+
 .job-list {
   list-style: none;
   padding: 0;
-  margin: 2rem 0;
+  margin: 1rem 0 0;
 }
 
 .job-list li {
@@ -34,6 +46,10 @@ Open roles at the Public AI Network. These opportunities are funded by and offer
   text-decoration: underline;
 }
 
+.job-list--filled a {
+  color: #495057;
+}
+
 .job-meta {
   display: block;
   margin-top: 0.35rem;
@@ -46,19 +62,79 @@ Open roles at the Public AI Network. These opportunities are funded by and offer
   color: #495057;
   line-height: 1.5;
 }
+
+.job-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #6c757d;
+  background: #f1f3f5;
+  border-radius: 4px;
+  vertical-align: middle;
+}
 </style>
 
-<ul class="job-list">
-{% assign sorted_jobs = site.jobs | sort: "order" %}
-{% for job in sorted_jobs %}
-  <li>
-    <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
-    <span class="job-meta">{{ job.location }} · {{ job.commitment }}</span>
-    {% if job.summary %}
-    <p class="job-summary">{{ job.summary }}</p>
-    {% endif %}
-  </li>
-{% endfor %}
-</ul>
+<div class="job-section">
+  <h2 id="funded-roles">Funded roles</h2>
+  <ul class="job-list">
+  {% assign funded_open = site.jobs | where: "status", "open" | where: "category", "funded" | sort: "order" %}
+  {% for job in funded_open %}
+    <li>
+      <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
+      {% if job.status == "filled" %}<span class="job-badge">Filled</span>{% endif %}
+      <span class="job-meta">
+        {% if job.host %}{{ job.host }} · {% endif %}{{ job.location }} · {{ job.commitment }}{% if job.compensation %} · {{ job.compensation }}{% endif %}
+      </span>
+      {% if job.summary %}
+      <p class="job-summary">{{ job.summary }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
 
-Questions? Email [josh@publicai.co](mailto:josh@publicai.co).
+<div class="job-section">
+  <h2 id="open-roles">Open roles in public AI</h2>
+  <p>Volunteer positions with PAINT. Part-time and unpaid.</p>
+  <ul class="job-list">
+  {% assign volunteer_open = site.jobs | where: "status", "open" | where: "category", "volunteer" | sort: "order" %}
+  {% for job in volunteer_open %}
+    <li>
+      <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
+      <span class="job-meta">
+        {% if job.host %}{{ job.host }} · {% endif %}{{ job.location }} · {{ job.commitment }}
+      </span>
+      {% if job.summary %}
+      <p class="job-summary">{{ job.summary }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
+<div class="job-section">
+  <h2 id="filled-roles">Filled roles</h2>
+  <ul class="job-list job-list--filled">
+  {% assign filled_jobs = site.jobs | where: "status", "filled" | sort: "order" %}
+  {% for job in filled_jobs %}
+    <li>
+      {% if job.external_url %}
+      <a href="{{ job.external_url }}" target="_blank" rel="noopener noreferrer">{{ job.title }}</a>
+      {% else %}
+      <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
+      {% endif %}
+      <span class="job-badge">Filled</span>
+      <span class="job-meta">
+        {% if job.host %}{{ job.host }} · {% endif %}{{ job.location }}{% if job.commitment %} · {{ job.commitment }}{% endif %}{% if job.compensation %} · {{ job.compensation }}{% endif %}
+      </span>
+      {% if job.summary %}
+      <p class="job-summary">{{ job.summary }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>

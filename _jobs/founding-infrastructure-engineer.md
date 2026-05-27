@@ -1,5 +1,8 @@
 ---
 title: Public AI Founding Infrastructure Engineer
+host: Current AI
+category: funded
+status: open
 location: Fully remote, with a preference for Europe, US, or Canada
 commitment: Full-time contract
 compensation: $50,000 over 3 months, with opportunity to transition to full-time employment after

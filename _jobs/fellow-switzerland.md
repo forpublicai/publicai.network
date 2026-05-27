@@ -1,5 +1,8 @@
 ---
 title: Public AI Fellow, Switzerland
+host: Current AI
+category: funded
+status: open
 location: Any major city in Switzerland, preferably Zürich
 commitment: Deliverable-based, then part-time
 compensation: 5,000 CHF stipend

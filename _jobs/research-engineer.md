@@ -1,5 +1,8 @@
 ---
 title: Public AI Research Engineer
+host: Current AI
+category: funded
+status: open
 location: Fully remote, with a preference for the US, Canada, or Europe
 commitment: Part-time contract
 compensation: $20,000 over three months, with opportunity to transition to a longer, full-time engagement
