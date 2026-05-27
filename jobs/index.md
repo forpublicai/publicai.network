@@ -5,9 +5,7 @@ nav_title: Jobs
 permalink: /jobs/
 ---
 
-The Public AI Network (PAINT) is a political movement and open-source coalition working to foster public AI. Our coalition includes individuals from Metagov, Chatham House, Public Knowledge, Code for Science and Society, Aspen Digital, Creative Commons, the Internet Archive, and many others.
-
-As part of our work, we offer some roles which are traditionally funded and others of which are more informal and independent (but no less important), as in a typical open-source community. All volunteer positions below are part-time and unpaid unless noted otherwise. To apply for any open position, send a brief message and CV to [hello@publicai.network](mailto:hello@publicai.network).
+The movement for public AI (often capitalized as just Public AI) is a political movement and open-source community working to foster public AI. As part of our work, we offer some roles which are traditionally funded and others of which are more informal and independent (but no less important), as in a typical open-source community.
 
 Also take a look at the [“help wanted” issues on our GitHub](https://github.com/forpublicai/publicai.network/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
 
@@ -81,7 +79,7 @@ Also take a look at the [“help wanted” issues on our GitHub](https://github.
 <div class="job-section">
   <h2 id="funded-roles">Funded roles</h2>
   <ul class="job-list">
-  {% assign funded_open = site.jobs | where: "status", "open" | where: "category", "funded" | sort: "order" %}
+  {% assign funded_open = site.jobs | where: "status", "open" | where: "category", "funded" | sort: "order" | sort: "date_posted" %}
   {% for job in funded_open %}
     <li>
       <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
@@ -99,9 +97,9 @@ Also take a look at the [“help wanted” issues on our GitHub](https://github.
 
 <div class="job-section">
   <h2 id="open-roles">Open roles in public AI</h2>
-  <p>Volunteer positions with PAINT. Part-time and unpaid.</p>
+  <p>Volunteer positions with the movement for public AI, not associated to any hosting organization. Part-time and unpaid.</p>
   <ul class="job-list">
-  {% assign volunteer_open = site.jobs | where: "status", "open" | where: "category", "volunteer" | sort: "order" %}
+  {% assign volunteer_open = site.jobs | where: "status", "open" | where: "category", "volunteer" | sort: "order" | sort: "date_posted" %}
   {% for job in volunteer_open %}
     <li>
       <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
@@ -119,7 +117,7 @@ Also take a look at the [“help wanted” issues on our GitHub](https://github.
 <div class="job-section">
   <h2 id="filled-roles">Filled roles</h2>
   <ul class="job-list job-list--filled">
-  {% assign filled_jobs = site.jobs | where: "status", "filled" | sort: "order" %}
+  {% assign filled_jobs = site.jobs | where: "status", "filled" | sort: "order" | sort: "date_posted" %}
   {% for job in filled_jobs %}
     <li>
       {% if job.external_url %}

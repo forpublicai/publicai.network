@@ -1,12 +1,13 @@
 ---
 title: Intern
-host: Public AI Network
+host: 
 category: volunteer
 status: open
 location: Remote
 commitment: Part-time, volunteer
 compensation: Unpaid
 order: 13
+date_posted: 2025-09-25
 summary: Support research, events, communications, and technical work across PAINT projects.
 ---
 

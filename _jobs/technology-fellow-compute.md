@@ -1,12 +1,13 @@
 ---
 title: Technology Fellow for Compute (TBC)
-host: Public AI Network
+host:
 category: volunteer
 status: open
 location: Remote
 commitment: Part-time, volunteer
 compensation: Unpaid
 order: 11
+date_posted: 2025-09-10
 summary: Catalog public compute programs and work toward standards and global infrastructure for public AI.
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: Campaign Lead (EU)
-host: Public AI Network
+host: 
 category: volunteer
 status: filled
 location: European Union
 commitment: Part-time, volunteer
 compensation: Unpaid
 order: 21
+date_posted: 2025-10-08
 summary: Lead advocacy and outreach across the European Union in collaboration with regional partners.
 ---
 

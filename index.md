@@ -68,34 +68,148 @@ Upcoming events are being planned in Zurich and Los Angeles.
 
 ### Past events
 
-| Date | Event | Location |
-|------|-------|----------|
-| Feb 27, 2026 | [Public AI Switzerland Founding Event](https://luma.com/3fwdxk84){:target="_blank" rel="noopener"} | Zürich, Switzerland |
-| Feb 21 2026 | [Karaoke Night](https://luma.com/21cshso9){:target="_blank" rel="noopener"} during the India AI Impact Summit | New Delhi, India |
-| Feb 17–21, 2026 | [AI Commons House](https://commonkhoj.org/){:target="_blank" rel="noopener"} at Khoj Studios during the [India AI Impact Summit](https://impact.indiaai.gov.in/){:target="_blank" rel="noopener"} week | New Delhi, India |
-| Sep 9, 2025 | the first [Public AI quarterly call](https://lu.ma/g9fafiq0){:target="_blank" rel="noopener"} | &emsp; *Online* |
-| Jul 31, 2025 | Public AI: Policy, Community, & the Future of National Labs. [TPC 2025](https://tpc25.org){:target="_blank" rel="noopener"} | San Jose, CA |
-| Jul 16, 2025 | [Oh Canada! A Public AI Happy Hour](https://lu.ma/7rjoaxts){:target="_blank" rel="noopener"} at ICML 2025 | Vancouver, Canada |
-| Apr 26, 2025 | [Public AI Dinner & Salon](https://lu.ma/6zeopix2){:target="_blank" rel="noopener"} at ICLR 2025 | Singapore |
-| Apr 24-25, 2025 | Commercializing Public AI at Barcelona Supercomputing Center | Barcelona, Spain |
-| Apr-Jun, 2025 | [Public AI Seminar Series](https://publicai.network/seminar.html){:target="_blank" rel="noopener"}, Season 3 🎬|  &emsp; *Online* |
-| Feb 12-15, 2025 | [AI Action II](https://docs.google.com/document/d/1IyP2jGob6Zxp1V7jjN1Ax--r45FHGYBgDhK31eoMNVU/edit?tab=t.0){:target="_blank" rel="noopener"} at Chateau du Fey | Joigny, France |
-| Feb 11, 2025 |  ⭐ [Public AI Congress](https://lu.ma/5h2x0n33){:target="_blank" rel="noopener"} and Public AI House at AI Action Summit | Paris, France |
-| Oct 17-20, 2024 | [mAIfuture](https://maifuture.pl){:target="_blank" rel="noopener"} at the Cambridge Innovation Center | Warsaw, Poland |
-| Oct 2, 2024 | [Designing Public AI](https://economicsecurityproject.org/news/blueprint-to-build-public-ai/){:target="_blank" rel="noopener"} at the Rockefeller Foundation | Washington, DC |
-| Aug 13-14, 2024 | ⭐ [Building a More Public AI Ecosystem](https://publicai.us){:target="_blank" rel="noopener"} | Library of Congress |
-| Aug-Oct, 2024 | [Public AI Seminar Series](https://publicai.network/seminar.html){:target="_blank" rel="noopener"}, Season 2 🎬 |  &emsp; *Online* |
-| Jul 24, 2024 | [Public AI Social #4 (+ Fishing Expedition)](https://lu.ma/oxdb3ryc){:target="_blank" rel="noopener"} | ICML 2024 |
-| Jul 15-21, 2024 | [AI Palace 2024](https://www.aipalace.org/){:target="_blank" rel="noopener"} | Bückeburg Palace |
-| Mar 13, 2024 | [Public Visions for AI Workshop](https://lu.ma/mqop6d2c){:target="_blank" rel="noopener"} | Newspeak House |
-| Jan-Feb, 2024 | [Public AI Seminar Series](https://publicai.network/seminar.html){:target="_blank" rel="noopener"}, Season 1 🎬 |  &emsp; *Online* |
-| Jan 8, 2024 | [Public & Civic AI Social #3](https://lu.ma/qalguhzr){:target="_blank" rel="noopener"} | Newspeak House |
-| Dec 14, 2023 | [Public AI Dinner Party](https://lu.ma/public-ai-dinner-party-neurips-2023){:target="_blank" rel="noopener"} | NeurIPS 2023 |
-| Nov 16, 2023 | [Public & Civic AI Social #2](https://lu.ma/zo0vnony){:target="_blank" rel="noopener"} | Newspeak House |
-| Oct 17, 2023 | [Public & Civic AI Social #1](https://lu.ma/public-civic-ai-social){:target="_blank" rel="noopener"} | Newspeak House |
-| Sep 21, 2023 | [Talk at AI: Ethical Paths Forward](https://archive.org/details/dweb-meetup-september-2023-ai-ethical-paths-forward){:target="_blank" rel="noopener"} | Internet Archive |
-| Sep 14, 2023 | [Public AI Seminar](https://www.eventbrite.com/e/public-ai-seminar-tickets-716665073527){:target="_blank" rel="noopener"} | NYU Engelberg Ctr |
-| Jul 3-10, 2023 | [AI Palace 2023](https://www.aipalace.org/){:target="_blank" rel="noopener"} | Bückeburg Palace |
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Event</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Feb 27, 2026</td>
+      <td><a href="https://luma.com/3fwdxk84" target="_blank" rel="noopener">Public AI Switzerland Founding Event</a></td>
+      <td>Zürich, Switzerland</td>
+    </tr>
+    <tr>
+      <td>Feb 21 2026</td>
+      <td><a href="https://luma.com/21cshso9" target="_blank" rel="noopener">Karaoke Night</a> during the India AI Impact Summit</td>
+      <td>New Delhi, India</td>
+    </tr>
+    <tr>
+      <td>Feb 17–21, 2026</td>
+      <td><a href="https://commonkhoj.org/" target="_blank" rel="noopener">AI Commons House</a> at Khoj Studios during the <a href="https://impact.indiaai.gov.in/" target="_blank" rel="noopener">India AI Impact Summit</a> week</td>
+      <td>New Delhi, India</td>
+    </tr>
+    <tr>
+      <td>Sep 9, 2025</td>
+      <td>the first <a href="https://lu.ma/g9fafiq0" target="_blank" rel="noopener">Public AI quarterly call</a></td>
+      <td><em>Online</em></td>
+    </tr>
+    <tr>
+      <td>Jul 31, 2025</td>
+      <td>Public AI: Policy, Community, &amp; the Future of National Labs. <a href="https://tpc25.org" target="_blank" rel="noopener">TPC 2025</a></td>
+      <td>San Jose, CA</td>
+    </tr>
+    <tr>
+      <td>Jul 16, 2025</td>
+      <td><a href="https://lu.ma/7rjoaxts" target="_blank" rel="noopener">Oh Canada! A Public AI Happy Hour</a> at ICML 2025</td>
+      <td>Vancouver, Canada</td>
+    </tr>
+    <tr>
+      <td>Apr 26, 2025</td>
+      <td><a href="https://lu.ma/6zeopix2" target="_blank" rel="noopener">Public AI Dinner &amp; Salon</a> at ICLR 2025</td>
+      <td>Singapore</td>
+    </tr>
+    <tr>
+      <td>Apr 24-25, 2025</td>
+      <td>Commercializing Public AI at Barcelona Supercomputing Center</td>
+      <td>Barcelona, Spain</td>
+    </tr>
+    <tr>
+      <td>Apr-Jun, 2025</td>
+      <td><a href="https://publicai.network/seminar.html" target="_blank" rel="noopener">Public AI Seminar Series</a>, Season 3 🎬</td>
+      <td><em>Online</em></td>
+    </tr>
+    <tr>
+      <td>Feb 12-15, 2025</td>
+      <td><a href="https://docs.google.com/document/d/1IyP2jGob6Zxp1V7jjN1Ax--r45FHGYBgDhK31eoMNVU/edit?tab=t.0" target="_blank" rel="noopener">AI Action II</a> at Chateau du Fey</td>
+      <td>Joigny, France</td>
+    </tr>
+    <tr>
+      <td>Feb 11, 2025</td>
+      <td>⭐ <a href="https://lu.ma/5h2x0n33" target="_blank" rel="noopener">Public AI Congress</a> and Public AI House at AI Action Summit</td>
+      <td>Paris, France</td>
+    </tr>
+    <tr>
+      <td>Oct 17-20, 2024</td>
+      <td><a href="https://maifuture.pl" target="_blank" rel="noopener">mAIfuture</a> at the Cambridge Innovation Center</td>
+      <td>Warsaw, Poland</td>
+    </tr>
+    <tr>
+      <td>Oct 2, 2024</td>
+      <td><a href="https://economicsecurityproject.org/news/blueprint-to-build-public-ai/" target="_blank" rel="noopener">Designing Public AI</a> at the Rockefeller Foundation</td>
+      <td>Washington, DC</td>
+    </tr>
+    <tr>
+      <td>Aug 13-14, 2024</td>
+      <td>⭐ <a href="https://publicai.us" target="_blank" rel="noopener">Building a More Public AI Ecosystem</a></td>
+      <td>Library of Congress</td>
+    </tr>
+    <tr>
+      <td>Aug-Oct, 2024</td>
+      <td><a href="https://publicai.network/seminar.html" target="_blank" rel="noopener">Public AI Seminar Series</a>, Season 2 🎬</td>
+      <td><em>Online</em></td>
+    </tr>
+    <tr>
+      <td>Jul 24, 2024</td>
+      <td><a href="https://lu.ma/oxdb3ryc" target="_blank" rel="noopener">Public AI Social #4 (+ Fishing Expedition)</a></td>
+      <td>ICML 2024</td>
+    </tr>
+    <tr>
+      <td>Jul 15-21, 2024</td>
+      <td><a href="https://www.aipalace.org/" target="_blank" rel="noopener">AI Palace 2024</a></td>
+      <td>Bückeburg Palace</td>
+    </tr>
+    <tr>
+      <td>Mar 13, 2024</td>
+      <td><a href="https://lu.ma/mqop6d2c" target="_blank" rel="noopener">Public Visions for AI Workshop</a></td>
+      <td>Newspeak House</td>
+    </tr>
+    <tr>
+      <td>Jan-Feb, 2024</td>
+      <td><a href="https://publicai.network/seminar.html" target="_blank" rel="noopener">Public AI Seminar Series</a>, Season 1 🎬</td>
+      <td><em>Online</em></td>
+    </tr>
+    <tr>
+      <td>Jan 8, 2024</td>
+      <td><a href="https://lu.ma/qalguhzr" target="_blank" rel="noopener">Public &amp; Civic AI Social #3</a></td>
+      <td>Newspeak House</td>
+    </tr>
+    <tr>
+      <td>Dec 14, 2023</td>
+      <td><a href="https://lu.ma/public-ai-dinner-party-neurips-2023" target="_blank" rel="noopener">Public AI Dinner Party</a></td>
+      <td>NeurIPS 2023</td>
+    </tr>
+    <tr>
+      <td>Nov 16, 2023</td>
+      <td><a href="https://lu.ma/zo0vnony" target="_blank" rel="noopener">Public &amp; Civic AI Social #2</a></td>
+      <td>Newspeak House</td>
+    </tr>
+    <tr>
+      <td>Oct 17, 2023</td>
+      <td><a href="https://lu.ma/public-civic-ai-social" target="_blank" rel="noopener">Public &amp; Civic AI Social #1</a></td>
+      <td>Newspeak House</td>
+    </tr>
+    <tr>
+      <td>Sep 21, 2023</td>
+      <td><a href="https://archive.org/details/dweb-meetup-september-2023-ai-ethical-paths-forward" target="_blank" rel="noopener">Talk at AI: Ethical Paths Forward</a></td>
+      <td>Internet Archive</td>
+    </tr>
+    <tr>
+      <td>Sep 14, 2023</td>
+      <td><a href="https://www.eventbrite.com/e/public-ai-seminar-tickets-716665073527" target="_blank" rel="noopener">Public AI Seminar</a></td>
+      <td>NYU Engelberg Ctr</td>
+    </tr>
+    <tr>
+      <td>Jul 3-10, 2023</td>
+      <td><a href="https://www.aipalace.org/" target="_blank" rel="noopener">AI Palace 2023</a></td>
+      <td>Bückeburg Palace</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Acknowledgements
 
 A [wide range of people](https://docs.google.com/document/d/1ykjsXpTRZu4Obu9miJlkR9vIqWSLey5m0G4Utlm6HBg/edit#heading=h.v36dq6wln0nk){:target="_blank" rel="noopener"} have contributed ideas and time to the movement for public AI. We gratefully acknowledge operational support by [Metagov](https://metagov.org){:target="_blank" rel="noopener"}, [Aspen Digital](https://www.aspendigital.org/){:target="_blank" rel="noopener"}, [Open Future](https://openfuture.eu/){:target="_blank" rel="noopener"}, [Public Knowledge](https://publicknowledge.org){:target="_blank" rel="noopener"}, [Code for Science and Society](https://www.codeforsociety.org/){:target="_blank" rel="noopener"}, [Mozilla](https://mozilla.org){:target="_blank" rel="noopener"}, the [Rockefeller Foundation](https://www.rockefellerfoundation.org/), the [Internet Archive](https://archive.org){:target="_blank" rel="noopener"}, [Chatham House](https://www.chathamhouse.org/){:target="_blank" rel="noopener"}, the [Berkman Klein Center](https://cyber.harvard.edu/), the [Bertelsmann Foundation](https://www.bfna.org/){:target="_blank" rel="noopener"}, the [Patrick J. McGovern Foundation](https://www.mcgovern.org/), and many more organizations.

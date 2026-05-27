@@ -7,6 +7,7 @@ location: Any major city in Switzerland, preferably Zürich
 commitment: Deliverable-based, then part-time
 compensation: 5,000 CHF stipend
 order: 3
+date_posted: 2026-05-15
 summary: Advance Public AI Switzerland, the Inference Utility, and Apertus ahead of the Swiss AI Summit in February 2027.
 ---
 

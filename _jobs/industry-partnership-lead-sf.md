@@ -1,12 +1,13 @@
 ---
 title: Industry Partnership Lead (San Francisco)
-host: Public AI Network
+host:
 category: volunteer
 status: open
 location: San Francisco Bay Area
 commitment: Part-time, volunteer
 compensation: Unpaid
 order: 12
+date_posted: 2025-09-18
 summary: Manage PAINT events, local outreach, and industry networks in the San Francisco Bay Area.
 ---
 

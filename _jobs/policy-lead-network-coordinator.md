@@ -1,12 +1,13 @@
 ---
 title: Policy Lead and Network Coordinator
-host: Public AI Network
+host:
 category: volunteer
 status: filled
 location: Remote
 commitment: Part-time, volunteer
 compensation: Unpaid
 order: 20
+date_posted: 2025-10-01
 summary: Oversee policy strategy, coalition coordination, and relationships with policymakers and industry leaders.
 ---
 

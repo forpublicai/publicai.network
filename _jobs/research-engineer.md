@@ -7,6 +7,7 @@ location: Fully remote, with a preference for the US, Canada, or Europe
 commitment: Part-time contract
 compensation: $20,000 over three months, with opportunity to transition to a longer, full-time engagement
 order: 2
+date_posted: 2026-05-15
 summary: Hands-on role spanning product, frontend, backend, and open-source community work on real public AI infrastructure.
 ---
 
@@ -30,6 +31,7 @@ This is a hands-on role that spans product, frontend, backend, and open-source c
 - Track and integrate the open-source AI stack. OpenWebUI ships fast. vLLM ships fast. LiteLLM, MCP servers, eval frameworks — all moving. You'll keep us current, fork where we need to, upstream where we can, and stitch everything into a platform that works.
 - Ship product across the stack. Frontend changes in our chat, backend changes in our routing, glue code between services. You'll touch all of it. We need someone who's comfortable shipping a UI change in the morning and debugging an inference backend in the afternoon.
 - Drive our open-source presence. Make our repos at [github.com/forpublicai](https://github.com/forpublicai) something contributors can actually engage with — clear issues, good docs, fast review. Help us behave like a real open-source project, not a closed shop with public code.
+- Contribute directly to the wider open-source AI ecosystem. Submit compatibility PRs across open-source and open-weight components, build demos that showcase how different pieces work together on public infrastructure, and fill in gaps in specific OS projects where the stack is close but not quite there for real deployments.
 - Prototype new capabilities. Routing transparency, endpoint provenance, MCP integrations, multimodal support, jurisdiction-aware handling. We have a long roadmap and not enough hands.
 - Be a product thinker, not just a coder. Notice what's broken in the user experience and fix it. Push back on roadmap decisions. Bring ideas, not just execution.
 
@@ -39,7 +41,7 @@ You'll have wide latitude. We need someone who sees what's broken and ships it, 
 
 **Required**
 
-- Demonstrated open-source chops — contributions, maintainership, or projects of your own that we can look at
+- Demonstrated open-source chops — contributions, maintainership, or projects of your own that we can look at, ideally including upstream PRs and integration demos
 - Comfort moving across the stack: frontend (React/Svelte/similar), backend (Python/TypeScript/Go), and the glue between
 - Familiarity with the open-source AI stack — OpenWebUI, vLLM, LiteLLM, MCP, or similar
 - Product instincts: you care about what users experience, not just what compiles
@@ -52,7 +54,7 @@ This is a nonprofit, open-source project building public goods. We need someone 
 
 **Nice to have**
 
-- Maintainership or significant contribution history on a project in the AI/ML or developer tools space
+- Maintainership or significant contribution history on a project in the AI/ML or developer tools space, including compatibility fixes across open-weight models and their surrounding tooling
 - Experience launching and running your own open-source project, startup, or community
 - Background in public-interest technology, civic tech, or research infrastructure
 - A track record of turning messy multi-repo systems into coherent platforms

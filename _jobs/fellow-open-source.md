@@ -7,6 +7,7 @@ location: Fully remote, with a preference for hubs with strong open-source AI pr
 commitment: Deliverable-based, then part-time
 compensation: €5,000 stipend
 order: 4
+date_posted: 2026-05-15
 summary: Build and steward Public AI's relationships across the global open-source AI community.
 ---
 

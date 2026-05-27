@@ -1806,7 +1806,7 @@ Typical review time: **about 1–3 days**. Larger changes (new features, design)
 <summary><strong>Examples: what to edit</strong></summary>
 
 - **Add yourself to the list below:** edit this file (`contributing.md`), find the right alphabetical section in the contributor cards, copy an existing card’s format, and open a PR.  
-- **Add an event:** edit `index.md` and add a row under **Upcoming events**.  
+- **Add an event:** edit `index.md` and add a row to the events table under **Upcoming events** or **Past events**.  
 - **Typo:** edit the relevant `.md` file; small fixes can be done in the GitHub web UI.
 
 </details>

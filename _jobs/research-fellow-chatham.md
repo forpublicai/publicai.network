@@ -7,6 +7,7 @@ location: London / hybrid
 commitment: Full-time
 compensation: Paid
 order: 24
+date_posted: 2025-10-29
 summary: Conduct research on public AI policy and governance as PAINT's thought leadership at Chatham House.
 ---
 

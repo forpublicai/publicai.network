@@ -7,6 +7,7 @@ location: Remote
 commitment: Part-time
 compensation: Paid
 order: 23
+date_posted: 2025-10-22
 summary: Oversee development of PAINT digital tools and align products with the movement's vision, hosted at Metagov.
 ---
 

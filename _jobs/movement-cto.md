@@ -1,12 +1,13 @@
 ---
 title: Movement CTO
-host: Public AI Network
+host:
 category: volunteer
 status: open
 location: Remote
 commitment: Part-time, volunteer
 compensation: Unpaid
 order: 10
+date_posted: 2025-09-03
 summary: Architect and develop cross-organizational technical infrastructure for the public AI movement.
 ---
 

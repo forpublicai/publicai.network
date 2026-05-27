@@ -7,6 +7,7 @@ location: Japan
 commitment: Part-time
 compensation: Paid
 order: 22
+date_posted: 2025-10-15
 summary: Part-time, paid fellowship hosted at Metagov — see Metagov for current details and applications.
 external_url: https://metagov.org/join/jobs/public-ai-fellow-japan
 ---

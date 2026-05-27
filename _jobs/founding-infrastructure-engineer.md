@@ -7,6 +7,7 @@ location: Fully remote, with a preference for Europe, US, or Canada
 commitment: Full-time contract
 compensation: $50,000 over 3 months, with opportunity to transition to full-time employment after
 order: 1
+date_posted: 2026-05-15
 summary: First dedicated infrastructure hire and technical owner of the Public AI Inference Utility's operational backbone.
 ---
 
@@ -33,6 +34,7 @@ This is a hands-on builder/maintainer/integrator role. In your first three month
 - Implement routing transparency and endpoint provenance. When someone uses our chat or API, they should be able to see — and verify — which backend served their inference. This is core to what makes us a public utility.
 - Speed up chat.publicai.co. People are writing us off based on a limited preview experience. Fix that, whether by collapsing Preview into the main chat, expanding Preview's feature set, or something better we haven't thought of.
 - Improve the platform overall as a public good. Two ideas we're excited about: (1) integrating an MCP server so an agent can make changes to the inference configuration, and (2) making the utility more transparent and contributable — closer to how a public utility or active open-source project operates, even though it's a live service rather than static code.
+- Work upstream in the open-source stack we depend on. Submit compatibility PRs across open-source and open-weight components (OpenWebUI, vLLM, LiteLLM, and related projects), build demos that show how different pieces fit together in a real public AI deployment, and fill gaps in specific OS projects where our production needs aren't yet met.
 
 You'll have wide latitude to set priorities. We need someone who sees what's broken and fixes it, not someone who waits for tickets.
 
@@ -53,7 +55,8 @@ This is a nonprofit, open-source project building public goods. We need someone 
 
 **Nice to have**
 
-- Open-source maintainer experience, especially on infrastructure or platform projects
+- Open-source maintainer experience, especially on infrastructure or platform projects — including merged PRs to projects you don't own
+- A track record of compatibility work across open-weight models and the tooling around them
 - Familiarity with OpenWebUI, vLLM, or similar inference stacks
 - Experience with MCP, agent tooling, or programmatic infrastructure interfaces
 - Experience working with large HPCs, e.g. national supercomputing centers
