@@ -77,34 +77,13 @@ Also take a look at the [“help wanted” issues on our GitHub](https://github.
 </style>
 
 <div class="job-section">
-  <h2 id="funded-roles">Funded roles</h2>
   <ul class="job-list">
-  {% assign funded_open = site.jobs | where: "status", "open" | where: "category", "funded" | sort: "order" | sort: "date_posted" %}
-  {% for job in funded_open %}
+  {% assign open_jobs = site.jobs | where: "status", "open" | sort: "order" | sort: "date_posted" %}
+  {% for job in open_jobs %}
     <li>
       <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
-      {% if job.status == "filled" %}<span class="job-badge">Filled</span>{% endif %}
       <span class="job-meta">
         {% if job.host %}{{ job.host }} · {% endif %}{{ job.location }} · {{ job.commitment }}{% if job.compensation %} · {{ job.compensation }}{% endif %}
-      </span>
-      {% if job.summary %}
-      <p class="job-summary">{{ job.summary }}</p>
-      {% endif %}
-    </li>
-  {% endfor %}
-  </ul>
-</div>
-
-<div class="job-section">
-  <h2 id="open-roles">Open roles in public AI</h2>
-  <p>Volunteer positions with the movement for public AI, not associated to any hosting organization. Part-time and unpaid.</p>
-  <ul class="job-list">
-  {% assign volunteer_open = site.jobs | where: "status", "open" | where: "category", "volunteer" | sort: "order" | sort: "date_posted" %}
-  {% for job in volunteer_open %}
-    <li>
-      <a href="{{ job.url | relative_url }}">{{ job.title }}</a>
-      <span class="job-meta">
-        {% if job.host %}{{ job.host }} · {% endif %}{{ job.location }} · {{ job.commitment }}
       </span>
       {% if job.summary %}
       <p class="job-summary">{{ job.summary }}</p>

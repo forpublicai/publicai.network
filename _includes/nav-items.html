@@ -1,11 +1,9 @@
 <div class="nav-shell">
   <div class="nav-items nav-primary-items" aria-label="Site pages">
     {% include nav-primary-links.html paths = include.paths %}
-  </div>
-
-  {%- assign repos_by_activity = include.repos | sort: "pushed_at" | reverse -%}
-  {%- assign now_unix = "now" | date: "%s" | plus: 0 -%}
-  <div class="repo-bar">
+    {%- assign repos_by_activity = include.repos | sort: "pushed_at" | reverse -%}
+    {%- assign now_unix = "now" | date: "%s" | plus: 0 -%}
+    <div class="repo-bar">
     <details class="repo-details" aria-label="forpublicai repositories">
       <summary class="repo-summary">
         <span class="repo-summary-text">Repos</span>
@@ -84,5 +82,6 @@
         </div>
       </div>
     </details>
+    </div>
   </div>
 </div>
