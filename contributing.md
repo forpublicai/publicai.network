@@ -457,6 +457,19 @@ The **Public AI Network** brings together a diverse coalition of researchers, pr
  </div>
 
 <div class="card">
+  <div class="tab">Arpita Raveendran</div>
+  <div class="content">
+    <div class="avatar c2">AR</div>
+    <div class="name">Arpita Raveendran</div>
+    <div class="aff">Product Management & Social Impact</div>
+    <div class="details">
+    <b>Focus:</b> Public AI for Libraries
+    </div>
+    <div class="joined">2026</div>
+  </div>
+</div>
+
+<div class="card">
   <div class="tab">Avani Wildani</div>
   <div class="content">
     <div class="avatar c3">AW</div>
