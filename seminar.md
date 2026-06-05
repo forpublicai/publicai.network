@@ -19,7 +19,7 @@ Season 4 will start in mid-summer 2026. The fourth season of the seminar will co
 
 To apply for the seminar, please [apply](https://forms.gle/1f8fkcCEjEoJF6L78).
 
-Organizers: Joshua Tan (Public AI), Gideon Lichfield (Harvard)
+Organizers: Nate Angell (Nudgital)
 
 ## Season 3
 Season 3 ran from April 22 to June 10, 2025, with two special sessions later in the summer. The seminar surveyed positions on AI emerging from art and culture, and considered the relationship between AI and the creative industries through four lenses: political power, cultural power, technological power, and economic power. Several spots were reserved for creative professionals in any medium interested in exploring public AI.
