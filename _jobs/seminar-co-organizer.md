@@ -2,7 +2,7 @@
 title: Seminar Co-organizer
 host:
 category: volunteer
-status: open
+status: filled
 location: Remote
 commitment: Part-time, volunteer
 compensation: Unpaid
