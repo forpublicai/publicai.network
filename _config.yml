@@ -16,6 +16,7 @@ plugins:
 minima:
   nav_pages:
   - libraries.md
+  - sail/index.md
   - seminar.md
   - contributing.md
   - publications.md

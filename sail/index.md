@@ -1,12 +1,11 @@
 ---
-title: SAIL Rating System
+title: SAIL
 layout: page
-description: The most comprehensive system for evaluating sovereign AI strategies and systems.
+description: A decoder for sovereign AI - mapping what decision-makers actually want when they invoke it, and where the technical stack can help.
 permalink: /sail/
 ---
 
 <style>
-/* Hide the auto-generated page title */
 .post-header,
 .post-title {
   display: none !important;
@@ -14,7 +13,7 @@ permalink: /sail/
 
 .sail-nav {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   margin: 2rem 0;
   flex-wrap: wrap;
   justify-content: center;
@@ -22,32 +21,24 @@ permalink: /sail/
 
 .sail-nav a {
   display: inline-block;
-  padding: 12px 24px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  padding: 10px 20px;
+  background: #f8f9fa;
+  color: #667eea;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  border-radius: 6px;
+  font-weight: 500;
+  border: 2px solid #667eea;
+  transition: all 0.2s ease;
 }
 
 .sail-nav a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  background: #667eea;
+  color: white;
 }
 
-.sail-nav a.disabled {
-  background: #e0e0e0;
-  color: #999;
-  cursor: not-allowed;
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-.sail-nav a.disabled:hover {
-  transform: none;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+.sail-nav a.current {
+  background: #667eea;
+  color: white;
 }
 
 .hero {
@@ -55,6 +46,7 @@ permalink: /sail/
   width: 100%;
   margin: 0 0 0.5rem 0;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .hero-image {
@@ -83,17 +75,20 @@ permalink: /sail/
 }
 
 .hero p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   margin: 0;
   color: white;
   line-height: 1.5;
   font-weight: 400;
 }
 
-.section-divider {
-  border: none;
-  border-top: 2px solid #e0e0e0;
-  margin: 4rem 0;
+.image-caption {
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 
 .section {
@@ -115,195 +110,144 @@ permalink: /sail/
   margin-bottom: 1rem;
 }
 
-.cert-levels {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2.5rem;
-  margin: 3rem 0;
-  flex-wrap: wrap;
-}
-
-.cert-level-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-width: 120px;
-}
-
-.cert-level-icon {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 0.75rem;
-}
-
-.cert-level-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.cert-level-name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #2c3e50;
-}
-
-.cert-level-item.platinum .cert-level-name {
-  color: #666;
-}
-
-.cert-level-item.gold .cert-level-name {
-  color: #b8860b;
-}
-
-.cert-level-item.silver .cert-level-name {
-  color: #808080;
-}
-
-.cert-level-item.certified .cert-level-name {
-  color: #dc3545;
-}
-
-.cert-level-points {
-  font-size: 0.95rem;
-  color: #666;
-  font-weight: 500;
-}
-
-.process-steps {
+.forks {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
 }
 
-.process-step {
+@media (min-width: 760px) {
+  .forks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.fork {
   background: #f8f9fa;
-  border-left: 4px solid #667eea;
-  padding: 1.5rem;
+  border-top: 4px solid #667eea;
   border-radius: 8px;
-  position: relative;
+  padding: 1.5rem;
 }
 
-.process-step-number {
-  position: absolute;
-  top: -15px;
-  left: 20px;
-  background: #667eea;
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.process-step h3 {
-  margin-top: 1rem;
+.fork h4 {
+  margin: 0 0 0.5rem 0;
   color: #2c3e50;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
-.process-step p {
-  color: #555;
+.fork p {
+  font-size: 0.98rem;
   line-height: 1.6;
-  margin-top: 0.5rem;
+  color: #555;
+  margin: 0;
 }
 
-.resources-grid {
+.interest-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.interest-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.interest-table th,
+.interest-table td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+.interest-table th {
+  font-weight: 600;
+}
+
+.interest-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.interest-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.interest-table .relevance {
+  font-size: 0.92rem;
+  color: #666;
+}
+
+.paths {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.5rem;
   margin: 2rem 0;
 }
 
-.resource-item {
+@media (min-width: 700px) {
+  .paths {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.path-card {
+  display: block;
   background: white;
-  border: 1px solid #e0e0e0;
+  border: 2px solid #667eea;
   border-radius: 8px;
-  padding: 1.5rem;
-  transition: box-shadow 0.2s ease;
+  padding: 1.75rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.resource-item:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.path-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(102, 126, 234, 0.25);
 }
 
-.resource-item h4 {
+.path-card h3 {
+  margin: 0 0 0.5rem 0;
   color: #667eea;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
 }
 
-.resource-item p {
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.6;
+.path-card p {
   margin: 0;
-}
-
-.bullet-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.bullet-list li {
-  padding: 0.75rem 0;
-  padding-left: 2rem;
-  position: relative;
   color: #555;
   line-height: 1.6;
 }
 
-.bullet-list li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: #667eea;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.placeholder-image {
-  width: 100%;
-  height: 300px;
+details.tech-assessment {
+  margin: 2rem 0;
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
-  margin: 2rem 0 0.5rem 0;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #f8f9fa;
+  padding: 0 1.5rem;
 }
 
-.placeholder-image.small {
-  height: 200px;
+details.tech-assessment summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  padding: 1.25rem 0;
 }
 
-.placeholder-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.image-caption {
-  font-size: 0.8rem;
-  color: #666;
-  font-style: italic;
-  text-align: center;
-  margin-bottom: 2rem;
-  padding: 0 1rem;
+details.tech-assessment[open] summary {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1rem;
 }
 
 .cert-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -315,179 +259,169 @@ permalink: /sail/
 
 .cert-table th,
 .cert-table td {
-  padding: 1.2rem;
+  padding: 0.9rem 1.2rem;
   text-align: left;
   border-bottom: 1px solid #e0e0e0;
-}
-
-.cert-table th {
-  font-weight: 600;
-  font-size: 1rem;
 }
 
 .cert-table tbody tr:last-child td {
   border-bottom: none;
 }
 
-.cert-table tbody tr:hover {
-  background: #f8f9fa;
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  
-  .hero p {
-    font-size: 1.1rem;
-  }
-  
-  .cert-levels,
-  .process-steps,
-  .resources-grid {
-    grid-template-columns: 1fr;
-  }
+.section-divider {
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  margin: 3.5rem 0;
 }
 </style>
 
+<nav class="sail-nav">
+  <a href="/sail" class="current">Home</a>
+  <a href="/sail/interests">Interests</a>
+  <a href="/sail/cases">Cases</a>
+  <a href="/sail/spec">Specification</a>
+  <a href="/sail/models">Models</a>
+  <a href="/sail/countries">Countries</a>
+</nav>
+
 <div class="hero">
-  <img src="/sail/assets/bsc.jpg" alt="Barcelona Supercomputing Centre" class="hero-image">
+  <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&h=700&fit=crop" alt="Global network infrastructure at night" class="hero-image">
   <div class="hero-content">
-    <h1>SAIL rating system</h1>
-    <p>The most comprehensive system for evaluating sovereign AI strategies and systems.</p>
+    <h1>SAIL: a decoder for sovereign AI</h1>
+    <p>What do decision-makers actually want when they say "sovereign AI" - and where can the technical stack help?</p>
   </div>
 </div>
-<p class="image-caption">Barcelona Supercomputing Centre | SAIL-certified AI infrastructure facility</p>
 
 <div class="section">
-  <h2>SAIL-certified sovereign AI systems are better systems</h2>
-  <p>SAIL (Sovereign AI Leadership) is a rating and evaluation system that provides a structured assessment of a country's or agency's AI sovereignty across technical, legal, and governance dimensions. It offers a point-based system that signals resilience, control, and strategic leadership.</p>
-  <p>SAIL serves as a globally recognized symbol of sovereignty leadership, supported by a committed community of governments, agencies, and technical partners driving market transformation toward resilient AI governance.</p>
-</div>
+  <h2>The question SAIL asks</h2>
+  <p>"Sovereign AI" is a banner that very different interests march under. A security ministry, an industrial-policy lead, an enterprise CIO, and a culture minister can all demand it while wanting completely different things. SAIL (Sovereign AI Leadership) is less interested in settling what sovereign AI <em>is</em> than in reading <strong>why decision-makers care</strong> - and then asking whether their strategy matches that interest.</p>
+  <p>When a minister invokes sovereign AI, what are they really optimizing for?</p>
 
-<div class="section">
-  <h2>SAIL is designed for all AI governance contexts</h2>
-  <p>SAIL applies to national strategies, ministries, agencies, and public programs that deploy or govern AI systems. Whether assessing sovereign capacity in applications, data, models, or infrastructure, SAIL helps governments identify strengths and dependencies, optimize capacity, and benchmark progress over time.</p>
-  
-  <div class="placeholder-image small">
-    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=800&fit=crop" alt="AI governance contexts - national, ministry, agency, program">
-  </div>
-  <p class="image-caption">AI governance contexts - national, ministry, agency, program</p>
-</div>
-
-<div class="section">
-  <h2>How SAIL works</h2>
-  <p>SAIL is holistic. As a framework, it evaluates sovereignty across seven layers—from applications and orchestration to compute and legal governance—through a series of credit categories tailored for each assessment track. To achieve SAIL certification, an entity must first satisfy baseline prerequisites and then accrue points by fulfilling credit criteria. Assessments are independently verified and award points that correspond to a level of SAIL certification: Certified, Silver, Gold, and Platinum.</p>
-  
-  <div class="cert-levels">
-    <div class="cert-level-item platinum">
-      <div class="cert-level-icon">
-        <img src="/sail/assets/torch_platinum.png" alt="Platinum certification icon">
-      </div>
-      <div class="cert-level-name">Platinum</div>
-      <div class="cert-level-points">80+ points</div>
+  <div class="forks">
+    <div class="fork">
+      <h4>Refusing a deal?</h4>
+      <p>Declining an "OpenAI for Countries"-style offer can mean vendor diversification, protecting a domestic champion, a security red line, or pure electoral signaling. Four different strategies wear the same headline.</p>
     </div>
-    
-    <div class="cert-level-item gold">
-      <div class="cert-level-icon">
-        <img src="/sail/assets/torch_gold.png" alt="Gold certification icon">
-      </div>
-      <div class="cert-level-name">Gold</div>
-      <div class="cert-level-points">60–79 points</div>
+    <div class="fork">
+      <h4>A news hook for something else?</h4>
+      <p>Sometimes the real pet interest is minerals, energy contracts, or regional jobs, and sovereign AI is the framing that gets the press release written.</p>
     </div>
-    
-    <div class="cert-level-item silver">
-      <div class="cert-level-icon">
-        <img src="/sail/assets/torch_silver.png" alt="Silver certification icon">
-      </div>
-      <div class="cert-level-name">Silver</div>
-      <div class="cert-level-points">50–59 points</div>
-    </div>
-    
-    <div class="cert-level-item certified">
-      <div class="cert-level-icon">
-        <img src="/sail/assets/torch_red.png" alt="Certified certification icon">
-      </div>
-      <div class="cert-level-name">Certified</div>
-      <div class="cert-level-points">40–49 points</div>
+    <div class="fork">
+      <h4>A values statement?</h4>
+      <p>"A French model should feel French." This is a question of legitimacy and representation that no amount of productization or on-soil hosting can settle.</p>
     </div>
   </div>
 </div>
 
 <div class="section">
-  <h2>SAIL Assessment Process</h2>
-  
-  <div class="process-steps">
-    <div class="process-step">
-      <div class="process-step-number">1</div>
-      <h3>Select the appropriate SAIL track and scope</h3>
-      <p>Determine whether the assessment applies to a national strategy, ministry, agency, or specific program, and review relevant prerequisites.</p>
-    </div>
-    
-    <div class="process-step">
-      <div class="process-step-number">2</div>
-      <h3>Register the assessment</h3>
-      <p>Provide baseline documentation and define the scope of AI systems, governance processes, and dependencies.</p>
-    </div>
-    
-    <div class="process-step">
-      <div class="process-step-number">3</div>
-      <h3>Build the SAIL scorecard</h3>
-      <p>Choose the credits aligned with your strategy and map responsibilities for evidence gathering and documentation.</p>
-    </div>
-    
-    <div class="process-step">
-      <div class="process-step-number">4</div>
-      <h3>Implement sovereignty strategies</h3>
-      <p>Execute technical, organizational, and legal actions needed to meet prerequisites and pursue credit categories.</p>
-    </div>
-    
-    <div class="process-step">
-      <div class="process-step-number">5</div>
-      <h3>Submit for verification</h3>
-      <p>Upload evidence to the SAIL review portal and undergo independent verification for scoring and certification.</p>
-    </div>
+  <h2>Five interests behind one slogan</h2>
+  <p>Most sovereign AI demands resolve into a handful of distinct interests. Each maps to a different part of the technical stack - and some are poorly served by any checklist at all.</p>
+
+  <table class="interest-table">
+    <thead>
+      <tr>
+        <th>Interest</th>
+        <th>What they usually want</th>
+        <th>Where the stack helps</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Security &amp; weaponization</strong></td>
+        <td>No foreign actor can read, alter, or switch off critical systems (e.g. Microsoft's Swiss source-code vault).</td>
+        <td class="relevance">Layers 6&ndash;7: compute control and legal override.</td>
+      </tr>
+      <tr>
+        <td><strong>Industrial policy</strong></td>
+        <td>Chips, fabs, energy, talent, and a national champion built at home.</td>
+        <td class="relevance">Layer 6 capacity; high coordination risk.</td>
+      </tr>
+      <tr>
+        <td><strong>Enterprise &amp; procurement</strong></td>
+        <td>Data residency, provenance, and contractual exit rights.</td>
+        <td class="relevance">Layers 1&ndash;3: the part SAIL scores best.</td>
+      </tr>
+      <tr>
+        <td><strong>Cultural identity &amp; values</strong></td>
+        <td>A model that represents a community's language and norms.</td>
+        <td class="relevance">Partial only; legitimacy cannot be certified.</td>
+      </tr>
+      <tr>
+        <td><strong>Middle-power alliance</strong></td>
+        <td>Pooled compute, data, and models with trusted partners.</td>
+        <td class="relevance">Rewarded as federated sovereignty.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><a href="/sail/interests">Read the full interest decoder &rarr;</a></p>
+</div>
+
+<div class="section">
+  <h2>Why the framing matters</h2>
+  <p>When interests conflict, "sovereignty" stops being a specification and becomes a contest. Parallel nationalist races - everyone onshoring the same chips, everyone poaching the same researchers - can quietly undermine a joint middle-power strategy. The backlash to national champions like Cohere and Aleph Alpha is the pattern in miniature: one country's flagship becomes another country's reason to say "now we don't have to depend on them."</p>
+  <p>There is a deeper tension too. Large language models have steep fixed costs, thrive on scale and shared data, and are cheap to copy once trained. That profile fits a globally provisioned <a href="/">public good with some decentralization</a> far better than dozens of self-sufficient national stacks. For some actors, the most sovereign outcome is a shared, openly governed system - sovereignty as governance and access, not ownership and borders.</p>
+</div>
+
+<div class="section">
+  <h2>Two ways to use SAIL</h2>
+  <div class="paths">
+    <a href="/sail/interests" class="path-card">
+      <h3>Understand the interests &rarr;</h3>
+      <p>Decode what a sovereign AI claim is really asking for, what each interest can and cannot achieve, and where coordination breaks down.</p>
+    </a>
+    <a href="/sail/spec" class="path-card">
+      <h3>Assess stack control &rarr;</h3>
+      <p>When the real goal is control, dependency transparency, or exit readiness, use the seven-layer specification to assess it.</p>
+    </a>
   </div>
 </div>
 
-<div class="section">
-  <h2>SAIL Tools and Resources</h2>
-  <p>SAIL is supported by a suite of resources designed to help teams understand and fulfill credit requirements:</p>
-  
-  <nav class="sail-nav">
-    <a href="/sail/spec">📋 Specification</a>
-    <a href="#" class="disabled">🤖 Models</a>
-    <a href="#" class="disabled">🌍 Countries</a>
-  </nav>
-</div>
+<hr class="section-divider">
 
-<div class="section">
-  <h2>Understanding SAIL and Getting Started</h2>
-  <p>Before pursuing SAIL certification:</p>
-  
-  <ul class="bullet-list">
-    <li><strong>Review prerequisites</strong> – Ensure your entity meets the minimum requirements for certification (e.g., legal authority, inventory of AI use).</li>
-    <li><strong>Select the relevant track</strong> – Choose the right assessment track depending on whether you are assessing national, subnational, or programmatic sovereignty.</li>
-    <li><strong>Explore the credit library</strong> – Identify which credits are achievable and which require further capacity building.</li>
-  </ul>
-  
-  <div class="placeholder-image small">
-    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop" alt="Getting started guide - SAIL assessment flowchart">
-  </div>
-  <p class="image-caption">Getting started guide - SAIL assessment flowchart</p>
-</div>
+<details class="tech-assessment">
+  <summary>Technical assessment: the seven-layer certification</summary>
 
-<div class="section">
-  <h2>Certification and Recognition</h2>
-  <p>Once certified, projects have joined a select group of leaders in AI. They can then order or download a certificate for display, and share the news through a coordinated press release.</p>
-</div>
+  <p>For interests that are genuinely about control and exit readiness - mostly enterprise, procurement, and security - SAIL offers a structured, point-based assessment across seven layers of the AI stack, from applications and data through to compute and legal governance. It is a tool for measuring stack control maturity, not a badge of national prestige.</p>
+
+  <p>An assessment satisfies baseline prerequisites first, then accrues points toward a control-maturity level:</p>
+
+  <table class="cert-table">
+    <thead>
+      <tr>
+        <th>Level</th>
+        <th>Points</th>
+        <th>Reading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Platinum</strong></td>
+        <td>80+</td>
+        <td>End-to-end control, individually or through credible allied arrangements.</td>
+      </tr>
+      <tr>
+        <td><strong>Gold</strong></td>
+        <td>60&ndash;79</td>
+        <td>Strong control over data and model behavior, with managed dependencies.</td>
+      </tr>
+      <tr>
+        <td><strong>Silver</strong></td>
+        <td>50&ndash;59</td>
+        <td>Application and data control, with unresolved deeper dependencies.</td>
+      </tr>
+      <tr>
+        <td><strong>Certified</strong></td>
+        <td>40&ndash;49</td>
+        <td>Baseline control, still highly dependent on external providers.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Crucially, the spec does not try to measure cultural legitimacy or industrial-policy success - interests it cannot assess. See the <a href="/sail/spec">full specification</a> for the layers, credits, flags, and a guide to when the framework applies.</p>
+</details>
 
 <div class="section">
   <h2>About SAIL</h2>
-  <p>The SAIL program is developed and maintained by the <strong>Public AI Regular Council</strong>.</p>
-  
-  <div class="placeholder-image">
-    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=600&fit=crop" alt="Sovereign AI Leadership Consortium partners and members">
-  </div>
-  <p class="image-caption">Sovereign AI Leadership Consortium partners and members</p>
+  <p>SAIL is developed and maintained by the <a href="/">Public AI Network</a> as part of its work on AI as public infrastructure. It draws on the network's <a href="/seminar">seminar series</a>, <a href="/publications">publications</a>, and <a href="/handbook">handbook</a> on national strategies and coordination.</p>
 </div>

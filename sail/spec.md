@@ -199,26 +199,87 @@ permalink: /sail/spec/
 </style>
 
 <nav class="spec-nav">
-  <a href="/sail">🏠 Home</a>
-  <a href="/sail/models">🤖 Models</a>
-  <a href="/sail/countries">🌍 Countries</a>
+  <a href="/sail">Home</a>
+  <a href="/sail/interests">Interests</a>
+  <a href="/sail/cases">Cases</a>
+  <a href="/sail/models">Models</a>
+  <a href="/sail/countries">Countries</a>
 </nav>
 
 ## SAIL Specification
 
-This document provides the complete specification for the **Sovereign AI Leadership (SAIL)** certification program, including evaluation criteria, point-based scoring methodology, and certification requirements.
+This document provides the complete specification for the **Sovereign AI Leadership (SAIL)** assessment, including evaluation criteria, point-based scoring methodology, and control-maturity levels.
 
 ### Table of Contents
 
 <div class="toc">
 <ul>
+  <li><a href="#when-to-use">When to use this spec</a></li>
   <li><a href="#overview">Overview</a></li>
-  <li><a href="#levels">Certification Levels</a></li>
+  <li><a href="#levels">Control-Maturity Levels</a></li>
   <li><a href="#layers">The Seven Layers</a></li>
   <li><a href="#flags">Flags & Constraints</a></li>
-  <li><a href="#process">Certification Process</a></li>
+  <li><a href="#process">Assessment Process</a></li>
 </ul>
 </div>
+
+## When to use this spec {#when-to-use}
+
+This specification assesses one specific thing: **how much control an entity has over its AI stack, and how readily it could exit a dependency.** That is exactly what some sovereign AI interests are about, and beside the point for others.
+
+<div class="key-principles">
+<h4>Use this spec when</h4>
+<ul>
+  <li>Your primary interest is <strong>control, dependency transparency, or exit readiness</strong> - typical of enterprise, procurement, and security concerns.</li>
+  <li>You need to compare strategies on capability actually demonstrated, not intent declared.</li>
+</ul>
+<h4>Do not use this spec as a proxy for</h4>
+<ul>
+  <li><strong>Cultural legitimacy</strong> - whether a model "feels French" is a question of governance and representation, not a score.</li>
+  <li><strong>Industrial-policy success</strong> - jobs, fabs, and regional investment are real goals the stack does not measure.</li>
+</ul>
+</div>
+
+Before applying the spec, decode the interest driving the request. The [interest decoder](/sail/interests) explains the five common interests behind sovereign AI claims; the table below routes each layer to the interests that care most about it.
+
+<table class="credit-table">
+  <thead>
+    <tr>
+      <th>Layer</th>
+      <th>Interests that care most</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#layer-1-application--service-sovereignty">Layer 1: Application</a></td>
+      <td>Enterprise &amp; procurement</td>
+    </tr>
+    <tr>
+      <td><a href="#layer-2-orchestration-integration--distribution">Layer 2: Orchestration</a></td>
+      <td>Enterprise &amp; procurement</td>
+    </tr>
+    <tr>
+      <td><a href="#layer-3-data-sovereignty-origin-control-evaluation">Layer 3: Data</a></td>
+      <td>Enterprise &amp; procurement; cultural identity &amp; values</td>
+    </tr>
+    <tr>
+      <td><a href="#layer-4-model-sovereignty-reproducibility--capability">Layer 4: Model</a></td>
+      <td>Industrial policy; cultural identity &amp; values</td>
+    </tr>
+    <tr>
+      <td><a href="#layer-5-training--post-training-sovereignty">Layer 5: Training</a></td>
+      <td>Industrial policy; cultural identity &amp; values</td>
+    </tr>
+    <tr>
+      <td><a href="#layer-6-compute--infrastructure-sovereignty-structural">Layer 6: Compute</a></td>
+      <td>Security &amp; weaponization; industrial policy; middle-power alliance</td>
+    </tr>
+    <tr>
+      <td><a href="#layer-7-legal-governance--exit-sovereignty">Layer 7: Legal &amp; Exit</a></td>
+      <td>Security &amp; weaponization; enterprise &amp; procurement</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Overview {#overview}
 
@@ -234,16 +295,24 @@ The framework is designed to reward realistic, optimized sovereignty strategies,
 <h4>Key Principles</h4>
 <ul>
   <li><strong>Sovereignty may be partial, federated, or optimized</strong>, but dependencies must be explicit.</li>
-  <li><strong>Certain layers</strong> (compute, legal environment) act as structural constraints and may cap achievable certification tiers.</li>
+  <li><strong>Certain layers</strong> (compute, legal environment) act as structural constraints and may cap achievable tiers.</li>
   <li><strong>Credit is awarded</strong> for real capacity, legal robustness, and exit readiness, not stated intent.</li>
 </ul>
 </div>
 
-**Note**: SAIL does not evaluate technical excellence, though it does look at publicly available adoption levels of sovereign products and artifacts.
+<div class="key-principles">
+<h4>Coordination &amp; federation</h4>
+<p>SAIL treats <strong>federated and allied capacity as legitimate sovereignty</strong>, not a consolation prize. A country that pools compute and models with trusted partners, with dependencies acknowledged, can score as highly as one that builds everything alone - and more realistically, given the economics of frontier models.</p>
+<p>The corollary is a <strong>fragmentation flag</strong>: strategies that duplicate chip and talent competition without allied benefit are scored as weaker on coordination. Building a national champion that erodes a viable middle-power alliance is a cost, not just a neutral choice. (This is a narrative flag for now, used in assessment commentary rather than as a fixed point deduction.) See the <a href="/sail/cases#cohere-aleph-alpha-and-franco-german-tension">Cohere / Aleph Alpha case</a> for the dynamic this guards against.</p>
+</div>
 
-## Certification Levels {#levels}
+**Note**: SAIL does not evaluate technical excellence, cultural legitimacy, or industrial-policy success, though it does look at publicly available adoption levels of sovereign products and artifacts.
 
-### Platinum — Sovereign Leadership
+## Control-Maturity Levels {#levels}
+
+These levels describe how much control an entity has demonstrated over its stack. They measure control maturity, not national prestige - a Platinum result is a statement about dependency and exit readiness, not a ranking of whose AI is most sovereign.
+
+### Platinum — End-to-End Control
 **80+ points earned**
 
 Demonstrates end-to-end control across the AI stack, including model adaptation and pre-training (individually or through credible allied/federated arrangements).
@@ -631,19 +700,19 @@ Indicates concerns about legal stability and the sustainability of AI-enabling r
 
 Indicates lack of control over primary model/service distribution channels.
 
-## Certification Process {#process}
+## Assessment Process {#process}
 
-1. **Baseline Assessment**: Verify all baseline prerequisites are met across each layer
-2. **Point Evaluation**: Assess each credit criterion and award points based on demonstrated capacity
-3. **Flag Review**: Identify and document any structural constraints or flags
-4. **Certification Level**: Determine certification level based on total points and constraints
-5. **Public Review**: Publish assessment for public comment and peer review
-6. **Final Certification**: Issue certification with detailed justification
+1. **Decode the interest**: Establish which sovereign AI [interest](/sail/interests) is actually driving the request, and confirm the spec is the right tool for it
+2. **Baseline Assessment**: Verify all baseline prerequisites are met across each layer
+3. **Point Evaluation**: Assess each credit criterion and award points based on demonstrated capacity
+4. **Flag Review**: Identify and document any structural constraints, coordination, or fragmentation flags
+5. **Maturity Level**: Determine the control-maturity level based on total points and constraints
+6. **Public Review**: Publish the assessment for public comment and peer review
 
 ---
 
 **Total Possible Points: 175**
 
-*This specification is maintained by the Public AI Regular Council. For questions or suggestions, please contact [info@publicai.network](mailto:info@publicai.network).*
+*This specification is maintained by the Public AI Network. For questions or suggestions, please contact [info@publicai.network](mailto:info@publicai.network).*
 
 *Acknowledgements: Jan Hajic's presentation to OSFM.*

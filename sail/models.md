@@ -189,6 +189,37 @@ permalink: /sail/models/
   background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
 }
 
+.model-interests {
+  margin: 0.75rem 0 0.25rem 0;
+}
+
+.model-interests .label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin: 2px 4px 2px 0;
+}
+
+.badge.security { background: #f8d7da; color: #842029; }
+.badge.industrial { background: #fff3cd; color: #664d03; }
+.badge.enterprise { background: #d1e7dd; color: #0f5132; }
+.badge.values { background: #e2d9f3; color: #432874; }
+.badge.alliance { background: #cfe2ff; color: #084298; }
+
+.models-nav a.current {
+  background: #667eea;
+  color: white;
+}
+
 @media (max-width: 768px) {
   .model-header {
     flex-direction: column;
@@ -201,14 +232,17 @@ permalink: /sail/models/
 </style>
 
 <nav class="models-nav">
-  <a href="/sail">🏠 Home</a>
-  <a href="/sail/spec">📋 Specification</a>
-  <a href="/sail/countries">🌍 Countries</a>
+  <a href="/sail">Home</a>
+  <a href="/sail/interests">Interests</a>
+  <a href="/sail/cases">Cases</a>
+  <a href="/sail/spec">Specification</a>
+  <a href="/sail/models" class="current">Models</a>
+  <a href="/sail/countries">Countries</a>
 </nav>
 
 ## Sovereign AI Models Directory
 
-A comprehensive directory of sovereign AI language models, foundation models, and AI systems developed by countries around the world.
+A small, curated set of sovereign AI models, tagged by the [interest](/sail/interests) each one primarily serves. The point is not to rank models but to show that "sovereign" means different things for each: a regional-language model, an open public good, and a national champion are answers to different questions.
 
 <div class="filter-bar">
   <select id="country-filter">
@@ -252,6 +286,12 @@ A comprehensive directory of sovereign AI language models, foundation models, an
   <div class="model-description">
     GPT-SW3 is a large language model trained on Swedish text data, developed by AI Sweden in collaboration with RISE and the Wallenberg AI, Autonomous Systems and Software Program (WASP). It represents one of the first major sovereign AI initiatives in the Nordic region.
   </div>
+
+  <div class="model-interests">
+    <span class="label">Serves which interest?</span>
+    <span class="badge values">Cultural identity &amp; values</span>
+    <span class="badge alliance">Middle-power alliance</span>
+  </div>
   
   <div class="model-specs">
     <div class="spec-item">
@@ -275,11 +315,10 @@ A comprehensive directory of sovereign AI language models, foundation models, an
   <div class="model-links">
     <a href="https://www.ai.se/en/project/gpt-sw3" target="_blank">Official Site</a>
     <a href="https://huggingface.co/AI-Sweden-Models" target="_blank">Hugging Face</a>
-    <a href="/sail/countries#sweden">Country Profile</a>
   </div>
 </div>
 
-<div class="model-card" data-country="Singapore" data-type="Language Model">
+<div class="model-card" id="singapore" data-country="Singapore" data-type="Language Model">
   <div class="model-header">
     <div class="model-title">
       <h3>SEA-LION <span class="country-badge">🇸🇬 Singapore</span></h3>
@@ -293,6 +332,12 @@ A comprehensive directory of sovereign AI language models, foundation models, an
   
   <div class="model-description">
     SEA-LION (Southeast Asian Languages in One Network) is a family of large language models designed specifically for Southeast Asian languages. Developed by AI Singapore, it supports 11 languages including Malay, Indonesian, Thai, Vietnamese, and Tagalog.
+  </div>
+
+  <div class="model-interests">
+    <span class="label">Serves which interest?</span>
+    <span class="badge alliance">Middle-power alliance</span>
+    <span class="badge values">Cultural identity &amp; values</span>
   </div>
   
   <div class="model-specs">
@@ -318,10 +363,11 @@ A comprehensive directory of sovereign AI language models, foundation models, an
     <a href="https://sea-lion.ai/" target="_blank">Official Site</a>
     <a href="https://huggingface.co/aisingapore" target="_blank">Hugging Face</a>
     <a href="/sail/countries#singapore">Country Profile</a>
+    <a href="/sail/cases#sea-lion-apertus-and-the-public-ai-inference-utility">Case</a>
   </div>
 </div>
 
-<div class="model-card" data-country="Switzerland" data-type="Language Model">
+<div class="model-card" id="switzerland" data-country="Switzerland" data-type="Language Model">
   <div class="model-header">
     <div class="model-title">
       <h3>Apertus <span class="country-badge">🇨🇭 Switzerland</span></h3>
@@ -335,6 +381,12 @@ A comprehensive directory of sovereign AI language models, foundation models, an
   
   <div class="model-description">
     Apertus is a fully open, transparent, multilingual language model developed by ETH Zurich. It represents a significant advancement in open-source sovereign AI, with complete transparency in training data, methodology, and deployment.
+  </div>
+
+  <div class="model-interests">
+    <span class="label">Serves which interest?</span>
+    <span class="badge values">Cultural identity &amp; values</span>
+    <span class="badge alliance">Middle-power alliance</span>
   </div>
   
   <div class="model-specs">
@@ -360,10 +412,11 @@ A comprehensive directory of sovereign AI language models, foundation models, an
     <a href="https://ethz.ch/en/news-and-events/eth-news/news/2025/09/press-release-apertus-a-fully-open-transparent-multilingual-language-model.html" target="_blank">Official Announcement</a>
     <a href="https://publicai.co/" target="_blank">Public AI Inference Utility</a>
     <a href="/sail/countries#switzerland">Country Profile</a>
+    <a href="/sail/cases#sea-lion-apertus-and-the-public-ai-inference-utility">Case</a>
   </div>
 </div>
 
-<div class="model-card" data-country="France" data-type="Foundation Model">
+<div class="model-card" id="france" data-country="France" data-type="Foundation Model">
   <div class="model-header">
     <div class="model-title">
       <h3>Mistral AI Models <span class="country-badge">🇫🇷 France</span></h3>
@@ -377,6 +430,12 @@ A comprehensive directory of sovereign AI language models, foundation models, an
   
   <div class="model-description">
     Mistral AI has developed a series of high-performance language models including Mistral 7B, Mixtral 8x7B, and Mistral Large. While a private company, Mistral AI represents significant French sovereign AI capabilities and has received substantial public support.
+  </div>
+
+  <div class="model-interests">
+    <span class="label">Serves which interest?</span>
+    <span class="badge industrial">Industrial policy</span>
+    <span class="badge values">Cultural identity &amp; values</span>
   </div>
   
   <div class="model-specs">
@@ -402,6 +461,7 @@ A comprehensive directory of sovereign AI language models, foundation models, an
     <a href="https://mistral.ai/" target="_blank">Official Site</a>
     <a href="https://huggingface.co/mistralai" target="_blank">Hugging Face</a>
     <a href="/sail/countries#france">Country Profile</a>
+    <a href="/sail/cases#mistral-and-french-ai">Case</a>
   </div>
 </div>
 
@@ -419,6 +479,12 @@ A comprehensive directory of sovereign AI language models, foundation models, an
   
   <div class="model-description">
     AuroraGPT is a science-focused language model developed by Argonne National Laboratory. It's designed specifically for scientific applications and represents a significant public sector AI initiative in the United States.
+  </div>
+
+  <div class="model-interests">
+    <span class="label">Serves which interest?</span>
+    <span class="badge industrial">Industrial policy</span>
+    <span class="badge enterprise">Enterprise &amp; procurement</span>
   </div>
   
   <div class="model-specs">
@@ -442,23 +508,12 @@ A comprehensive directory of sovereign AI language models, foundation models, an
   
   <div class="model-links">
     <a href="https://auroragpt.anl.gov/" target="_blank">Official Site</a>
-    <a href="/sail/countries#united-states">Country Profile</a>
   </div>
 </div>
 
-## Statistics
-
-- **Total Models Tracked**: 50+
-- **Countries Represented**: 25+
-- **Platinum Certified**: 8
-- **Gold Certified**: 15
-- **Silver Certified**: 12
-- **Open Source Models**: 35+
-- **Multilingual Models**: 20+
-
 ## Contributing
 
-Know of a sovereign AI model that should be included? [Submit information](mailto:info@publicai.network) or make a pull request to add it to this directory.
+This is an illustrative selection, not an exhaustive index. Know of a sovereign AI model that sharpens the picture - especially one that serves an interest not yet represented here? [Submit information](mailto:info@publicai.network) or open a pull request to add it.
 
 <script>
 // Filter functionality
