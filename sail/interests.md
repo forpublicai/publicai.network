@@ -196,7 +196,7 @@ permalink: /sail/interests/
 
 # What do people actually want from sovereign AI?
 
-<p class="lede">When a minister, a CIO, or an industrial-policy lead says "sovereign AI," they rarely mean the same thing. The phrase is a banner that very different interests march under. This page maps the most common interests behind the slogan, what each one is really optimizing for, and which parts of the <a href="/sail/spec">SAIL specification</a> actually speak to it &mdash; and which parts cannot.</p>
+<p class="lede">When a minister, a CIO, or an industrial-policy lead says "sovereign AI," they rarely mean the same thing. This reference guide maps the most common interests behind the slogan. For the narrative introduction, read the <a href="/sail/blog/decoding-sovereign-ai/">featured essay</a>.</p>
 
 We are less interested in settling what sovereign AI *is* than in reading why decision-makers care. The same demand for "sovereignty" can be a bid for vendor independence, a play for chips and jobs, a data-residency requirement, or a cultural statement. Treating these as one thing is how policy debates go in circles.
 

@@ -75,12 +75,12 @@ How does public AI relate to national AI strategies, sovereignty claims, and mul
 - **[AI Nationalisms: Global Industrial Policy Approaches to AI](https://ainowinstitute.org/publications/research/ai-nationalisms-global-industrial-policy-approaches-to-ai)** — AI Now Institute
 
 ### Tool
-- **[SAIL: a decoder for sovereign AI](https://publicai.network/sail/interests)** — maps what policymakers actually want when they invoke sovereign AI (security, industrial policy, enterprise control, cultural identity, or middle-power alliance) and where coordination breaks down.
+- **[Decoding sovereign AI](https://publicai.network/sail/blog/decoding-sovereign-ai/)** — featured essay mapping what policymakers actually want when they invoke sovereign AI. Companion reference: [interest decoder](https://publicai.network/sail/interests).
 
 ### Discussion prompts
 - When does sovereignty reinforce public accountability, and when does it undermine it?  
 - Is the Airbus analogy helpful for thinking about public AI, or misleading?
-- Using the [SAIL interest decoder](https://publicai.network/sail/interests), which interest is really driving a sovereignty claim you have seen in the news?
+- Using the [SAIL interest decoder](https://publicai.network/sail/interests) or [featured essay](https://publicai.network/sail/blog/decoding-sovereign-ai/), which interest is really driving a sovereignty claim you have seen in the news?
 
 ### Applied exercise (output)
 **Strategy comparison brief (diagram + short text)**  
