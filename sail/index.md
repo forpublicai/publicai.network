@@ -103,20 +103,24 @@ permalink: /sail/
 }
 
 .featured-post {
-  display: block;
   background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
   border: 1px solid #c5cff5;
   border-left: 5px solid #667eea;
   border-radius: 8px;
-  padding: 1.5rem 1.75rem;
   margin: 2rem 0 3rem 0;
-  text-decoration: none;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .featured-post:hover {
   box-shadow: 0 4px 16px rgba(102, 126, 234, 0.15);
   transform: translateY(-2px);
+}
+
+.featured-post a {
+  display: block;
+  padding: 1.5rem 1.75rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 .featured-post .label {
@@ -362,12 +366,14 @@ permalink: /sail/
 </div>
 <p class="image-caption">Barcelona Supercomputing Centre | SAIL-certified AI infrastructure facility</p>
 
-<a href="/sail/blog/decoding-sovereign-ai/" class="featured-post">
-  <div class="label">Featured essay</div>
-  <h3>Decoding sovereign AI: same word, different interests</h3>
-  <p>When policymakers say sovereign AI, they rarely mean the same thing. This essay maps the five interests behind the slogan — security, industrial policy, enterprise control, cultural identity, and middle-power alliance — and explains when the technical stack can help.</p>
-  <div class="read-more">Read the essay &rarr;</div>
-</a>
+<div class="featured-post" markdown="0">
+  <a href="/sail/blog/decoding-sovereign-ai/">
+    <div class="label">Featured essay</div>
+    <h3>Decoding sovereign AI: same word, different interests</h3>
+    <p>When policymakers say sovereign AI, they rarely mean the same thing. This essay maps the five interests behind the slogan — security, industrial policy, enterprise control, cultural identity, and middle-power alliance — and explains when the technical stack can help.</p>
+    <div class="read-more">Read the essay &rarr;</div>
+  </a>
+</div>
 
 <div class="section">
   <h2>SAIL-certified sovereign AI systems are better systems</h2>
