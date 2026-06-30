@@ -15,9 +15,21 @@ table th { text-align: center; }
 A research seminar to study public AI and other forms of public interest AI. You can [apply](https://forms.gle/1f8fkcCEjEoJF6L78) to join a future season of the seminar.
 
 ## Season 4
-Season 4 will start in mid-summer 2026. The fourth season of the seminar will cover the business of AI, spanning business models, gaps, and case studies. In particular, we will consider the opportunities for public AI across applications, models, inference, and physical infrastructure.
+Season 4 is planned to start in summer 2026. The fourth season of the seminar will focus on the business of public AI, including public infrastructure exemplars, funding/business models, and case studies. In particular, we will consider the opportunities for public AI across applications, models, inference, and physical infrastructure.
 
-To apply for the seminar, please [apply](https://forms.gle/1f8fkcCEjEoJF6L78).
+### Sessions in Formation
+| Date | Seminar | Recording |
+|------|---------|-----------|
+| TBA | **Exemplars: Broadband:** What can public AI learn from efforts to provide broadband internet access as public infrastructure? | TBA |
+| TBA | **Exemplars: The Internet:** What can public AI learn from efforts to build the internet as public infrastructure? | TBA |
+| TBA | **Funding: Government Models:** How can public AI be sustained using government funding? | TBA |
+| TBA | **Funding: Cooperative Models:** How can public AI be sustained using cooperative/distributed funding? | TBA |
+| TBA | **Case Studies: Commercial Offerings:** How are commercial AI companies supporting public AI? | TBA |
+| TBA | **Case Studies: Compute:** What efforts are happening to build public AI compute? | TBA |
+| TBA | **Case Studies: Global:** What public AI efforts are happening around the globe? | TBA |
+| TBA | **Case Studies: Models/Data:** What efforts are happening to build public AI models/data collections? | TBA |
+
+To join for the seminar, please [apply](https://forms.gle/1f8fkcCEjEoJF6L78).
 
 Organizers: Nate Angell (Nudgital)
 
