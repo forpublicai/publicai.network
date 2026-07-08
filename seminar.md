@@ -18,6 +18,7 @@ A research seminar to study public AI and other forms of public interest AI. You
 Season 4 is planned to start in summer 2026. The fourth season of the seminar will focus on the business of public AI, including public infrastructure exemplars, funding/business models, and case studies. In particular, we will consider the opportunities for public AI across applications, models, inference, and physical infrastructure.
 
 ### Sessions in Formation
+
 | Date | Seminar | Recording |
 |------|---------|-----------|
 | TBA | **Exemplars: Broadband:** What can public AI learn from efforts to provide broadband internet access as public infrastructure? | TBA |
