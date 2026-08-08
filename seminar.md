@@ -7,7 +7,7 @@ description: A research seminar to study public AI and other forms of public int
 
 <style>
 table {  border-spacing: 0; }
-table td, table th {  padding: 4px;  /* default is 12px */ }
+table td, table th {  padding: 4px; /* default is 12px */ vertical-align: top; }
 table td:first-child { white-space: nowrap; width: 3.5em;  /* don't break on date */ }
 table th { text-align: center; }
 </style>
@@ -15,24 +15,27 @@ table th { text-align: center; }
 A research seminar to study public AI and other forms of public interest AI. You can [apply](https://forms.gle/1f8fkcCEjEoJF6L78) to join a future season of the seminar.
 
 ## Season 4
-Season 4 is planned to start in summer 2026. The fourth season of the seminar will focus on the business of public AI, including public infrastructure exemplars, funding/business models, and case studies. In particular, we will consider the opportunities for public AI across applications, models, inference, and physical infrastructure.
+The fourth season of the seminar focuses on the business of public AI, including public infrastructure exemplars, funding/business models, and case studies. In particular, we will consider the opportunities for public AI across applications, models, inference, and physical infrastructure.
 
-### Sessions in Formation
+### Sessions
+Unless indicated otherwise, **all sessions are held Tuesdays, 11am–1pm ET** (UTC-4). Seminar seats are limited, so please [apply to join this season](https://forms.gle/1f8fkcCEjEoJF6L78) (if your application is accepted, see email for registration details).
 
 | Date | Seminar | Recording |
 |------|---------|-----------|
-| TBA | **Exemplars: Broadband:** What can public AI learn from efforts to provide broadband internet access as public infrastructure? | TBA |
-| TBA | **Exemplars: The Internet:** What can public AI learn from efforts to build the internet as public infrastructure? | TBA |
-| TBA | **Funding: Government Models:** How can public AI be sustained using government funding? | TBA |
-| TBA | **Funding: Cooperative Models:** How can public AI be sustained using cooperative/distributed funding? | TBA |
-| TBA | **Case Studies: Commercial Offerings:** How are commercial AI companies supporting public AI? | TBA |
-| TBA | **Case Studies: Compute:** What efforts are happening to build public AI compute? | TBA |
-| TBA | **Case Studies: Global:** What public AI efforts are happening around the globe? | TBA |
-| TBA | **Case Studies: Models/Data:** What efforts are happening to build public AI models/data collections? | TBA |
+| **11 Aug 2026** | **Exemplars: The Internet:** What can public AI learn from efforts to build the internet as public infrastructure? | **Presenter: [Janet Abbate](https://www.linkedin.com/in/jabbate/)**, [Professor, Department of Science, Technology, and Society](https://liberalarts.vt.edu/departments-and-schools/department-of-science-technology-and-society/faculty/janet-abbate.html), [Virginia Tech](https://www.vt.edu/)<br />**Preread: [Privatizing the Internet: Competing Visions and Chaotic Events, 1987–1995](https://doi.org/10.1109/MAHC.2010.24)** (Janet Abbate, IEEE Annals of the History of Computing, Jan–Mar 2010) |
+| **18 Aug 2026** | **Funding: Cooperative Models:** How can public AI be sustained using cooperative/distributed funding? | **Presenter: [Nathan Schneider](https://www.linkedin.com/in/nathanschneider/)**, [Assistant Professor of Media Studies](https://nathanschneider.info/), [University of Colorado Boulder](https://www.colorado.edu/)<br />**Preread: [Collective Governance for AI: Points of Intervention](https://metagov.org/cg-ai/)** (Nathan Schneider/Metagov, Nov 2025) |
+| **25 Aug 2026** | **Funding: Government Models:** How can public AI be sustained using government funding? | **Presenter: TBA**<br />**Preread: TBA** |
+| **1 Sep 2026** | **Exemplars: Broadband:** What can public AI learn from efforts to provide broadband internet access as public infrastructure? | **Presenter (pending confirmation): [Gigi Sohn](https://www.linkedin.com/in/gigisohn/)**, ED, [AAPB](https://www.aapb.us/); Board Chair, [EFF](https://www.eff.org/); Former President CEO, [Public Knowledge](https://publicknowledge.org/)<br />**Preread: TBA** |
+| **8 Sep 2026** | **Case Studies: Models/Data:** What efforts are happening to build public AI models/data collections? | **Presenter: TBA**<br />**Preread: TBA** |
+| **15 Sep 2026** | **Case Studies: Compute:** What efforts are happening to build public AI compute? | **Presenter: [Devin Gaffney](https://www.linkedin.com/in/devin-gaffney)**, [CEO](https://www.devingaffney.com/), [Graze Social](https://www.graze.social/)<br />**Preread: [Can we billionaire-proof inference?](https://graze.leaflet.pub/3molilyuk5k2a)** (Graze Social Newsletter, 18 Jun 2026) |
+| **22 Sep 2026** | **Case Studies: Global:** What public AI efforts are happening around the globe? | **Presenters: Team members from [Open Knowledge Foundation AI Learning Labs](https://okfn.org/en/projects/ai-learning-labs/)**<br />**Preread: TBA**  |
+| **29 Sep 2026** | **Case Studies: Commercial Offerings:** How are commercial AI companies supporting public AI? | **Presenters: [Saayeli Bruni](https://www.linkedin.com/in/saayeli/)**, [Principal](https://mozilla.vc/team/saayeli-mukherji-bruni/), [Mozilla Ventures](https://mozilla.vc/)<br />**Preread: TBA** |
 
+### Join
 To join for the seminar, please [apply](https://forms.gle/1f8fkcCEjEoJF6L78).
 
-Organizers: Nate Angell (Nudgital)
+### Organizers
+* [Nate Angell](https://www.linkedin.com/in/nateangell/), [Founder](https://xolotl.org/), [Nudgital](https://nudgital.com/)
 
 ## Season 3
 Season 3 ran from April 22 to June 10, 2025, with two special sessions later in the summer. The seminar surveyed positions on AI emerging from art and culture, and considered the relationship between AI and the creative industries through four lenses: political power, cultural power, technological power, and economic power. Several spots were reserved for creative professionals in any medium interested in exploring public AI.
