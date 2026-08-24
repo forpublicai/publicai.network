@@ -1,40 +1,34 @@
 ---
 title: Fractional CEO, MOCSI
-host: Public AI
+host: Public AI, via Metagov
 category: funded
 status: filled
 location: Maine (hybrid)
-commitment: Fractional contract, 8 days per month
+commitment: Fractional contract, 10 days per month
 compensation:
 order: 0
 date_posted: 2026-08-01
 summary: Stand up Maine's community-owned AI compute service — form the entity, close customers, raise capital, and publish a forkable recipe for other communities.
 ---
 
-This opportunity is funded by [Public AI](https://publicai.co) and offered in collaboration with the Maine Open Compute Services Initiative (MOCSI), fiscally sponsored by [Metagov](https://metagov.org).
+This opportunity is funded by [Public AI](https://publicai.co) and fiscally sponsored by [Metagov](https://metagov.org).
 
 **Location:** Maine, hybrid  
 **Commitment:** Fractional contract, 8 days per month  
 **Start date:** ASAP
 
-MOCSI is building the first community-owned AI compute service in the United States: a community-scale facility (on the order of 8–16 GPUs and under $1M capex) with local ownership, an explicit public-interest focus, and an open, auditable service stack. Candidate sites are under diligence across Maine. The site is not yet locked.
-
-The thesis is narrow and defensible. Compute, not data, is the binding constraint on who gets to participate in the AI economy. Almost all of it is privately held. Maine can own some.
-
-We are not building a datacenter business. We are building a public utility and publishing the recipe so the next community does not start from zero. The model draws on Maine's history of public and cooperative infrastructure — town-owned broadband, cooperative ISPs — and on peer public AI compute projects such as Empire AI and Calcompute.
-
-The project is early but not speculative. There is a financial model, legal counsel at Bernstein Shur, an infrastructure lead, a community engagement lead, stakeholder workshops underway, and a first grant from the Co-Lab Fund. There is no entity. That is the first thing you fix.
+A team incubated by Public AI is building the Maine Open Compute Services Initiative (MOCSI), the first community-owned AI data center in the United States. MOCSI is a community-scale facility (on the order of 8–16 GPUs and under $1M capex) with local ownership, an explicit public-interest focus, and an open, auditable service stack. As the fractional CEO, you will lead this founding team through the raise, establishment, and execution of MOCSI's mission: to provide affordable, community-owned AI to Maine.
 
 ## You will
 
+- **Close anchor customer MOUs.** Bring in customers, in particular written LOIs/MOUs from Maine institutions (and any out-of-state anchors that strengthen the raise).
+- **Close the raise.** Most likely: a blend of philanthropic, state, federal, and aligned private capital. As part of this, you will maintain final responsibility for the pitch deck, business model, and financial model that will serve as core tools of the raise.
 - **Form the entity.** Select and stand up the legal vehicle with counsel, including governance structure, board composition, and the community-ownership provisions that make "community-owned" a legal fact rather than a slogan.
-- **Close anchor customer MOUs.** The model needs roughly 75% utilization to work. Written commitments from Maine institutions — the university system, health systems, state agencies, regional employers — are the difference between a credible raise and a spreadsheet.
 - **Advance site selection and negotiate the site agreement.** Diligence candidate locations, then lock power, cooling, interconnection, and expansion options with the chosen host.
-- **Assemble the capital raise package.** Blended philanthropic, state, federal, and patient private capital. Be honest in the materials: cash-opex breakeven sits above the cheapest dedicated competitor price at target utilization. MOCSI is a subsidized public utility, not a business that pencils on its own. Raise on that basis. Funders who need it to pencil are the wrong funders.
-- **Own the numbers.** Maintain the financial model as a live decision tool, not a pitch artifact.
+- **Lead the founding team** of MOCSI. The founding team of MOCSI is composed of leads working across product, infrastructure, community, and legal/governance. Your role is not execute across all these fronts, but to help prioritize, unblock, and represent externally.
+- **Define the permanent leadership structure** of MOCSI once capital has been raised, and recruit into it.
 - **Build the political base.** Maine's congressional delegation, the Governor's office, Maine Connectivity Authority, municipal officials, and the regional business community.
-- **Publish the recipe.** Bylaws, MOU templates, the financial model, site diligence, power negotiations. Everything ships public under an open license so other communities can fork it.
-- **Define the permanent leadership structure** and recruit into it. This role is explicitly transitional.
+- **Publish the recipe.** Bylaws, MOU templates, the financial model, site diligence, power negotiations, and more all described in an open publication.
 
 You will have wide latitude. We need someone who can hold a project together before there is an organization to hold it.
 
@@ -43,14 +37,13 @@ You will have wide latitude. We need someone who can hold a project together bef
 **Required**
 
 - You have built and run infrastructure in a capital-intensive or regulated sector. Telecom, broadband, energy, water, or datacenter.
-- You have stood up a new entity from nothing: incorporation, board, first customers, first hires.
-- You have raised across mixed sources, at minimum some combination of philanthropic, state, and private capital.
+- You have stood up and raised money for a new entity from nothing: incorporation, board, first customers, first hires.
 - You have real relationships in Maine institutions, politics, and business, and you can get a meeting this month.
-- You are comfortable saying in public that the project requires subsidy, and comfortable arguing why that is the correct structure rather than a weakness.
+- Comfort making the case for philanthropic and state funding, and arguing why this is an advantage of the model.
 
 **Most important: intrinsic motivation.**
 
-This is a public-goods project with a nonprofit sponsor and an open license on its output. We need someone who wants Maine to own compute, not someone who wants to run a datacenter. The compensation is fractional and the equity story, if any, is deliberately capped. If the upside is what makes the role attractive, it is the wrong role.
+MOCSI, at its core, is a public-goods project. It is about creating something that will serve the people of Maine, and communicating that to our many stakeholders. The compensation is fractional and the equity story, if any, is deliberately capped. If you are here for the equity upside or because you just want to run a data center, this is the wrong role.
 
 **Nice to have**
 
@@ -60,13 +53,9 @@ This is a public-goods project with a nonprofit sponsor and an open license on i
 - Federal and state grant experience, particularly EDA, DOE, or NTIA programs
 - Existing relationships with Maine economic-development or site-host institutions
 
-## Logistics
-
-- **Location:** Maine, hybrid. Regular in-state presence required; travel to the selected site as diligence and operations demand.
-- **Employment:** Independent contractor engaged by Public AI, transitioning to employment with the MOCSI entity upon its formation and adequate capitalization. Governed by a separate statement of work.
-- **Compensation:** Negotiated for the fractional contract. Reviewed at entity formation.
-
 ---
+
+This role will operate as an independent contractor engaged by Public AI (hosted via Metagov), transitioning to employment with the MOCSI entity upon its formation and adequate capitalization.
 
 Send a note to [josh@publicai.co](mailto:josh@publicai.co). Tell us what you have built, who you can call in Augusta, and why community-owned compute matters to you.
 
