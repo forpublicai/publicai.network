@@ -976,6 +976,20 @@ The **Public AI Network** brings together a diverse coalition of researchers, pr
   </div>
 </div>
 
+<div class="card">
+  <div class="tab">Nate Angell</div>
+  <div class="content">
+    <div class="avatar c6">NA</div>
+    <div class="name">Nate Angell</div>
+    <div class="aff"><a href="https://nudgital.com/">Nudgital</a>, US</div>
+    <div class="details">
+    <b>Focus:</b>
+    Communications, Community, Education
+    </div>
+    <div class="joined">2026</div>
+  </div>
+</div>
+
     <div class="card">
       <div class="tab">Nick Garcia</div>
       <div class="content">
