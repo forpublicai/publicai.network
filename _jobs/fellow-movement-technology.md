@@ -4,8 +4,8 @@ host: London College of Political Technology
 category: funded
 status: open
 location: London preferred; remote okay
-commitment: Deliverable-based, then part-time
-compensation: £4,000 stipend
+commitment: 2 months, extendable
+compensation: £1,000/month stipend
 order: 1
 date_posted: 2026-08-27
 summary: Technical organizer building automations and infrastructure so the global public AI movement can coordinate and stay legible across the US, UK, and beyond.
@@ -14,11 +14,11 @@ summary: Technical organizer building automations and infrastructure so the glob
 This opportunity is offered in collaboration with the [London College of Political Technology](https://newspeak.house) (Newspeak House).
 
 **Location:** London preferred; remote okay  
-**Commitment:** Deliverable-based, then part-time  
-**Compensation:** £4,000 stipend  
+**Commitment:** 4 months, extendable  
+**Compensation:** £1,000/month stipend  
 **Start date:** ASAP
 
-We are seeking a dynamic and mission-driven Public AI Fellow to serve as a technical organizer for the larger distributed movement for public AI. This is a builder-and-coordinator role: part systems thinker, part organizer, part infrastructure engineer for a network that spans the US, UK, and peer efforts elsewhere.
+We are seeking a dynamic and mission-driven Public AI Fellow for a focused four-month engagement to serve as a technical organizer for the larger distributed movement for public AI. If the work goes well, the fellowship may extend. This is a builder-and-coordinator role: part systems thinker, part organizer, part infrastructure engineer for a network that spans the US, UK, and peer efforts around the world.
 
 The public AI movement is growing faster than its shared tooling. People, projects, commitments, and knowledge are scattered across Slack workspaces, docs, calendars, and GitHub orgs. This fellowship invests in new automations and infrastructure that improve coordination and legibility across that network—so the movement can see itself, work together, and scale without becoming opaque.
 
@@ -32,6 +32,19 @@ This isn't a product-engineering job for one platform. It's movement technology:
 - Strengthen shared infrastructure that peer organizations can reuse, so local chapters and partner efforts don't reinvent the same coordination layer.
 - Partner closely with Public AI's engineering and organizing work, and with communities around the London College of Political Technology.
 - Document what you build so others can fork, operate, and extend it.
+
+## First projects may include
+
+- Regular Slack export → annual and monthly reports → (maybe) live discussion summaries on the site
+- Curating the movement's collective context and provisioning access to it via a RAG or Public AI agent
+- Experiments with automatic newsletters
+- Helping particular Public AI projects become more autonomous / agentic
+- Technical and marketing infrastructure to help college chapters form
+- Setting up a forum
+- Setting up a movement calendar / calendly / assistant
+- Setting up a Pol.is for the community
+- Deciding on a triage plan for all the ideas above
+- And other coordination and legibility work as priorities emerge
 
 ## You might be a fit if you have
 
@@ -48,6 +61,6 @@ This is an opportunity to build the technical backbone of a growing internationa
 
 ---
 
-To apply, send a short email and CV to [josh@publicai.co](mailto:josh@publicai.co).
+To apply, send a short email and CV to [josh@publicai.co and ed@newspeak.house](mailto:josh@publicai.co,ed@newspeak.house).
 
 [← Back to all jobs](/jobs/)
