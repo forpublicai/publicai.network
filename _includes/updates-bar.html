@@ -1,0 +1,37 @@
+{%- if site.data.updates and site.data.updates.size > 0 -%}
+<aside class="updates-bar{% if site.data.updates.size > 4 %} updates-bar--ticker{% endif %}" aria-label="Recent Public AI updates">
+  <div class="updates-bar-inner">
+    <a class="updates-bar-label" href="{{ '/news/' | relative_url }}">Updates</a>
+    <div class="updates-bar-viewport">
+      <div class="updates-bar-track">
+        {%- assign update_passes = 1 -%}
+        {%- if site.data.updates.size > 4 -%}
+          {%- assign update_passes = 2 -%}
+        {%- endif -%}
+        {%- for pass in (1..update_passes) -%}
+          <div class="updates-bar-set"{% if pass > 1 %} aria-hidden="true"{% endif %}>
+            {%- for item in site.data.updates -%}
+              {%- assign item_url = item.url -%}
+              {%- assign item_external = false -%}
+              {%- if item_url contains "://" -%}
+                {%- assign item_external = true -%}
+              {%- else -%}
+                {%- assign item_url = item_url | relative_url -%}
+              {%- endif -%}
+              <a
+                class="updates-item updates-item-{{ item.kind }}"
+                href="{{ item_url }}"
+                {% if item_external %}target="_blank" rel="noopener noreferrer"{% endif %}
+                title="{{ item.kind_label }} · {{ item.date | date: '%b %d, %Y' }}"
+              >
+                <span class="updates-kind">{{ item.kind_label }}</span>
+                <span class="updates-title">{{ item.title | escape }}</span>
+              </a>
+            {%- endfor -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</aside>
+{%- endif -%}
