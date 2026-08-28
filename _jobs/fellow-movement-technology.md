@@ -4,7 +4,7 @@ host: London College of Political Technology
 category: funded
 status: open
 location: London preferred; remote okay
-commitment: 2 months, extendable
+commitment: 4 months, extendable
 compensation: £1,000/month stipend
 order: 1
 date_posted: 2026-08-27
