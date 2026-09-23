@@ -23,7 +23,12 @@ Registration below is recognition and coordination, not incorporation or endorse
 
 ## Register a chapter
 
-<form id="chapter-form" class="chapter-form" method="POST" action="CONFIG_FORM_ACTION_URL" novalidate>
+<form id="chapter-form" class="chapter-form" method="POST" action="https://script.google.com/macros/s/AKfycbyuQxaAzDsZUNapNuJyoEE-OYN1JBzOJS0WJf3o6HHXJNvyg-qa7kR0J8q-H_BI8ybC/exec" novalidate>
+
+  <div class="form-field" style="position: absolute; left: -9999px;" aria-hidden="true">
+    <label for="website">Website</label>
+    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+  </div>
 
   <div class="form-field">
     <label for="university">University or institution</label>
@@ -83,6 +88,7 @@ Registration below is recognition and coordination, not incorporation or endorse
   </div>
 
   <p id="form-error" class="form-error" hidden>Please fill in all required fields, use a valid email address, and check the consent box before submitting.</p>
+  <p id="form-success" class="form-success" hidden>Thank you for registering your chapter! We'll be in touch soon.</p>
 
   <button type="submit" class="button">Submit registration</button>
 
@@ -92,12 +98,15 @@ Registration below is recognition and coordination, not incorporation or endorse
 (function () {
   var form = document.getElementById('chapter-form');
   var error = document.getElementById('form-error');
+  var success = document.getElementById('form-success');
 
   function isValidEmail(value) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
   }
 
   form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
     var valid = true;
 
     var required = form.querySelectorAll('[required]');
@@ -115,11 +124,29 @@ Registration below is recognition and coordination, not incorporation or endorse
     if (Number(form.member_count.value) < 3) valid = false;
 
     if (!valid) {
-      event.preventDefault();
+      success.hidden = true;
       error.hidden = false;
-    } else {
-      error.hidden = true;
+      return;
     }
+
+    error.hidden = true;
+
+    var formData = new FormData(form);
+    var body = new URLSearchParams(formData);
+
+    fetch(form.action, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: body
+    }).then(function () {
+      error.hidden = true;
+      success.hidden = false;
+      form.reset();
+    }).catch(function () {
+      success.hidden = true;
+      error.textContent = 'Something went wrong submitting your registration. Please try again in a moment.';
+      error.hidden = false;
+    });
   });
 })();
 </script>
