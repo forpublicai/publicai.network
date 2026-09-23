@@ -398,3 +398,67 @@ h2 {
         width: 100%;
     }
 }
+
+.chapter-form {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.form-field {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: #222;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="number"],
+.form-field textarea {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: 2px solid #EF233C;
+    outline-offset: 1px;
+}
+
+.form-field-checkbox label {
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.form-field-checkbox input {
+    margin-top: 3px;
+}
+
+.form-error {
+    color: #EF233C;
+    margin-bottom: 14px;
+}
+
+.chapter-form button.button {
+    background: #EF233C;
+    color: white;
+    border: none;
+    border-radius: 0;
+    padding: 10px 14px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.chapter-form button.button:hover {
+    background: #d81b32;
+}
