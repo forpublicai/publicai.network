@@ -15,9 +15,11 @@ A Public AI chapter is a student-led group that learns, builds, and serves with 
 
 ## First 90 days
 
-- **Days 1-30**: hold an orientation workshop and demonstrate [chat.publicai.co](https://chat.publicai.co).
-- **Days 31-60**: run a hackathon using the API at [platform.publicai.co](https://platform.publicai.co), and start a local-language model evaluation.
-- **Days 61-90**: volunteer with a library, school, or nonprofit to teach AI literacy, then publish a short report.
+- **Weeks 1-4**: run the four-week [Public AI handbook](https://publicai.network/handbook) course as a reading group. It covers foundations, political economy, national strategies and building public AI locally, and ends with a local action plan.
+- **Weeks 5-8**: hold a hands-on session with [chat.publicai.co](https://chat.publicai.co), and try the API at [platform.publicai.co](https://platform.publicai.co) in a small hackathon or a local-language model evaluation.
+- **Weeks 9-13**: carry out one piece of your action plan, for example an AI-literacy session with a library, school or nonprofit, and share a short write-up with the network.
+
+The first Public AI chapter started at the University of Manchester. New chapters are welcome to build on that model and to improve the handbook.
 
 Registration below is recognition and coordination, not incorporation or endorsement. Keep personal information to the minimum necessary.
 
