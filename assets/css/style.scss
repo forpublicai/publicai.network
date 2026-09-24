@@ -390,6 +390,151 @@ h2 {
     font-style: none;
 }
 
+.updates-bar {
+    background: #161616;
+    color: #f3f3f3;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+body:has(.updates-bar) .site-header {
+    border-top-width: 0;
+}
+
+.updates-bar-inner {
+    display: flex;
+    align-items: stretch;
+    min-height: 36px;
+}
+
+.updates-bar-label {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 12px;
+    background: #ef233c;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.updates-bar-label:hover,
+.updates-bar-label:focus-visible {
+    color: #fff;
+    background: #d90429;
+    text-decoration: none;
+}
+
+.updates-bar-viewport {
+    flex: 1 1 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 28px), transparent);
+    -webkit-mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 28px), transparent);
+}
+
+.updates-bar-track {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: max-content;
+}
+
+.updates-bar--ticker .updates-bar-track {
+    animation: updates-scroll 48s linear infinite;
+}
+
+.updates-bar:hover .updates-bar-track,
+.updates-bar:focus-within .updates-bar-track {
+    animation-play-state: paused;
+}
+
+.updates-bar-set {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.updates-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+    color: #f3f3f3;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 36px;
+    border-right: 1px solid #2f2f2f;
+}
+
+.updates-item:hover,
+.updates-item:focus-visible {
+    color: #fff;
+    background: #222;
+    text-decoration: none;
+}
+
+.updates-kind {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ff6b7a;
+}
+
+.updates-item-repo .updates-kind { color: #69db7c; }
+.updates-item-event .updates-kind { color: #ffc078; }
+.updates-item-newsletter .updates-kind { color: #b197fc; }
+.updates-item-news .updates-kind { color: #74c0fc; }
+.updates-item-press .updates-kind { color: #91a7ff; }
+
+.updates-title {
+    max-width: min(70vw, 520px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@keyframes updates-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .updates-bar--ticker .updates-bar-track {
+        animation: none;
+    }
+
+    .updates-bar-set[aria-hidden="true"] {
+        display: none;
+    }
+
+    .updates-bar-viewport {
+        overflow-x: auto;
+        mask-image: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .updates-bar-label {
+        padding: 0 10px;
+        font-size: 10px;
+    }
+
+    .updates-item {
+        padding: 0 12px;
+        font-size: 12px;
+    }
+
+    .updates-title {
+        max-width: 68vw;
+    }
+}
+
 /* Minima sets `table { display: block }` below 800px for overflow scrolling, but that
    breaks the table layout model (cells stack instead of columns). Restore real tables. */
 @include media-query($on-laptop) {
