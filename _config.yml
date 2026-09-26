@@ -21,7 +21,6 @@ minima:
   - publications.md
   - news.md
   - jobs/index.md
-  - chapters/index.md
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: true
 
