@@ -618,6 +618,19 @@ The **Public AI Network** brings together a diverse coalition of researchers, pr
   </div>
 </div>
 
+<div class="card">
+  <div class="tab">Devinson Peña</div>
+  <div class="content">
+    <div class="avatar c2">DP</div>
+    <div class="name">Devinson Peña</div>
+    <div class="aff">Zurich, Switzerland</div>
+    <div class="details">
+      <b>Focus:</b> Public AI infrastructure
+    </div>
+    <div class="joined">2026</div>
+  </div>
+</div>
+
     <div class="card">
       <div class="tab">Diane Coyle</div>
       <div class="content">
