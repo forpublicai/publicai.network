@@ -5,7 +5,7 @@ nav_title: Shop
 description: Public AI merch. Proceeds support the movement.
 ---
 
-Wear the movement. Our shop sells a small set of Public AI tees, totes and stickers, printed on demand and shipped worldwide.
+Wear the movement. Our shop sells a small set of Public AI tees and totes, printed on demand and shipped worldwide.
 
 **[Visit the shop at shop.publicai.network](https://shop.publicai.network)**
 
