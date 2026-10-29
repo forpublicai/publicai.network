@@ -790,36 +790,49 @@ The **Public AI Network** brings together a diverse coalition of researchers, pr
   </div>
 </div>
 
-    <div class="card">
-      <div class="tab">Joshua Tan</div>
-      <div class="content">
-        <div class="avatar c1">JT</div>
-        <div class="name">Joshua Tan</div>
-        <div class="aff">Oxford, Metagov</div>
-        <div class="details">
-          Community Organizer<br/>
-          <b>Focus:</b> Computational governance, collective intelligence <br/>
-          <b>Projects:</b> Airbus for AI, Inference Utility, Public AI for Libraries
-        </div>
-        <div class="joined">Founding Member</div>
-      </div>
+<div class="card">
+  <div class="tab">Joshua Tan</div>
+  <div class="content">
+    <div class="avatar c1">JT</div>
+    <div class="name">Joshua Tan</div>
+    <div class="aff">Oxford, Metagov</div>
+    <div class="details">
+      Community Organizer<br/>
+      <b>Focus:</b> Computational governance, collective intelligence <br/>
+      <b>Projects:</b> Airbus for AI, Inference Utility, Public AI for Libraries
     </div>
+    <div class="joined">Founding Member</div>
+  </div>
+</div>
 
-
-    <div class="card">
-      <div class="tab">Nathan E. Sanders</div>
-      <div class="content">
-        <div class="avatar c1">NS</div>
-        <div class="name">Nathan E. Sanders</div>
-        <div class="aff">Harvard Berkman Klein Center</div>
-        <div class="details">
-          Data Scientist<br/>
-          <b>Focus:</b> Civic technology, AI for democracy<br/>
-          <b>Projects:</b> Rewiring Democracy book, MAPLE
-        </div>
-        <div class="joined">2023</div>
-      </div>
+<div class="card">
+  <div class="tab">J&uuml;rg Stuker</div>
+  <div class="content">
+    <div class="avatar c4">JS</div>
+    <div class="name">J&uuml;rg Stuker</div>
+    <div class="details">
+    Entrepreneur<br/>
+      <b>Focus:</b>Strategy, company building, HCI<br/>
+      <b>Projects:</b>Public AI Switzerland, Swiss {ai} Weeks
     </div>
+    <div class="joined">2026</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="tab">Nathan E. Sanders</div>
+  <div class="content">
+    <div class="avatar c1">NS</div>
+    <div class="name">Nathan E. Sanders</div>
+    <div class="aff">Harvard Berkman Klein Center</div>
+    <div class="details">
+      Data Scientist<br/>
+      <b>Focus:</b> Civic technology, AI for democracy<br/>
+      <b>Projects:</b> Rewiring Democracy book, MAPLE
+    </div>
+    <div class="joined">2023</div>
+  </div>
+</div>
     
 <div class="card">
   <div class="tab">Katherine Elkins</div>
