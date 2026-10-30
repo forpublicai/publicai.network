@@ -9,7 +9,7 @@
     {%- endif -%}
     <a
       class="nav-item{% if nav_active %} nav-item-active{% endif %}"
-      href="{{ hyperpage.url | relative_url }}"
+      href="{% if hyperpage.nav_url %}{{ hyperpage.nav_url }}{% else %}{{ hyperpage.url | relative_url }}{% endif %}"
     >
       {{ hyperpage.nav_title | default: hyperpage.title | escape }}
     </a>

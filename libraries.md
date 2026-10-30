@@ -2,6 +2,7 @@
 title: Building Public AI with Libraries
 layout: page
 nav_title: Libraries
+nav_url: https://libraries.publicai.co
 description: An AI pilot program for public libraries.
 ---
 
