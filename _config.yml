@@ -20,7 +20,7 @@ minima:
   - contributing.md
   - publications.md
   - news.md
-  - jobs/index.md
+  - opportunities/index.md
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: true
 

@@ -61,4 +61,4 @@ Send a note to [josh@publicai.co](mailto:josh@publicai.co). Tell us what you hav
 
 We read every application.
 
-[← Back to all jobs](/jobs/)
+[← Back to all opportunities](/opportunities/)

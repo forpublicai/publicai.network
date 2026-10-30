@@ -24,4 +24,4 @@ This role was hosted at Metagov. For the job description and any future openings
 
 ---
 
-[← Back to all roles](/jobs/)
+[← Back to all roles](/opportunities/)

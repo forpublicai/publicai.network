@@ -27,4 +27,4 @@ As an Intern at PAINT, you will support various projects, assist in research, ev
 
 To apply, send a brief message and CV to [hello@publicai.network](mailto:hello@publicai.network).
 
-[← Back to all roles](/jobs/)
+[← Back to all roles](/opportunities/)

@@ -63,4 +63,4 @@ This is an opportunity to build the technical backbone of a growing internationa
 
 To apply, send a short email and CV to [josh@publicai.co and ed@newspeak.house](mailto:josh@publicai.co,ed@newspeak.house).
 
-[← Back to all jobs](/jobs/)
+[← Back to all opportunities](/opportunities/)

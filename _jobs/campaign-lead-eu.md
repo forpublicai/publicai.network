@@ -26,4 +26,4 @@ In the role of EU Campaign Lead at PAINT, you will lead advocacy and outreach ac
 
 ---
 
-[← Back to all roles](/jobs/)
+[← Back to all roles](/opportunities/)

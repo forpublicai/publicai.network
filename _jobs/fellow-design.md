@@ -61,4 +61,4 @@ This is an opportunity to help define how a growing public-interest AI movement 
 
 To apply, send a short email, CV, and portfolio (or 2–3 relevant case studies) to [josh@currentai.org](mailto:josh@currentai.org).
 
-[← Back to all jobs](/jobs/)
+[← Back to all opportunities](/opportunities/)

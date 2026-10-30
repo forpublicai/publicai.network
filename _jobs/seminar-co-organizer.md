@@ -47,4 +47,4 @@ Experience running reading groups, workshops, or seminar series is a plus.
 
 To apply, send a brief note on your background and interest to [hello@publicai.network](mailto:hello@publicai.network).
 
-[← Back to all roles](/jobs/)
+[← Back to all roles](/opportunities/)

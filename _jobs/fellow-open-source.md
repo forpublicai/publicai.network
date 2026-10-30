@@ -53,4 +53,4 @@ This is an opportunity to build the connective tissue of the public-interest ope
 
 To apply, send a short email and CV to [josh@publicai.co](mailto:josh@publicai.co).
 
-[← Back to all jobs](/jobs/)
+[← Back to all opportunities](/opportunities/)

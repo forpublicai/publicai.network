@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Jobs
-nav_title: Jobs
-permalink: /jobs/
+title: Opportunities
+nav_title: Opportunities
+permalink: /opportunities/
 ---
 
 The movement for public AI is a political movement and open-source community working to foster public AI. As part of our work, we offer some roles which are traditionally funded and others of which are more informal and independent but no less important, as is typical in an open-source community.

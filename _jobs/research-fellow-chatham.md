@@ -27,4 +27,4 @@ The Research Fellow at Chatham House will conduct extensive research on public A
 
 ---
 
-[← Back to all roles](/jobs/)
+[← Back to all roles](/opportunities/)

@@ -27,4 +27,4 @@ As the Technology Fellow for Compute, you will be responsible for cataloging and
 
 To apply, send a brief message and CV to [hello@publicai.network](mailto:hello@publicai.network).
 
-[← Back to all roles](/jobs/)
+[← Back to all roles](/opportunities/)

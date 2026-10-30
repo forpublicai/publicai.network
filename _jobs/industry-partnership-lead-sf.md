@@ -26,4 +26,4 @@ The Industry Lead in San Francisco will manage PAINT-related events, lead local 
 
 To apply, send a brief message and CV to [hello@publicai.network](mailto:hello@publicai.network).
 
-[← Back to all roles](/jobs/)
+[← Back to all roles](/opportunities/)

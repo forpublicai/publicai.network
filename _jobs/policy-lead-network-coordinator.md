@@ -26,4 +26,4 @@ As the Policy Lead and Network Coordinator at PAINT, you will be responsible for
 
 ---
 
-[← Back to all roles](/jobs/)
+[← Back to all roles](/opportunities/)

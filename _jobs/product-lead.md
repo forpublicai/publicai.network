@@ -27,4 +27,4 @@ As the Product Lead hosted at Metagov for PAINT, you will oversee the developmen
 
 ---
 
-[← Back to all roles](/jobs/)
+[← Back to all roles](/opportunities/)

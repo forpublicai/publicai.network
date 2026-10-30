@@ -45,4 +45,4 @@ This is an opportunity to shape Switzerland's role in a high-level international
 
 To apply, send a short email and CV to [josh@publicai.co](mailto:josh@publicai.co).
 
-[← Back to all jobs](/jobs/)
+[← Back to all opportunities](/opportunities/)
