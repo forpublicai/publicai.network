@@ -1,0 +1,1626 @@
+{
+ "asOf": "2026-11-16",
+ "launch": "2025-09-02",
+ "windows": {
+  "d30": [
+   "2026-10-18",
+   "2026-11-16"
+  ],
+  "y1": [
+   "2025-11-16",
+   "2026-11-16"
+  ],
+  "launch": [
+   "2025-09-02",
+   "2026-11-16"
+  ]
+ },
+ "figures": {
+  "visitors_30": 9086,
+  "visitors_avg": 13826,
+  "tokens_30": 6552783094,
+  "tokens_avg": 1888192098,
+  "users_30": 2928,
+  "active_30": 2169,
+  "hello_30": 25,
+  "hello_avg": 9.5,
+  "issues_30": 2,
+  "issues_avg": 2.2,
+  "missing": 19,
+  "total": 30
+ },
+ "pillars": [
+  {
+   "id": "products",
+   "label": "Products",
+   "question": "Is the utility being used?",
+   "topline": [
+    {
+     "key": "tokens",
+     "metric": "Tokens served (LiteLLM)",
+     "status": "Counted",
+     "format": "big",
+     "d30": 6552783094,
+     "y1_avg": 1698728526,
+     "launch": 25006107117
+    },
+    {
+     "key": "active_users",
+     "metric": "chat.publicai.co active users",
+     "status": "Counted",
+     "format": "int",
+     "d30": 2169,
+     "y1_avg": 3786,
+     "launch": 49866
+    }
+   ],
+   "connected": 8,
+   "total": 12
+  },
+  {
+   "id": "movement",
+   "label": "Movement",
+   "question": "Are people and organisations joining?",
+   "topline": [
+    {
+     "key": "partners",
+     "metric": "Partner organisations",
+     "status": "Not connected",
+     "format": "int",
+     "d30": null,
+     "y1_avg": null,
+     "launch": null
+    },
+    {
+     "key": "community_active",
+     "metric": "Active community members",
+     "status": "Not connected",
+     "format": "int",
+     "d30": null,
+     "y1_avg": null,
+     "launch": null
+    }
+   ],
+   "connected": 2,
+   "total": 11
+  },
+  {
+   "id": "idea",
+   "label": "Idea",
+   "question": "Is public AI spreading as an idea?",
+   "topline": [
+    {
+     "key": "news_mentions",
+     "metric": "News articles using \"public AI\"",
+     "status": "Not connected",
+     "format": "int",
+     "d30": null,
+     "y1_avg": null,
+     "launch": null
+    },
+    {
+     "key": "publications",
+     "metric": "Publications on public AI",
+     "status": "Partial",
+     "format": "int",
+     "d30": 0,
+     "y1_avg": 0,
+     "launch": 2
+    }
+   ],
+   "connected": 1,
+   "total": 7
+  }
+ ],
+ "scorecard": [
+  {
+   "key": "tokens",
+   "pillar": "products",
+   "metric": "Tokens served (LiteLLM)",
+   "status": "Counted",
+   "format": "big",
+   "d30": 6552783094,
+   "y1": 22658305176,
+   "launch": 25006107117
+  },
+  {
+   "key": "active_users",
+   "pillar": "products",
+   "metric": "chat.publicai.co active users",
+   "status": "Counted",
+   "format": "int",
+   "d30": 2169,
+   "y1": 29720,
+   "launch": 49866
+  },
+  {
+   "key": "users",
+   "pillar": "products",
+   "metric": "chat.publicai.co sign-ups",
+   "status": "Counted",
+   "format": "int",
+   "d30": 2928,
+   "y1": 32466,
+   "launch": 59441
+  },
+  {
+   "key": "chat_messages",
+   "pillar": "products",
+   "metric": "Chat messages",
+   "status": "Counted",
+   "format": "int",
+   "d30": 15388,
+   "y1": 303141,
+   "launch": 463051
+  },
+  {
+   "key": "llm_requests",
+   "pillar": "products",
+   "metric": "API requests (LiteLLM)",
+   "status": "Counted",
+   "format": "int",
+   "d30": 2924392,
+   "y1": 12884725,
+   "launch": 13857651
+  },
+  {
+   "key": "api_keys",
+   "pillar": "products",
+   "metric": "Developer API keys issued",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "models_hosted",
+   "pillar": "products",
+   "metric": "Models hosted",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "visitors_co",
+   "pillar": "products",
+   "metric": "publicai.co visitors",
+   "status": "Counted",
+   "format": "int",
+   "d30": 9086,
+   "y1": 164944,
+   "launch": 323096
+  },
+  {
+   "key": "visitors_ch",
+   "pillar": "products",
+   "metric": "publicai.ch visitors",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "countries",
+   "pillar": "products",
+   "metric": "Countries reached",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "hello",
+   "pillar": "products",
+   "metric": "Emails to hello@publicai.co",
+   "status": "Counted",
+   "format": "int",
+   "d30": 25,
+   "y1": 114,
+   "launch": 164
+  },
+  {
+   "key": "support",
+   "pillar": "products",
+   "metric": "Emails to support@publicai.co",
+   "status": "Partial",
+   "format": "int",
+   "d30": 1,
+   "y1": 12,
+   "launch": 14
+  },
+  {
+   "key": "partners",
+   "pillar": "movement",
+   "metric": "Partner organisations",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "community_active",
+   "pillar": "movement",
+   "metric": "Active community members",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "community_joined",
+   "pillar": "movement",
+   "metric": "New Slack members",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "events",
+   "pillar": "movement",
+   "metric": "Events and attendees",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "coop_members",
+   "pillar": "movement",
+   "metric": "Cooperative members (Public AI Switzerland)",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "contributors",
+   "pillar": "movement",
+   "metric": "GitHub contributors",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "issues",
+   "pillar": "movement",
+   "metric": "GitHub issues opened",
+   "status": "Counted",
+   "format": "int",
+   "d30": 2,
+   "y1": 27,
+   "launch": 84
+  },
+  {
+   "key": "issues_open",
+   "pillar": "movement",
+   "metric": "GitHub issues still open",
+   "status": "Counted",
+   "format": "int",
+   "d30": 1,
+   "y1": 18,
+   "launch": 53
+  },
+  {
+   "key": "newsletter",
+   "pillar": "movement",
+   "metric": "Newsletter subscribers",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "social_followers",
+   "pillar": "movement",
+   "metric": "Social followers",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "dialogue",
+   "pillar": "movement",
+   "metric": "dialogue.publicai.ch participation",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "news_mentions",
+   "pillar": "idea",
+   "metric": "News articles using \"public AI\"",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "press_public_ai",
+   "pillar": "idea",
+   "metric": "Press about Public AI and its projects",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "publications",
+   "pillar": "idea",
+   "metric": "Publications on public AI",
+   "status": "Partial",
+   "format": "int",
+   "d30": 0,
+   "y1": 0,
+   "launch": 2
+  },
+  {
+   "key": "papers",
+   "pillar": "idea",
+   "metric": "Academic papers using \"public AI\"",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "policy",
+   "pillar": "idea",
+   "metric": "Policy documents citing public AI",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "social_mentions",
+   "pillar": "idea",
+   "metric": "Social mentions of \"public AI\"",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  },
+  {
+   "key": "notable_mentions",
+   "pillar": "idea",
+   "metric": "Notable mentions",
+   "status": "Not connected",
+   "format": "int",
+   "d30": null,
+   "y1": null,
+   "launch": null
+  }
+ ],
+ "milestones": [
+  {
+   "date": "2025-09-02",
+   "type": "launch",
+   "title": "Public AI Inference Utility launches with Apertus",
+   "url": "https://publicai.co"
+  }
+ ],
+ "series": {
+  "hello": [
+   {
+    "month": "2025-09",
+    "value": 43
+   },
+   {
+    "month": "2025-10",
+    "value": 7
+   },
+   {
+    "month": "2025-11",
+    "value": 2
+   },
+   {
+    "month": "2025-12",
+    "value": 4
+   },
+   {
+    "month": "2026-01",
+    "value": 8
+   },
+   {
+    "month": "2026-02",
+    "value": 7
+   },
+   {
+    "month": "2026-03",
+    "value": 10
+   },
+   {
+    "month": "2026-04",
+    "value": 9
+   },
+   {
+    "month": "2026-05",
+    "value": 11
+   },
+   {
+    "month": "2026-06",
+    "value": 6
+   },
+   {
+    "month": "2026-07",
+    "value": 8
+   },
+   {
+    "month": "2026-08",
+    "value": 7
+   },
+   {
+    "month": "2026-09",
+    "value": 6
+   },
+   {
+    "month": "2026-10",
+    "value": 23
+   },
+   {
+    "month": "2026-11",
+    "value": 13
+   }
+  ],
+  "support": [
+   {
+    "month": "2025-09",
+    "value": 0
+   },
+   {
+    "month": "2025-10",
+    "value": 1
+   },
+   {
+    "month": "2025-11",
+    "value": 2
+   },
+   {
+    "month": "2025-12",
+    "value": 0
+   },
+   {
+    "month": "2026-01",
+    "value": 1
+   },
+   {
+    "month": "2026-02",
+    "value": 1
+   },
+   {
+    "month": "2026-03",
+    "value": 2
+   },
+   {
+    "month": "2026-04",
+    "value": 3
+   },
+   {
+    "month": "2026-05",
+    "value": 0
+   },
+   {
+    "month": "2026-06",
+    "value": 0
+   },
+   {
+    "month": "2026-07",
+    "value": 0
+   },
+   {
+    "month": "2026-08",
+    "value": 1
+   },
+   {
+    "month": "2026-09",
+    "value": 0
+   },
+   {
+    "month": "2026-10",
+    "value": 2
+   },
+   {
+    "month": "2026-11",
+    "value": 1
+   }
+  ],
+  "issues": [
+   {
+    "month": "2025-09",
+    "value": 51
+   },
+   {
+    "month": "2025-10",
+    "value": 3
+   },
+   {
+    "month": "2025-11",
+    "value": 6
+   },
+   {
+    "month": "2025-12",
+    "value": 1
+   },
+   {
+    "month": "2026-01",
+    "value": 1
+   },
+   {
+    "month": "2026-02",
+    "value": 1
+   },
+   {
+    "month": "2026-03",
+    "value": 8
+   },
+   {
+    "month": "2026-04",
+    "value": 2
+   },
+   {
+    "month": "2026-05",
+    "value": 2
+   },
+   {
+    "month": "2026-06",
+    "value": 0
+   },
+   {
+    "month": "2026-07",
+    "value": 0
+   },
+   {
+    "month": "2026-08",
+    "value": 2
+   },
+   {
+    "month": "2026-09",
+    "value": 1
+   },
+   {
+    "month": "2026-10",
+    "value": 6
+   },
+   {
+    "month": "2026-11",
+    "value": 0
+   }
+  ],
+  "publications": [
+   {
+    "month": "2025-09",
+    "value": 2
+   },
+   {
+    "month": "2025-10",
+    "value": 0
+   },
+   {
+    "month": "2025-11",
+    "value": 0
+   },
+   {
+    "month": "2025-12",
+    "value": 0
+   },
+   {
+    "month": "2026-01",
+    "value": 0
+   },
+   {
+    "month": "2026-02",
+    "value": 0
+   },
+   {
+    "month": "2026-03",
+    "value": 0
+   },
+   {
+    "month": "2026-04",
+    "value": 0
+   },
+   {
+    "month": "2026-05",
+    "value": 0
+   },
+   {
+    "month": "2026-06",
+    "value": 0
+   },
+   {
+    "month": "2026-07",
+    "value": 0
+   },
+   {
+    "month": "2026-08",
+    "value": 0
+   },
+   {
+    "month": "2026-09",
+    "value": 0
+   },
+   {
+    "month": "2026-10",
+    "value": 0
+   },
+   {
+    "month": "2026-11",
+    "value": 0
+   }
+  ],
+  "visitors": [
+   {
+    "month": "2025-09",
+    "value": 118857
+   },
+   {
+    "month": "2025-10",
+    "value": 29534
+   },
+   {
+    "month": "2025-11",
+    "value": 19311
+   },
+   {
+    "month": "2025-12",
+    "value": 25346
+   },
+   {
+    "month": "2026-01",
+    "value": 19952
+   },
+   {
+    "month": "2026-02",
+    "value": 17186
+   },
+   {
+    "month": "2026-03",
+    "value": 22958
+   },
+   {
+    "month": "2026-04",
+    "value": 9751
+   },
+   {
+    "month": "2026-05",
+    "value": 9801
+   },
+   {
+    "month": "2026-06",
+    "value": 9306
+   },
+   {
+    "month": "2026-07",
+    "value": 8392
+   },
+   {
+    "month": "2026-08",
+    "value": 8877
+   },
+   {
+    "month": "2026-09",
+    "value": 10627
+   },
+   {
+    "month": "2026-10",
+    "value": 9887
+   },
+   {
+    "month": "2026-11",
+    "value": 4780
+   }
+  ],
+  "signups": [
+   {
+    "month": "2025-09",
+    "value": 23763
+   },
+   {
+    "month": "2025-10",
+    "value": 2541
+   },
+   {
+    "month": "2025-11",
+    "value": 1420
+   },
+   {
+    "month": "2025-12",
+    "value": 5216
+   },
+   {
+    "month": "2026-01",
+    "value": 2909
+   },
+   {
+    "month": "2026-02",
+    "value": 2412
+   },
+   {
+    "month": "2026-03",
+    "value": 4338
+   },
+   {
+    "month": "2026-04",
+    "value": 2772
+   },
+   {
+    "month": "2026-05",
+    "value": 2481
+   },
+   {
+    "month": "2026-06",
+    "value": 3425
+   },
+   {
+    "month": "2026-07",
+    "value": 1743
+   },
+   {
+    "month": "2026-08",
+    "value": 1264
+   },
+   {
+    "month": "2026-09",
+    "value": 1583
+   },
+   {
+    "month": "2026-10",
+    "value": 1350
+   },
+   {
+    "month": "2026-11",
+    "value": 2234
+   }
+  ],
+  "active_users": [
+   {
+    "month": "2025-09",
+    "value": 20793
+   },
+   {
+    "month": "2025-10",
+    "value": 4141
+   },
+   {
+    "month": "2025-11",
+    "value": 2694
+   },
+   {
+    "month": "2025-12",
+    "value": 5650
+   },
+   {
+    "month": "2026-01",
+    "value": 4406
+   },
+   {
+    "month": "2026-02",
+    "value": 3729
+   },
+   {
+    "month": "2026-03",
+    "value": 5564
+   },
+   {
+    "month": "2026-04",
+    "value": 4154
+   },
+   {
+    "month": "2026-05",
+    "value": 3716
+   },
+   {
+    "month": "2026-06",
+    "value": 4467
+   },
+   {
+    "month": "2026-07",
+    "value": 2871
+   },
+   {
+    "month": "2026-08",
+    "value": 2280
+   },
+   {
+    "month": "2026-09",
+    "value": 2544
+   },
+   {
+    "month": "2026-10",
+    "value": 2267
+   },
+   {
+    "month": "2026-11",
+    "value": 1256
+   }
+  ],
+  "chat_messages": [
+   {
+    "month": "2025-09",
+    "value": 122844
+   },
+   {
+    "month": "2025-10",
+    "value": 26787
+   },
+   {
+    "month": "2025-11",
+    "value": 20156
+   },
+   {
+    "month": "2025-12",
+    "value": 36927
+   },
+   {
+    "month": "2026-01",
+    "value": 30083
+   },
+   {
+    "month": "2026-02",
+    "value": 35761
+   },
+   {
+    "month": "2026-03",
+    "value": 34819
+   },
+   {
+    "month": "2026-04",
+    "value": 26411
+   },
+   {
+    "month": "2026-05",
+    "value": 21592
+   },
+   {
+    "month": "2026-06",
+    "value": 24983
+   },
+   {
+    "month": "2026-07",
+    "value": 17215
+   },
+   {
+    "month": "2026-08",
+    "value": 19064
+   },
+   {
+    "month": "2026-09",
+    "value": 21449
+   },
+   {
+    "month": "2026-10",
+    "value": 17135
+   },
+   {
+    "month": "2026-11",
+    "value": 8093
+   }
+  ],
+  "tokens": [
+   {
+    "month": "2025-09",
+    "value": 1624378373
+   },
+   {
+    "month": "2025-10",
+    "value": 511890730
+   },
+   {
+    "month": "2025-11",
+    "value": 444960385
+   },
+   {
+    "month": "2025-12",
+    "value": 862038709
+   },
+   {
+    "month": "2026-01",
+    "value": 758778744
+   },
+   {
+    "month": "2026-02",
+    "value": 671427901
+   },
+   {
+    "month": "2026-03",
+    "value": 1078896061
+   },
+   {
+    "month": "2026-04",
+    "value": 764539154
+   },
+   {
+    "month": "2026-05",
+    "value": 1193922985
+   },
+   {
+    "month": "2026-06",
+    "value": 1108980381
+   },
+   {
+    "month": "2026-07",
+    "value": 896895752
+   },
+   {
+    "month": "2026-08",
+    "value": 1557370985
+   },
+   {
+    "month": "2026-09",
+    "value": 3240657775
+   },
+   {
+    "month": "2026-10",
+    "value": 6552505336
+   },
+   {
+    "month": "2026-11",
+    "value": 3927050018
+   }
+  ],
+  "llm_requests": [
+   {
+    "month": "2025-09",
+    "value": 666756
+   },
+   {
+    "month": "2025-10",
+    "value": 215589
+   },
+   {
+    "month": "2025-11",
+    "value": 272023
+   },
+   {
+    "month": "2025-12",
+    "value": 554730
+   },
+   {
+    "month": "2026-01",
+    "value": 648439
+   },
+   {
+    "month": "2026-02",
+    "value": 906371
+   },
+   {
+    "month": "2026-03",
+    "value": 859034
+   },
+   {
+    "month": "2026-04",
+    "value": 364295
+   },
+   {
+    "month": "2026-05",
+    "value": 442607
+   },
+   {
+    "month": "2026-06",
+    "value": 586220
+   },
+   {
+    "month": "2026-07",
+    "value": 483964
+   },
+   {
+    "month": "2026-08",
+    "value": 873559
+   },
+   {
+    "month": "2026-09",
+    "value": 1702693
+   },
+   {
+    "month": "2026-10",
+    "value": 3705233
+   },
+   {
+    "month": "2026-11",
+    "value": 1666992
+   }
+  ],
+  "tokens_per_message": [
+   {
+    "month": "2025-09",
+    "value": 13055
+   },
+   {
+    "month": "2025-10",
+    "value": 19107
+   },
+   {
+    "month": "2025-11",
+    "value": 22075
+   },
+   {
+    "month": "2025-12",
+    "value": 16833
+   },
+   {
+    "month": "2026-01",
+    "value": 13784
+   },
+   {
+    "month": "2026-02",
+    "value": 11452
+   },
+   {
+    "month": "2026-03",
+    "value": 15608
+   },
+   {
+    "month": "2026-04",
+    "value": 23844
+   },
+   {
+    "month": "2026-05",
+    "value": 27139
+   },
+   {
+    "month": "2026-06",
+    "value": 32960
+   },
+   {
+    "month": "2026-07",
+    "value": 34266
+   },
+   {
+    "month": "2026-08",
+    "value": 46856
+   },
+   {
+    "month": "2026-09",
+    "value": 105853
+   },
+   {
+    "month": "2026-10",
+    "value": 252043
+   },
+   {
+    "month": "2026-11",
+    "value": 373812
+   }
+  ]
+ },
+ "tables": {
+  "llm_windows": [
+   {
+    "window": "Last 30 days",
+    "total_tokens": 6552783094,
+    "prompt_tokens": 6187808008,
+    "completion_tokens": 364975086,
+    "requests": 2924392,
+    "failed": 507731,
+    "spend": 2643.27
+   },
+   {
+    "window": "Past 12 months",
+    "total_tokens": 22658305176,
+    "prompt_tokens": 20371832786,
+    "completion_tokens": 2286472390,
+    "requests": 12884725,
+    "failed": 1546857,
+    "spend": 45421.98
+   },
+   {
+    "window": "Since launch",
+    "total_tokens": 25006107117,
+    "prompt_tokens": 22321127361,
+    "completion_tokens": 2684979756,
+    "requests": 13857651,
+    "failed": 1546857,
+    "spend": 45596.29
+   }
+  ],
+  "llm_family": [
+   {
+    "name": "Apertus 8B",
+    "d30": 5165169909,
+    "y1": 7731624723,
+    "launch": 8378592034,
+    "share": 33.5
+   },
+   {
+    "name": "Apertus 1.5 70B",
+    "d30": 675604195,
+    "y1": 5143298103,
+    "launch": 5143298103,
+    "share": 20.6
+   },
+   {
+    "name": "Apertus 70B",
+    "d30": 56722089,
+    "y1": 2666844866,
+    "launch": 3631214534,
+    "share": 14.5
+   },
+   {
+    "name": "SEA-LION",
+    "d30": 280843487,
+    "y1": 3149643880,
+    "launch": 3186662914,
+    "share": 12.7
+   },
+   {
+    "name": "Llama",
+    "d30": 0,
+    "y1": 845780779,
+    "launch": 1509163753,
+    "share": 6.0
+   },
+   {
+    "name": "DictaLM",
+    "d30": 0,
+    "y1": 627002527,
+    "launch": 627002527,
+    "share": 2.5
+   },
+   {
+    "name": "Apertus (unsized alias)",
+    "d30": 8620258,
+    "y1": 533941834,
+    "launch": 533941929,
+    "share": 2.1
+   },
+   {
+    "name": "OLMo / Molmo",
+    "d30": 0,
+    "y1": 454138942,
+    "launch": 454138942,
+    "share": 1.8
+   },
+   {
+    "name": "Cohere Embed",
+    "d30": 47229,
+    "y1": 378061753,
+    "launch": 410888262,
+    "share": 1.6
+   },
+   {
+    "name": "Bielik",
+    "d30": 136287236,
+    "y1": 401598888,
+    "launch": 401598888,
+    "share": 1.6
+   },
+   {
+    "name": "Apertus 1.5 8B",
+    "d30": 0,
+    "y1": 319459783,
+    "launch": 319459783,
+    "share": 1.3
+   },
+   {
+    "name": "Mistral",
+    "d30": 177914473,
+    "y1": 253652492,
+    "launch": 253652492,
+    "share": 1.0
+   },
+   {
+    "name": "ALIA / Salamandra",
+    "d30": 50586489,
+    "y1": 77974170,
+    "launch": 80416322,
+    "share": 0.3
+   },
+   {
+    "name": "EuroLLM",
+    "d30": 0,
+    "y1": 74294707,
+    "launch": 74294707,
+    "share": 0.3
+   },
+   {
+    "name": "gpt-oss",
+    "d30": 0,
+    "y1": 0,
+    "launch": 794198,
+    "share": 0.0
+   },
+   {
+    "name": "Qwen",
+    "d30": 421765,
+    "y1": 421765,
+    "launch": 421765,
+    "share": 0.0
+   },
+   {
+    "name": "Cohere Command",
+    "d30": 255726,
+    "y1": 255726,
+    "launch": 255726,
+    "share": 0.0
+   },
+   {
+    "name": "Kimi",
+    "d30": 201232,
+    "y1": 201232,
+    "launch": 201232,
+    "share": 0.0
+   },
+   {
+    "name": "GLM",
+    "d30": 109006,
+    "y1": 109006,
+    "launch": 109006,
+    "share": 0.0
+   }
+  ],
+  "llm_team": [
+   {
+    "name": "Open WebUI",
+    "d30": 5385915737,
+    "y1": 15228949421,
+    "launch": 17556045197,
+    "share": 70.2
+   },
+   {
+    "name": "Developer Portal",
+    "d30": 781566294,
+    "y1": 6255963743,
+    "launch": 6255963743,
+    "share": 25.0
+   },
+   {
+    "name": "AIPotluck",
+    "d30": 103203191,
+    "y1": 808893939,
+    "launch": 808893939,
+    "share": 3.2
+   },
+   {
+    "name": "aipotluck-developers-internal-use",
+    "d30": 164535645,
+    "y1": 164535645,
+    "launch": 164535645,
+    "share": 0.7
+   },
+   {
+    "name": "Unassigned",
+    "d30": 98377499,
+    "y1": 118467953,
+    "launch": 139174118,
+    "share": 0.6
+   },
+   {
+    "name": "Public AI Developers",
+    "d30": 0,
+    "y1": 61105438,
+    "launch": 61105438,
+    "share": 0.2
+   },
+   {
+    "name": "aipotluck-users",
+    "d30": 9964135,
+    "y1": 9964135,
+    "launch": 9964135,
+    "share": 0.0
+   },
+   {
+    "name": "Swiss National AI Dialogue",
+    "d30": 6190535,
+    "y1": 7356466,
+    "launch": 7356466,
+    "share": 0.0
+   },
+   {
+    "name": "aipotluck-backend",
+    "d30": 3028911,
+    "y1": 3028911,
+    "launch": 3028911,
+    "share": 0.0
+   },
+   {
+    "name": "litellm-dashboard",
+    "d30": 1147,
+    "y1": 39525,
+    "launch": 39525,
+    "share": 0.0
+   }
+  ],
+  "repos": [
+   {
+    "name": "chat.publicai.co",
+    "opened": 42,
+    "open": 29
+   },
+   {
+    "name": "platform.publicai.co",
+    "opened": 20,
+    "open": 9
+   },
+   {
+    "name": "publicai.co",
+    "opened": 14,
+    "open": 11
+   },
+   {
+    "name": "libraries-kiosk",
+    "opened": 4,
+    "open": 3
+   },
+   {
+    "name": "publicai.ch",
+    "opened": 2,
+    "open": 0
+   },
+   {
+    "name": "swiss-national-ai-dialogue",
+    "opened": 1,
+    "open": 1
+   },
+   {
+    "name": ".github",
+    "opened": 1,
+    "open": 0
+   }
+  ],
+  "coverage": [
+   {
+    "pillar": "products",
+    "metric": "Tokens served (LiteLLM)",
+    "status": "Counted",
+    "source": "LiteLLM",
+    "have": "Daily tokens by team and model from LiteLLM's admin export (CSV, 17 Nov 2026), from 30 Aug 2025. Model names grouped into families by litellm_usage.py.",
+    "next": "Switch to the LiteLLM API once the viewer key works (every authenticated request currently returns a server error). litellm_usage.py already has an --api mode for it."
+   },
+   {
+    "pillar": "products",
+    "metric": "chat.publicai.co active users",
+    "status": "Counted",
+    "source": "Open WebUI API",
+    "have": "People who sent at least one message in the window, from Open WebUI's analytics API.",
+    "next": "Same script as sign-ups."
+   },
+   {
+    "pillar": "products",
+    "metric": "chat.publicai.co sign-ups",
+    "status": "Counted",
+    "source": "Open WebUI API",
+    "have": "New accounts per window from Open WebUI's admin API (user list sorted by sign-up date). Since launch is everyone who signed up from 2 Sep 2025: 59,478 accounts in total at the time of the pull.",
+    "next": "Refreshed by openwebui_stats.py, which reads only counts. Can run on a schedule."
+   },
+   {
+    "pillar": "products",
+    "metric": "Chat messages",
+    "status": "Counted",
+    "source": "Open WebUI API",
+    "have": "Messages sent in chat.publicai.co in the window, from Open WebUI's analytics API.",
+    "next": "Same script as sign-ups."
+   },
+   {
+    "pillar": "products",
+    "metric": "API requests (LiteLLM)",
+    "status": "Counted",
+    "source": "LiteLLM",
+    "have": "Requests per day from the same LiteLLM export, including failed ones.",
+    "next": "Same source as the row above."
+   },
+   {
+    "pillar": "products",
+    "metric": "Developer API keys issued",
+    "status": "Not connected",
+    "source": "LiteLLM",
+    "have": "Nothing yet.",
+    "next": "LiteLLM /key/list, once the API 500 is fixed."
+   },
+   {
+    "pillar": "products",
+    "metric": "Models hosted",
+    "status": "Not connected",
+    "source": "LiteLLM",
+    "have": "Model families appear in the LiteLLM usage data.",
+    "next": "Count distinct model families with traffic per month from litellm_daily.json, or read /v1/models."
+   },
+   {
+    "pillar": "products",
+    "metric": "publicai.co visitors",
+    "status": "Counted",
+    "source": "Vercel Web Analytics",
+    "have": "Unique visitors from Vercel Web Analytics (project publicai-landing, production), full history from launch day.",
+    "next": "Snapshot of 17 Nov 2026. Can be made live on the Vercel connector, or refreshed monthly by a scheduled task."
+   },
+   {
+    "pillar": "products",
+    "metric": "publicai.ch visitors",
+    "status": "Not connected",
+    "source": "Infomaniak",
+    "have": "There is no Infomaniak connector, and the site ships no analytics script.",
+    "next": "Export monthly visitor stats from the Infomaniak hosting panel as CSV, or add a cookieless analytics script to the site."
+   },
+   {
+    "pillar": "products",
+    "metric": "Countries reached",
+    "status": "Not connected",
+    "source": "Vercel Web Analytics",
+    "have": "Vercel Web Analytics has visitors by country.",
+    "next": "Pull aggregate_pageviews grouped by country through the Vercel connector."
+   },
+   {
+    "pillar": "products",
+    "metric": "Emails to hello@publicai.co",
+    "status": "Counted",
+    "source": "Gmail",
+    "have": "Every thread addressed to hello@ in Josh's Gmail since launch. This is all inbound mail, including press, partnerships and vendor pitches, not only support.",
+    "next": "Can be refreshed by a scheduled task that reruns the Gmail search."
+   },
+   {
+    "pillar": "products",
+    "metric": "Emails to support@publicai.co",
+    "status": "Partial",
+    "source": "Gmail",
+    "have": "Only threads where Josh was also copied. Joseph's support@ inbox is not included, so the real number is higher.",
+    "next": "Joseph runs the same search on support@ and shares the dates, or grants read access."
+   },
+   {
+    "pillar": "movement",
+    "metric": "Partner organisations",
+    "status": "Not connected",
+    "source": "records/partners.json",
+    "have": "Nothing yet.",
+    "next": "Fill records/partners.json: one entry per model builder, compute provider or deployer, with the date they joined."
+   },
+   {
+    "pillar": "movement",
+    "metric": "Active community members",
+    "status": "Not connected",
+    "source": "Public AI Slack",
+    "have": "The connected Slack is Current AI's, not Public AI's.",
+    "next": "Add a Public AI Slack bot token (channels:history, channels:read, users:read). Count distinct posters per week in public channels. No names or messages are stored."
+   },
+   {
+    "pillar": "movement",
+    "metric": "New Slack members",
+    "status": "Not connected",
+    "source": "Public AI Slack",
+    "have": "Same as above.",
+    "next": "Same token; count joins per month."
+   },
+   {
+    "pillar": "movement",
+    "metric": "Events and attendees",
+    "status": "Not connected",
+    "source": "records/events.json",
+    "have": "Nothing yet.",
+    "next": "Fill records/events.json: date, name, city, format, attendees."
+   },
+   {
+    "pillar": "movement",
+    "metric": "Cooperative members (Public AI Switzerland)",
+    "status": "Not connected",
+    "source": "publicai.ch",
+    "have": "publicai.ch has a members page.",
+    "next": "Count members by join date from the publicai.ch content, or keep a dated count in records/."
+   },
+   {
+    "pillar": "movement",
+    "metric": "GitHub contributors",
+    "status": "Not connected",
+    "source": "GitHub",
+    "have": "Issues are counted; commits and contributors are not.",
+    "next": "Count distinct authors of commits, issues and PRs across forpublicai repositories per month."
+   },
+   {
+    "pillar": "movement",
+    "metric": "GitHub issues opened",
+    "status": "Counted",
+    "source": "GitHub",
+    "have": "Issues opened in forpublicai repositories since launch: 84 of the org's 97.",
+    "next": "Snapshot today. A GitHub connector would make it live."
+   },
+   {
+    "pillar": "movement",
+    "metric": "GitHub issues still open",
+    "status": "Counted",
+    "source": "GitHub",
+    "have": "Of the issues opened in each window, how many are open today.",
+    "next": "Same source as the row above."
+   },
+   {
+    "pillar": "movement",
+    "metric": "Newsletter subscribers",
+    "status": "Not connected",
+    "source": "Substack",
+    "have": "publicai.substack.com. Substack does not publish subscriber counts.",
+    "next": "Monthly subscriber count from the Substack dashboard, typed into records/audience.json. Posts per month come from the RSS feed."
+   },
+   {
+    "pillar": "movement",
+    "metric": "Social followers",
+    "status": "Not connected",
+    "source": "records/audience.json",
+    "have": "@ForPublicAI on X, linkedin.com/company/pubai.",
+    "next": "X API costs about $200 a month and LinkedIn has no open API, so type follower counts into records/audience.json once a month."
+   },
+   {
+    "pillar": "movement",
+    "metric": "dialogue.publicai.ch participation",
+    "status": "Not connected",
+    "source": "dialogue.publicai.ch",
+    "have": "The site could not be reached from this session. Meeting notes from 27 Apr 2026 say the Swiss dialogue survey was paused and would be restructured, with CIP taking ownership.",
+    "next": "Export submissions by date from the dialogue backend (forpublicai/swiss-national-ai-dialogue)."
+   },
+   {
+    "pillar": "idea",
+    "metric": "News articles using \"public AI\"",
+    "status": "Not connected",
+    "source": "GDELT",
+    "have": "Nothing yet. Network access to GDELT is set up in the \"Public AI progress\" environment.",
+    "next": "GDELT DOC API, exact phrase \"public AI\", monthly volume. Check a sample by hand each month."
+   },
+   {
+    "pillar": "idea",
+    "metric": "Press about Public AI and its projects",
+    "status": "Not connected",
+    "source": "GDELT",
+    "have": "No Google Alerts yet.",
+    "next": "GDELT queries for \"Public AI Inference Utility\", \"publicai.co\", \"Apertus\"; Google Alerts into a Gmail label later."
+   },
+   {
+    "pillar": "idea",
+    "metric": "Publications on public AI",
+    "status": "Partial",
+    "source": "publicai.network, OpenAlex",
+    "have": "The curated list on publicai.network/publications, last updated Sep 2025.",
+    "next": "Update the list, then add OpenAlex counts of papers using the exact phrase."
+   },
+   {
+    "pillar": "idea",
+    "metric": "Academic papers using \"public AI\"",
+    "status": "Not connected",
+    "source": "OpenAlex",
+    "have": "Nothing yet.",
+    "next": "OpenAlex works search, exact phrase, grouped by year."
+   },
+   {
+    "pillar": "idea",
+    "metric": "Policy documents citing public AI",
+    "status": "Not connected",
+    "source": "Hansard, EUR-Lex, Curia Vista",
+    "have": "Nothing yet.",
+    "next": "UK Hansard API for parliament; EUR-Lex and Swiss Curia Vista searched by hand; national strategies listed in records/mentions.json."
+   },
+   {
+    "pillar": "idea",
+    "metric": "Social mentions of \"public AI\"",
+    "status": "Not connected",
+    "source": "Bluesky",
+    "have": "Nothing yet.",
+    "next": "Bluesky search API (free). X and LinkedIn mention search are paid."
+   },
+   {
+    "pillar": "idea",
+    "metric": "Notable mentions",
+    "status": "Not connected",
+    "source": "records/mentions.json",
+    "have": "Example: Mistral's full-page ad in The Times naming public AI.",
+    "next": "Add entries to records/mentions.json by PR."
+   }
+  ]
+ }
+}

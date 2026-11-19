@@ -1,0 +1,6 @@
+{
+ "about": "Dated milestones for the timeline: launches, grants, agreements, new countries. Add entries by pull request. type is one of launch, funding, partnership, policy, community, other. Keep amounts only if they are public.",
+ "rows": [
+  {"date": "2025-09-02", "type": "launch", "title": "Public AI Inference Utility launches with Apertus", "url": "https://publicai.co"}
+ ]
+}

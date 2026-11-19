@@ -1,0 +1,303 @@
+{
+ "pillars": [
+  {
+   "id": "products",
+   "label": "Products",
+   "question": "Is the utility being used?",
+   "topline": [
+    "tokens",
+    "active_users"
+   ]
+  },
+  {
+   "id": "movement",
+   "label": "Movement",
+   "question": "Are people and organisations joining?",
+   "topline": [
+    "partners",
+    "community_active"
+   ]
+  },
+  {
+   "id": "idea",
+   "label": "Idea",
+   "question": "Is public AI spreading as an idea?",
+   "topline": [
+    "news_mentions",
+    "publications"
+   ]
+  }
+ ],
+ "metrics": [
+  {
+   "key": "tokens",
+   "pillar": "products",
+   "metric": "Tokens served (LiteLLM)",
+   "status": "Counted",
+   "source": "LiteLLM",
+   "have": "Daily tokens by team and model from LiteLLM's admin export (CSV, 17 Nov 2026), from 30 Aug 2025. Model names grouped into families by litellm_usage.py.",
+   "next": "Switch to the LiteLLM API once the viewer key works (every authenticated request currently returns a server error). litellm_usage.py already has an --api mode for it."
+  },
+  {
+   "key": "active_users",
+   "pillar": "products",
+   "metric": "chat.publicai.co active users",
+   "status": "Counted",
+   "source": "Open WebUI API",
+   "have": "People who sent at least one message in the window, from Open WebUI's analytics API.",
+   "next": "Same script as sign-ups."
+  },
+  {
+   "key": "users",
+   "pillar": "products",
+   "metric": "chat.publicai.co sign-ups",
+   "status": "Counted",
+   "source": "Open WebUI API",
+   "have": "New accounts per window from Open WebUI's admin API (user list sorted by sign-up date). Since launch is everyone who signed up from 2 Sep 2025: 59,478 accounts in total at the time of the pull.",
+   "next": "Refreshed by openwebui_stats.py, which reads only counts. Can run on a schedule."
+  },
+  {
+   "key": "chat_messages",
+   "pillar": "products",
+   "metric": "Chat messages",
+   "status": "Counted",
+   "source": "Open WebUI API",
+   "have": "Messages sent in chat.publicai.co in the window, from Open WebUI's analytics API.",
+   "next": "Same script as sign-ups."
+  },
+  {
+   "key": "llm_requests",
+   "pillar": "products",
+   "metric": "API requests (LiteLLM)",
+   "status": "Counted",
+   "source": "LiteLLM",
+   "have": "Requests per day from the same LiteLLM export, including failed ones.",
+   "next": "Same source as the row above."
+  },
+  {
+   "key": "api_keys",
+   "pillar": "products",
+   "metric": "Developer API keys issued",
+   "status": "Not connected",
+   "source": "LiteLLM",
+   "have": "Nothing yet.",
+   "next": "LiteLLM /key/list, once the API 500 is fixed."
+  },
+  {
+   "key": "models_hosted",
+   "pillar": "products",
+   "metric": "Models hosted",
+   "status": "Not connected",
+   "source": "LiteLLM",
+   "have": "Model families appear in the LiteLLM usage data.",
+   "next": "Count distinct model families with traffic per month from litellm_daily.json, or read /v1/models."
+  },
+  {
+   "key": "visitors_co",
+   "pillar": "products",
+   "metric": "publicai.co visitors",
+   "status": "Counted",
+   "source": "Vercel Web Analytics",
+   "have": "Unique visitors from Vercel Web Analytics (project publicai-landing, production), full history from launch day.",
+   "next": "Snapshot of 17 Nov 2026. Can be made live on the Vercel connector, or refreshed monthly by a scheduled task."
+  },
+  {
+   "key": "visitors_ch",
+   "pillar": "products",
+   "metric": "publicai.ch visitors",
+   "status": "Not connected",
+   "source": "Infomaniak",
+   "have": "There is no Infomaniak connector, and the site ships no analytics script.",
+   "next": "Export monthly visitor stats from the Infomaniak hosting panel as CSV, or add a cookieless analytics script to the site."
+  },
+  {
+   "key": "countries",
+   "pillar": "products",
+   "metric": "Countries reached",
+   "status": "Not connected",
+   "source": "Vercel Web Analytics",
+   "have": "Vercel Web Analytics has visitors by country.",
+   "next": "Pull aggregate_pageviews grouped by country through the Vercel connector."
+  },
+  {
+   "key": "hello",
+   "pillar": "products",
+   "metric": "Emails to hello@publicai.co",
+   "status": "Counted",
+   "source": "Gmail",
+   "have": "Every thread addressed to hello@ in Josh's Gmail since launch. This is all inbound mail, including press, partnerships and vendor pitches, not only support.",
+   "next": "Can be refreshed by a scheduled task that reruns the Gmail search."
+  },
+  {
+   "key": "support",
+   "pillar": "products",
+   "metric": "Emails to support@publicai.co",
+   "status": "Partial",
+   "source": "Gmail",
+   "have": "Only threads where Josh was also copied. Joseph's support@ inbox is not included, so the real number is higher.",
+   "next": "Joseph runs the same search on support@ and shares the dates, or grants read access."
+  },
+  {
+   "key": "partners",
+   "pillar": "movement",
+   "metric": "Partner organisations",
+   "status": "Not connected",
+   "source": "records/partners.json",
+   "have": "Nothing yet.",
+   "next": "Fill records/partners.json: one entry per model builder, compute provider or deployer, with the date they joined."
+  },
+  {
+   "key": "community_active",
+   "pillar": "movement",
+   "metric": "Active community members",
+   "status": "Not connected",
+   "source": "Public AI Slack",
+   "have": "The connected Slack is Current AI's, not Public AI's.",
+   "next": "Add a Public AI Slack bot token (channels:history, channels:read, users:read). Count distinct posters per week in public channels. No names or messages are stored."
+  },
+  {
+   "key": "community_joined",
+   "pillar": "movement",
+   "metric": "New Slack members",
+   "status": "Not connected",
+   "source": "Public AI Slack",
+   "have": "Same as above.",
+   "next": "Same token; count joins per month."
+  },
+  {
+   "key": "events",
+   "pillar": "movement",
+   "metric": "Events and attendees",
+   "status": "Not connected",
+   "source": "records/events.json",
+   "have": "Nothing yet.",
+   "next": "Fill records/events.json: date, name, city, format, attendees."
+  },
+  {
+   "key": "coop_members",
+   "pillar": "movement",
+   "metric": "Cooperative members (Public AI Switzerland)",
+   "status": "Not connected",
+   "source": "publicai.ch",
+   "have": "publicai.ch has a members page.",
+   "next": "Count members by join date from the publicai.ch content, or keep a dated count in records/."
+  },
+  {
+   "key": "contributors",
+   "pillar": "movement",
+   "metric": "GitHub contributors",
+   "status": "Not connected",
+   "source": "GitHub",
+   "have": "Issues are counted; commits and contributors are not.",
+   "next": "Count distinct authors of commits, issues and PRs across forpublicai repositories per month."
+  },
+  {
+   "key": "issues",
+   "pillar": "movement",
+   "metric": "GitHub issues opened",
+   "status": "Counted",
+   "source": "GitHub",
+   "have": "Issues opened in forpublicai repositories since launch: 84 of the org's 97.",
+   "next": "Snapshot today. A GitHub connector would make it live."
+  },
+  {
+   "key": "issues_open",
+   "pillar": "movement",
+   "metric": "GitHub issues still open",
+   "status": "Counted",
+   "source": "GitHub",
+   "have": "Of the issues opened in each window, how many are open today.",
+   "next": "Same source as the row above."
+  },
+  {
+   "key": "newsletter",
+   "pillar": "movement",
+   "metric": "Newsletter subscribers",
+   "status": "Not connected",
+   "source": "Substack",
+   "have": "publicai.substack.com. Substack does not publish subscriber counts.",
+   "next": "Monthly subscriber count from the Substack dashboard, typed into records/audience.json. Posts per month come from the RSS feed."
+  },
+  {
+   "key": "social_followers",
+   "pillar": "movement",
+   "metric": "Social followers",
+   "status": "Not connected",
+   "source": "records/audience.json",
+   "have": "@ForPublicAI on X, linkedin.com/company/pubai.",
+   "next": "X API costs about $200 a month and LinkedIn has no open API, so type follower counts into records/audience.json once a month."
+  },
+  {
+   "key": "dialogue",
+   "pillar": "movement",
+   "metric": "dialogue.publicai.ch participation",
+   "status": "Not connected",
+   "source": "dialogue.publicai.ch",
+   "have": "The site could not be reached from this session. Meeting notes from 27 Apr 2026 say the Swiss dialogue survey was paused and would be restructured, with CIP taking ownership.",
+   "next": "Export submissions by date from the dialogue backend (forpublicai/swiss-national-ai-dialogue)."
+  },
+  {
+   "key": "news_mentions",
+   "pillar": "idea",
+   "metric": "News articles using \"public AI\"",
+   "status": "Not connected",
+   "source": "GDELT",
+   "have": "Nothing yet. Network access to GDELT is set up in the \"Public AI progress\" environment.",
+   "next": "GDELT DOC API, exact phrase \"public AI\", monthly volume. Check a sample by hand each month."
+  },
+  {
+   "key": "press_public_ai",
+   "pillar": "idea",
+   "metric": "Press about Public AI and its projects",
+   "status": "Not connected",
+   "source": "GDELT",
+   "have": "No Google Alerts yet.",
+   "next": "GDELT queries for \"Public AI Inference Utility\", \"publicai.co\", \"Apertus\"; Google Alerts into a Gmail label later."
+  },
+  {
+   "key": "publications",
+   "pillar": "idea",
+   "metric": "Publications on public AI",
+   "status": "Partial",
+   "source": "publicai.network, OpenAlex",
+   "have": "The curated list on publicai.network/publications, last updated Sep 2025.",
+   "next": "Update the list, then add OpenAlex counts of papers using the exact phrase."
+  },
+  {
+   "key": "papers",
+   "pillar": "idea",
+   "metric": "Academic papers using \"public AI\"",
+   "status": "Not connected",
+   "source": "OpenAlex",
+   "have": "Nothing yet.",
+   "next": "OpenAlex works search, exact phrase, grouped by year."
+  },
+  {
+   "key": "policy",
+   "pillar": "idea",
+   "metric": "Policy documents citing public AI",
+   "status": "Not connected",
+   "source": "Hansard, EUR-Lex, Curia Vista",
+   "have": "Nothing yet.",
+   "next": "UK Hansard API for parliament; EUR-Lex and Swiss Curia Vista searched by hand; national strategies listed in records/mentions.json."
+  },
+  {
+   "key": "social_mentions",
+   "pillar": "idea",
+   "metric": "Social mentions of \"public AI\"",
+   "status": "Not connected",
+   "source": "Bluesky",
+   "have": "Nothing yet.",
+   "next": "Bluesky search API (free). X and LinkedIn mention search are paid."
+  },
+  {
+   "key": "notable_mentions",
+   "pillar": "idea",
+   "metric": "Notable mentions",
+   "status": "Not connected",
+   "source": "records/mentions.json",
+   "have": "Example: Mistral's full-page ad in The Times naming public AI.",
+   "next": "Add entries to records/mentions.json by PR."
+  }
+ ]
+}

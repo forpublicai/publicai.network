@@ -1,0 +1,60 @@
+{
+ "rows": [
+  {
+   "date": "2026-11-02"
+  },
+  {
+   "date": "2026-10-13"
+  },
+  {
+   "date": "2026-10-12"
+  },
+  {
+   "date": "2026-08-25"
+  },
+  {
+   "date": "2026-04-30"
+  },
+  {
+   "date": "2026-04-20"
+  },
+  {
+   "date": "2026-04-13"
+  },
+  {
+   "date": "2026-03-17"
+  },
+  {
+   "date": "2026-03-05"
+  },
+  {
+   "date": "2026-02-22"
+  },
+  {
+   "date": "2026-01-23"
+  },
+  {
+   "date": "2025-11-22"
+  },
+  {
+   "date": "2025-11-11"
+  },
+  {
+   "date": "2025-10-21"
+  }
+ ],
+ "meta": [
+  {
+   "label": "Query",
+   "value": "(to:support@publicai.co OR deliveredto:support@publicai.co OR cc:support@publicai.co) after:2025/09/02"
+  },
+  {
+   "label": "Source",
+   "value": "Josh's Gmail only: threads where support@ was addressed and Josh also received a copy. Joseph's support@ inbox is not included."
+  },
+  {
+   "label": "Snapshot",
+   "value": "2026-11-16"
+  }
+ ]
+}

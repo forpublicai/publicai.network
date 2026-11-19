@@ -1,0 +1,14 @@
+{
+  "name": "publicai-progress",
+  "private": true,
+  "type": "module",
+  "description": "Pre-renders the progress page to static HTML for sites without React (publicai.network).",
+  "scripts": {
+    "static": "node static/render.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  }
+}

@@ -1,0 +1,97 @@
+{
+ "rows": [
+  {
+   "month": "2025-09",
+   "visitors": 118857,
+   "pageviews": 285290
+  },
+  {
+   "month": "2025-10",
+   "visitors": 29534,
+   "pageviews": 58056
+  },
+  {
+   "month": "2025-11",
+   "visitors": 19311,
+   "pageviews": 37829
+  },
+  {
+   "month": "2025-12",
+   "visitors": 25346,
+   "pageviews": 49779
+  },
+  {
+   "month": "2026-01",
+   "visitors": 19952,
+   "pageviews": 38202
+  },
+  {
+   "month": "2026-02",
+   "visitors": 17186,
+   "pageviews": 32892
+  },
+  {
+   "month": "2026-03",
+   "visitors": 22958,
+   "pageviews": 44767
+  },
+  {
+   "month": "2026-04",
+   "visitors": 9751,
+   "pageviews": 16425
+  },
+  {
+   "month": "2026-05",
+   "visitors": 9801,
+   "pageviews": 16357
+  },
+  {
+   "month": "2026-06",
+   "visitors": 9306,
+   "pageviews": 15459
+  },
+  {
+   "month": "2026-07",
+   "visitors": 8392,
+   "pageviews": 13972
+  },
+  {
+   "month": "2026-08",
+   "visitors": 8877,
+   "pageviews": 14812
+  },
+  {
+   "month": "2026-09",
+   "visitors": 10627,
+   "pageviews": 17952
+  },
+  {
+   "month": "2026-10",
+   "visitors": 9887,
+   "pageviews": 17066
+  },
+  {
+   "month": "2026-11",
+   "visitors": 4780,
+   "pageviews": 8181
+  }
+ ],
+ "meta": [
+  {
+   "label": "Source",
+   "value": "Vercel Web Analytics, team public-ai-co, project publicai-landing (publicai.co), production only"
+  },
+  {
+   "label": "Call",
+   "value": "aggregate_pageviews by month, since 2025-09-01, until 2026-11-17"
+  },
+  {
+   "label": "Note",
+   "value": "First recorded visits are on 2 Sep 2025 (launch day); 1 Sep 2025 has zero."
+  },
+  {
+   "label": "Snapshot",
+   "value": "2026-11-17"
+  }
+ ]
+}
