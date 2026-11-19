@@ -1,141 +1,178 @@
-- name: publicai.network
-  url: https://github.com/forpublicai/publicai.network
-  description: The website of the Public AI Network
-  homepage: "https://publicai.network/"
-  pushed_at: 2026-05-27T12:03:59Z
-  updated_at: 2026-05-27T11:22:38Z
-
-- name: litellm
-  url: https://github.com/forpublicai/litellm
-  description: Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format, with cost tracking, guardrails, loadbalancing and logging. [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, VLLM, NVIDIA NIM]
-  homepage: "https://docs.litellm.ai/docs/"
-  pushed_at: 2026-05-27T03:30:54Z
-  updated_at: 2026-02-13T18:20:30Z
-
-- name: librarieskiosk
-  url: https://github.com/forpublicai/librarieskiosk
-  description: Public AI Libraries Project Version 2 
-  homepage: "https://librarieskiosk.vercel.app"
-  pushed_at: 2026-05-26T22:44:31Z
-  updated_at: 2026-05-21T16:25:30Z
-
-- name: publicai.ch
+- name: "publicai.ch"
   url: https://github.com/forpublicai/publicai.ch
-  description: Public AI Switzerland
+  description: "Public AI Switzerland"
   homepage: "http://publicai.ch/"
-  pushed_at: 2026-05-26T05:50:44Z
-  updated_at: 2026-05-26T05:50:48Z
+  pushed_at: 2026-11-19T15:13:14Z
+  updated_at: 2026-11-12T00:56:33Z
 
-- name: safemolt
+- name: "publicai.co"
+  url: https://github.com/forpublicai/publicai.co
+  description: "The website of the Public AI Inference Utility"
+  homepage: "https://publicai.co"
+  pushed_at: 2026-11-19T15:12:30Z
+  updated_at: 2026-10-30T11:14:12Z
+
+- name: "progress"
+  url: https://github.com/forpublicai/progress
+  description: "Shared progress & milestones across the movement"
+  pushed_at: 2026-11-19T15:10:36Z
+  updated_at: 2026-11-18T22:37:45Z
+
+- name: "chat.publicai.co"
+  url: https://github.com/forpublicai/chat.publicai.co
+  description: "The main chat app for the Public AI Inference Utility, based on OpenWebUI"
+  homepage: "https://chat.publicai.co"
+  pushed_at: 2026-11-19T13:57:41Z
+  updated_at: 2026-11-15T06:00:52Z
+
+- name: "publicai.us"
+  url: https://github.com/forpublicai/publicai.us
+  description: "The website for publicai.us"
+  homepage: "http://publicai.us/"
+  pushed_at: 2026-11-18T22:16:24Z
+  updated_at: 2026-11-07T07:51:52Z
+
+- name: "publicai.network"
+  url: https://github.com/forpublicai/publicai.network
+  description: "The website of the Public AI Network"
+  homepage: "https://publicai.network/"
+  pushed_at: 2026-11-14T19:59:43Z
+  updated_at: 2026-11-16T14:22:28Z
+
+- name: "librarieskiosk"
+  url: https://github.com/forpublicai/librarieskiosk
+  description: "Public AI Libraries Project Version 2"
+  homepage: "https://librarieskiosk.vercel.app"
+  pushed_at: 2026-11-10T23:58:44Z
+  updated_at: 2026-11-10T05:43:17Z
+
+- name: "holmesgpt"
+  url: https://github.com/forpublicai/holmesgpt
+  description: "SRE Agent - CNCF Sandbox Project"
+  homepage: "https://holmesgpt.dev/"
+  pushed_at: 2026-11-10T13:35:50Z
+  updated_at: 2026-11-10T13:19:58Z
+
+- name: "platform.publicai.co"
+  url: https://github.com/forpublicai/platform.publicai.co
+  description: "The API gateway for the Public AI Inference Utility, based on Zuplo"
+  homepage: "https://platform.publicai.co"
+  pushed_at: 2026-10-26T20:40:04Z
+  updated_at: 2026-10-26T20:40:08Z
+
+- name: "litellm-v2"
+  url: https://github.com/forpublicai/litellm-v2
+  description: "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]"
+  homepage: "https://docs.litellm.ai/docs/"
+  pushed_at: 2026-10-26T10:35:57Z
+  updated_at: 2026-10-22T12:01:22Z
+
+- name: "safemolt"
   url: https://github.com/forpublicai/safemolt
   homepage: "https://safemolt.com"
-  pushed_at: 2026-05-25T11:46:21Z
-  updated_at: 2026-05-25T11:46:24Z
+  pushed_at: 2026-10-21T21:26:32Z
+  updated_at: 2026-10-21T21:26:38Z
 
-- name: publicai-flywheel-experiments
+- name: "libraries-kiosk"
+  url: https://github.com/forpublicai/libraries-kiosk
+  description: "The dashboard for the libraries project"
+  homepage: "https://forpublicai.github.io/libraries-kiosk/"
+  pushed_at: 2026-10-20T15:02:34Z
+  updated_at: 2026-10-20T15:02:39Z
+
+- name: "lago-api"
+  url: https://github.com/forpublicai/lago-api
+  description: "Open Source Metering and Usage Based Billing"
+  homepage: "https://www.getlago.com/"
+  pushed_at: 2026-10-20T13:04:57Z
+  updated_at: 2026-10-20T13:04:21Z
+
+- name: "swiss-national-ai-dialogue"
+  url: https://github.com/forpublicai/swiss-national-ai-dialogue
+  pushed_at: 2026-10-02T07:30:24Z
+  updated_at: 2026-10-05T12:55:27Z
+
+- name: "open-webui"
+  url: https://github.com/forpublicai/open-webui
+  description: "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
+  homepage: "https://openwebui.com"
+  pushed_at: 2026-09-22T07:19:54Z
+  updated_at: 2026-09-22T07:20:33Z
+
+- name: "aquaculture"
+  url: https://github.com/forpublicai/aquaculture
+  description: "The Public AI Aquaculture Project"
+  homepage: "https://aquaculture-ten.vercel.app"
+  pushed_at: 2026-08-24T19:49:15Z
+  updated_at: 2026-08-24T19:52:04Z
+
+- name: "design-system"
+  url: https://github.com/forpublicai/design-system
+  description: "The Public AI design system"
+  pushed_at: 2026-07-25T21:11:34Z
+  updated_at: 2026-07-25T21:11:38Z
+
+- name: "publicai-flywheel-experiments"
   url: https://github.com/forpublicai/publicai-flywheel-experiments
   description: "A repo for writing and code related to \"public AI flywheel experiments\""
   pushed_at: 2026-05-24T13:04:22Z
   updated_at: 2026-05-24T13:04:25Z
 
-- name: publicai_survey
+- name: "publicai_survey"
   url: https://github.com/forpublicai/publicai_survey
   pushed_at: 2026-05-24T13:01:19Z
   updated_at: 2026-05-24T13:01:23Z
 
-- name: mobile-app-2
+- name: "mobile-app-2"
   url: https://github.com/forpublicai/mobile-app-2
-  description: Mobile (iOS/Android) client for OpenWebUI. Chat with your self‑hosted AI.
+  description: "Mobile (iOS/Android) client for OpenWebUI. Chat with your self‑hosted AI."
   homepage: "http://conduit.mobile"
   pushed_at: 2026-05-24T01:13:25Z
-  updated_at: 2026-05-24T01:13:29Z
+  updated_at: 2026-08-20T01:45:14Z
 
-- name: .github
+- name: ".github"
   url: https://github.com/forpublicai/.github
   pushed_at: 2026-05-18T11:51:29Z
   updated_at: 2026-05-18T11:51:33Z
 
-- name: publicai.co
-  url: https://github.com/forpublicai/publicai.co
-  description: The website of the Public AI Inference Utility
-  homepage: "https://publicai.co"
-  pushed_at: 2026-04-25T16:01:54Z
-  updated_at: 2026-04-25T16:01:58Z
-
-- name: chat.publicai.co
-  url: https://github.com/forpublicai/chat.publicai.co
-  description: The main chat app for the Public AI Inference Utility, based on OpenWebUI
-  homepage: "https://chat.publicai.co"
-  pushed_at: 2026-04-20T08:55:28Z
-  updated_at: 2026-05-08T12:33:16Z
-
-- name: platform.publicai.co
-  url: https://github.com/forpublicai/platform.publicai.co
-  description: The API gateway for the Public AI Inference Utility, based on Zuplo
-  homepage: "https://platform.publicai.co"
-  pushed_at: 2026-04-10T14:06:00Z
-  updated_at: 2026-05-05T18:44:33Z
-
-- name: publicai.uk
+- name: "publicai.uk"
   url: https://github.com/forpublicai/publicai.uk
   homepage: "https://publicai-uk.vercel.app"
   pushed_at: 2026-03-27T07:33:57Z
   updated_at: 2026-03-27T07:34:00Z
 
-- name: commune
+- name: "commune"
   url: https://github.com/forpublicai/commune
   homepage: "https://commune-kappa.vercel.app"
   pushed_at: 2026-03-22T12:02:32Z
   updated_at: 2026-05-18T01:47:03Z
 
-- name: open-webui
-  url: https://github.com/forpublicai/open-webui
-  description: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
-  homepage: "https://openwebui.com"
-  pushed_at: 2026-03-12T22:25:22Z
-  updated_at: 2026-04-10T13:56:16Z
-
-- name: libraries-kiosk
-  url: https://github.com/forpublicai/libraries-kiosk
-  description: The dashboard for the libraries project
-  homepage: "https://forpublicai.github.io/libraries-kiosk/"
-  pushed_at: 2026-03-11T18:35:36Z
-  updated_at: 2026-04-15T06:04:56Z
-
-- name: publicai.us
-  url: https://github.com/forpublicai/publicai.us
-  description: The website for publicai.us
-  homepage: "http://publicai.us/"
-  pushed_at: 2026-03-10T22:05:10Z
-  updated_at: 2026-03-10T22:05:15Z
-
-- name: ADHDAI
+- name: "ADHDAI"
   url: https://github.com/forpublicai/ADHDAI
   homepage: "https://forpublicai.github.io/ADHDAI/"
   pushed_at: 2026-02-12T15:02:58Z
   updated_at: 2026-05-20T20:16:11Z
 
-- name: huggingface.js
+- name: "huggingface.js"
   url: https://github.com/forpublicai/huggingface.js
-  description: Use Hugging Face with JavaScript
+  description: "Use Hugging Face with JavaScript"
   homepage: "https://hf.co/docs/huggingface.js"
   pushed_at: 2026-01-17T05:10:30Z
   updated_at: 2026-01-17T05:10:55Z
 
-- name: personalize
+- name: "personalize"
   url: https://github.com/forpublicai/personalize
   pushed_at: 2025-12-30T15:35:18Z
   updated_at: 2025-12-30T15:35:22Z
 
-- name: publicai-mcp-server
+- name: "publicai-mcp-server"
   url: https://github.com/forpublicai/publicai-mcp-server
   pushed_at: 2025-12-30T07:55:41Z
-  updated_at: 2026-02-23T08:18:12Z
+  updated_at: 2026-08-26T11:39:34Z
 
-- name: manymodels
+- name: "manymodels"
   url: https://github.com/forpublicai/manymodels
-  description: The many models research project
+  description: "The many models research project"
   homepage: "https://manymodels.org/"
   pushed_at: 2025-08-01T22:14:24Z
   updated_at: 2025-11-07T11:18:28Z
-

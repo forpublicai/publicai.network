@@ -1,0 +1,48 @@
+name: Update repo list
+
+# Refreshes _data/forpublicai_repos.yml (the navbar "Repos" menu) once a day.
+# The Recently active / Active / Quiet buckets are computed when Jekyll builds,
+# so we also request a Pages rebuild even when the data didn't change.
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # daily, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: update-repos
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refresh repo data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_repos.py
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          if git diff --quiet -- _data/forpublicai_repos.yml; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/forpublicai_repos.yml
+          git commit -m "Refresh forpublicai repo list"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild Pages so activity buckets stay current
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Pages build request failed (non-fatal)"
