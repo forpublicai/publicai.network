@@ -1,0 +1,12 @@
+---
+layout: page
+title: Progress
+permalink: /progress/
+noindex: true
+---
+{% comment %}
+  The page body is prebuilt in forpublicai/progress (static/network.tsx),
+  vendored here as a git subtree at progress/. To refresh:
+  git subtree pull --prefix=progress https://github.com/forpublicai/progress main --squash
+{% endcomment %}
+{% include_relative progress/static/dist/network.html %}
