@@ -1,3 +1,16 @@
+- name: "publicai.network"
+  url: https://github.com/forpublicai/publicai.network
+  description: "The website of the Public AI Network"
+  homepage: "https://publicai.network/"
+  pushed_at: 2026-11-19T18:49:16Z
+  updated_at: 2026-11-16T14:22:28Z
+
+- name: "progress"
+  url: https://github.com/forpublicai/progress
+  description: "Shared progress & milestones across the movement"
+  pushed_at: 2026-11-19T18:43:19Z
+  updated_at: 2026-11-18T22:37:45Z
+
 - name: "publicai.ch"
   url: https://github.com/forpublicai/publicai.ch
   description: "Public AI Switzerland"
@@ -12,12 +25,6 @@
   pushed_at: 2026-11-19T15:12:30Z
   updated_at: 2026-10-30T11:14:12Z
 
-- name: "progress"
-  url: https://github.com/forpublicai/progress
-  description: "Shared progress & milestones across the movement"
-  pushed_at: 2026-11-19T15:10:36Z
-  updated_at: 2026-11-18T22:37:45Z
-
 - name: "chat.publicai.co"
   url: https://github.com/forpublicai/chat.publicai.co
   description: "The main chat app for the Public AI Inference Utility, based on OpenWebUI"
@@ -31,13 +38,6 @@
   homepage: "http://publicai.us/"
   pushed_at: 2026-11-18T22:16:24Z
   updated_at: 2026-11-07T07:51:52Z
-
-- name: "publicai.network"
-  url: https://github.com/forpublicai/publicai.network
-  description: "The website of the Public AI Network"
-  homepage: "https://publicai.network/"
-  pushed_at: 2026-11-14T19:59:43Z
-  updated_at: 2026-11-16T14:22:28Z
 
 - name: "librarieskiosk"
   url: https://github.com/forpublicai/librarieskiosk
