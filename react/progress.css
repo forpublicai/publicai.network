@@ -1,0 +1,64 @@
+/* Progress dashboard, styled to the Public AI design system: black text only,
+ * flat 5% cards with 16px radius, Overpass Mono for figures and labels, and
+ * red (#ef3c24) kept to the chart bars. Load Overpass Mono 400/600 on the
+ * page, or set --progress-mono to another monospace stack. */
+
+.progress-figure { font-variant-numeric: tabular-nums; }
+.progress-num, .progress-na, .progress-pill, .progress-chart__value, .progress-chart__tick,
+.progress-topline__value, .progress-topline__window, .progress-topline__context, .progress-timeline__date,
+.progress-pillar__coverage {
+  font-family: var(--progress-mono, "Overpass Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace);
+}
+
+/* Tables */
+.progress-table { margin: 1.5rem 0; max-width: 100%; overflow-x: auto; border: 1px solid #ececec; border-radius: 12px; }
+.progress-table:focus-visible { outline: 2px solid #ef3c24; outline-offset: 3px; }
+.progress-table table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; line-height: 1.55; margin: 0; }
+.progress-table thead { background: #f7f7f7; }
+.progress-table th, .progress-table td { vertical-align: top; padding: 0.85rem 1.1rem; border-bottom: 1px solid #ececec; text-align: left; color: #000; }
+.progress-table th { font-weight: 600; white-space: nowrap; }
+.progress-table tbody tr:last-child td { border-bottom: none; }
+.progress-table th[align="right"], .progress-table td[align="right"] { text-align: right; }
+.progress-num { font-size: 0.875rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.progress-na { font-size: 0.8125rem; color: #000; }
+
+/* Status pills */
+.progress-pill { display: inline-block; padding: 0.1rem 0.7rem; border: 1px solid currentColor; border-radius: 1000px;
+  font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.02em; white-space: nowrap; color: #000; }
+.progress-pill--warn { color: #8a5f3e; /* oak, darkened to 4.5:1 for small text */ }
+.progress-pill--missing { border-color: transparent; background: #f6f2ea; /* parchment */ }
+
+/* Charts */
+.progress-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.progress-chart { margin: 0; padding: 2rem; border-radius: 16px; background: rgba(0, 0, 0, 0.05); min-width: 0; }
+.progress-chart__title { font-size: 0.9375rem; font-weight: 600; color: #000; margin-bottom: 0.75rem; }
+.progress-chart svg { display: block; overflow: visible; }
+.progress-chart__bar { fill: #ef3c24; }
+.progress-chart__bar--partial { fill-opacity: 0.4; }
+.progress-chart__axis { stroke: rgba(0, 0, 0, 0.2); }
+.progress-chart__value, .progress-chart__tick { fill: #000; font-size: 15px; font-variant-numeric: tabular-nums; }
+
+/* Pillars */
+.progress-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
+.progress-pillar { padding: 2rem; border-radius: 16px; background: rgba(0, 0, 0, 0.05); color: #000; display: flex; flex-direction: column; gap: 1.25rem; }
+.progress-pillar__label { margin: 0; font-size: 1.5rem; font-weight: 500; }
+.progress-pillar__question { margin: -1rem 0 0; font-size: 0.9375rem; }
+.progress-topline__metric { font-size: 0.9375rem; font-weight: 600; margin-bottom: 0.25rem; }
+.progress-topline__value { font-size: 2.25rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.progress-topline__window { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.02em; margin-top: 0.25rem; }
+.progress-topline__context { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin: 0.5rem 0 0; font-size: 0.8125rem; }
+.progress-topline__context div { display: flex; gap: 0.4rem; }
+.progress-topline__context dt { font-weight: 400; }
+.progress-topline__context dd { margin: 0; font-weight: 600; }
+.progress-pillar__coverage { margin: auto 0 0; font-size: 0.75rem; }
+
+/* Timeline */
+.progress-timeline { list-style: none; padding: 0; margin: 1.5rem 0; border-left: 2px solid #000; }
+.progress-timeline li { display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; padding: 0.5rem 0 0.5rem 1.25rem; }
+.progress-timeline__date { font-size: 0.875rem; }
+.progress-timeline a { color: #000; text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 640px) {
+  .progress-chart, .progress-pillar { padding: 1.25rem; }
+  .progress-timeline li { grid-template-columns: 1fr; gap: 0.1rem; }
+}

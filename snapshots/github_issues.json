@@ -1,0 +1,522 @@
+{
+ "rows": [
+  {
+   "repo": "platform.publicai.co",
+   "created": "2026-10-22",
+   "state": "open",
+   "title": "SLA readiness: which of these gaps matter most to you?"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2026-10-21",
+   "state": "closed",
+   "title": "429 ‘Budget has been exceeded’ (team cap $50) although account has credits"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2026-10-14",
+   "state": "closed",
+   "title": "API docs not accessible to agents"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2026-10-12",
+   "state": "closed",
+   "title": "apertus-v1.5-70b rejects system messages with HTTP 400; gateway silently falls back to Qwen-SEA-LION"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2026-10-06",
+   "state": "closed",
+   "title": "Messages get permanently stuck / fail to send"
+  },
+  {
+   "repo": "swiss-national-ai-dialogue",
+   "created": "2026-10-05",
+   "state": "open",
+   "title": "Apertus-assisted review of the initial source code"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2026-09-24",
+   "state": "closed",
+   "title": "Billing page pricing panel stays in loading state"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2026-08-27",
+   "state": "open",
+   "title": "Being a good citizen"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2026-08-14",
+   "state": "closed",
+   "title": "Add model name, version, and training cutoff to API responses — align with Swiss AI Initiative transparency policy"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2026-05-26",
+   "state": "closed",
+   "title": "Search exceeds context window"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2026-05-13",
+   "state": "open",
+   "title": "Budget exceeded message"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2026-04-01",
+   "state": "open",
+   "title": "User account deletion"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2026-04-01",
+   "state": "open",
+   "title": "Expired validation link"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2026-03-29",
+   "state": "open",
+   "title": "OpenAI Agentic Workflows: Platform Enhancement Roadmap"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2026-03-29",
+   "state": "open",
+   "title": "Add Reusable Agent Skills System"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2026-03-29",
+   "state": "open",
+   "title": "Implement Context Compaction for Long-Running Agent Tasks"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2026-03-29",
+   "state": "open",
+   "title": "Add Hosted Container Workspace for Agents"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2026-03-29",
+   "state": "open",
+   "title": "Implement Built-in Agent Execution Loop"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2026-03-29",
+   "state": "open",
+   "title": "Add Shell Tool Support for Agent Workflows"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2026-03-27",
+   "state": "open",
+   "title": "Evaluate and Implement vLLM Speculative Decoding (Speculators) for Inference Optimization"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2026-03-27",
+   "state": "open",
+   "title": "Test feature from Twitter post"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2026-02-28",
+   "state": "open",
+   "title": "Backticks are not properly escaped in the workspace tool creation web UI"
+  },
+  {
+   "repo": "libraries-kiosk",
+   "created": "2026-01-13",
+   "state": "open",
+   "title": "Banner instructions"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-12-11",
+   "state": "open",
+   "title": "System prompts break Swiss German toggle"
+  },
+  {
+   "repo": "publicai.ch",
+   "created": "2025-11-29",
+   "state": "closed",
+   "title": "Multi-languages website"
+  },
+  {
+   "repo": "publicai.ch",
+   "created": "2025-11-29",
+   "state": "closed",
+   "title": "Translation of the statutes in FR"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-11-27",
+   "state": "open",
+   "title": "Customizing System Prompt in chat options"
+  },
+  {
+   "repo": "libraries-kiosk",
+   "created": "2025-11-11",
+   "state": "open",
+   "title": "Credit system"
+  },
+  {
+   "repo": "libraries-kiosk",
+   "created": "2025-11-11",
+   "state": "open",
+   "title": "Telemetry"
+  },
+  {
+   "repo": "libraries-kiosk",
+   "created": "2025-11-11",
+   "state": "closed",
+   "title": "Onboarding docs for libraries"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-10-23",
+   "state": "open",
+   "title": "Can we get proofs that the sovereign public models are running inference within chosen jurisdictional bounds (e.g. Swiss models are running in European data centres)?"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-10-13",
+   "state": "open",
+   "title": "How do I run tools like Marimo or Simon Willison's \"llm\" against the public AI inference endpoint?"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-10-11",
+   "state": "open",
+   "title": "How can I tell which endpoint is serving the inference when I use the chat interface or API?"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-30",
+   "state": "open",
+   "title": "Feature: use style"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-29",
+   "state": "open",
+   "title": "OpenRouter listing / partnership"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-28",
+   "state": "open",
+   "title": "Hugging Face social graph integration with data flywheel"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "A national data flywheel for Switzerland"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Analyze data logs and improve data logging"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Cookie banner"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Case study / wrap-up for Apertus"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Public AI for Countries"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Advertising stack"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Featuring our Inference Partners"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Blog posts"
+  },
+  {
+   "repo": ".github",
+   "created": "2025-09-26",
+   "state": "closed",
+   "title": "Add a README for the Public AI Organization"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Useful National RAG systems"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Improve analytics across Public AI"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Improve Analytics for Open WebUI"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Improve Analytics for LiteLLM"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Improve Analytics for Zuplo"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-26",
+   "state": "closed",
+   "title": "Rework publicai.co design / information hierarchy"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Enable tool-use for Apertus models"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-26",
+   "state": "closed",
+   "title": "Use a chat UI library for publicai.co to improve the 8B chat experience"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-26",
+   "state": "open",
+   "title": "Utility grand opening a.k.a. Spanish launch"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-25",
+   "state": "open",
+   "title": "Apertus can't be loaded by LM Studio (\"Apertus architecture unknown\")"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-24",
+   "state": "open",
+   "title": "CSS Satisfactory"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-24",
+   "state": "closed",
+   "title": "CSS Satisfactory"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-24",
+   "state": "closed",
+   "title": "Mißtakes"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-18",
+   "state": "closed",
+   "title": "Soverign"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-17",
+   "state": "open",
+   "title": "Small Quantised Version of Apertus 8B"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-16",
+   "state": "open",
+   "title": "Frontend Disclose Model Size"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-15",
+   "state": "closed",
+   "title": "Create Discord community as part of \"Plus\" launch... maybe?"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2025-09-11",
+   "state": "closed",
+   "title": "Test button flow in API reference fails with 500 due to empty body"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-10",
+   "state": "closed",
+   "title": "Security issue"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2025-09-10",
+   "state": "closed",
+   "title": "Cloudflare Error when using API-keys"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-09",
+   "state": "open",
+   "title": "citation + link-out feature (like in Perplexity)"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-09",
+   "state": "open",
+   "title": "Become an official inference provider on HuggingFace"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-09",
+   "state": "open",
+   "title": "Separate prompt suggestions per model"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-08",
+   "state": "closed",
+   "title": "Tool toggle + sponsor ad overwrite"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-08",
+   "state": "open",
+   "title": "Answers in english (but not systematically) when prompted in french"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-08",
+   "state": "open",
+   "title": "User parameters suggestions"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-05",
+   "state": "closed",
+   "title": "HTTP/1.1 500 Internal Server Error"
+  },
+  {
+   "repo": "publicai.co",
+   "created": "2025-09-05",
+   "state": "closed",
+   "title": "Unable to create new API key:  https://platform.publicai.co/settings/api-keys/new reports 404"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2025-09-05",
+   "state": "open",
+   "title": "owned_by bug"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2025-09-04",
+   "state": "closed",
+   "title": "API: Rewrite Error (8b)"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-04",
+   "state": "closed",
+   "title": "Document attachment just don't work."
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2025-09-04",
+   "state": "closed",
+   "title": "API-timeout (70b)"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-04",
+   "state": "open",
+   "title": "More Documentation like Context Window"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-04",
+   "state": "closed",
+   "title": "Apertus does not use web search."
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2025-09-04",
+   "state": "closed",
+   "title": "API: blocked Python openai client?"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-03",
+   "state": "closed",
+   "title": "Add an open source license"
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2025-09-03",
+   "state": "closed",
+   "title": "API: Demo Request returns Invalid Model Error"
+  },
+  {
+   "repo": "chat.publicai.co",
+   "created": "2025-09-02",
+   "state": "open",
+   "title": "Incorrect prompt parsing or other confusion of user input."
+  },
+  {
+   "repo": "platform.publicai.co",
+   "created": "2025-09-02",
+   "state": "closed",
+   "title": "API: From my point of view, an ineffective/wrong content filter"
+  }
+ ],
+ "meta": [
+  {
+   "label": "Query",
+   "value": "GitHub search: org:forpublicai is:issue created:>=2025-09-02"
+  },
+  {
+   "label": "Snapshot",
+   "value": "2026-11-16"
+  },
+  {
+   "label": "Org total incl. pre-launch",
+   "value": "97 issues, 62 open"
+  }
+ ]
+}
