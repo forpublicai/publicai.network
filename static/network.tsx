@@ -38,7 +38,7 @@ export default function NetworkProgress() {
 
       <ProgressPillars
         d30Label="last 30 days"
-        avgLabel="Monthly average, past year"
+        avgLabel="Avg month, past year"
         launchLabel="Since launch"
         notConnected="Not connected yet"
         coverageLabel="{n} of {total} metrics connected"
@@ -47,7 +47,7 @@ export default function NetworkProgress() {
       <h2>Products</h2>
       <p>
         In the last 30 days the Public AI Inference Utility served <ProgressFigure name="tokens_30" format="big" />{" "}
-        tokens, against <ProgressFigure name="tokens_avg" format="big" /> a month over the past year.
+        tokens.
         chat.publicai.co had <ProgressFigure name="active_30" /> active users and gained{" "}
         <ProgressFigure name="users_30" /> sign-ups.
       </p>
