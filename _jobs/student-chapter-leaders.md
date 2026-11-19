@@ -19,9 +19,9 @@ This opportunity is hosted by [Aspen Digital](https://www.aspendigital.org/), a 
 **Program Dates:** From mid-February to mid-May 2027
 **Application Deadline:** End-of-day anywhere on Earth 23 December 2026
 
+## The Challenge
 We need a purposeful entrypoint for rising leaders who want to engage more deeply with questions of the access, accountability, and sustainability of the AI ecosystem.
 
-## The Challenge
 In the last year, for the first time since the widespread adoption of generative AI, the share of young Americans (18–29) who said that they were more concerned than excited about AI exceeded 50%. At the same time, this demographic is one of the fastest and most consistent adopters of the technology. Students’ futures will be significantly shaped by these technologies. They deserve to influence how they are built, used, and governed.
 
 ## Our Approach
