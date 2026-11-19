@@ -41,7 +41,7 @@
 /* Pillars */
 .progress-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
 .progress-pillar { padding: 2rem; border-radius: 16px; background: rgba(0, 0, 0, 0.05); color: #000; display: flex; flex-direction: column; gap: 1.25rem; }
-.progress-pillar__label { margin: 0; font-size: 1.5rem; font-weight: 500; }
+.progress-pillars .progress-pillar__label { margin: 0; /* beats host rules like .post-content h3 */  font-size: 1.5rem; font-weight: 500; }
 .progress-pillar__question { margin: -1rem 0 0; font-size: 0.9375rem; }
 .progress-topline__metric { font-size: 0.9375rem; font-weight: 600; margin-bottom: 0.25rem; }
 .progress-topline__value { font-size: 2.25rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
