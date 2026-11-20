@@ -4,7 +4,7 @@
     {%- assign nav_active = false -%}
     {%- if page.url == hyperpage.url -%}
       {%- assign nav_active = true -%}
-    {%- elsif hyperpage.url == '/opportunities/' and page.url contains '/jobs/' -%}
+    {%- elsif hyperpage.url == '/opportunities/' and page.url contains '/jobs/' and page.url != '/jobs/' -%}
       {%- assign nav_active = true -%}
     {%- endif -%}
     <a
