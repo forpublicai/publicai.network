@@ -38,6 +38,17 @@
 .progress-chart__axis { stroke: rgba(0, 0, 0, 0.2); }
 .progress-chart__value, .progress-chart__tick { fill: #000; font-size: 15px; font-variant-numeric: tabular-nums; }
 
+/* Ranked bars (e.g. users by country) */
+.progress-bars { margin: 1.5rem 0; padding: 2rem; border-radius: 16px; background: rgba(0, 0, 0, 0.05); color: #000; }
+.progress-bars ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+.progress-bars__row { display: grid; grid-template-columns: minmax(7rem, 13rem) 1fr minmax(7.5rem, auto); gap: 1rem; align-items: center; font-size: 0.9375rem; }
+.progress-bars__track { display: block; height: 0.9rem; }
+.progress-bars__bar { display: block; height: 100%; min-width: 2px; background: #ef3c24; border-radius: 2px; }
+.progress-bars__row--muted .progress-bars__bar { opacity: 0.35; }
+.progress-bars__value { text-align: right; white-space: nowrap; font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+.progress-bars__share { display: inline-block; min-width: 3.6rem; margin-left: 0.75rem; }
+.progress-bars__value { font-family: var(--progress-mono, "Overpass Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace); }
+
 /* Pillars */
 .progress-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
 .progress-pillar { padding: 2rem; border-radius: 16px; background: rgba(0, 0, 0, 0.05); color: #000; display: flex; flex-direction: column; gap: 1.25rem; }
@@ -59,6 +70,8 @@
 .progress-timeline a { color: #000; text-decoration: underline; text-underline-offset: 3px; }
 
 @media (max-width: 640px) {
-  .progress-chart, .progress-pillar { padding: 1.25rem; }
+  .progress-chart, .progress-pillar, .progress-bars { padding: 1.25rem; }
+  .progress-bars__row { grid-template-columns: 1fr auto; gap: 0.25rem 0.75rem; }
+  .progress-bars__track { grid-column: 1 / -1; grid-row: 2; }
   .progress-timeline li { grid-template-columns: 1fr; gap: 0.1rem; }
 }

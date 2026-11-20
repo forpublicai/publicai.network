@@ -251,6 +251,55 @@ export function ProgressChart({
   );
 }
 
+/** Horizontal bars for a ranked table, e.g. users by country. Rows with
+ * muted: true (such as "other" or "not set") are drawn lighter and don't
+ * set the scale. */
+export function ProgressBars({
+  table,
+  labelKey,
+  valueKey,
+  shareKey,
+  title,
+  format: kind = "int",
+}: {
+  table: keyof typeof data.tables;
+  labelKey: string;
+  valueKey: string;
+  /** Optional percentage shown after the value. */
+  shareKey?: string;
+  title: string;
+  format?: Format;
+}) {
+  const rows = data.tables[table] as Row[];
+  // Scale to the largest ranked row, so a big "other" or "not set" row
+  // doesn't flatten the rest. A muted row past that scale gets no bar,
+  // only its number, rather than a capped bar that would understate it.
+  const ranked = rows.filter((r) => !r.muted);
+  const max = Math.max(1, ...(ranked.length ? ranked : rows).map((r) => Number(r[valueKey]) || 0));
+  return (
+    <figure className="progress-bars">
+      <figcaption className="progress-chart__title">{title}</figcaption>
+      <ol>
+        {rows.map((r, i) => {
+          const v = Number(r[valueKey]) || 0;
+          return (
+            <li key={i} className={r.muted ? "progress-bars__row progress-bars__row--muted" : "progress-bars__row"}>
+              <span className="progress-bars__label">{String(r[labelKey])}</span>
+              <span className="progress-bars__track" aria-hidden="true">
+                {v <= max ? <span className="progress-bars__bar" style={{ width: `${(100 * v) / max}%` }} /> : null}
+              </span>
+              <span className="progress-bars__value">
+                {format(v, kind)}
+                {shareKey ? <span className="progress-bars__share">{format(r[shareKey], "pct")}</span> : null}
+              </span>
+            </li>
+          );
+        })}
+      </ol>
+    </figure>
+  );
+}
+
 /** A responsive grid around ProgressChart blocks. */
 export function ProgressGrid({ children }: { children: ReactNode }) {
   return <div className="progress-grid">{children}</div>;

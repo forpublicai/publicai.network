@@ -113,11 +113,11 @@
   {
    "key": "countries",
    "pillar": "products",
-   "metric": "Countries reached",
-   "status": "Not connected",
-   "source": "Vercel Web Analytics",
-   "have": "Vercel Web Analytics has visitors by country.",
-   "next": "Pull aggregate_pageviews grouped by country through the Vercel connector."
+   "metric": "Countries reached (chat users)",
+   "status": "Partial",
+   "source": "Open WebUI timezones",
+   "have": "chat.publicai.co users by country, from the timezone their browser reported, mapped to a country with the tz database (collectors/openwebui_countries.py). Last 30 days counts countries with active users; since launch counts countries with any registered user. About half of users set no timezone, or UTC, so they have no country.",
+   "next": "Visitors by country from Vercel Web Analytics, for publicai.co."
   },
   {
    "key": "hello",

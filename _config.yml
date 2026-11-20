@@ -1,7 +1,8 @@
 markdown: kramdown
 theme: minima
 title: Public AI Network
-description: A coalition to build public AI
+description: A coalition building AI as public infrastructure.
+url: "https://publicai.network"
 author:
   name: Public AI Network
   email: info@publicai.network
@@ -21,6 +22,7 @@ minima:
   - publications.md
   - news.md
   - opportunities/index.md
+  - jobs/index.md
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: true
 
@@ -30,6 +32,15 @@ collections:
     permalink: /jobs/:name/
 
 defaults:
+  # Site-wide social card; a page's own `image` front matter overrides it.
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/social-card.png
+        width: 1200
+        height: 630
+        alt: "Public AI Network: a coalition building AI as public infrastructure"
   - scope:
       path: ""
       type: jobs
@@ -40,10 +51,26 @@ google_analytics: G-8CM1DYG2FB
 
 # see https://github.com/jekyll/minima/blob/master/_config.yml for examples
 
-# progress/ is the forpublicai/progress subtree. Only its prebuilt fragment is
-# used, through include_relative in progress.html, so don't publish the rest.
+# progress/ is the forpublicai/progress subtree. progress.html pulls in its
+# prebuilt fragment with include_relative, and the social card is published
+# from progress/static/dist/card.png. Everything else in it stays unpublished.
+# Jekyll 3 matches these with fnmatch, where * also crosses /, so name paths.
 exclude:
-  - progress/
+  - progress/collectors/
+  - progress/data/
+  - progress/react/
+  - progress/records/
+  - progress/snapshots/
+  - progress/static/*.tsx
+  - progress/static/*.mjs
+  - progress/static/dist/*.html
+  - progress/README.md
+  - progress/HANDOFF.md
+  - progress/build.py
+  - progress/metrics.json
+  - progress/package.json
+  - progress/package-lock.json
+  - progress/tsconfig.json
   - Gemfile
   - Gemfile.lock
   - node_modules/

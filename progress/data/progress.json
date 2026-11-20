@@ -36,7 +36,11 @@
   "search_y1": 47,
   "search_30": 32,
   "hansard_total": 3,
-  "missing": 15,
+  "countries_launch": 164,
+  "countries_30": 97,
+  "country_known_pct": 46,
+  "country_outside_ch_pct": 64,
+  "missing": 14,
   "total": 31
  },
  "pillars": [
@@ -64,7 +68,7 @@
      "launch": 49866
     }
    ],
-   "connected": 8,
+   "connected": 9,
    "total": 12
   },
   {
@@ -216,12 +220,12 @@
   {
    "key": "countries",
    "pillar": "products",
-   "metric": "Countries reached",
-   "status": "Not connected",
+   "metric": "Countries reached (chat users)",
+   "status": "Partial",
    "format": "int",
-   "d30": null,
+   "d30": 97,
    "y1": null,
-   "launch": null
+   "launch": 164
   },
   {
    "key": "hello",
@@ -2056,6 +2060,134 @@
     "open": 0
    }
   ],
+  "countries": [
+   {
+    "country": "CH",
+    "name": "Switzerland",
+    "users": 9875,
+    "new_30": 671,
+    "active_30": 1389,
+    "muted": false,
+    "share": 16.6
+   },
+   {
+    "country": "FR",
+    "name": "France",
+    "users": 5598,
+    "new_30": 160,
+    "active_30": 390,
+    "muted": false,
+    "share": 9.4
+   },
+   {
+    "country": "IT",
+    "name": "Italy",
+    "users": 2302,
+    "new_30": 24,
+    "active_30": 110,
+    "muted": false,
+    "share": 3.9
+   },
+   {
+    "country": "DE",
+    "name": "Germany",
+    "users": 1770,
+    "new_30": 53,
+    "active_30": 167,
+    "muted": false,
+    "share": 3.0
+   },
+   {
+    "country": "US",
+    "name": "United States",
+    "users": 1025,
+    "new_30": 76,
+    "active_30": 116,
+    "muted": false,
+    "share": 1.7
+   },
+   {
+    "country": "BE",
+    "name": "Belgium",
+    "users": 589,
+    "new_30": 14,
+    "active_30": 40,
+    "muted": false,
+    "share": 1.0
+   },
+   {
+    "country": "IN",
+    "name": "India",
+    "users": 425,
+    "new_30": 31,
+    "active_30": 44,
+    "muted": false,
+    "share": 0.7
+   },
+   {
+    "country": "ES",
+    "name": "Spain",
+    "users": 424,
+    "new_30": 14,
+    "active_30": 30,
+    "muted": false,
+    "share": 0.7
+   },
+   {
+    "country": "GB",
+    "name": "United Kingdom",
+    "users": 402,
+    "new_30": 15,
+    "active_30": 31,
+    "muted": false,
+    "share": 0.7
+   },
+   {
+    "country": "CA",
+    "name": "Canada",
+    "users": 323,
+    "new_30": 9,
+    "active_30": 26,
+    "muted": false,
+    "share": 0.5
+   },
+   {
+    "country": "BR",
+    "name": "Brazil",
+    "users": 282,
+    "new_30": 11,
+    "active_30": 26,
+    "muted": false,
+    "share": 0.5
+   },
+   {
+    "country": "NL",
+    "name": "Netherlands",
+    "users": 272,
+    "new_30": 6,
+    "active_30": 20,
+    "muted": false,
+    "share": 0.5
+   },
+   {
+    "country": "other",
+    "name": "152 other countries",
+    "users": 3898,
+    "new_30": 227,
+    "active_30": 388,
+    "muted": true,
+    "share": 6.6
+   },
+   {
+    "country": "unknown",
+    "name": "No country (timezone not set, or UTC)",
+    "users": 32278,
+    "new_30": 1617,
+    "active_30": 1627,
+    "muted": true,
+    "share": 54.3
+   }
+  ],
   "coverage": [
    {
     "pillar": "products",
@@ -2131,11 +2263,11 @@
    },
    {
     "pillar": "products",
-    "metric": "Countries reached",
-    "status": "Not connected",
-    "source": "Vercel Web Analytics",
-    "have": "Vercel Web Analytics has visitors by country.",
-    "next": "Pull aggregate_pageviews grouped by country through the Vercel connector."
+    "metric": "Countries reached (chat users)",
+    "status": "Partial",
+    "source": "Open WebUI timezones",
+    "have": "chat.publicai.co users by country, from the timezone their browser reported, mapped to a country with the tz database (collectors/openwebui_countries.py). Last 30 days counts countries with active users; since launch counts countries with any registered user. About half of users set no timezone, or UTC, so they have no country.",
+    "next": "Visitors by country from Vercel Web Analytics, for publicai.co."
    },
    {
     "pillar": "products",

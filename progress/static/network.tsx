@@ -4,6 +4,7 @@
 // Spend, team names and the key anomaly are left out here on purpose.
 import data from "../data/progress.json";
 import {
+  ProgressBars,
   ProgressChart,
   ProgressFigure,
   ProgressGrid,
@@ -56,6 +57,13 @@ export default function NetworkProgress() {
         <ProgressChart series="active_users" title="chat.publicai.co active users" unit="active users" partialLabel={partial} />
         <ProgressChart series="visitors" title="publicai.co visitors" unit="visitors" partialLabel={partial} />
       </ProgressGrid>
+      <p>
+        chat.publicai.co has registered users in <ProgressFigure name="countries_launch" /> countries, and people in <ProgressFigure name="countries_30" /> of them were active in the last 30 days. <ProgressFigure name="country_outside_ch_pct" />% of users with a known country are outside Switzerland.
+      </p>
+      <ProgressBars table="countries" labelKey="name" valueKey="users" shareKey="share" title="Registered chat users by country" />
+      <p>
+        The country comes from the timezone each user’s browser reported, mapped with the tz database. It is where their clock is set, not their nationality or exact location. <ProgressFigure name="country_known_pct" />% of users have a timezone with a country; the rest set none, or set UTC.
+      </p>
 
       <h2>Movement</h2>
       <p>
