@@ -252,7 +252,8 @@ export function ProgressChart({
 }
 
 /** Horizontal bars for a ranked table, e.g. users by country. Rows with
- * muted: true (such as "other" or "not set") are drawn lighter. */
+ * muted: true (such as "other" or "not set") are drawn lighter and don't
+ * set the scale. */
 export function ProgressBars({
   table,
   labelKey,
@@ -270,7 +271,10 @@ export function ProgressBars({
   format?: Format;
 }) {
   const rows = data.tables[table] as Row[];
-  const max = Math.max(1, ...rows.map((r) => Number(r[valueKey]) || 0));
+  // Scale to the largest ranked row, so a big "other" or "not set" row
+  // doesn't flatten the rest; muted rows are capped at full width.
+  const ranked = rows.filter((r) => !r.muted);
+  const max = Math.max(1, ...(ranked.length ? ranked : rows).map((r) => Number(r[valueKey]) || 0));
   return (
     <figure className="progress-bars">
       <figcaption className="progress-chart__title">{title}</figcaption>
@@ -281,7 +285,7 @@ export function ProgressBars({
             <li key={i} className={r.muted ? "progress-bars__row progress-bars__row--muted" : "progress-bars__row"}>
               <span className="progress-bars__label">{String(r[labelKey])}</span>
               <span className="progress-bars__track" aria-hidden="true">
-                <span className="progress-bars__bar" style={{ width: `${(100 * v) / max}%` }} />
+                <span className="progress-bars__bar" style={{ width: `${Math.min(100, (100 * v) / max)}%` }} />
               </span>
               <span className="progress-bars__value">
                 {format(v, kind)}
