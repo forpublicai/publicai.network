@@ -7,7 +7,7 @@ then links for old names (Asia/Calcutta -> Asia/Kolkata). zone.tab comes
 first because newer tz data links some countries' zones to a neighbour's
 (Europe/Oslo -> Europe/Berlin). So the country is where the browser's clock
 was set, not where someone lives or what passport they hold, and users who
-never set one are counted as unknown.
+never set one, or set UTC, are counted as unknown.
 
 Per country: registered users, sign-ups in the last 30 days, and users active
 in the last 30 days. Only these counts are written: no ids, names, emails or
@@ -31,6 +31,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import get_json, write_rows  # noqa: E402
 
 TZDIR = os.environ.get("TZDIR", "/usr/share/zoneinfo")
+# Plain names where the tz database's iso3166.tab uses its own, and the label
+# for users with no timezone or one with no country (UTC, Etc/GMT+N).
+NAMES = {"GB": "United Kingdom", "US": "United States", "KR": "South Korea", "KP": "North Korea",
+         "VA": "Vatican City", "unknown": "No country (timezone not set, or UTC)"}
 
 
 def tz_countries():
@@ -110,12 +114,13 @@ def main():
     if unmapped:
         print("Timezones with no country (counted as unknown):", dict(unmapped), file=sys.stderr)
 
-    rows = [{"country": cc, "name": names.get(cc, "Timezone not set" if cc == "unknown" else cc),
+    names.update(NAMES)
+    rows = [{"country": cc, "name": names.get(cc, cc),
              "users": reg[cc], "new_30": new[cc], "active_30": active[cc]}
             for cc in sorted(reg, key=lambda c: (-reg[c], c))]
     about = (f"chat.publicai.co users by country, as of {a.as_of}, from the timezone each user's browser "
              "reported (IANA zone mapped to a country with the tz database). users = registered; new_30 = "
-             "signed up in the last 30 days; active_30 = active in the last 30 days. 'unknown' = no timezone set.")
+             "signed up in the last 30 days; active_30 = active in the last 30 days. 'unknown' = no timezone, or one with no country (UTC, Etc/GMT+N).")
     write_rows(a.out, about, rows)
 
 
