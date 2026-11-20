@@ -1,7 +1,7 @@
 markdown: kramdown
 theme: minima
 title: Public AI Network
-description: A coalition to build public AI
+description: A coalition building AI as public infrastructure.
 url: "https://publicai.network"
 author:
   name: Public AI Network
@@ -31,6 +31,15 @@ collections:
     permalink: /jobs/:name/
 
 defaults:
+  # Site-wide social card; a page's own `image` front matter overrides it.
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/social-card.png
+        width: 1200
+        height: 630
+        alt: "Public AI Network: a coalition building AI as public infrastructure"
   - scope:
       path: ""
       type: jobs
