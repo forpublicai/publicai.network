@@ -1,7 +1,8 @@
 // Renders static/*.tsx pages to self-contained HTML fragments in static/dist/,
 // for sites that can't run React (publicai.network on Jekyll). Each fragment
 // carries its own <style> and is wrapped in Liquid raw tags, so Jekyll's
-// {% include_relative %} drops it in unchanged.
+// {% include_relative %} drops it in unchanged. Also renders the social
+// card, static/dist/card.png (see card.mjs).
 //
 //   npm install && npm run static
 /* global console */
@@ -9,6 +10,7 @@ import { build } from "esbuild";
 import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
+import { renderCard } from "./card.mjs";
 
 const here = import.meta.dirname;
 const dist = path.join(here, "dist");
@@ -47,3 +49,4 @@ for (const page of pages) {
   console.log(`static/dist/${name}.html  ${(fragment.length / 1024).toFixed(1)} kB`);
 }
 await rm(tmp, { recursive: true, force: true });
+await renderCard(data, path.join(dist, "card.png"));
