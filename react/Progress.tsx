@@ -272,7 +272,8 @@ export function ProgressBars({
 }) {
   const rows = data.tables[table] as Row[];
   // Scale to the largest ranked row, so a big "other" or "not set" row
-  // doesn't flatten the rest; muted rows are capped at full width.
+  // doesn't flatten the rest. A muted row past that scale gets no bar,
+  // only its number, rather than a capped bar that would understate it.
   const ranked = rows.filter((r) => !r.muted);
   const max = Math.max(1, ...(ranked.length ? ranked : rows).map((r) => Number(r[valueKey]) || 0));
   return (
@@ -285,7 +286,7 @@ export function ProgressBars({
             <li key={i} className={r.muted ? "progress-bars__row progress-bars__row--muted" : "progress-bars__row"}>
               <span className="progress-bars__label">{String(r[labelKey])}</span>
               <span className="progress-bars__track" aria-hidden="true">
-                <span className="progress-bars__bar" style={{ width: `${Math.min(100, (100 * v) / max)}%` }} />
+                {v <= max ? <span className="progress-bars__bar" style={{ width: `${(100 * v) / max}%` }} /> : null}
               </span>
               <span className="progress-bars__value">
                 {format(v, kind)}
