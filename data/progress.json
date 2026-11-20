@@ -30,8 +30,14 @@
   "slack_active_30": 231,
   "slack_joined_30": 45,
   "slack_members": 678,
-  "missing": 17,
-  "total": 30
+  "news_30": null,
+  "papers_30": 37,
+  "papers_y1": 344,
+  "search_y1": 47,
+  "search_30": 32,
+  "hansard_total": 3,
+  "missing": 15,
+  "total": 31
  },
  "pillars": [
   {
@@ -103,17 +109,17 @@
      "launch": null
     },
     {
-     "key": "publications",
-     "metric": "Publications on public AI",
-     "status": "Partial",
+     "key": "papers",
+     "metric": "Academic papers using \"public AI\"",
+     "status": "Counted",
      "format": "int",
-     "d30": 0,
-     "y1_avg": 0,
-     "launch": 2
+     "d30": 37,
+     "y1_avg": 29,
+     "launch": 371
     }
    ],
-   "connected": 1,
-   "total": 7
+   "connected": 4,
+   "total": 8
   }
  ],
  "scorecard": [
@@ -381,21 +387,31 @@
    "key": "papers",
    "pillar": "idea",
    "metric": "Academic papers using \"public AI\"",
-   "status": "Not connected",
+   "status": "Counted",
    "format": "int",
-   "d30": null,
-   "y1": null,
-   "launch": null
+   "d30": 37,
+   "y1": 344,
+   "launch": 371
+  },
+  {
+   "key": "search_interest",
+   "pillar": "idea",
+   "metric": "Google searches for \"public AI\"",
+   "status": "Counted",
+   "format": "int",
+   "d30": 32,
+   "y1": 47,
+   "launch": 46
   },
   {
    "key": "policy",
    "pillar": "idea",
    "metric": "Policy documents citing public AI",
-   "status": "Not connected",
+   "status": "Partial",
    "format": "int",
-   "d30": null,
-   "y1": null,
-   "launch": null
+   "d30": 1,
+   "y1": 1,
+   "launch": 1
   },
   {
    "key": "social_mentions",
@@ -1171,6 +1187,414 @@
     "value": 27
    }
   ],
+  "papers": [
+   {
+    "month": "2024-01",
+    "value": 3
+   },
+   {
+    "month": "2024-02",
+    "value": 2
+   },
+   {
+    "month": "2024-03",
+    "value": 1
+   },
+   {
+    "month": "2024-04",
+    "value": 0
+   },
+   {
+    "month": "2024-05",
+    "value": 1
+   },
+   {
+    "month": "2024-06",
+    "value": 2
+   },
+   {
+    "month": "2024-07",
+    "value": 1
+   },
+   {
+    "month": "2024-08",
+    "value": 2
+   },
+   {
+    "month": "2024-09",
+    "value": 3
+   },
+   {
+    "month": "2024-10",
+    "value": 5
+   },
+   {
+    "month": "2024-11",
+    "value": 1
+   },
+   {
+    "month": "2024-12",
+    "value": 5
+   },
+   {
+    "month": "2025-01",
+    "value": 15
+   },
+   {
+    "month": "2025-02",
+    "value": 6
+   },
+   {
+    "month": "2025-03",
+    "value": 7
+   },
+   {
+    "month": "2025-04",
+    "value": 1
+   },
+   {
+    "month": "2025-05",
+    "value": 9
+   },
+   {
+    "month": "2025-06",
+    "value": 3
+   },
+   {
+    "month": "2025-07",
+    "value": 2
+   },
+   {
+    "month": "2025-08",
+    "value": 5
+   },
+   {
+    "month": "2025-09",
+    "value": 9
+   },
+   {
+    "month": "2025-10",
+    "value": 11
+   },
+   {
+    "month": "2025-11",
+    "value": 13
+   },
+   {
+    "month": "2025-12",
+    "value": 17
+   },
+   {
+    "month": "2026-01",
+    "value": 68
+   },
+   {
+    "month": "2026-02",
+    "value": 11
+   },
+   {
+    "month": "2026-03",
+    "value": 14
+   },
+   {
+    "month": "2026-04",
+    "value": 14
+   },
+   {
+    "month": "2026-05",
+    "value": 21
+   },
+   {
+    "month": "2026-06",
+    "value": 40
+   },
+   {
+    "month": "2026-07",
+    "value": 34
+   },
+   {
+    "month": "2026-08",
+    "value": 31
+   },
+   {
+    "month": "2026-09",
+    "value": 28
+   },
+   {
+    "month": "2026-10",
+    "value": 42
+   },
+   {
+    "month": "2026-11",
+    "value": 18
+   }
+  ],
+  "search_interest": [
+   {
+    "month": "2024-01",
+    "value": 3
+   },
+   {
+    "month": "2024-02",
+    "value": 7
+   },
+   {
+    "month": "2024-03",
+    "value": 8
+   },
+   {
+    "month": "2024-04",
+    "value": 2
+   },
+   {
+    "month": "2024-05",
+    "value": 5
+   },
+   {
+    "month": "2024-06",
+    "value": 5
+   },
+   {
+    "month": "2024-07",
+    "value": 1
+   },
+   {
+    "month": "2024-08",
+    "value": 3
+   },
+   {
+    "month": "2024-09",
+    "value": 5
+   },
+   {
+    "month": "2024-10",
+    "value": 8
+   },
+   {
+    "month": "2024-11",
+    "value": 7
+   },
+   {
+    "month": "2024-12",
+    "value": 8
+   },
+   {
+    "month": "2025-01",
+    "value": 18
+   },
+   {
+    "month": "2025-02",
+    "value": 25
+   },
+   {
+    "month": "2025-03",
+    "value": 12
+   },
+   {
+    "month": "2025-04",
+    "value": 12
+   },
+   {
+    "month": "2025-05",
+    "value": 11
+   },
+   {
+    "month": "2025-06",
+    "value": 19
+   },
+   {
+    "month": "2025-07",
+    "value": 22
+   },
+   {
+    "month": "2025-08",
+    "value": 56
+   },
+   {
+    "month": "2025-09",
+    "value": 46
+   },
+   {
+    "month": "2025-10",
+    "value": 39
+   },
+   {
+    "month": "2025-11",
+    "value": 34
+   },
+   {
+    "month": "2025-12",
+    "value": 34
+   },
+   {
+    "month": "2026-01",
+    "value": 32
+   },
+   {
+    "month": "2026-02",
+    "value": 37
+   },
+   {
+    "month": "2026-03",
+    "value": 52
+   },
+   {
+    "month": "2026-04",
+    "value": 64
+   },
+   {
+    "month": "2026-05",
+    "value": 63
+   },
+   {
+    "month": "2026-06",
+    "value": 65
+   },
+   {
+    "month": "2026-07",
+    "value": 54
+   },
+   {
+    "month": "2026-08",
+    "value": 49
+   },
+   {
+    "month": "2026-09",
+    "value": 49
+   },
+   {
+    "month": "2026-10",
+    "value": 35
+   },
+   {
+    "month": "2026-11",
+    "value": 28
+   }
+  ],
+  "newsletter_posts": [
+   {
+    "month": "2025-09",
+    "value": 5
+   },
+   {
+    "month": "2025-10",
+    "value": 0
+   },
+   {
+    "month": "2025-11",
+    "value": 0
+   },
+   {
+    "month": "2025-12",
+    "value": 0
+   },
+   {
+    "month": "2026-01",
+    "value": 0
+   },
+   {
+    "month": "2026-02",
+    "value": 0
+   },
+   {
+    "month": "2026-03",
+    "value": 1
+   },
+   {
+    "month": "2026-04",
+    "value": 0
+   },
+   {
+    "month": "2026-05",
+    "value": 1
+   },
+   {
+    "month": "2026-06",
+    "value": 0
+   },
+   {
+    "month": "2026-07",
+    "value": 1
+   },
+   {
+    "month": "2026-08",
+    "value": 0
+   },
+   {
+    "month": "2026-09",
+    "value": 0
+   },
+   {
+    "month": "2026-10",
+    "value": 0
+   },
+   {
+    "month": "2026-11",
+    "value": 0
+   }
+  ],
+  "hansard": [
+   {
+    "month": "2025-09",
+    "value": 0
+   },
+   {
+    "month": "2025-10",
+    "value": 0
+   },
+   {
+    "month": "2025-11",
+    "value": 0
+   },
+   {
+    "month": "2025-12",
+    "value": 0
+   },
+   {
+    "month": "2026-01",
+    "value": 0
+   },
+   {
+    "month": "2026-02",
+    "value": 0
+   },
+   {
+    "month": "2026-03",
+    "value": 0
+   },
+   {
+    "month": "2026-04",
+    "value": 0
+   },
+   {
+    "month": "2026-05",
+    "value": 0
+   },
+   {
+    "month": "2026-06",
+    "value": 0
+   },
+   {
+    "month": "2026-07",
+    "value": 0
+   },
+   {
+    "month": "2026-08",
+    "value": 0
+   },
+   {
+    "month": "2026-09",
+    "value": 0
+   },
+   {
+    "month": "2026-10",
+    "value": 1
+   },
+   {
+    "month": "2026-11",
+    "value": 0
+   }
+  ],
   "tokens": [
    {
     "month": "2025-09",
@@ -1798,8 +2222,8 @@
     "metric": "Newsletter subscribers",
     "status": "Not connected",
     "source": "Substack",
-    "have": "publicai.substack.com. Substack does not publish subscriber counts.",
-    "next": "Monthly subscriber count from the Substack dashboard, typed into records/audience.json. Posts per month come from the RSS feed."
+    "have": "Posts on publicai.substack.com come from the archive API (collectors/idea_substack.py). Substack does not publish subscriber counts.",
+    "next": "Monthly subscriber count from the Substack dashboard, typed into records/audience.json."
    },
    {
     "pillar": "movement",
@@ -1822,8 +2246,8 @@
     "metric": "News articles using \"public AI\"",
     "status": "Not connected",
     "source": "GDELT",
-    "have": "Nothing yet. Network access to GDELT is set up in the \"Public AI progress\" environment.",
-    "next": "GDELT DOC API, exact phrase \"public AI\", monthly volume. Check a sample by hand each month."
+    "have": "collectors/idea_gdelt.py is written. GDELT refuses every request from the cloud environment's shared IP (HTTP 429), so there is no data yet.",
+    "next": "Run the collector from a GitHub Action or a laptop. It is slow (one request per 5 seconds) and resumes where it stopped. Then check a sample of matching articles by hand."
    },
    {
     "pillar": "idea",
@@ -1844,26 +2268,34 @@
    {
     "pillar": "idea",
     "metric": "Academic papers using \"public AI\"",
-    "status": "Not connected",
+    "status": "Counted",
     "source": "OpenAlex",
-    "have": "Nothing yet.",
-    "next": "OpenAlex works search, exact phrase, grouped by year."
+    "have": "Works in OpenAlex with the phrase in the title or abstract, by publication month, from Jan 2023 (collectors/idea_openalex.py). Works dated only by year land in January, which inflates January.",
+    "next": "Recent months grow as OpenAlex indexes new works, so refresh monthly."
+   },
+   {
+    "pillar": "idea",
+    "metric": "Google searches for \"public AI\"",
+    "status": "Counted",
+    "source": "Google Trends",
+    "have": "Weekly worldwide search interest in the exact phrase, from Jan 2024 (collectors/idea_trends.py). An index where 100 is the peak week, not a number of searches. Window figures are the average index.",
+    "next": "Google Trends has no public API: the collector uses the endpoints its web page calls. If they break, download the CSV by hand and pass --csv."
    },
    {
     "pillar": "idea",
     "metric": "Policy documents citing public AI",
-    "status": "Not connected",
+    "status": "Partial",
     "source": "Hansard, EUR-Lex, Curia Vista",
-    "have": "Nothing yet.",
-    "next": "UK Hansard API for parliament; EUR-Lex and Swiss Curia Vista searched by hand; national strategies listed in records/mentions.json."
+    "have": "UK Parliament spoken contributions containing the phrase, from Hansard (collectors/idea_hansard.py). Three so far, all in the Lords.",
+    "next": "EUR-Lex and Swiss Curia Vista searched by hand; national strategies listed in records/mentions.json."
    },
    {
     "pillar": "idea",
     "metric": "Social mentions of \"public AI\"",
     "status": "Not connected",
     "source": "Bluesky",
-    "have": "Nothing yet.",
-    "next": "Bluesky search API (free). X and LinkedIn mention search are paid."
+    "have": "Bluesky's public search refuses requests from this environment without a login.",
+    "next": "A Bluesky account and app password, then app.bsky.feed.searchPosts with since/until per month. X and LinkedIn search are paid."
    },
    {
     "pillar": "idea",

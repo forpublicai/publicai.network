@@ -21,7 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SNAP = os.path.join(HERE, "snapshots")
 REC = os.path.join(HERE, "records")
 LAUNCH = "2025-09-02"
-SERIES_FOR = {"users": "signups", "visitors_co": "visitors",
+SERIES_FOR = {"users": "signups", "visitors_co": "visitors", "news_mentions": "news",
               "community_active": "slack_posting", "community_joined": "slack_joined"}
 
 
@@ -81,6 +81,32 @@ def main():
     pubs = [r["date"] for r in rows_of(load("publications.json"))]
     records = {n: rows_of(load(f"{n}.json", REC)) for n in ("milestones", "events", "partners", "mentions", "audience")}
     llm = litellm_rows(a.litellm)
+    def optional(name):
+        return rows_of(load(name)) if os.path.exists(os.path.join(SNAP, name)) else []
+
+    gdelt, openalex, trends = optional("idea_gdelt.json"), optional("idea_openalex.json"), optional("idea_trends.json")
+    hansard, substack = optional("idea_hansard.json"), optional("idea_substack.json")
+
+    def monthly_sum(rows, field, start):
+        """Window total from a monthly series, pro-rated by the days of each month
+        inside the window. The as-of month only has data up to the as-of date."""
+        if not rows:
+            return None
+        s0, e0, total = dt.date.fromisoformat(start), as_of, 0.0
+        for r in rows:
+            m0 = dt.date.fromisoformat(r["month"] + "-01")
+            m1 = min((m0 + dt.timedelta(days=32)).replace(day=1) - dt.timedelta(days=1), e0)
+            if m1 < m0:
+                continue
+            overlap = (min(m1, e0) - max(m0, s0)).days + 1
+            if overlap > 0:
+                total += r[field] * overlap / ((m1 - m0).days + 1)
+        return round(total)
+
+    def mean_index(start):
+        vals = [r["index"] for r in trends if start <= r["week"] <= end]
+        return round(sum(vals) / len(vals)) if vals else None
+
     slack = litellm_rows(os.path.join(SNAP, "slack_daily.json"))  # same columns/rows shape
     slack = [r for r in slack if r["date"] <= end]
     slack_on = {r["date"]: r for r in slack}
@@ -113,6 +139,12 @@ def main():
         # Slack's rolling 30-day count of people who posted; no 12-month or since-launch equivalent.
         "community_active": {"d30": slack_at(end, "monthly_posting"), "y1": None, "launch": None},
         "community_joined": {k: slack_joined(s) for k, s in windows.items()},
+        # GDELT and OpenAlex are monthly: a window counts the months it touches,
+        # so "last 30 days" is the as-of month plus the one before.
+        "news_mentions": {k: monthly_sum(gdelt, "articles", s) for k, s in windows.items()},
+        "papers": {k: monthly_sum(openalex, "works", s) for k, s in windows.items()},
+        "search_interest": {k: mean_index(s) for k, s in windows.items()},
+        "policy": {k: count([r["date"] for r in hansard], s) for k, s in windows.items()},
     }
     if records["partners"]:
         values["partners"] = {k: count([p["joined"] for p in records["partners"]], s) for k, s in windows.items()}
@@ -159,6 +191,19 @@ def main():
             start = slack_at(before, "members")
             if start is not None:
                 by_month["slack_joined"][mo] = slack_on[last]["members"] - start
+    for r in gdelt:
+        by_month["news"][r["month"]] = r["articles"]
+    for r in openalex:
+        by_month["papers"][r["month"]] = r["works"]
+    weeks = collections.defaultdict(list)
+    for r in trends:
+        weeks[r["week"][:7]].append(r["index"])
+    for mo, vals in weeks.items():
+        by_month["search_interest"][mo] = round(sum(vals) / len(vals))
+    for r in substack:
+        by_month["newsletter_posts"][r["date"][:7]] += 1
+    for r in hansard:
+        by_month["hansard"][r["date"][:7]] += 1
     owui_tokens = collections.Counter()
     for r in llm:
         by_month["tokens"][r["date"][:7]] += float(r["total_tokens"] or 0)
@@ -168,7 +213,11 @@ def main():
     for mo, n in by_month["chat_messages"].items():
         if n:
             by_month["tokens_per_message"][mo] = round(owui_tokens[mo] / n)
-    series = {name: [{"month": mo, "value": int(by_month[name].get(mo, 0))} for mo in span] for name in by_month}
+    # Idea series start in 2024, to show the trend before launch.
+    long_span = list(months("2024-01", last_month))
+    pre_launch = {"news", "papers", "search_interest"}
+    series = {name: [{"month": mo, "value": int(by_month[name].get(mo, 0))}
+                     for mo in (long_span if name in pre_launch else span)] for name in by_month}
 
     # LiteLLM tables.
     llm_windows = []
@@ -222,6 +271,12 @@ def main():
         "slack_active_30": slack_at(end, "monthly_active"),
         "slack_joined_30": pv["community_joined"]["d30"],
         "slack_members": slack_at(end, "enabled_members"),
+        "news_30": pv["news_mentions"]["d30"],
+        "papers_30": pv["papers"]["d30"],
+        "papers_y1": pv["papers"]["y1"],
+        "search_y1": pv["search_interest"]["y1"],
+        "search_30": pv["search_interest"]["d30"],
+        "hansard_total": len(hansard),
         "missing": sum(1 for c in coverage if c["status"] == "Not connected"),
         "total": len(coverage),
     }
