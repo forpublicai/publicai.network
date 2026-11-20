@@ -99,7 +99,7 @@ export default function NetworkProgress() {
         <ProgressChart series="publications" title="publicai.network publications list" unit="publications" partialLabel={partial} />
       </ProgressGrid>
       <p>
-        News counts come from GDELT’s worldwide crawl and papers from OpenAlex. Both count the phrase, so they also catch “public AI tools” and companies named PublicAI: read them as trends. Google search interest is an index where 100 is the peak week since January 2024, not a number of searches. UK Parliament has used the phrase <ProgressFigure name="hansard_total" /> times in Hansard, all in the Lords.
+        Papers come from OpenAlex. It counts the phrase, so it also catches “public AI tools” and companies named PublicAI: read it as a trend. News articles from GDELT are next. Google search interest is an index where 100 is the peak week since January 2024, not a number of searches. UK Parliament has used the phrase <ProgressFigure name="hansard_total" /> times in Hansard, all in the Lords.
       </p>
 
       <h2>Milestones</h2>
