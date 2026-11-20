@@ -90,12 +90,17 @@ export default function NetworkProgress() {
 
       <h2>Idea</h2>
       <p>
-        Publications come from the <a href="/publications/">publications list</a>, which needs updating. News, papers,
-        policy documents and social posts that use the phrase "public AI" are next.
+        In the last 30 days, <ProgressFigure name="papers_30" /> new papers used the phrase “public AI” in their title or abstract, against <ProgressFigure name="papers_y1" /> in the past year. Google search interest in the phrase averaged <ProgressFigure name="search_30" />, against <ProgressFigure name="search_y1" /> over the past year.
       </p>
       <ProgressGrid>
-        <ProgressChart series="publications" title="Publications per month" unit="publications" partialLabel={partial} />
+        <ProgressChart series="papers" title="Papers using “public AI”" unit="papers" partialLabel={partial} />
+        <ProgressChart series="search_interest" title="Google search interest in “public AI”" unit="index" partialLabel={partial} />
+        <ProgressChart series="newsletter_posts" title="Public AI newsletter posts" unit="posts" partialLabel={partial} />
+        <ProgressChart series="publications" title="publicai.network publications list" unit="publications" partialLabel={partial} />
       </ProgressGrid>
+      <p>
+        News counts come from GDELT’s worldwide crawl and papers from OpenAlex. Both count the phrase, so they also catch “public AI tools” and companies named PublicAI: read them as trends. Google search interest is an index where 100 is the peak week since January 2024, not a number of searches. UK Parliament has used the phrase <ProgressFigure name="hansard_total" /> times in Hansard, all in the Lords.
+      </p>
 
       <h2>Milestones</h2>
       <ProgressTimeline label="Milestones" />

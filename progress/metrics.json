@@ -24,7 +24,7 @@
    "question": "Is public AI spreading as an idea?",
    "topline": [
     "news_mentions",
-    "publications"
+    "papers"
    ]
   }
  ],
@@ -215,8 +215,8 @@
    "metric": "Newsletter subscribers",
    "status": "Not connected",
    "source": "Substack",
-   "have": "publicai.substack.com. Substack does not publish subscriber counts.",
-   "next": "Monthly subscriber count from the Substack dashboard, typed into records/audience.json. Posts per month come from the RSS feed."
+   "have": "Posts on publicai.substack.com come from the archive API (collectors/idea_substack.py). Substack does not publish subscriber counts.",
+   "next": "Monthly subscriber count from the Substack dashboard, typed into records/audience.json."
   },
   {
    "key": "social_followers",
@@ -242,8 +242,8 @@
    "metric": "News articles using \"public AI\"",
    "status": "Not connected",
    "source": "GDELT",
-   "have": "Nothing yet. Network access to GDELT is set up in the \"Public AI progress\" environment.",
-   "next": "GDELT DOC API, exact phrase \"public AI\", monthly volume. Check a sample by hand each month."
+   "have": "collectors/idea_gdelt.py is written. GDELT refuses every request from the cloud environment's shared IP (HTTP 429), so there is no data yet.",
+   "next": "Run the collector from a GitHub Action or a laptop. It is slow (one request per 5 seconds) and resumes where it stopped. Then check a sample of matching articles by hand."
   },
   {
    "key": "press_public_ai",
@@ -267,19 +267,28 @@
    "key": "papers",
    "pillar": "idea",
    "metric": "Academic papers using \"public AI\"",
-   "status": "Not connected",
+   "status": "Counted",
    "source": "OpenAlex",
-   "have": "Nothing yet.",
-   "next": "OpenAlex works search, exact phrase, grouped by year."
+   "have": "Works in OpenAlex with the phrase in the title or abstract, by publication month, from Jan 2023 (collectors/idea_openalex.py). Works dated only by year land in January, which inflates January.",
+   "next": "Recent months grow as OpenAlex indexes new works, so refresh monthly."
+  },
+  {
+   "key": "search_interest",
+   "pillar": "idea",
+   "metric": "Google searches for \"public AI\"",
+   "status": "Counted",
+   "source": "Google Trends",
+   "have": "Weekly worldwide search interest in the exact phrase, from Jan 2024 (collectors/idea_trends.py). An index where 100 is the peak week, not a number of searches. Window figures are the average index.",
+   "next": "Google Trends has no public API: the collector uses the endpoints its web page calls. If they break, download the CSV by hand and pass --csv."
   },
   {
    "key": "policy",
    "pillar": "idea",
    "metric": "Policy documents citing public AI",
-   "status": "Not connected",
+   "status": "Partial",
    "source": "Hansard, EUR-Lex, Curia Vista",
-   "have": "Nothing yet.",
-   "next": "UK Hansard API for parliament; EUR-Lex and Swiss Curia Vista searched by hand; national strategies listed in records/mentions.json."
+   "have": "UK Parliament spoken contributions containing the phrase, from Hansard (collectors/idea_hansard.py). Three so far, all in the Lords.",
+   "next": "EUR-Lex and Swiss Curia Vista searched by hand; national strategies listed in records/mentions.json."
   },
   {
    "key": "social_mentions",
@@ -287,8 +296,8 @@
    "metric": "Social mentions of \"public AI\"",
    "status": "Not connected",
    "source": "Bluesky",
-   "have": "Nothing yet.",
-   "next": "Bluesky search API (free). X and LinkedIn mention search are paid."
+   "have": "Bluesky's public search refuses requests from this environment without a login.",
+   "next": "A Bluesky account and app password, then app.bsky.feed.searchPosts with since/until per month. X and LinkedIn search are paid."
   },
   {
    "key": "notable_mentions",

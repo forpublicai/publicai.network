@@ -31,8 +31,17 @@ python3 collectors/litellm_usage.py --csv export.csv --out raw/litellm_usage.jso
 python3 collectors/litellm_daily.py --raw raw/litellm_usage.json --out snapshots/litellm_daily.json
 python3 collectors/openwebui_stats.py --api https://chat.publicai.co --as-of 2026-11-16 --out snapshots/openwebui_stats.json
 python3 collectors/publications.py --md ../publicai.network/publications.md --out snapshots/publications.json
+python3 collectors/slack_analytics.py --csv "Slack analytics export.csv" --out snapshots/slack_daily.json
+python3 collectors/idea_openalex.py --until 2026-11-16 --out snapshots/idea_openalex.json   # key injected by the proxy, or OPENALEX_API_KEY
+python3 collectors/idea_trends.py --api --until 2026-11-16 --out snapshots/idea_trends.json  # or --csv multiTimeline.csv
+python3 collectors/idea_hansard.py --out snapshots/idea_hansard.json
+python3 collectors/idea_substack.py --out snapshots/idea_substack.json
+python3 collectors/idea_gdelt.py --until 2026-11-16 --out snapshots/idea_gdelt.json        # slow; refused from shared cloud IPs
 python3 build.py --as-of 2026-11-16
+npm install && npm run static   # rebuilds static/dist/ for publicai.network
 ```
+
+Idea counts follow the exact phrase "public AI", so they also catch "public AI tools" and companies named PublicAI. Read them as trends. Google Trends is an index (100 = peak week in the range), not a count of searches.
 
 `litellm_usage.py` writes per-model rows to `raw/` (gitignored, about 2 MB). `collectors/litellm_daily.py` sums it by date, team and model family into `snapshots/litellm_daily.json`, the committed version.
 
