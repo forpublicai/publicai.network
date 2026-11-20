@@ -300,10 +300,12 @@ export function ProgressPillars({
                           <dd>{format(t.y1_avg, t.format as Format)}</dd>
                         </div>
                       ) : null}
-                      <div>
-                        <dt>{launchLabel}</dt>
-                        <dd>{format(t.launch, t.format as Format)}</dd>
-                      </div>
+                      {t.launch !== null ? (
+                        <div>
+                          <dt>{launchLabel}</dt>
+                          <dd>{format(t.launch, t.format as Format)}</dd>
+                        </div>
+                      ) : null}
                     </dl>
                   </>
                 )}
