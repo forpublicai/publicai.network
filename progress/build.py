@@ -86,6 +86,8 @@ def main():
 
     gdelt, openalex, trends = optional("idea_gdelt.json"), optional("idea_openalex.json"), optional("idea_trends.json")
     hansard, substack = optional("idea_hansard.json"), optional("idea_substack.json")
+    countries = optional("openwebui_countries.json")
+    known = [r for r in countries if r["country"] != "unknown"]
 
     def monthly_sum(rows, field, start):
         """Window total from a monthly series, pro-rated by the days of each month
@@ -145,6 +147,9 @@ def main():
         "papers": {k: monthly_sum(openalex, "works", s) for k, s in windows.items()},
         "search_interest": {k: mean_index(s) for k, s in windows.items()},
         "policy": {k: count([r["date"] for r in hansard], s) for k, s in windows.items()},
+        # A country is reached once someone there has an account (or was active, for 30 days).
+        "countries": {"d30": sum(1 for r in known if r["active_30"]) if known else None, "y1": None,
+                      "launch": len(known) if known else None},
     }
     if records["partners"]:
         values["partners"] = {k: count([p["joined"] for p in records["partners"]], s) for k, s in windows.items()}
@@ -254,6 +259,21 @@ def main():
         e["open"] += i["state"] == "open"
     repo_rows = sorted(repos.values(), key=lambda e: -e["opened"])
 
+    # Users by country: the top countries, then the rest and "not set".
+    country_rows = []
+    if countries:
+        total_users = sum(r["users"] for r in countries)
+        top, rest = known[:12], known[12:]
+        country_rows = [dict(r) for r in top]
+        if rest:
+            country_rows.append({"country": "other", "name": f"{len(rest)} other countries",
+                                 **{k: sum(r[k] for r in rest) for k in ("users", "new_30", "active_30")}})
+        country_rows += [dict(r) for r in countries if r["country"] == "unknown"]
+        for r in country_rows:
+            r["muted"] = r["country"] in ("other", "unknown")
+        for r in country_rows:
+            r["share"] = round(100 * r["users"] / total_users, 1)
+
     pv = values
     figures = {
         "visitors_30": pv["visitors_co"]["d30"],
@@ -277,6 +297,12 @@ def main():
         "search_y1": pv["search_interest"]["y1"],
         "search_30": pv["search_interest"]["d30"],
         "hansard_total": len(hansard),
+        "countries_launch": pv["countries"]["launch"],
+        "countries_30": pv["countries"]["d30"],
+        "country_known_pct": round(100 * sum(r["users"] for r in known) / sum(r["users"] for r in countries))
+        if countries else None,
+        "country_outside_ch_pct": round(100 * sum(r["users"] for r in known if r["country"] != "CH")
+                                        / max(1, sum(r["users"] for r in known))) if known else None,
         "missing": sum(1 for c in coverage if c["status"] == "Not connected"),
         "total": len(coverage),
     }
@@ -313,6 +339,7 @@ def main():
             "llm_family": breakdown("family"),
             "llm_team": breakdown("team"),
             "repos": repo_rows,
+            "countries": country_rows,
             "coverage": [{"pillar": c["pillar"], "metric": c["metric"], "status": c["status"], "source": c["source"],
                           "have": c["have"], "next": c["next"]}
                          for c in coverage],

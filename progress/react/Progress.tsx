@@ -251,6 +251,50 @@ export function ProgressChart({
   );
 }
 
+/** Horizontal bars for a ranked table, e.g. users by country. Rows with
+ * muted: true (such as "other" or "not set") are drawn lighter. */
+export function ProgressBars({
+  table,
+  labelKey,
+  valueKey,
+  shareKey,
+  title,
+  format: kind = "int",
+}: {
+  table: keyof typeof data.tables;
+  labelKey: string;
+  valueKey: string;
+  /** Optional percentage shown after the value. */
+  shareKey?: string;
+  title: string;
+  format?: Format;
+}) {
+  const rows = data.tables[table] as Row[];
+  const max = Math.max(1, ...rows.map((r) => Number(r[valueKey]) || 0));
+  return (
+    <figure className="progress-bars">
+      <figcaption className="progress-chart__title">{title}</figcaption>
+      <ol>
+        {rows.map((r, i) => {
+          const v = Number(r[valueKey]) || 0;
+          return (
+            <li key={i} className={r.muted ? "progress-bars__row progress-bars__row--muted" : "progress-bars__row"}>
+              <span className="progress-bars__label">{String(r[labelKey])}</span>
+              <span className="progress-bars__track" aria-hidden="true">
+                <span className="progress-bars__bar" style={{ width: `${(100 * v) / max}%` }} />
+              </span>
+              <span className="progress-bars__value">
+                {format(v, kind)}
+                {shareKey ? <span className="progress-bars__share">{format(r[shareKey], "pct")}</span> : null}
+              </span>
+            </li>
+          );
+        })}
+      </ol>
+    </figure>
+  );
+}
+
 /** A responsive grid around ProgressChart blocks. */
 export function ProgressGrid({ children }: { children: ReactNode }) {
   return <div className="progress-grid">{children}</div>;
