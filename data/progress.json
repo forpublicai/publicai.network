@@ -36,7 +36,11 @@
   "search_y1": 47,
   "search_30": 32,
   "hansard_total": 3,
-  "missing": 15,
+  "countries_launch": null,
+  "countries_30": null,
+  "country_known_pct": null,
+  "country_outside_ch_pct": null,
+  "missing": 14,
   "total": 31
  },
  "pillars": [
@@ -64,7 +68,7 @@
      "launch": 49866
     }
    ],
-   "connected": 8,
+   "connected": 9,
    "total": 12
   },
   {
@@ -216,8 +220,8 @@
   {
    "key": "countries",
    "pillar": "products",
-   "metric": "Countries reached",
-   "status": "Not connected",
+   "metric": "Countries reached (chat users)",
+   "status": "Partial",
    "format": "int",
    "d30": null,
    "y1": null,
@@ -2056,6 +2060,7 @@
     "open": 0
    }
   ],
+  "countries": [],
   "coverage": [
    {
     "pillar": "products",
@@ -2131,11 +2136,11 @@
    },
    {
     "pillar": "products",
-    "metric": "Countries reached",
-    "status": "Not connected",
-    "source": "Vercel Web Analytics",
-    "have": "Vercel Web Analytics has visitors by country.",
-    "next": "Pull aggregate_pageviews grouped by country through the Vercel connector."
+    "metric": "Countries reached (chat users)",
+    "status": "Partial",
+    "source": "Open WebUI timezones",
+    "have": "chat.publicai.co users by country, from the timezone their browser reported, mapped to a country with the tz database (collectors/openwebui_countries.py). Last 30 days counts countries with active users; since launch counts countries with any registered user. About a third of users have no timezone.",
+    "next": "Visitors by country from Vercel Web Analytics, for publicai.co."
    },
    {
     "pillar": "products",
