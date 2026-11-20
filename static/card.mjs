@@ -2,7 +2,7 @@
 // /progress page: one headline number per pillar, from data/progress.json.
 // Needs Playwright with Chromium (`npx playwright install chromium`); without
 // it the existing card is kept and a warning is printed.
-/* global console */
+/* global console, document */
 import { readFile, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import path from "node:path";
