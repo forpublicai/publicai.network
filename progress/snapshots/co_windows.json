@@ -1,0 +1,35 @@
+{
+ "rows": [
+  {
+   "window": "d30",
+   "since": "2026-10-18",
+   "until": "2026-11-17",
+   "visitors": 9086,
+   "pageviews": 15574
+  },
+  {
+   "window": "y1",
+   "since": "2025-11-18",
+   "until": "2026-11-17",
+   "visitors": 164944,
+   "pageviews": 302626
+  },
+  {
+   "window": "launch",
+   "since": "2025-09-02",
+   "until": "2026-11-17",
+   "visitors": 323096,
+   "pageviews": 666833
+  }
+ ],
+ "meta": [
+  {
+   "label": "Source",
+   "value": "Vercel Web Analytics count_pageviews, project publicai-landing (publicai.co)"
+  },
+  {
+   "label": "Snapshot",
+   "value": "2026-11-17"
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "months": [
+  {
+   "month": "2025-08",
+   "new_users": 12,
+   "total_users": 12,
+   "active_users": 7,
+   "messages": 245,
+   "chats": 124
+  },
+  {
+   "month": "2025-09",
+   "new_users": 23763,
+   "total_users": 23775,
+   "active_users": 20793,
+   "messages": 122844,
+   "chats": 42756
+  },
+  {
+   "month": "2025-10",
+   "new_users": 2541,
+   "total_users": 26316,
+   "active_users": 4141,
+   "messages": 26787,
+   "chats": 10006
+  },
+  {
+   "month": "2025-11",
+   "new_users": 1420,
+   "total_users": 27736,
+   "active_users": 2694,
+   "messages": 20156,
+   "chats": 7327
+  },
+  {
+   "month": "2025-12",
+   "new_users": 5216,
+   "total_users": 32952,
+   "active_users": 5650,
+   "messages": 36927,
+   "chats": 12004
+  },
+  {
+   "month": "2026-01",
+   "new_users": 2909,
+   "total_users": 35861,
+   "active_users": 4406,
+   "messages": 30083,
+   "chats": 11189
+  },
+  {
+   "month": "2026-02",
+   "new_users": 2412,
+   "total_users": 38273,
+   "active_users": 3729,
+   "messages": 35761,
+   "chats": 10062
+  },
+  {
+   "month": "2026-03",
+   "new_users": 4338,
+   "total_users": 42611,
+   "active_users": 5564,
+   "messages": 34819,
+   "chats": 11634
+  },
+  {
+   "month": "2026-04",
+   "new_users": 2772,
+   "total_users": 45383,
+   "active_users": 4154,
+   "messages": 26411,
+   "chats": 8964
+  },
+  {
+   "month": "2026-05",
+   "new_users": 2481,
+   "total_users": 47864,
+   "active_users": 3716,
+   "messages": 21592,
+   "chats": 7866
+  },
+  {
+   "month": "2026-06",
+   "new_users": 3425,
+   "total_users": 51289,
+   "active_users": 4467,
+   "messages": 24983,
+   "chats": 8695
+  },
+  {
+   "month": "2026-07",
+   "new_users": 1743,
+   "total_users": 53032,
+   "active_users": 2871,
+   "messages": 17215,
+   "chats": 6127
+  },
+  {
+   "month": "2026-08",
+   "new_users": 1264,
+   "total_users": 54296,
+   "active_users": 2280,
+   "messages": 19064,
+   "chats": 5467
+  },
+  {
+   "month": "2026-09",
+   "new_users": 1583,
+   "total_users": 55879,
+   "active_users": 2544,
+   "messages": 21449,
+   "chats": 5777
+  },
+  {
+   "month": "2026-10",
+   "new_users": 1350,
+   "total_users": 57229,
+   "active_users": 2267,
+   "messages": 17135,
+   "chats": 5397
+  },
+  {
+   "month": "2026-11",
+   "new_users": 2234,
+   "total_users": 59463,
+   "active_users": 1256,
+   "messages": 8093,
+   "chats": 2686
+  }
+ ],
+ "windows": [
+  {
+   "window": "Last 30 days",
+   "from": "2026-10-18",
+   "to": "2026-11-16",
+   "new_users": 2928,
+   "active_users": 2169,
+   "messages": 15388,
+   "chats": 5029
+  },
+  {
+   "window": "Past 12 months",
+   "from": "2025-11-16",
+   "to": "2026-11-16",
+   "new_users": 32466,
+   "active_users": 29720,
+   "messages": 303141,
+   "chats": 98250
+  },
+  {
+   "window": "Since launch",
+   "from": "2025-09-02",
+   "to": "2026-11-16",
+   "new_users": 59441,
+   "active_users": 49866,
+   "messages": 463051,
+   "chats": 153877
+  }
+ ]
+}

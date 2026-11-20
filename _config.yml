@@ -39,3 +39,13 @@ defaults:
 google_analytics: G-8CM1DYG2FB
 
 # see https://github.com/jekyll/minima/blob/master/_config.yml for examples
+
+# progress/ is the forpublicai/progress subtree. Only its prebuilt fragment is
+# used, through include_relative in progress.html, so don't publish the rest.
+exclude:
+  - progress/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .bundle/
