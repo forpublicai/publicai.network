@@ -62,7 +62,7 @@ export default function NetworkProgress() {
       </p>
       <ProgressBars table="countries" labelKey="name" valueKey="users" shareKey="share" title="Registered chat users by country" />
       <p>
-        The country comes from the timezone each user’s browser reported, mapped with the tz database. It is where their clock is set, not their nationality or exact location. <ProgressFigure name="country_known_pct" />% of users have a timezone; the rest are counted as not set.
+        The country comes from the timezone each user’s browser reported, mapped with the tz database. It is where their clock is set, not their nationality or exact location. <ProgressFigure name="country_known_pct" />% of users have a timezone with a country; the rest set none, or set UTC.
       </p>
 
       <h2>Movement</h2>
