@@ -4,12 +4,13 @@
 // {% include_relative %} drops it in unchanged.
 //
 //   npm install && npm run static
+/* global console */
 import { build } from "esbuild";
 import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 
-const here = path.dirname(new URL(import.meta.url).pathname);
+const here = import.meta.dirname;
 const dist = path.join(here, "dist");
 const tmp = path.join(here, ".tmp");
 const css = await readFile(path.join(here, "..", "react", "progress.css"), "utf8");
