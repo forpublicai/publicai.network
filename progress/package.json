@@ -7,6 +7,8 @@
     "static": "node static/render.mjs"
   },
   "devDependencies": {
+    "@fontsource/overpass-mono": "^5.3.0",
+    "@fontsource/public-sans": "^5.3.0",
     "esbuild": "0.25.12",
     "react": "19.1.0",
     "react-dom": "19.1.0"
