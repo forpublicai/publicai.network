@@ -190,6 +190,8 @@ export function ProgressChart({
   const peak = rows.reduce((a, b) => (b.value > a.value ? b : a), rows[0]);
   const last = rows[rows.length - 1];
   const labelled = peak === last ? [peak] : [peak, last];
+  // A month label every quarter, or every half-year on long series.
+  const tickEvery = rows.length > 20 ? 6 : 3;
   return (
     <figure className="progress-chart">
       <figcaption className="progress-chart__title">{title}</figcaption>
@@ -231,7 +233,7 @@ export function ProgressChart({
           );
         })}
         {rows.map((r, i) =>
-          i % 3 === 0 ? (
+          i % tickEvery === 0 ? (
             <text
               key={`t-${r.month}`}
               x={i * step + step / 2}
