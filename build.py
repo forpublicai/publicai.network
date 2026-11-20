@@ -21,7 +21,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SNAP = os.path.join(HERE, "snapshots")
 REC = os.path.join(HERE, "records")
 LAUNCH = "2025-09-02"
-SERIES_FOR = {"users": "signups", "visitors_co": "visitors"}
+SERIES_FOR = {"users": "signups", "visitors_co": "visitors",
+              "community_active": "slack_posting", "community_joined": "slack_joined"}
 
 
 def load(name, folder=SNAP):
@@ -80,6 +81,19 @@ def main():
     pubs = [r["date"] for r in rows_of(load("publications.json"))]
     records = {n: rows_of(load(f"{n}.json", REC)) for n in ("milestones", "events", "partners", "mentions", "audience")}
     llm = litellm_rows(a.litellm)
+    slack = litellm_rows(os.path.join(SNAP, "slack_daily.json"))  # same columns/rows shape
+    slack = [r for r in slack if r["date"] <= end]
+    slack_on = {r["date"]: r for r in slack}
+
+    def slack_at(day, field):
+        """Value on the last exported day on or before `day`, or None before the export starts."""
+        prior = [r for r in slack if r["date"] <= day]
+        return prior[-1][field] if prior and day >= slack[0]["date"] else None
+
+    def slack_joined(start):
+        before = (dt.date.fromisoformat(start) - dt.timedelta(days=1)).isoformat()
+        a0, a1 = slack_at(before, "members"), slack_at(end, "members")
+        return a1 - a0 if a0 is not None and a1 is not None else None
 
     def llm_sum(field, start):
         return sum(float(r[field] or 0) for r in llm if in_window(r["date"], start))
@@ -96,6 +110,9 @@ def main():
         "issues": {k: count([i["created"] for i in issues], s) for k, s in windows.items()},
         "issues_open": {k: count([i["created"] for i in issues if i["state"] == "open"], s) for k, s in windows.items()},
         "publications": {k: count(pubs, s) for k, s in windows.items()},
+        # Slack's rolling 30-day count of people who posted; no 12-month or since-launch equivalent.
+        "community_active": {"d30": slack_at(end, "monthly_posting"), "y1": None, "launch": None},
+        "community_joined": {k: slack_joined(s) for k, s in windows.items()},
     }
     if records["partners"]:
         values["partners"] = {k: count([p["joined"] for p in records["partners"]], s) for k, s in windows.items()}
@@ -128,6 +145,20 @@ def main():
         by_month["signups"][r["month"]] = r["new_users"]
         by_month["active_users"][r["month"]] = r["active_users"]
         by_month["chat_messages"][r["month"]] = r["messages"]
+    # Slack: rolling counts at each month's last exported day; joins and
+    # messages only for months the export covers in full.
+    for mo in span:
+        last = max((r["date"] for r in slack if r["date"][:7] == mo), default=None)
+        if not last:
+            continue
+        by_month["slack_posting"][mo] = slack_on[last]["monthly_posting"]
+        by_month["slack_active"][mo] = slack_on[last]["monthly_active"]
+        if slack[0]["date"] <= f"{mo}-01":
+            by_month["slack_messages"][mo] = sum(r["messages"] for r in slack if r["date"][:7] == mo)
+            before = (dt.date.fromisoformat(f"{mo}-01") - dt.timedelta(days=1)).isoformat()
+            start = slack_at(before, "members")
+            if start is not None:
+                by_month["slack_joined"][mo] = slack_on[last]["members"] - start
     owui_tokens = collections.Counter()
     for r in llm:
         by_month["tokens"][r["date"][:7]] += float(r["total_tokens"] or 0)
@@ -187,6 +218,10 @@ def main():
         "hello_avg": round(pv["hello"]["y1"] / 12, 1),
         "issues_30": pv["issues"]["d30"],
         "issues_avg": round(pv["issues"]["y1"] / 12, 1),
+        "slack_posting_30": pv["community_active"]["d30"],
+        "slack_active_30": slack_at(end, "monthly_active"),
+        "slack_joined_30": pv["community_joined"]["d30"],
+        "slack_members": slack_at(end, "enabled_members"),
         "missing": sum(1 for c in coverage if c["status"] == "Not connected"),
         "total": len(coverage),
     }

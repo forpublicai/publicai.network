@@ -150,19 +150,19 @@
    "key": "community_active",
    "pillar": "movement",
    "metric": "Active community members",
-   "status": "Not connected",
-   "source": "Public AI Slack",
-   "have": "The connected Slack is Current AI's, not Public AI's.",
-   "next": "Add a Public AI Slack bot token (channels:history, channels:read, users:read). Count distinct posters per week in public channels. No names or messages are stored."
+   "status": "Counted",
+   "source": "Slack analytics export",
+   "have": "People who posted at least one message in the Public AI Slack in the last 30 days, as Slack counts it (rolling 30 days). Daily from 18 Oct 2025, from the analytics CSV export of 20 Nov 2026.",
+   "next": "Export the Overview CSV from Slack analytics once a month and run collectors/slack_analytics.py. Slack has no analytics API below Enterprise Grid."
   },
   {
    "key": "community_joined",
    "pillar": "movement",
    "metric": "New Slack members",
-   "status": "Not connected",
-   "source": "Public AI Slack",
-   "have": "Same as above.",
-   "next": "Same token; count joins per month."
+   "status": "Counted",
+   "source": "Slack analytics export",
+   "have": "New accounts per month: the change in Slack's total member count, which includes deactivated accounts. Full months from Nov 2025.",
+   "next": "Same export as the row above."
   },
   {
    "key": "events",

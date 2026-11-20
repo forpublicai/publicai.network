@@ -26,7 +26,11 @@
   "hello_avg": 9.5,
   "issues_30": 2,
   "issues_avg": 2.2,
-  "missing": 19,
+  "slack_posting_30": 107,
+  "slack_active_30": 231,
+  "slack_joined_30": 45,
+  "slack_members": 678,
+  "missing": 17,
   "total": 30
  },
  "pillars": [
@@ -74,14 +78,14 @@
     {
      "key": "community_active",
      "metric": "Active community members",
-     "status": "Not connected",
+     "status": "Counted",
      "format": "int",
-     "d30": null,
-     "y1_avg": null,
+     "d30": 107,
+     "y1_avg": 90,
      "launch": null
     }
    ],
-   "connected": 2,
+   "connected": 4,
    "total": 11
   },
   {
@@ -247,9 +251,9 @@
    "key": "community_active",
    "pillar": "movement",
    "metric": "Active community members",
-   "status": "Not connected",
+   "status": "Counted",
    "format": "int",
-   "d30": null,
+   "d30": 107,
    "y1": null,
    "launch": null
   },
@@ -257,10 +261,10 @@
    "key": "community_joined",
    "pillar": "movement",
    "metric": "New Slack members",
-   "status": "Not connected",
+   "status": "Counted",
    "format": "int",
-   "d30": null,
-   "y1": null,
+   "d30": 45,
+   "y1": 318,
    "launch": null
   },
   {
@@ -919,6 +923,254 @@
     "value": 8093
    }
   ],
+  "slack_posting": [
+   {
+    "month": "2025-09",
+    "value": 0
+   },
+   {
+    "month": "2025-10",
+    "value": 93
+   },
+   {
+    "month": "2025-11",
+    "value": 79
+   },
+   {
+    "month": "2025-12",
+    "value": 70
+   },
+   {
+    "month": "2026-01",
+    "value": 75
+   },
+   {
+    "month": "2026-02",
+    "value": 87
+   },
+   {
+    "month": "2026-03",
+    "value": 81
+   },
+   {
+    "month": "2026-04",
+    "value": 80
+   },
+   {
+    "month": "2026-05",
+    "value": 102
+   },
+   {
+    "month": "2026-06",
+    "value": 97
+   },
+   {
+    "month": "2026-07",
+    "value": 89
+   },
+   {
+    "month": "2026-08",
+    "value": 97
+   },
+   {
+    "month": "2026-09",
+    "value": 101
+   },
+   {
+    "month": "2026-10",
+    "value": 110
+   },
+   {
+    "month": "2026-11",
+    "value": 107
+   }
+  ],
+  "slack_active": [
+   {
+    "month": "2025-09",
+    "value": 0
+   },
+   {
+    "month": "2025-10",
+    "value": 139
+   },
+   {
+    "month": "2025-11",
+    "value": 139
+   },
+   {
+    "month": "2025-12",
+    "value": 126
+   },
+   {
+    "month": "2026-01",
+    "value": 135
+   },
+   {
+    "month": "2026-02",
+    "value": 135
+   },
+   {
+    "month": "2026-03",
+    "value": 171
+   },
+   {
+    "month": "2026-04",
+    "value": 156
+   },
+   {
+    "month": "2026-05",
+    "value": 163
+   },
+   {
+    "month": "2026-06",
+    "value": 168
+   },
+   {
+    "month": "2026-07",
+    "value": 157
+   },
+   {
+    "month": "2026-08",
+    "value": 169
+   },
+   {
+    "month": "2026-09",
+    "value": 184
+   },
+   {
+    "month": "2026-10",
+    "value": 192
+   },
+   {
+    "month": "2026-11",
+    "value": 231
+   }
+  ],
+  "slack_messages": [
+   {
+    "month": "2025-09",
+    "value": 0
+   },
+   {
+    "month": "2025-10",
+    "value": 0
+   },
+   {
+    "month": "2025-11",
+    "value": 2310
+   },
+   {
+    "month": "2025-12",
+    "value": 2427
+   },
+   {
+    "month": "2026-01",
+    "value": 2423
+   },
+   {
+    "month": "2026-02",
+    "value": 2978
+   },
+   {
+    "month": "2026-03",
+    "value": 2762
+   },
+   {
+    "month": "2026-04",
+    "value": 2796
+   },
+   {
+    "month": "2026-05",
+    "value": 2394
+   },
+   {
+    "month": "2026-06",
+    "value": 3007
+   },
+   {
+    "month": "2026-07",
+    "value": 3470
+   },
+   {
+    "month": "2026-08",
+    "value": 4211
+   },
+   {
+    "month": "2026-09",
+    "value": 3501
+   },
+   {
+    "month": "2026-10",
+    "value": 3601
+   },
+   {
+    "month": "2026-11",
+    "value": 1473
+   }
+  ],
+  "slack_joined": [
+   {
+    "month": "2025-09",
+    "value": 0
+   },
+   {
+    "month": "2025-10",
+    "value": 0
+   },
+   {
+    "month": "2025-11",
+    "value": 17
+   },
+   {
+    "month": "2025-12",
+    "value": 3
+   },
+   {
+    "month": "2026-01",
+    "value": 17
+   },
+   {
+    "month": "2026-02",
+    "value": 19
+   },
+   {
+    "month": "2026-03",
+    "value": 22
+   },
+   {
+    "month": "2026-04",
+    "value": 19
+   },
+   {
+    "month": "2026-05",
+    "value": 51
+   },
+   {
+    "month": "2026-06",
+    "value": 33
+   },
+   {
+    "month": "2026-07",
+    "value": 22
+   },
+   {
+    "month": "2026-08",
+    "value": 27
+   },
+   {
+    "month": "2026-09",
+    "value": 38
+   },
+   {
+    "month": "2026-10",
+    "value": 36
+   },
+   {
+    "month": "2026-11",
+    "value": 27
+   }
+  ],
   "tokens": [
    {
     "month": "2025-09",
@@ -1488,18 +1740,18 @@
    {
     "pillar": "movement",
     "metric": "Active community members",
-    "status": "Not connected",
-    "source": "Public AI Slack",
-    "have": "The connected Slack is Current AI's, not Public AI's.",
-    "next": "Add a Public AI Slack bot token (channels:history, channels:read, users:read). Count distinct posters per week in public channels. No names or messages are stored."
+    "status": "Counted",
+    "source": "Slack analytics export",
+    "have": "People who posted at least one message in the Public AI Slack in the last 30 days, as Slack counts it (rolling 30 days). Daily from 18 Oct 2025, from the analytics CSV export of 20 Nov 2026.",
+    "next": "Export the Overview CSV from Slack analytics once a month and run collectors/slack_analytics.py. Slack has no analytics API below Enterprise Grid."
    },
    {
     "pillar": "movement",
     "metric": "New Slack members",
-    "status": "Not connected",
-    "source": "Public AI Slack",
-    "have": "Same as above.",
-    "next": "Same token; count joins per month."
+    "status": "Counted",
+    "source": "Slack analytics export",
+    "have": "New accounts per month: the change in Slack's total member count, which includes deactivated accounts. Full months from Nov 2025.",
+    "next": "Same export as the row above."
    },
    {
     "pillar": "movement",

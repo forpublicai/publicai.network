@@ -59,8 +59,19 @@ export default function NetworkProgress() {
 
       <h2>Movement</h2>
       <p>
-        Partners, community members and events are not counted yet. For now the movement shows up in mail and code:{" "}
-        <ProgressFigure name="hello_30" /> new threads to hello@publicai.co and{" "}
+        The Public AI Slack has <ProgressFigure name="slack_members" /> members.{" "}
+        <ProgressFigure name="slack_posting_30" /> of them posted in the last 30 days and{" "}
+        <ProgressFigure name="slack_active_30" /> were active, reading or posting.{" "}
+        <ProgressFigure name="slack_joined_30" /> people joined. Partners and events are not counted yet.
+      </p>
+      <ProgressGrid>
+        <ProgressChart series="slack_posting" title="Slack members posting, past 30 days" unit="people" partialLabel="to date" />
+        <ProgressChart series="slack_joined" title="New Slack members per month" unit="new members" partialLabel={partial} />
+        <ProgressChart series="slack_messages" title="Slack messages per month" unit="messages" partialLabel={partial} />
+      </ProgressGrid>
+      <p>
+        Posting and active counts are Slack&apos;s own rolling 30-day figures, taken on the last day of each month. Mail
+        and code show the movement too: <ProgressFigure name="hello_30" /> new threads to hello@publicai.co and{" "}
         <ProgressFigure name="issues_30" /> GitHub issues in the last 30 days.
       </p>
       <ProgressGrid>
