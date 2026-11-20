@@ -2,28 +2,28 @@
   url: https://github.com/forpublicai/publicai.network
   description: "The website of the Public AI Network"
   homepage: "https://publicai.network/"
-  pushed_at: 2026-11-19T18:49:16Z
+  pushed_at: 2026-11-20T12:29:26Z
   updated_at: 2026-11-16T14:22:28Z
-
-- name: "progress"
-  url: https://github.com/forpublicai/progress
-  description: "Shared progress & milestones across the movement"
-  pushed_at: 2026-11-19T18:43:19Z
-  updated_at: 2026-11-18T22:37:45Z
 
 - name: "publicai.ch"
   url: https://github.com/forpublicai/publicai.ch
   description: "Public AI Switzerland"
   homepage: "http://publicai.ch/"
-  pushed_at: 2026-11-19T15:13:14Z
+  pushed_at: 2026-11-20T12:29:22Z
   updated_at: 2026-11-12T00:56:33Z
 
 - name: "publicai.co"
   url: https://github.com/forpublicai/publicai.co
   description: "The website of the Public AI Inference Utility"
   homepage: "https://publicai.co"
-  pushed_at: 2026-11-19T15:12:30Z
+  pushed_at: 2026-11-20T12:29:18Z
   updated_at: 2026-10-30T11:14:12Z
+
+- name: "progress"
+  url: https://github.com/forpublicai/progress
+  description: "Shared progress & milestones across the movement"
+  pushed_at: 2026-11-20T12:29:00Z
+  updated_at: 2026-11-18T22:37:45Z
 
 - name: "chat.publicai.co"
   url: https://github.com/forpublicai/chat.publicai.co
