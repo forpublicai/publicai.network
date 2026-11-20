@@ -12,13 +12,14 @@ table td:first-child { white-space: nowrap; width: 3.5em;  /* don't break on dat
 table th { text-align: center; }
 </style>
 
-A research seminar to study public AI and other forms of public interest AI. You can [apply](https://forms.gle/1f8fkcCEjEoJF6L78) to join a future season of the seminar.
+A research seminar to study public AI and other forms of public interest AI.
+
+To join future seasons of the seminar, please [apply](https://forms.gle/1f8fkcCEjEoJF6L78).
 
 ## Season 4
 The fourth season of the seminar focuses on the business of public AI, including public infrastructure exemplars, funding/business models, and case studies. In particular, we will consider the opportunities for public AI across applications, models, inference, and physical infrastructure.
 
 ### Sessions
-Unless indicated otherwise, **all sessions are held Tuesdays, 11am–1pm ET** (UTC-4). Seminar seats are limited, so [please apply to join this season](https://forms.gle/1f8fkcCEjEoJF6L78) (if your application is accepted, see email for registration details).
 
 | Date | Session | Outputs |
 |------|---------|---------|
@@ -30,9 +31,7 @@ Unless indicated otherwise, **all sessions are held Tuesdays, 11am–1pm ET** (U
 | **15 Sep 2026** | **Case Studies: Compute:** What efforts are happening to build public AI compute?<br />**Presenter: [Devin Gaffney](https://www.linkedin.com/in/devin-gaffney)**, [CEO](https://www.devingaffney.com/), [Graze Social](https://www.graze.social/)<br />**Preread: [Can we billionaire-proof inference?](https://graze.leaflet.pub/3molilyuk5k2a)** (Graze Social Newsletter, 18 Jun 2026) | <a href="https://youtu.be/I-v3meFjVSA" title="view recording on YouTube"><img src="https://publicai.network/assets/seminar/season04/intro-06-compute.png" alt="video thumbnail showing session 06 details: Case Studies: Compute with Devin Gaffney"></a> |
 | **22 Sep 2026** | **Case Studies: Global:** What public AI efforts are happening around the globe?<br />**Presenters: [Patricio Del Boca](https://pdelboca.me/about.html)**, Tech Lead and Open Activist, [Open Knowledge Foundation](https://okfn.org/) and **[Jaanus Vänt](https://www.linkedin.com/in/jaanus-vant/)**, AI and Data Strategy Coordinator, [Ministry of Justice and Digital Affairs, Republic of Estonia](https://www.justdigi.ee/)<br />**Prereads: [Public AI is not a technology stack. It is an operating model.](https://publicai.network/docs/Public_AI_is_an_operating_model_not_a_stack__lessons_from_Estonia_v5.pdf)** (Jaanus Vänt, Sep 2026) and **[New Field Guide: Connecting AI to Government Data](https://blog.okfn.org/2026/09/16/new-field-guide-connecting-ai-to-government-data/)** (OKFN Blog, 16 Sep 2026) | <a href="https://youtu.be/m49N_LU58qA" title="view recording on YouTube"><img src="https://publicai.network/assets/seminar/season04/intro-07-global.png" alt="video thumbnail showing session 07 details: Case Studies: Global with Patricio Del Boca and Jaanus Vänt"></a> |
 | **30 Sep 2026** | **Case Studies: Commercial Offerings:** How are commercial AI companies supporting public AI?<br />**Presenter: [Saayeli Bruni](https://www.linkedin.com/in/saayeli/)**, [Principal](https://mozilla.vc/team/saayeli-mukherji-bruni/), [Mozilla Ventures](https://mozilla.vc/)<br />**Preread: [Trustworthy AI in Action: An exploration of the investment opportunity in open, secure and trustworthy AI](https://www.impactvc.co/_files/ugd/5dff30_c22a7e9a8a0c4d03affbfa898cff4c0d.pdf)** (ImpactVC & Mozilla Ventures, Jul 2026) | <a href="https://youtu.be/SpR0vLMnCvo" title="view recording on YouTube"><img src="https://publicai.network/assets/seminar/season04/intro-08-commercial-offerings.png" alt="video thumbnail showing session 08 details: Case Studies: Commercial Offerings with Saayeli Bruni"></a> |
-
-### Join
-To join for the seminar, please [apply](https://forms.gle/1f8fkcCEjEoJF6L78).
+| **13 Nov 2026** | **Case Studies: Coordination:** Funding, building, and bridging global public-interest AI.<br />**Presenter: [Ayah Bdeir](https://ayahbdeir.com/)**, [CEO](https://www.currentai.org/blogs/why-i-joined-current-ai), [Current AI](https://www.currentai.org/) | <a href="https://youtu.be/obwrcnWhPIw" title="view recording on YouTube"><img src="https://publicai.network/assets/seminar/season04/intro-09-coordination.png" alt="video thumbnail showing session 09 details: Case Studies: Coordination with Ayah Bdeir"></a> |
 
 ### Organizers
 * [Nate Angell](https://www.linkedin.com/in/nateangell/), [Founder](https://xolotl.org/), [Nudgital](https://nudgital.com/)
