@@ -6,6 +6,25 @@ layout: page
 
 # Write the story of humanity's future.
 
+## 🎉 2026 Winners Announced!
+
+Congratulations to our inaugural Protopian Prize winners!
+
+**Democratic Futures Prize Winner:**  
+["A River to Speak For"](https://metagov.substack.com/p/a-river-to-speak-for-by-sean-mooney) by Sean Mooney
+
+**Public AI Prize Winner:**  
+"The Wrong Person to Ask" by Tomasz Grzegorczyk
+
+**Runners Up:**
+- "The Last Developer of Venice Beach" by Colby Devitt
+- "Heal the Game" by Benjamin Rosenbaum
+- "I Am The River" by Alex Avard
+
+Read all the winning and runners up stories on [Metagov's blog](https://metagov.substack.com) and watch the recording of our [Online Winners Showcase](https://luma.com/7dsq7uh2) event for excerpt readings and conversations with judges. View full [2026 results here](https://protopianprize.com/2026-results).
+
+---
+
 ## PROMPT:
 
 Submit your original short fiction that helps imagine a **positive future** for humanity and AI -- and **actionable steps** to get us there.

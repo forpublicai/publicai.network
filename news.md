@@ -14,6 +14,9 @@ table th { text-align: center; font-weight: normal; font-size: 16px; }
 
 | Date | Update |
 |------|--------|
+| **2026**  |   |
+| 10/15 | [🎉] Protopian Prize winners announced! Democratic Futures Prize: ["A River to Speak For"](https://metagov.substack.com/p/a-river-to-speak-for-by-sean-mooney) by Sean Mooney. Public AI Prize: "The Wrong Person to Ask" by Tomasz Grzegorczyk. See all [2026 winners and runners-up](https://protopianprize.com/2026-results).
+| 10/1 | [🏆] Congratulations to Timo Eugster, Luca Saur, and Marco Daldoss who won the Public AI category at the Swiss {ai} Weeks Hackathon in Zurich with [Clausurus](https://www.linkedin.com/posts/public-ai-switzerland_congratulations-to-timo-eugster-luca-saur-activity-7511405885592584192-faUL), a privacy gateway using Apertus to protect personal data before it reaches frontier models.
 | **2025**  |   |
 | 11/7-9 | [🪩] [Mozfest](https://www.mozillafestival.org/en/) @ 15 returns to Barcelona. Public AI events will include a [Benchmarks](https://www.aspeninstitute.org/publications/reclaiming-ai-for-development/) workshop and an Airbus for AI workshop.
 | 9/9 | [🗣️] First quarterly call for the Public AI Network, 1000–1130 ET / 1400–1530 UTC.  [RSVP](https://luma.com/g9fafiq0), or [propose a lightning talk](https://docs.google.com/forms/d/e/1FAIpQLSdYfhh44IkZf8JcnPM7BJVf5xWu0chHProQE97XxBJe6kL4rQ/viewform)!
