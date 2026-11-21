@@ -17,4 +17,4 @@ to them should be universal. Public AI provides affordable access to these tools
 
 We set out a roadmap for _public investments_ into public goods at each layer of the AI stack to lower the costs of innovation, vertically-integrated _public utilities_ to fund sustainable development, and innovative new _public goods_ that invent and scale breakthroughs.
 
-The time for action is now — and in labs, libraries, and legislatures around the world, the work to ignite our shared imagnation by building Public AI has already begun. Join us!
+The time for action is now — and in labs, libraries, and legislatures around the world, the work to ignite our shared imagination by building Public AI has already begun. Join us!
