@@ -23,6 +23,7 @@ minima:
   - news.md
   - opportunities/index.md
   - jobs/index.md
+  - shop.md
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: true
 
