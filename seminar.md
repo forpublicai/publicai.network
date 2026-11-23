@@ -17,7 +17,7 @@ A research seminar to study public AI and other forms of public interest AI.
 To join future seasons of the seminar, please [apply](https://forms.gle/1f8fkcCEjEoJF6L78).
 
 ## Season 4
-The fourth season of the seminar focuses on the business of public AI, including public infrastructure exemplars, funding/business models, and case studies. In particular, we will consider the opportunities for public AI across applications, models, inference, and physical infrastructure.
+The fourth season of the seminar ran from 11 August to 30 September 2026, with a special session on 13 November. This season focused on the business of public AI, including public infrastructure exemplars, funding/business models, and case studies. In particular, we considered the opportunities for public AI across all the layers of the AI stack, including applications, inference, models, and physical infrastructure.
 
 ### Sessions
 
@@ -95,7 +95,7 @@ Organizers: Joshua Tan (Oxford, Metagov), SJ Klein (Berkman, Interlace), Nick Ga
 
 ## Details
 - Format: the seminar is invite-only. The first half of the seminar, reserved for invited talks, is recorded via Zoom and posted online. Notes from the entire seminar will be summarized without named attribution under the Chatham House rule.
-- Meeting times: every Tuesday from 11am - 1pm ET over Zoom.
+- Meeting times: typically weekly every Tuesday from 11am–1pm ET over Zoom.
 - Recordings and notes will be posted online at [https://publicai.network/seminar](https://publicai.network/seminar).
 
 ## Goals
