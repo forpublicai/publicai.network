@@ -82,6 +82,10 @@ body {
     padding-bottom: 2px;
 }
 
+.site-nav .nav-item:nth-child(4) {
+    margin-right: 20px; /* adds extra space so that navigation doesn't bump items to another row when different options are selected */
+}
+
 .site-nav .nav-item:hover,
 .site-nav .nav-item:focus-visible {
     color: #ef233c;
