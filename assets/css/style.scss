@@ -318,6 +318,10 @@ body {
         border-bottom: 1px solid #efefef;
     }
 
+    .site-nav .nav-item:nth-child(4) {
+        margin-right: 15px; /* remove extra space added to desktop view so that navigation doesn't bump items to another row when different options are selected */
+    }
+
     .site-nav .nav-item-active {
         border-bottom-color: #ef233c;
     }
